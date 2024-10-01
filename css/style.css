@@ -1,4 +1,4 @@
-/*Reset*/
+/***Reset***/
 
 * {
     box-sizing: border-box;
@@ -26,6 +26,21 @@ FONTS
 }
 
 
+/**************
+FONT AWESOME
+**************/
+
+.fa-github {
+    color: #000000;
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+    text-decoration: none;
+}
+
+
 /***********
 DISPLAY
 ***********/
@@ -35,50 +50,48 @@ DISPLAY
 }
 
 /***********
-    NAV REVENIR DESSUS APRES
+    NAV
 ***********/
 
 .container {
     width: 100%;
 }
 
-.fixed {
+nav {
     position: fixed;
     top: 0;
     left: 0;
+    padding: 1em;
+    text-align: center;
     height: 10vh;
     width: 100%;
-    align-items: center;
-    justify-content: space-around;
     background-color: #BACFE4;
-    opacity: 90%;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
-.div a {
+nav a {
+    padding: 8px 46px 8px 46px;
     color: black;
     text-decoration: none;
-    align-items: center;
-    justify-content: space-around;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
-.div a:hover {
-    opacity: 100%;
+nav a:hover {
     color: #fff;
     background-color: #283669;
     text-decoration: none;
-    padding: 1em;
     border-radius: 5px;
-    align-items: center;
-    justify-content: space-around;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
+}
+
+span {
+    text-decoration: underline 2px;
 }
 
 /**********
@@ -91,9 +104,26 @@ img {
 
 header {
     min-height: 100vh;
-    background: url(../imgs/computer.jpg);
+    background: url(../imgs/header-img.png);
     background-size: cover;
     background-position: center center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 12em;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-left: 25px;
+    color: #fff;
+}
+
+header h2 {
+    font-size: 25px;
+    margin-left: 25px;
+    color: #fff;
 }
 
 /**********
@@ -112,7 +142,6 @@ p, li, a {
     font-style: normal;
 }
 
-
 /**********
 ACCUEIL
 **********/
@@ -125,7 +154,7 @@ ACCUEIL
 
 .profile-img {
     width: 100%;
-    border-radius: 50%;
+    border-radius: 5%;
 }
 
 .socials {
@@ -165,6 +194,8 @@ COMPETENCES
     padding: 6px 8rem 6px 7rem;
     width: 30%;
     justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 2em;
 }
 
 .title-competences {
@@ -298,6 +329,8 @@ FORMATIONS
     padding: 6px 8rem 6px 8rem;
     width: 20%;
     justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 2em;
 }
 
 .title-formations {
@@ -318,12 +351,12 @@ FORMATIONS
 }
 
 .booster-h2-title {
-    padding: 3px 0rem 0rem 1rem; /*top right bottom left*/
+    padding: 3px 0rem 0rem 1rem;
     font-size: 35px;
 }
 
 .booster-h3-title {
-    padding: 1px 0rem 0rem 1rem; /*top right bottom left*/
+    padding: 1px 0rem 0rem 1rem;
     font-size: 30px;
 }
 
@@ -354,12 +387,12 @@ FORMATIONS
 }
 
 .apple-foundation-program-h2-title {
-    padding: 3px 0rem 0rem 1rem; /*top right bottom left*/
+    padding: 3px 0rem 0rem 1rem;
     font-size: 35px;
 }
 
 .apple-foundation-program-h3-title {
-    padding: 1px 0rem 0rem 1rem; /*top right bottom left*/
+    padding: 1px 0rem 0rem 1rem;
     font-size: 30px;
 }
 
@@ -395,15 +428,15 @@ EXPERIENCES
 
 #experiences {
     background-color: #BACFE4;
-    padding: 6px 8rem 6px 3rem;
-    width: 25%;
+    padding: 8px 63px 8px 63px;
     justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 2em;
 }
 
 .title-experiences {
     justify-content: center;
 }
-
 
 /***ADATECH SCHOOL***/
 
@@ -423,6 +456,7 @@ EXPERIENCES
 .adatech-school-h2-title {
     padding: 1px 0rem 0rem 1rem; /*top right bottom left*/
     font-size: 30px;
+    margin-top: 5px;
 }
 
 .adatech-school-h3-title {
@@ -449,23 +483,22 @@ EXPERIENCES
 }
 
 /**************
-FONT AWESOME
+CONTACT
 **************/
 
-.fa-github {
-    color: #000000;
-    text-decoration: none;
+#contact {
+    background-color: #BACFE4;
+    padding: 8px 46px 8px 46px;
+    justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 2em;
 }
 
-.fa-linkedin {
-    color: #0077B5;
-    text-decoration: none;
+.title-contact {
+    justify-content: center;
 }
 
-
-/**************
-FORM
-**************/
+/***FORM***/
 
 form {
     min-height: 100vh;
@@ -480,6 +513,7 @@ FOOTER
 
 footer {
     background-color: #BACFE4;
+    text-align: center;
 }
 
 footer a {
