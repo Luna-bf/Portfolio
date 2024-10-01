@@ -3,40 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Luna BURATTI-FAYOLLE">
-    <meta name="description" content="Voici mon site cv.">
-    <title>Site CV - Luna BURATTI-FAYOLLE</title>
+    <title>Portfolio - Luna BURATTI-FAYOLLE</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" >
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" type="text/css" >
 </head>
 <body>
-    <nav class="d-flex fixed">
-        <div class="d-flex">
-            <a href="#accueil">Accueil</a>
-            <a href="#competences">Compétences</a>
-            <a href="#formations">Formations</a>
-            <a href="#contact">Contact</a>
-        </div>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#competences">Compétences</a>
+        <a href="#formations">Formations</a>
+        <a href="#contact-me">Contact</a>
     </nav>
     
-    <header>
-        <article>
-            <h1>Bonjour, je m’apelle Luna et je suis une jeune développeuse web junior de 19 ans.</h1>
-            <h2>Je recherche activement une alternance pour devenir une développeuse full stack confirmée.</h2>
-        </article>
+    <header class="d-flex">
+        <h1>Bonjour, je m’apelle <span>Luna</span> et je suis une jeune <span>développeuse web junior</span> de 19 ans.</h1>
+        <h2>Je recherche activement une <span>alternance</span> pour devenir une développeuse full stack confirmée.</h2>
     </header>
     
     <main class="container">
         <section id="accueil" class="home d-flex">
             <div class="d-flex profile">
-                <img src="imgs/Photo_de_profil.jpg" class="profile-img" alt="Ma photo">
+                <img src="imgs/Photo_CV_30092024.jpg" class="profile-img" alt="Ma photo">
             </div>
             
             <article class="d-flex socials">
                 <p>Vous pouvez me retrouver sur :</p>
                 <div class="d-flex socials-icons">
-                    <a href="#" class="fa-brands fa-github"></a>
-                    <a href="https://www.linkedin.com/in/luna-buratti-fayolle-491062310/" class="fa-brands fa-linkedin"></a>
+                    <a href="https://github.com/Sunnyy05" target="_blank" class="fa-brands fa-github"></a>
+                    <a href="https://www.linkedin.com/in/luna-buratti-fayolle-491062310/" target="_blank" class="fa-brands fa-linkedin"></a>
                 </div>
             </article>
             
@@ -130,7 +125,7 @@
         </section>
         
         <section>
-            <div class="title-experiences">
+            <div class="d-flex title-experiences">
                 <h1 id="experiences">Expériences</h1>
             </div>
             <article class="d-flex parent-ada">
@@ -146,9 +141,9 @@
             </article>
         </section>
         
-        <section id="contact">
+        <section id="contact-me">
             <div class="d-flex title-contact">
-                <h1 id="contact" class="d-flex">Contactez moi</h1>
+                <h1 id="contact">Contactez moi</h1>
             </div>
             <form action="POST">
                 <input type="text" id="company_name" name="company_name" placeholder="Nom de l'entreprise (obligatoire)" required>
