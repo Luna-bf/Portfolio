@@ -31,7 +31,7 @@
             </div>
             
             <article class="d-flex socials">
-                <p>Vous pouvez me retrouver sur :</p>
+                <h1>Vous pouvez me retrouver sur :</h1>
                 <div class="d-flex socials-icons">
                     <a href="https://github.com/Sunnyy05" target="_blank" class="fa-brands fa-github"></a>
                     <a href="https://www.linkedin.com/in/luna-buratti-fayolle-491062310/" target="_blank" class="fa-brands fa-linkedin"></a>
@@ -40,8 +40,15 @@
             
             <article class="searching-for">
                 <h1>Ce que je recherche :</h1>
-                <p>Actuellement en formation à la 3W Academy, je suis à la recherche d'une entreprise prête à investir dans la formation d’une débutante ambitieuse et désireuse d'apprendre. Mon objectif est de contribuer activement à des projets dynamiques tout en continuant à me former et à évoluer dans ce domaine.</p>
+                <p>Actuellement en formation à la 3W Academy, je suis une jeune développeuse web junior de 19 ans passionnée par le développement et la création de solutions innovantes. En quête de perfectionnement dans ce domaine, je suis à la recherche d'une opportunité en alternance pour mettre en pratique mes compétences et apprendre auprès de professionnels expérimentés.</p>
+                <p>Motivée, curieuse et persévérante, je suis déterminée à développer mes compétences en front-end et back-end pour devenir une développeuse full-stack accomplie. Bien que je sois au début de mon parcours, je suis enthousiaste à l'idée de découvrir et de maîtriser des technologies variées telles que HTML, CSS, JavaScript, PHP, Python et bien d'autres.</p>
+                <p>Je suis à la recherche d'une entreprise prête à investir dans une débutante ambitieuse et désireuse d'apprendre. Mon objectif est de contribuer activement à des projets dynamiques tout en continuant à me former et à évoluer dans ce domaine.</p>
             </article>
+        </section>
+            
+        <section class="d-flex contact-resume">
+            <a href="#contact-me" class="contact-me-link">Me contacter</a>
+            <a href="ressources/CV_Luna_30092024.pdf" download="CV_Luna_30092024.pdf" class="resume">Télécharger mon CV</a>
         </section>
         
         <section>
@@ -148,11 +155,17 @@
             <div class="d-flex title-contact">
                 <h1 id="contact">Contactez moi</h1>
             </div>
-            <form action="POST">
-                <input type="text" id="company_name" name="company_name" placeholder="Nom de l'entreprise (obligatoire)" required>
-                <input type="email" id="email" name="email" placeholder="Votre adresse mail (obligatoire)" required>
-                <input type="text" id="message" name="message" placeholder="Votre message">
-                <button type="submit">Soumettre</button>
+            <form method="POST">
+                <div class="d-flex my-form">
+                    <div>
+                        <input type="text" id="company_name" name="company_name" placeholder="Nom de l'entreprise (obligatoire)" required>
+                        <input type="email" id="email" name="email" placeholder="Votre adresse mail (obligatoire)" required>
+                        <textarea id="message" name="message" placeholder="Votre message"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="toolbar">Soumettre</button>
+                </div>
             </form>
         </section>
     </main>
