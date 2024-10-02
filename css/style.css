@@ -61,10 +61,6 @@ body {
     NAV
 ***********/
 
-.container {
-    width: 100%;
-}
-
 nav {
     position: fixed;
     top: 0;
@@ -117,56 +113,6 @@ nav ul li a:focus {
     font-style: normal;
 }
 
-/*
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 1em;
-    height: 10vh;
-    width: 100%;
-    background-color: #BACFE4;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-nav ul {
-    list-style: none;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-nav li a {
-    padding: 4px 20px 4px 20px;
-    text-decoration: none;
-    color: black;
-    justify-content: center;
-    justify-content: space-evenly;
-}
-
-nav li a:hover {
-    justify-content: center;
-    justify-content: space-evenly;
-    list-style: none;
-    padding: 4px 20px 4px 20px;
-    text-decoration: none;
-    background-color: #283669;
-    color: #fff;
-    border-radius: 5px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-*/
-
-
-span {
-    text-decoration: underline 2px;
-}
-
 /**********
 HEADER
 **********/
@@ -199,9 +145,17 @@ header h2 {
     color: #fff;
 }
 
+span {
+    text-decoration: underline 2px;
+}
+
 /**********
 MAIN
 **********/
+
+.container {
+    width: 100%;
+}
 
 h1, h2, h3, h4 {
     font-family: "Poppins", sans-serif;
@@ -209,7 +163,7 @@ h1, h2, h3, h4 {
     font-style: normal;
 }
 
-p, li, a {
+p, li, a, input, textarea, button {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -250,13 +204,26 @@ ACCUEIL
     width: 50%;
 }
 
-.buttons a {
+.contact-resume {
     flex-direction: row;
-    text-decoration: none;
-    padding: 8px;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.contact-me-link {
     background-color: #283669;
     color: #fff;
+    text-decoration: none;
     border-radius: 5px;
+    padding: 5px 40px 5px 40px;
+}
+
+.resume {
+    background-color: #283669;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
 }
 
 /**************
@@ -578,7 +545,34 @@ form {
     min-height: 100vh;
     background: url(../imgs/bricks.png);
     background-size: cover;
-    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+}
+
+input {
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+textarea {
+	height: 15em;
+    padding: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+button {
+    margin: 5px;
+    border-radius: 5px;
+    background-color: blue;
+    padding: 10px;
+    border: 1px blue solid;
 }
 
 /**************
