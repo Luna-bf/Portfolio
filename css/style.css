@@ -530,7 +530,6 @@ PROJETS
     padding: 8px 63px 8px 63px;
     justify-content: center;
     margin-top: 6em;
-    margin-bottom: 2em;
 }
 
 .title-projects {
@@ -539,6 +538,8 @@ PROJETS
 
 .parent-project {
     justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 2em;
 }
 
 .project {
@@ -566,6 +567,10 @@ PROJETS
     font-weight: 900;
     color: #FFBD59;
     font-size: 18px;
+}
+
+.project-mb ul li:last-child {
+    margin-bottom: 3rem;
 }
 
 
@@ -615,10 +620,24 @@ textarea {
 
 button {
     margin: 5px;
-    border-radius: 5px;
-    background-color: blue;
     padding: 10px;
-    border: 1px blue solid;
+    border-radius: 5px;
+    border: 1px #283669 solid;
+    background-color: #283669;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+button:hover {
+    background-image: linear-gradient(#406285, #283669);
+    border: 1px #283669 solid;
+}
+
+button:focus {
+    background-image: linear-gradient(#02254a, #02254a);
+    border: 1px #02254a solid;
 }
 
 /**************
