@@ -177,6 +177,7 @@ ACCUEIL
     width: 15%;
     margin-top: 30px;
     flex-direction: column;
+    margin-bottom: 6rem;
 }
 
 .profile-img {
@@ -190,18 +191,33 @@ ACCUEIL
     width: 50%;
 }
 
+.find-me {
+    text-align: center;
+    margin: 1rem;
+    font-size: 18px;
+}
+
 .socials-icons {
     flex-direction: row;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    justify-content: space-evenly;
 }
 
 .home {
     flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 1rem 0 1rem 0;
 }
 
 .searching-for {
-    margin-top: 30px;
+    margin-top: 25px;
     width: 50%;
+}
+
+.searching-for h1 {
+    font-size: 25px;
+    margin-bottom: 5px;
 }
 
 .contact-resume {
@@ -218,12 +234,32 @@ ACCUEIL
     padding: 5px 40px 5px 40px;
 }
 
+.contact-me-link:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f27a";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #fff;
+    font-size: 18px;
+}
+
 .resume {
     background-color: #283669;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     padding: 5px 15px 5px 15px;
+}
+
+.resume:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f019";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #fff;
+    font-size: 18px;
 }
 
 /**************
@@ -260,6 +296,7 @@ COMPETENCES
 .languages {
     background-color: #E6EEF6;
     width: 80%;
+    font-size: 20px;
     margin-left: 50px;
     padding: 1rem 3rem 4rem 3rem; /*top right bottom left*/
     border-radius: 15px;
@@ -280,6 +317,7 @@ COMPETENCES
 .soft-skills {
     background-color: #E6EEF6;
     width: 80%;
+    font-size: 20px;
     margin-left: 50px;
     padding: 1rem 3rem 4rem 3rem; /*top right bottom left*/
     border-radius: 15px;
@@ -405,11 +443,20 @@ FORMATIONS
 }
 
 .booster-live100 ul li {
-    width: 60%;
-    margin: 1rem 0rem 0px 3rem;
+    margin: 1rem 0rem 0px 1rem;
     font-size: 20px;
+    list-style: none;
 }
 
+.booster-live100 ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #2AAA8A;
+    font-size: 18px;
+}
 
 /***AFP***/
 
@@ -436,13 +483,23 @@ FORMATIONS
 }
 
 .apple-foundation-program ul {
-    margin: 4rem 0rem 0rem 0rem;
+    margin: 4rem 0rem 2rem 0rem;
 }
 
 .apple-foundation-program ul li {
-    width: 60%;
-    margin: 1rem 0rem 0px 3rem;
+    margin: 1rem 0rem 0rem 1rem;
     font-size: 20px;
+    list-style: none;
+}
+
+.apple-foundation-program ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #2AAA8A;
+    font-size: 18px;
 }
 
 
@@ -503,14 +560,25 @@ EXPERIENCES
 }
 
 .adatech-school ul {
-    margin: 4rem 0rem 0rem 0rem;
+    margin: 4rem 0rem 1rem 0rem;
 }
 
 .adatech-school ul li {
-    width: 60%;
-    margin: 1rem 0rem 0px 3rem;
+    margin: 1rem 0rem 0rem 1rem;
     font-size: 20px;
+    list-style: none;
 }
+
+.adatech-school ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #2AAA8A;
+    font-size: 18px;
+}
+
 
 /***LOGOS***/
 
