@@ -323,6 +323,11 @@ COMPETENCES
     border-radius: 15px;
 }
 
+.soft-skills ul li {
+    margin: 1rem 0rem 0px 1rem;
+    font-size: 20px;
+}
+
 .soft-skills ul li:last-child {
     margin-top: 25px;
 }
@@ -387,13 +392,12 @@ COMPETENCES
 /***LOGOS***/
 
 .logos-frontend {
-    width: 100%;
+    width: 60%;
 }
 
 .logos-backend {
-    width: 90%;
-    margin-top: 15px;
-    margin-left: 45px;
+    width: 50%;
+    justify-content: center;
 }
 
 
@@ -583,7 +587,7 @@ EXPERIENCES
 /***LOGOS***/
 
 .logos-adatech-school {
-    width: 40%;
+    width: 30%;
     margin-top: 40px;
     margin-left: 300px;
 }
