@@ -190,16 +190,14 @@
             <div class="d-flex title-contact">
                 <h1 id="contact">Contactez moi</h1>
             </div>
-            <form method="POST" class="d-flex">
-                <div class="d-flex my-form">
-                    <div>
+            <form method="POST">
+                <div class="d-flex">
+                    <div class="my-form">
                         <input type="text" id="company_name" name="company_name" placeholder="Nom de l'entreprise (obligatoire)" required>
                         <input type="email" id="email" name="email" placeholder="Votre adresse mail (obligatoire)" required>
                         <textarea id="message" name="message" placeholder="Votre message"></textarea>
+					    <button type="submit" class="button">Envoyer</button>
                     </div>
-                </div>
-                <div>
-                    <button type="submit" class="toolbar">Soumettre</button>
                 </div>
             </form>
         </section>
