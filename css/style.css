@@ -283,6 +283,7 @@ ACCUEIL
     text-decoration: none;
     border-radius: 5px;
     padding: 5px 40px 5px 40px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.5);
 }
 
 .contact-me-link:before {
@@ -295,12 +296,22 @@ ACCUEIL
     font-size: 18px;
 }
 
+.contact-me-link:hover {
+    background-color: #324487;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 40px 5px 40px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.5);
+}
+
 .resume {
     background-color: #283669;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 40px 5px 40px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.5);
 }
 
 .resume:before {
@@ -311,6 +322,15 @@ ACCUEIL
     font-weight: 900;
     color: #fff;
     font-size: 18px;
+}
+
+.resume:hover {
+    background-color: #324487;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 40px 5px 40px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.5);
 }
 
 /**************
@@ -351,6 +371,7 @@ COMPETENCES
     margin-left: 50px;
     padding: 1rem 3rem 4rem 3rem; /*top right bottom left*/
     border-radius: 15px;
+	box-shadow: -10px 8px 10px silver;
 }
 
 .languages ul li {
@@ -386,6 +407,7 @@ COMPETENCES
     margin-left: 50px;
     padding: 1rem 3rem 4rem 3rem; /*top right bottom left*/
     border-radius: 15px;
+	box-shadow: 10px 8px 10px silver;
 }
 
 .soft-skills ul li {
@@ -425,6 +447,7 @@ COMPETENCES
     margin-left: 50px;
     padding: 1rem 3rem 1rem 3rem; /*top right bottom left*/
     border-radius: 15px;
+	box-shadow: -10px 8px 10px silver;
 }
 
 .hard-skills-back {
@@ -434,7 +457,31 @@ COMPETENCES
     padding: 1rem 3rem 2rem 1rem; /*top right bottom left*/
     border-radius: 15px;
     flex-direction: column;
+	box-shadow: 10px 8px 10px silver;
 }
+
+/*
+.animation {
+    margin-left: 395px;
+    background-color: #fc3;
+    margin-bottom: 3rem;
+    width: 200px;
+    height: 200px;
+    transition: //Je met TOUJOURS les propriétés et le temps qui seront modifiés par la transition là où il n'y a pas le :hover
+    width 2s,
+    height 2s,
+    background-color 2s,
+    transform 2s;
+}
+
+.animation:hover { //Puis je précise comment mon élément va agir (changement de couleur, taille, sens etc...)
+    background-color: #3cf;
+    margin-left: 395px;
+    width: 240px;
+    height: 240px;
+    transform: rotate(180deg);
+}
+*/
 
 
 /***ICONS***/
@@ -506,6 +553,7 @@ FORMATIONS
     width: 80%;
     height: 576px;
     border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 .booster-h2-title {
@@ -550,6 +598,7 @@ FORMATIONS
     width: 80%;
     height: 576px;
     border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 .apple-foundation-program-h2-title {
@@ -626,6 +675,7 @@ EXPERIENCES
     width: 80%;
     height: 576px;
     border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 .adatech-school-h2-title {
@@ -698,6 +748,7 @@ PROJETS
     width: 100%;
     border-radius: 15px;
     border: 2px solid #000000;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
 }
 
 .project ul li {
@@ -747,7 +798,7 @@ form {
     background-repeat: no-repeat;
     background-position: center;
     padding: 2em;
-    flex-direction: column;
+    justify-content: center;
 }
 
 input {
@@ -766,6 +817,7 @@ textarea {
     width: 100%;
     border: 1px solid #fff;
     border-radius: 5px;
+    justify-content: center;
 }
 
 button {
@@ -778,17 +830,15 @@ button {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
+    justify-content: center;
 }
 
 button:hover {
-    background-image: linear-gradient(#406285, #283669);
+    background-color: #324487;
     border: 1px #283669 solid;
+    justify-content: center;
 }
 
-button:focus {
-    background-image: linear-gradient(#02254a, #02254a);
-    border: 1px #02254a solid;
-}
 
 /**************
 FOOTER
