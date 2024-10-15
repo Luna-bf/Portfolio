@@ -302,8 +302,22 @@ COMPETENCES
     border-radius: 15px;
 }
 
+.languages ul li {
+    list-style: none;
+}
+
 .languages ul li:last-child {
     margin-top: 25px;
+}
+
+.languages ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\2b";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #2AAA8A;
+    font-size: 18px;
 }
 
 
@@ -324,12 +338,21 @@ COMPETENCES
 }
 
 .soft-skills ul li {
-    margin: 1rem 0rem 0px 1rem;
-    font-size: 20px;
+    list-style: none;
 }
 
 .soft-skills ul li:last-child {
     margin-top: 25px;
+}
+
+.soft-skills ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\2b";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #2AAA8A;
+    font-size: 18px;
 }
 
 
@@ -359,6 +382,7 @@ COMPETENCES
     margin-left: 50px;
     padding: 1rem 3rem 2rem 1rem; /*top right bottom left*/
     border-radius: 15px;
+    flex-direction: column;
 }
 
 
@@ -393,11 +417,12 @@ COMPETENCES
 
 .logos-frontend {
     width: 60%;
+    margin-left: 185px;
 }
 
 .logos-backend {
     width: 50%;
-    justify-content: center;
+    margin-left: 275px;
 }
 
 
@@ -588,8 +613,8 @@ EXPERIENCES
 
 .logos-adatech-school {
     width: 30%;
-    margin-top: 40px;
-    margin-left: 300px;
+    margin-top: 65px;
+    margin-left: 330px;
 }
 
 
@@ -671,6 +696,7 @@ form {
     background-repeat: no-repeat;
     background-position: center;
     padding: 2em;
+    justify-content: center;
 }
 
 input {
