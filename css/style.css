@@ -382,16 +382,6 @@ COMPETENCES
     margin-top: 25px;
 }
 
-.languages ul li:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\2b";
-    padding-right: 10px;
-    vertical-align: middle;
-    font-weight: 900;
-    color: #2AAA8A;
-    font-size: 18px;
-}
-
 
 /***SOFT SKILLS***/
 
@@ -414,18 +404,12 @@ COMPETENCES
     list-style: none;
 }
 
-.soft-skills ul li:last-child {
+.soft-skills ul li:nth-child(2) {
     margin-top: 25px;
 }
 
-.soft-skills ul li:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\2b";
-    padding-right: 10px;
-    vertical-align: middle;
-    font-weight: 900;
-    color: #2AAA8A;
-    font-size: 18px;
+.soft-skills ul li:last-child {
+    margin-top: 25px;
 }
 
 
@@ -770,21 +754,6 @@ PROJETS
 
 .project-mb ul li:last-child {
     margin-bottom: 3rem;
-}
-
-.project ul li a {
-    text-decoration: none;
-    color: navy;
-}
-
-.project ul li a:hover {
-    text-decoration: underline;
-    color: navy;
-}
-
-.project ul li a:focus {
-    text-decoration: underline;
-    color: red;
 }
 
 
