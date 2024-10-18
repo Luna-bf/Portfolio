@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" >
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" type="text/css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="imgs/favicon-48x48.png" />
 </head>
 <body>
@@ -53,26 +54,30 @@
         </section>
         
         <section class="d-flex contact-resume">
-            <a href="#contact-me" class="contact-me-link">Me contacter</a>
-            <a href="ressources/CV_Luna_16102024.pdf" download="CV de Luna BURATTI-FAYOLLE.pdf" class="resume">Télécharger mon CV</a>
+            <!--<a href="#contact-me" class="contact-me-link">Me contacter</a>-->
+            <a href="ressources/CV_Luna_16102024.pdf" download="CV de Luna BURATTI-FAYOLLE.pdf" class="resume">Télécharger mon CV (FR)</a>
+            <a href="ressources/Luna_Resume_16102024.pdf" download="Luna BURATTI-FAYOLLE's Resume.pdf" class="resume">Download my Resume (EN)</a>
         </section>
         
         <section>
             <div class="d-flex title-competences">
                 <h1 id="competences">Compétences</h1>
             </div>
-            <article class="d-flex parent-languages slide-in from-right">
-                <article class="languages">
-                    <h2 class="d-flex title">Langues</h2>
-                    <ul>
-                        <li>Français : Langue maternelle</li>
-                        <li>Anglais : niveau B1</li>
-                    </ul>
+            
+            <div class="left animation-item slide-left">
+                <article class="d-flex parent-languages slide-in from-left">
+                    <article class="languages">
+                        <h2 class="d-flex title">Langues</h2>
+                        <ul>
+                            <li>Français : Langue maternelle</li>
+                            <li>Anglais : niveau B1</li>
+                        </ul>
+                    </article>
+                    <div class="icon-languages">
+                        <img src="imgs/icons/languages_icon.png" alt="Icône de l'article langues">
+                    </div>
                 </article>
-                <div class="icon-languages">
-                    <img src="imgs/icons/languages_icon.png" alt="Icône de l'article langues">
-                </div>
-            </article>
+            </div>
             
             <article class="d-flex parent-soft-skills fadeInLeft animated">
                 <div class="icon-soft-skills">
@@ -119,7 +124,7 @@
                     <h3 class="booster-h3-title">3W Academy</h3>
                     <ul>
                         <li>Apprendre l’intégration avec 4 langages de développement web : HTML, CSS, JavaScript et PHP.</li>
-                        <li>Découvrir les différents outils utilisés en développement full stack.</li>
+                        <li>Découvrir les différents outils utilisés en développement full stack : Bootstrap (librairie), Vue.js (framework), MySQL (gestion de bases de données), le MCD, la POO et l’architecture MVC (Model View Controller)</li>
                     </ul>
                     <img class="logos-booster" src="imgs/logos/logos_booster.png" alt="Logo des langages et outils utilisés pendant cette formation">
                 </article>
@@ -208,5 +213,6 @@
         <p>Tous droits réservés</p>
     </footer>
     
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
