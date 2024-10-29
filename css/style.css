@@ -1,224 +1,875 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Luna BURATTI-FAYOLLE">
-    <title>Portfolio - Luna BURATTI-FAYOLLE</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" >
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" type="text/css" >
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="imgs/favicon-48x48.png" />
-</head>
-<body>
-    <nav>
-        <ul class="d-flex">
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#formations">Formations</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#contact-me">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <header class="d-flex" id="header">
-        <h1>Bonjour, je m’appelle <span>Luna</span> et je suis une jeune <span>développeuse web junior</span> de 19 ans.</h1>
-        <h2>Je recherche activement une <span>alternance</span> pour devenir une développeuse full stack confirmée.</h2>
-    </header>
-    
-    <main class="container" id="accueil">
-        
-        <a href="js/app.js" id="return-to-top"><i class="icon-chevron-up"></i></a>
-        
-        <section class="home d-flex">
-            
-            <div class="d-flex profile">
-                <img src="imgs/Photo_CV_30092024.jpg" class="profile-img" alt="Ma photo">
-    
-                <p class="find-me">Vous pouvez me retrouver sur :</p>
-                <article class="d-flex socials-icons">
-                    <a href="https://github.com/Luna-bf" target="_blank" class="fa-brands fa-github"></a>
-                    <a href="https://www.linkedin.com/in/luna-buratti-fayolle-491062310/" target="_blank" class="fa-brands fa-linkedin"></a>
-                </article>
-            </div>
-            
-            <article class="searching-for">
-                <p>Actuellement en recherche à la 3W Academy, je suis une jeune développeuse web junior de 19 ans passionnée par le développement et la création de solutions innovantes. En quête d'évolution dans ce domaine, je suis à la recherche d'une opportunité en alternance pour mettre en pratique mes compétences et apprendre auprès de professionnels expérimentés.</p>
-                <br>
-                <p>Motivée, curieuse et persévérante, je suis déterminée à gagner en compétences aussi bien front-end qu’en back-end pour devenir une développeuse full-stack accomplie. Je possède déjà des connaissances en HTML, CSS, PHP, MySQL et bien d'autres.</p>
-                <br>
-                <p>Je suis à la recherche d'une entreprise prête à signer un contrat d’apprentissage pour une durée de 12 mois avec une débutante ambitieuse et désireuse d'apprendre.</p>
-                <br>
-                <p>Je suis disponible immédiatement pour échanger avec vous alors n’hésitez pas à me contacter !</p>
-            </article>
-        </section>
-        
-        <section class="d-flex contact-resume">
-            <!--<a href="#contact-me" class="contact-me-link">Me contacter</a>-->
-            <a href="ressources/CV_Luna_16102024.pdf" download="CV de Luna BURATTI-FAYOLLE.pdf" class="resume">Télécharger mon CV (FR)</a>
-            <a href="ressources/Luna_Resume_16102024.pdf" download="Luna BURATTI-FAYOLLE's Resume.pdf" class="resume">Download my Resume (EN)</a>
-        </section>
-        
-        <section>
-            <div class="d-flex title-competences">
-                <h1 id="competences">Compétences</h1>
-            </div>
-            
-            <div class="left animation-item slide-right">
-                <article class="d-flex parent-languages slide-in from-right">
-                    <article class="languages">
-                        <h2 class="d-flex title">Langues</h2>
-                        <ul>
-                            <li>Français : Langue maternelle</li>
-                            <li>Anglais : niveau B1</li>
-                        </ul>
-                    </article>
-                    <div class="icon-languages">
-                        <img src="imgs/icons/languages_icon.png" alt="Icône de l'article langues">
-                    </div>
-                </article>
-            </div>
-            
-            <div class="right animation-item slide-left">
-                <article class="d-flex parent-soft-skills slide-in from-left">
-                    <div class="icon-soft-skills">
-                        <img src="imgs/icons/soft_skills_icon.png" alt="Icône de l'article soft skills">
-                    </div>
-                    <article class="soft-skills">
-                        <h2 class="d-flex title">Soft Skills</h2>
-                        <ul>
-                            <li>Prise de recul : Je suis ouverte à la critique et à la conversation.</li>
-                            <li>Curiosité : Je suis ouverte à des nouvelles choses.</li>
-                            <li>Persévérance : Je fais toujours de mon mieux et je n'abandonne pas devant la difficulté.</li>
-                        </ul>
-                    </article>
-                </article>
-            </div>
-            
-            <div class="left animation-item slide-right">
-                <article class="d-flex parent-hard-skills-front slide-in from-right">
-                    <article class="hard-skills-front">
-                        <h2 class="d-flex title">Hard skills (frontend)</h2>
-                        <img class="logos-frontend" src="imgs/logos/logos_frontend.png" alt="Logo des langages et outils que j'utilise en frontend">
-                    </article>
-                    <div class="icon-hard-skills-front">
-                        <img src="imgs/icons/front_end_icon.png" alt="Icône de l'article hard skills (frontend)">
-                    </div>
-                </article>
-            </div>
-            
-            <div class="right animation-item slide-left">
-                <article class="d-flex parent-hard-skills-back slide-in from-left">
-                    <div class="icon-hard-skills-back">
-                        <img src="imgs/icons/back_end_icon.png" alt="Icône de l'article hard skills (backend)">
-                    </div>
-                    <article class="d-flex hard-skills-back">
-                        <h2 class="d-flex title">Hard skills (backend)</h2>
-                        <img class="logos-backend" src="imgs/logos/logos_backend.png" alt="Logo des langages et outils que j'utilise en backend">
-                    </article>
-                </article>
-            </div>
-        </section>
-        
-        <section>
-            <div class="d-flex title-formations">
-                <h1 id="formations" class="d-flex">Formations</h1>
-            </div>
-            <article class="d-flex parent-booster">
-                <article class="booster-live100">
-                    <h2 class="booster-h2-title">Booster Live100 - 2024</h2>
-                    <h3 class="booster-h3-title">3W Academy</h3>
-                    <ul>
-                        <li>Apprendre l’intégration avec 4 langages de développement web : HTML, CSS, JavaScript et PHP.</li>
-                        <li>Découvrir les différents outils utilisés en développement full stack : Bootstrap (librairie), Vue.js (framework), MySQL (gestion de bases de données), le MCD, la POO et l’architecture MVC (Model View Controller)</li>
-                    </ul>
-                    <img class="logos-booster" src="imgs/logos/logos_booster.png" alt="Logo des langages et outils utilisés pendant cette formation">
-                </article>
-            </article>
-            
-            <article class="d-flex parent-booster">
-                <article class="apple-foundation-program">
-                    <h2 class="apple-foundation-program-h2-title">Apple Foundation Program - 2024</h2>
-                    <h3 class="apple-foundation-program-h3-title">Simplon.co</h3>
-                    <ul>
-                        <li>Concevoir une application mobile à partir d’une problématique</li>
-                        <li>Développer une application mobile iOS</li>
-                        <li>Développer des compétences transversales qui renforcent l’employabilité</li>
-                    </ul>
-                <div class="d-flex parent-logo-100">
-                    <img class="logos-afp" src="imgs/logos/logos_afp.png" alt="Logo des langages et outils utilisés pendant cette formation">
-                </div>
-                </article>
-            </article>
-        </section>
-        
-        <section>
-            <div class="d-flex title-experiences">
-                <h1 id="experiences">Expériences</h1>
-            </div>
-            <article class="d-flex parent-ada">
-                <article class="adatech-school">
-                    <h2 class="adatech-school-h2-title">Stage de découverte - 2023</h2>
-                    <h3 class="adatech-school-h3-title">AdaTech School</h3>
-                    <ul>
-                        <li>Découvrir le développement web</li>
-                        <li>Découvrir et prendre en main les langages suivants : HTML et CSS</li>
-                    </ul>
-                    <img class="logos-adatech-school" src="imgs/logos/logos_adatech_school.png" alt="Logo des langages utilisés pendant ce stage">
-                </article>
-            </article>
-        </section>
-        
-        <section>
-            <div class="d-flex title-projects">
-                <h1 id="projects">Projets</h1>
-            </div>
-            <article class="d-flex parent-project">
-                <article class="project project-mb">
-                    <img src="imgs/projects/php-rpg_thumbnail.png" alt="Capture d'écran du RPG PHP'" class="project-img" />
-                    <ul>
-                        <li>Année : 2024 (en cours)</li>
-                        <li>Technos utilisées : PHP, HTML, CSS</li>
-                        <li><a href="https://github.com/Luna-bf/PHP-RPG" target="_blank">Lien Github</a></li>
-                    </ul>
-                </article>
-            </article>
-            
-            
-            <article class="d-flex parent-project">
-                <article class="project">
-                    <img src="imgs/projects/dummy_thumbnail.png" alt="Capture d'écran du site 'ça va de soie'" class="project-img" />
-                    <ul>
-                        <li>Année : 2024 (en cours)</li>
-                        <li>Technos utilisées : HTML, CSS</li>
-                        <li><a href="https://github.com/Luna-bf/Ca-va-de-soie-en-cours" target="_blank">Lien Github</a></li>
-                    </ul>
-                </article>
-            </article>
-        </section>
-        
-        <section id="contact-me">
-            <div class="d-flex title-contact">
-                <h1 id="contact">Contactez moi</h1>
-            </div>
-            <form method="POST">
-                <div class="d-flex">
-                    <div class="my-form">
-                        <input type="text" id="company_name" name="company_name" placeholder="Nom de l'entreprise (obligatoire)" required>
-                        <input type="email" id="email" name="email" placeholder="Votre adresse mail (obligatoire)" required>
-                        <textarea id="message" name="message" placeholder="Votre message"></textarea>
-					    <button type="submit" class="button">Envoyer</button>
-                    </div>
-                </div>
-            </form>
-        </section>
-    </main>
-    
-    <footer>
-        <p>Luna BURATTI-FAYOLLE - 2024</p>
-        <p>Tous droits réservés</p>
-    </footer>
-    
-    <script type="text/javascript" src="js/app.js"></script>
-</body>
-</html>
+/***Reset***/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/************
+FONTS
+************/
+
+/*Poppins light - pour le texte*/
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+/*Poppins medium - pour les titres*/
+@font-face {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+/**************
+FONT AWESOME
+**************/
+
+.fa-github {
+    color: #000000;
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+    text-decoration: none;
+}
+
+
+/***********
+DISPLAY
+***********/
+
+.d-flex {
+    display: flex;
+}
+
+/***********
+BODY
+***********/
+
+body {
+    background-color: white;
+    height: 2000px;
+}
+
+/***********
+    NAV
+***********/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #BACFE4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-decoration: underline 1px black;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+nav ul li a:focus {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    color: #fff;
+    text-decoration: underline 1px #fff;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/**********
+HEADER
+**********/
+
+img {
+    width: 100%;
+}
+
+header {
+    min-height: 100vh;
+    background: url(../imgs/header-img.png);
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 12em;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-left: 25px;
+    color: #fff;
+}
+
+header h2 {
+    font-size: 25px;
+    margin-left: 25px;
+    color: #fff;
+}
+
+span {
+    text-decoration: underline 2px;
+}
+
+/**********
+MAIN
+**********/
+
+.container {
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p, li, a, input, textarea, button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/*************
+RETURN TO TOP
+*************/
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+/**********
+ANIMATIONS
+**********/
+
+.animation-item {
+    opacity: 0;
+    position: relative;
+}
+
+.animation-item.slide-left {
+    opacity: 0;
+    -moz-transition: all 1000ms linear;
+    -webkit-transition: all 1000ms linear;
+    -o-transition: all 1000ms linear;
+    transition: all 1000ms linear;
+    -moz-transform: translate3d(-300px, 0px, 0px);
+    -webkit-transform: translate3d(-300px, 0px, 0px);
+    -o-transform: translate3d(-300px, 0px);
+    -ms-transform: translate3d(-300px, 0px);
+    transform: translate3d(-300px, 0px, 0px);
+}
+
+.animation-item.slide-right {
+    opacity: 0;
+    -moz-transition: all 1000ms linear;
+    -webkit-transition: all 1000ms linear;
+    -o-transition: all 1000ms linear;
+    transition: all 1000ms linear;
+    -moz-transform: translate3d(300px, 0px, 0px);
+    -webkit-transform: translate3d(300px, 0px, 0px);
+    -o-transform: translate3d(300px, 0px);
+    -ms-transform: translate3d(300px, 0px);
+    transform: translate3d(300px, 0px, 0px);
+}
+
+.animation-item.slide-left.item-in-view, .animation-item.slide-right.item-in-view {
+    opacity:1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px);
+    -ms-transform: translate3d(0px, 0px);
+    transform: translate3d(50px, 0px, 0px);
+}
+
+
+/**********
+ACCUEIL
+**********/
+
+.home {
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 1rem 0 1rem 0;
+}
+
+.profile {
+    width: 15%;
+    margin-top: 30px;
+    flex-direction: column;
+    margin-bottom: 6rem;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.socials {
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.find-me {
+    text-align: center;
+    margin: 1rem;
+    font-size: 18px;
+}
+
+.socials-icons {
+    flex-direction: row;
+    font-size: 3rem;
+    justify-content: space-evenly;
+}
+
+.searching-for {
+    margin-top: 25px;
+    width: 50%;
+}
+
+.searching-for h1 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.contact-resume {
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.contact-me-link {
+    background-color: #283669;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 40px 5px 40px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.5);
+}
+
+.contact-me-link:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f27a";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contact-me-link:hover {
+    background-color: #324487;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 40px 5px 40px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.5);
+}
+
+.resume {
+    background-color: #283669;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 40px 5px 40px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.5);
+}
+
+.resume:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f019";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #fff;
+    font-size: 18px;
+}
+
+.resume:hover {
+    background-color: #324487;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 40px 5px 40px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.5);
+}
+
+/**************
+COMPETENCES
+**************/
+
+#competences {
+    background-color: #BACFE4;
+    padding: 6px 8rem 6px 7rem;
+    width: 30%;
+    justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 2em;
+}
+
+.title-competences {
+    justify-content: center;
+}
+
+.title {
+    margin-bottom: 30px;
+    font-size: 35px;
+    justify-content: center;
+}
+
+
+/***LANGUAGES***/
+
+.parent-languages {
+    padding: 20px;
+    justify-content: center
+}
+
+.languages {
+    background-color: #E6EEF6;
+    width: 75%;
+    font-size: 20px;
+    /*margin-left: 50px;*/
+    padding: 1rem 3rem 4rem 3rem; /*top right bottom left*/
+    border-radius: 15px;
+	box-shadow: -10px 8px 10px silver;
+}
+
+.languages ul li {
+    list-style: none;
+}
+
+.languages ul li:last-child {
+    margin-top: 25px;
+}
+
+
+/***SOFT SKILLS***/
+
+.parent-soft-skills {
+    padding: 20px;
+    justify-content: center;
+}
+
+.soft-skills {
+    background-color: #E6EEF6;
+    width: 75%;
+    font-size: 20px;
+    margin-left: 50px;
+    padding: 1rem 3rem 4rem 3rem; /*top right bottom left*/
+    border-radius: 15px;
+	box-shadow: 10px 8px 10px silver;
+}
+
+.soft-skills ul li {
+    list-style: none;
+}
+
+.soft-skills ul li:nth-child(2) {
+    margin-top: 25px;
+}
+
+.soft-skills ul li:last-child {
+    margin-top: 25px;
+}
+
+
+/***HARD SKILLS***/
+
+.parent-hard-skills-front {
+    padding: 20px;
+    justify-content: center;
+}
+
+.parent-hard-skills-back {
+    padding: 20px;
+    justify-content: center;
+}
+
+.hard-skills-front {
+    background-color: #E6EEF6;
+    width: 75%;
+    margin-left: 50px;
+    padding: 1rem 3rem 1rem 3rem; /*top right bottom left*/
+    border-radius: 15px;
+	box-shadow: -10px 8px 10px silver;
+}
+
+.hard-skills-back {
+    background-color: #E6EEF6;
+    width: 75%;
+    margin-left: 45px;
+    padding: 1rem 3rem 2rem 1rem; /*top right bottom left*/
+    border-radius: 15px;
+    flex-direction: column;
+	box-shadow: 10px 8px 10px silver;
+}
+
+
+/***ICONS***/
+
+.icon-languages {
+    width: 10%;
+    margin-left: 3rem; /*top right bottom left*/
+    margin-top: 4rem;
+}
+
+.icon-soft-skills {
+    width: 10%;
+    margin-right: 1rem; /*top right bottom left*/
+    margin-top: 5rem;
+}
+
+.icon-hard-skills-front {
+    width: 10%;
+    margin-left: 3rem; /*top right bottom left*/
+    margin-top: 8rem;
+}
+
+.icon-hard-skills-back {
+    width: 10%;
+    margin-right: 1rem; /*top right bottom left*/
+    margin-top: 5rem;
+}
+
+
+/***LOGOS***/
+
+.logos-frontend {
+    width: 60%;
+    margin-left: 185px;
+}
+
+.logos-backend {
+    width: 50%;
+    margin-left: 275px;
+}
+
+
+/**************
+FORMATIONS
+**************/
+
+/***BOOSTER***/
+
+#formations {
+    background-color: #BACFE4;
+    padding: 6px 8rem 6px 8rem;
+    width: 20%;
+    justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 2em;
+}
+
+.title-formations {
+    justify-content: center;
+}
+
+.parent-booster {
+    padding: 20px;
+    justify-content: center;
+}
+
+.booster-live100 {
+    background-color: #E6EEF6;
+    width: 80%;
+    height: 576px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.booster-h2-title {
+    padding: 3px 0rem 0rem 1rem;
+    font-size: 35px;
+}
+
+.booster-h3-title {
+    padding: 1px 0rem 0rem 1rem;
+    font-size: 30px;
+}
+
+.booster-live100 ul {
+    margin: 4rem 0rem 0rem 0rem;
+}
+
+.booster-live100 ul li {
+    margin: 1rem 0rem 0px 1rem;
+    font-size: 20px;
+    list-style: none;
+}
+
+.booster-live100 ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #2AAA8A;
+    font-size: 18px;
+}
+
+/***AFP***/
+
+.parent-afp {
+    padding: 20px;
+    justify-content: center;
+}
+
+.apple-foundation-program {
+    background-color: #E6EEF6;
+    width: 80%;
+    height: 576px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.apple-foundation-program-h2-title {
+    padding: 3px 0rem 0rem 1rem;
+    font-size: 35px;
+}
+
+.apple-foundation-program-h3-title {
+    padding: 1px 0rem 0rem 1rem;
+    font-size: 30px;
+}
+
+.apple-foundation-program ul {
+    margin: 4rem 0rem 2rem 0rem;
+}
+
+.apple-foundation-program ul li {
+    margin: 1rem 0rem 0rem 1rem;
+    font-size: 20px;
+    list-style: none;
+}
+
+.apple-foundation-program ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #2AAA8A;
+    font-size: 18px;
+}
+
+
+/***LOGOS***/
+
+.logos-booster {
+    width: 70%;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.logos-afp {
+    width: 55%;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+
+/**************
+EXPERIENCES
+**************/
+
+#experiences {
+    background-color: #BACFE4;
+    padding: 8px 63px 8px 63px;
+    justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 2em;
+}
+
+.title-experiences {
+    justify-content: center;
+}
+
+/***ADATECH SCHOOL***/
+
+.parent-ada {
+    padding: 20px;
+    justify-content: center;
+}
+
+.adatech-school {
+    background-color: #E6EEF6;
+    width: 80%;
+    height: 576px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.adatech-school-h2-title {
+    padding: 1px 0rem 0rem 1rem; /*top right bottom left*/
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.adatech-school-h3-title {
+    padding: 1px 0rem 0rem 1rem; /*top right bottom left*/
+    font-size: 30px;
+}
+
+.adatech-school ul {
+    margin: 4rem 0rem 1rem 0rem;
+}
+
+.adatech-school ul li {
+    margin: 1rem 0rem 0rem 1rem;
+    font-size: 20px;
+    list-style: none;
+}
+
+.adatech-school ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #2AAA8A;
+    font-size: 18px;
+}
+
+
+/***LOGOS***/
+
+.logos-adatech-school {
+    width: 30%;
+    margin-top: 65px;
+    margin-left: 330px;
+}
+
+
+/**************
+PROJETS
+**************/
+
+#projects {
+    background-color: #BACFE4;
+    padding: 8px 63px 8px 63px;
+    justify-content: center;
+    margin-top: 6em;
+}
+
+.title-projects {
+    justify-content: center;
+}
+
+.parent-project {
+    justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 2em;
+}
+
+.project {
+    width: 77%;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+
+.project ul li {
+    width: 65%;
+    margin: 1rem 0rem 0rem 5px;
+    list-style: none;
+    font-size: 25px;
+}
+
+.project ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f005";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #FFBD59;
+    font-size: 18px;
+}
+
+.project-mb ul li:last-child {
+    margin-bottom: 3rem;
+}
+
+
+/**************
+CONTACT
+**************/
+
+#contact {
+    background-color: #BACFE4;
+    padding: 8px 46px 8px 46px;
+    justify-content: center;
+    margin-top: 6em;
+    margin-bottom: 2em;
+}
+
+.title-contact {
+    justify-content: center;
+}
+
+/***FORM***/
+
+form {
+    min-height: 100vh;
+    background: url(../imgs/bricks.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+    justify-content: center;
+}
+
+input {
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+textarea {
+	height: 15em;
+    padding: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px #283669 solid;
+    background-color: #283669;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #324487;
+    border: 1px #324487 solid;
+    justify-content: center;
+}
+
+
+/**************
+FOOTER
+**************/
+
+footer {
+    background-color: #BACFE4;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/**************
+ANIMATIONS
+**************/
+
+
+
+
+/**************
+MEDIA QUERIES
+**************/
+
+/***MOBILE***/
+
+@media (min-width : 768px) {
+
+}
