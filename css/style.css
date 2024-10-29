@@ -40,7 +40,6 @@ FONT AWESOME
     text-decoration: none;
 }
 
-
 /***********
 DISPLAY
 ***********/
@@ -219,7 +218,6 @@ RETURN TO TOP
     top: 5px;
 }
 
-
 /**********
 ANIMATIONS
 **********/
@@ -263,7 +261,6 @@ ANIMATIONS
     -ms-transform: translate3d(0px, 0px);
     transform: translate3d(50px, 0px, 0px);
 }
-
 
 /**********
 ACCUEIL
@@ -401,7 +398,6 @@ COMPETENCES
     justify-content: center;
 }
 
-
 /***LANGUAGES***/
 
 .parent-languages {
@@ -426,7 +422,6 @@ COMPETENCES
 .languages ul li:last-child {
     margin-top: 25px;
 }
-
 
 /***SOFT SKILLS***/
 
@@ -456,7 +451,6 @@ COMPETENCES
 .soft-skills ul li:last-child {
     margin-top: 25px;
 }
-
 
 /***HARD SKILLS***/
 
@@ -489,7 +483,6 @@ COMPETENCES
 	box-shadow: 10px 8px 10px silver;
 }
 
-
 /***ICONS***/
 
 .icon-languages {
@@ -516,7 +509,6 @@ COMPETENCES
     margin-top: 5rem;
 }
 
-
 /***LOGOS***/
 
 .logos-frontend {
@@ -528,7 +520,6 @@ COMPETENCES
     width: 50%;
     margin-left: 275px;
 }
-
 
 /**************
 FORMATIONS
@@ -637,7 +628,6 @@ FORMATIONS
     font-size: 18px;
 }
 
-
 /***LOGOS***/
 
 .logos-booster {
@@ -651,7 +641,6 @@ FORMATIONS
     margin-top: 40px;
     margin-left: 200px;
 }
-
 
 /**************
 EXPERIENCES
@@ -715,7 +704,6 @@ EXPERIENCES
     font-size: 18px;
 }
 
-
 /***LOGOS***/
 
 .logos-adatech-school {
@@ -723,7 +711,6 @@ EXPERIENCES
     margin-top: 65px;
     margin-left: 330px;
 }
-
 
 /**************
 PROJETS
@@ -777,7 +764,6 @@ PROJETS
 .project-mb ul li:last-child {
     margin-bottom: 3rem;
 }
-
 
 /**************
 CONTACT
@@ -845,7 +831,6 @@ button:hover {
     justify-content: center;
 }
 
-
 /**************
 FOOTER
 **************/
@@ -855,14 +840,6 @@ footer {
     text-align: center;
     padding: 1rem;
 }
-
-
-/**************
-ANIMATIONS
-**************/
-
-
-
 
 /**************
 MEDIA QUERIES
