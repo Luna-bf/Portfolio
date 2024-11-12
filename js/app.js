@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
     var animation_elements = $.find('.animation-item');
     var web_window = $(window);
     
@@ -25,4 +25,4 @@ $(document).ready(function() {
         check_if_in_view();
     });
     $(window).trigger('scroll');
-});
+});*/
