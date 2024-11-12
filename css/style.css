@@ -40,6 +40,7 @@ FONT AWESOME
     text-decoration: none;
 }
 
+
 /***********
 DISPLAY
 ***********/
@@ -69,10 +70,10 @@ nav {
     text-align: center;
     height: 10vh;
     width: 100%;
-    background-color: #BACFE4;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
+    background: rgba(186, 207, 228, 0.7);
 }
 
 nav ul {
@@ -112,6 +113,34 @@ nav ul li a:focus {
     font-weight: 300;
     font-style: normal;
 }
+
+.dropdown {
+    position: relative;
+    max-width: 50%;
+}
+
+.dropdown-content {
+    position: absolute;
+    margin-top: 10px;
+    padding: 25px;
+    background-color: #fff;
+    border: solid thin #aaa;
+}
+
+.lang-change:focus {
+    color: firebrick;
+    text-decoration: underline;
+}
+
+.hide {
+    display: none;
+}
+
+/*.flag {
+    width: 40%;
+    height: 45%;
+    align-items: center;
+}*/
 
 /**********
 HEADER
@@ -169,6 +198,10 @@ p, li, a, input, textarea, button {
     font-style: normal;
 }
 
+hr {
+    width: 90%;
+    margin: auto;
+}
 
 /*************
 RETURN TO TOP
@@ -218,6 +251,7 @@ RETURN TO TOP
     top: 5px;
 }
 
+
 /**********
 ANIMATIONS
 **********/
@@ -262,6 +296,7 @@ ANIMATIONS
     transform: translate3d(50px, 0px, 0px);
 }
 
+
 /**********
 ACCUEIL
 **********/
@@ -270,7 +305,7 @@ ACCUEIL
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
-    margin: 1rem 0 1rem 0;
+    margin: 0.5rem 0 0 0;
 }
 
 .profile {
@@ -317,6 +352,7 @@ ACCUEIL
     flex-direction: row;
     justify-content: center;
     justify-content: space-evenly;
+    margin-bottom: 4em;
 }
 
 .contact-me-link {
@@ -384,7 +420,7 @@ COMPETENCES
     padding: 6px 8rem 6px 7rem;
     width: 30%;
     justify-content: center;
-    margin-top: 6em;
+    margin-top: 3em;
     margin-bottom: 2em;
 }
 
@@ -397,6 +433,7 @@ COMPETENCES
     font-size: 35px;
     justify-content: center;
 }
+
 
 /***LANGUAGES***/
 
@@ -422,6 +459,7 @@ COMPETENCES
 .languages ul li:last-child {
     margin-top: 25px;
 }
+
 
 /***SOFT SKILLS***/
 
@@ -451,6 +489,7 @@ COMPETENCES
 .soft-skills ul li:last-child {
     margin-top: 25px;
 }
+
 
 /***HARD SKILLS***/
 
@@ -483,6 +522,7 @@ COMPETENCES
 	box-shadow: 10px 8px 10px silver;
 }
 
+
 /***ICONS***/
 
 .icon-languages {
@@ -509,6 +549,7 @@ COMPETENCES
     margin-top: 5rem;
 }
 
+
 /***LOGOS***/
 
 .logos-frontend {
@@ -520,6 +561,7 @@ COMPETENCES
     width: 50%;
     margin-left: 275px;
 }
+
 
 /**************
 FORMATIONS
@@ -628,6 +670,7 @@ FORMATIONS
     font-size: 18px;
 }
 
+
 /***LOGOS***/
 
 .logos-booster {
@@ -641,6 +684,7 @@ FORMATIONS
     margin-top: 40px;
     margin-left: 200px;
 }
+
 
 /**************
 EXPERIENCES
@@ -704,6 +748,7 @@ EXPERIENCES
     font-size: 18px;
 }
 
+
 /***LOGOS***/
 
 .logos-adatech-school {
@@ -711,6 +756,7 @@ EXPERIENCES
     margin-top: 65px;
     margin-left: 330px;
 }
+
 
 /**************
 PROJETS
@@ -764,6 +810,7 @@ PROJETS
 .project-mb ul li:last-child {
     margin-bottom: 3rem;
 }
+
 
 /**************
 CONTACT
@@ -831,6 +878,7 @@ button:hover {
     justify-content: center;
 }
 
+
 /**************
 FOOTER
 **************/
@@ -840,6 +888,14 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+
+/**************
+ANIMATIONS
+**************/
+
+
+
 
 /**************
 MEDIA QUERIES
