@@ -95,9 +95,9 @@
                     <article class="soft-skills">
                         <h2 class="d-flex title">Soft Skills</h2>
                         <ul>
-                            <li>Prise de recul : Je suis ouverte à la critique et à la conversation.</li>
-                            <li>Curiosité : Je suis ouverte à des nouvelles choses.</li>
-                            <li>Persévérance : Je fais toujours de mon mieux et je n'abandonne pas devant la difficulté.</li>
+                            <li><?= __('Prise de recul : Je suis ouverte à la critique et à la conversation') ?></li>
+                            <li><?= __('Curiosité : Je suis ouverte à des nouvelles choses') ?></li>
+                            <li><?= __('Persévérance : Je fais toujours de mon mieux et je n\'abandonne pas face à la difficulté') ?></li>
                         </ul>
                     </article>
                 </article>
@@ -106,7 +106,7 @@
             <div class="left animation-item slide-right">
                 <article class="d-flex parent-hard-skills-front slide-in from-right">
                     <article class="hard-skills-front">
-                        <h2 class="d-flex title">Hard skills (frontend)</h2>
+                        <h2 class="d-flex title">Hard skills (front-end)</h2>
                         <img class="logos-frontend" src="imgs/logos/logos_frontend.png" alt="Logo des langages et outils que j'utilise en frontend">
                     </article>
                     <div class="icon-hard-skills-front">
@@ -121,7 +121,7 @@
                         <img src="imgs/icons/back_end_icon.png" alt="Icône de l'article hard skills (backend)">
                     </div>
                     <article class="d-flex hard-skills-back">
-                        <h2 class="d-flex title">Hard skills (backend)</h2>
+                        <h2 class="d-flex title">Hard skills (back-end)</h2>
                         <img class="logos-backend" src="imgs/logos/logos_backend.png" alt="Logo des langages et outils que j'utilise en backend">
                     </article>
                 </article>
@@ -137,8 +137,8 @@
                     <h2 class="booster-h2-title">Booster Live100 - 2024</h2>
                     <h3 class="booster-h3-title">3W Academy</h3>
                     <ul>
-                        <li>Apprendre l’intégration avec 4 langages de développement web : HTML, CSS, JavaScript et PHP.</li>
-                        <li>Découvrir les différents outils utilisés en développement full stack : Bootstrap (librairie), Vue.js (framework), MySQL (gestion de bases de données), le MCD, la POO et l’architecture MVC (Model View Controller)</li>
+                        <li><?= __('Apprendre l’intégration avec 4 langages de développement web : HTML, CSS, JavaScript et PHP') ?></li>
+                        <li><?= __('Découvrir les différents outils utilisés en développement full stack : Bootstrap (librairie), Vue.js (framework), MySQL (gestion de bases de données), le MCD, la POO et l’architecture MVC (Model View Controller)') ?></li>
                     </ul>
                     <img class="logos-booster" src="imgs/logos/logos_booster.png" alt="Logo des langages et outils utilisés pendant cette formation">
                 </article>
@@ -149,9 +149,9 @@
                     <h2 class="apple-foundation-program-h2-title">Apple Foundation Program - 2024</h2>
                     <h3 class="apple-foundation-program-h3-title">Simplon.co</h3>
                     <ul>
-                        <li>Concevoir une application mobile à partir d’une problématique</li>
-                        <li>Développer une application mobile iOS</li>
-                        <li>Développer des compétences transversales qui renforcent l’employabilité</li>
+                        <li><?= __('Concevoir une application mobile à partir d’une problématique') ?></li>
+                        <li><?= __('Développer une application mobile iOS') ?></li>
+                        <li><?= __('Développer des compétences transversales qui renforcent l’employabilité') ?></li>
                     </ul>
                 <div class="d-flex parent-logo-100">
                     <img class="logos-afp" src="imgs/logos/logos_afp.png" alt="Logo des langages et outils utilisés pendant cette formation">
@@ -166,11 +166,11 @@
             </div>
             <article class="d-flex parent-ada">
                 <article class="adatech-school">
-                    <h2 class="adatech-school-h2-title">Stage de découverte - 2023</h2>
+                    <h2 class="adatech-school-h2-title"><?= __('Stage de découverte - 2023') ?></h2>
                     <h3 class="adatech-school-h3-title">AdaTech School</h3>
                     <ul>
-                        <li>Découvrir le développement web</li>
-                        <li>Découvrir et prendre en main les langages suivants : HTML et CSS</li>
+                        <li><?= __('Découvrir le développement web') ?></li>
+                        <li><?= __('Découvrir et prendre en main les langages suivants : HTML et CSS') ?></li>
                     </ul>
                     <img class="logos-adatech-school" src="imgs/logos/logos_adatech_school.png" alt="Logo des langages utilisés pendant ce stage">
                 </article>
@@ -209,13 +209,11 @@
                 <h1 id="contact"><?= __('Contactez moi')?></h1>
             </div>
             <form method="POST">
-                <div class="d-flex">
-                    <div class="my-form">
-                        <input type="text" id="company_name" name="company_name" placeholder="Nom de l'entreprise (obligatoire)" required>
-                        <input type="email" id="email" name="email" placeholder="Votre adresse mail (obligatoire)" required>
-                        <textarea id="message" name="message" placeholder="Votre message"></textarea>
-					    <button type="submit" class="button">Envoyer</button>
-                    </div>
+                <div class="my-form">
+                    <input type="text" id="company_name" name="company_name" placeholder=<?= __('"Nom de l\'entreprise (obligatoire)"')?> required>
+                    <input type="email" id="email" name="email" placeholder=<?= __('"Votre adresse mail (obligatoire)"')?> required>
+                    <textarea id="message" name="message" placeholder=<?= __('"Votre message"')?>></textarea>
+					<button type="submit" class="button"><?= __('Envoyer')?></button>
                 </div>
             </form>
         </section>
