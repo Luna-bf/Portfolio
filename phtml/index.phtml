@@ -8,24 +8,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" type="text/css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="imgs/favicon-48x48.png" />
+    <link rel="icon" type="image/x-icon" href="imgs/favicon-48x48.png" >
 </head>
 <body>
     <nav>
-        <ul class="d-flex">
-            <li>
-                <div class="dropdown">
-                    <a href="#"><?= __('Langue')?></a>
-                    <div class="dropdown-content hide">
-                        <!--<img src="imgs/flags/france-flag.png" alt="France flag" class="flag">--><div><a href="index.php?lang=fr" class="lang-change">Français</a></div>
-                        <!--<img src="imgs/flags/uk-flag.png" alt="UK flag" class="flag">--><div><a href="index.php?lang=en" class="lang-change">English</a></div>
+        <div id="space-between">
+            <ul class="d-flex">
+                <li id="go-right">
+                    <div class="dropdown">
+                        <a href="#"><?= __('Langue')?></a>
+                        <div class="dropdown-content hide">
+                            <!--<img src="imgs/flags/france-flag.png" alt="France flag" class="flag">--><div><a href="index.php?lang=fr" class="lang-change">Français</a></div>
+                            <!--<img src="imgs/flags/uk-flag.png" alt="UK flag" class="flag">--><div><a href="index.php?lang=en" class="lang-change">English</a></div>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li><a href="#competences"><?= __('Compétences')?></a></li>
-            <li><a href="#formations"><?= __('Formations')?></a></li>
-            <li><a href="#projects"><?= __('Projets')?></a></li>
-        </ul>
+                </li>
+            </ul>
+            
+            <ul class="d-flex">
+                <li><a href="#competences"><?= __('Compétences')?></a></li>
+                <li><a href="#formations"><?= __('Formations')?></a></li>
+                <li><a href="#projects"><?= __('Projets')?></a></li>
+            </ul>
+        </div>
     </nav>
     
     <header class="d-flex" id="header">
@@ -69,7 +74,7 @@
         
         <section>
             <div class="d-flex title-competences">
-                <h1 id="competences"><?= __('Compétences')?></h1>
+                <h1 id="competences" class="d-flex"><?= __('Compétences')?></h1>
             </div>
             
             <div class="left animation-item slide-right">
