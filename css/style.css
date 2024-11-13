@@ -355,41 +355,13 @@ ACCUEIL
     margin-bottom: 4em;
 }
 
-.contact-me-link {
-    background-color: #283669;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 5px 40px 5px 40px;
-    box-shadow: 0 6px 8px rgba(0,0,0,0.5);
-}
-
-.contact-me-link:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f27a";
-    padding-right: 10px;
-    vertical-align: middle;
-    font-weight: 900;
-    color: #fff;
-    font-size: 18px;
-}
-
-.contact-me-link:hover {
-    background-color: #324487;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 5px 40px 5px 40px;
-    box-shadow: 0 6px 8px rgba(0,0,0,0.5);
-}
-
 .resume {
     background-color: #283669;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     padding: 5px 40px 5px 40px;
-    box-shadow: 0 6px 8px rgba(0,0,0,0.5);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
 }
 
 .resume:before {
@@ -408,7 +380,7 @@ ACCUEIL
     text-decoration: none;
     border-radius: 5px;
     padding: 5px 40px 5px 40px;
-    box-shadow: 0 6px 8px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
 }
 
 /**************
