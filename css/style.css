@@ -12,19 +12,18 @@ FONTS
 
 /*Poppins light - pour le texte*/
 @font-face {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 
 /*Poppins medium - pour les titres*/
 @font-face {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
-
 
 /**************
 FONT AWESOME
