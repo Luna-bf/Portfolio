@@ -1,11 +1,11 @@
 <?php
 
 $lang = [
-    'Accueil' => 'Home',
+    'Langues' => 'Languages',
+    'Portfolio de Luna BURATTI FAYOLLE' => 'Luna BURATTI FAYOLLE\'s portfolio website',
     'Compétences' => 'Skills',
     'Formations' => 'Trainings',
     'Projets' => 'Projects',
-    'Langues' => 'Languages',
     'Bonjour, je m’appelle' => 'Hello, my name is',
     'et je suis une jeune' => 'and I\'m a young',
     'développeuse web junior' => 'junior web developer',
