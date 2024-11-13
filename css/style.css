@@ -76,9 +76,13 @@ nav {
     background: rgba(186, 207, 228, 0.7);
 }
 
-nav ul {
+#space-between {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul {
     list-style: none;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
@@ -89,11 +93,10 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: black;
+    padding: 0 5px;
 }
 
 nav ul li a:hover {
-    display: flex;
-    justify-content: space-evenly;
     list-style: none;
     text-decoration: underline 1px black;
     border-radius: 5px;
@@ -103,8 +106,6 @@ nav ul li a:hover {
 }
 
 nav ul li a:focus {
-    display: flex;
-    justify-content: space-evenly;
     list-style: none;
     color: #fff;
     text-decoration: underline 1px #fff;
@@ -114,8 +115,13 @@ nav ul li a:focus {
     font-style: normal;
 }
 
+#go-right {
+    margin-right: auto;
+}
+
 .dropdown {
     position: relative;
+    justify-content: flex-start;
     max-width: 50%;
 }
 
@@ -135,6 +141,12 @@ nav ul li a:focus {
 .hide {
     display: none;
 }
+
+/*.flag {
+    width: 40%;
+    height: 45%;
+    align-items: center;
+}*/
 
 /**********
 HEADER
@@ -196,6 +208,100 @@ hr {
     width: 90%;
     margin: auto;
 }
+
+/*************
+RETURN TO TOP
+*************/
+
+/*#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}*/
+
+
+/**********
+ANIMATIONS
+**********/
+/*
+.animation-item {
+    opacity: 0;
+    position: relative;
+}
+
+.animation-item.slide-left {
+    opacity: 0;
+    -moz-transition: all 1000ms linear;
+    -webkit-transition: all 1000ms linear;
+    -o-transition: all 1000ms linear;
+    transition: all 1000ms linear;
+    -moz-transform: translate3d(-300px, 0px, 0px);
+    -webkit-transform: translate3d(-300px, 0px, 0px);
+    -o-transform: translate3d(-300px, 0px);
+    -ms-transform: translate3d(-300px, 0px);
+    transform: translate3d(-300px, 0px, 0px);
+}
+
+.animation-item.slide-right {
+    opacity: 0;
+    -moz-transition: all 1000ms linear;
+    -webkit-transition: all 1000ms linear;
+    -o-transition: all 1000ms linear;
+    transition: all 1000ms linear;
+    -moz-transform: translate3d(300px, 0px, 0px);
+    -webkit-transform: translate3d(300px, 0px, 0px);
+    -o-transform: translate3d(300px, 0px);
+    -ms-transform: translate3d(300px, 0px);
+    transform: translate3d(300px, 0px, 0px);
+}
+
+.animation-item.slide-left.item-in-view, .animation-item.slide-right.item-in-view {
+    opacity:1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px);
+    -ms-transform: translate3d(0px, 0px);
+    transform: translate3d(50px, 0px, 0px);
+}*/
+
 
 /**********
 ACCUEIL
@@ -317,8 +423,7 @@ COMPETENCES
     background-color: #E6EEF6;
     width: 75%;
     font-size: 20px;
-    /*margin-left: 50px;*/
-    padding: 1rem 3rem 4rem 3rem; /*top right bottom left*/
+    padding: 1rem 3rem 4rem 3rem;
     border-radius: 15px;
 	box-shadow: -10px 8px 10px silver;
 }
@@ -344,7 +449,7 @@ COMPETENCES
     width: 75%;
     font-size: 20px;
     margin-left: 50px;
-    padding: 1rem 3rem 4rem 3rem; /*top right bottom left*/
+    padding: 1rem 3rem 4rem 3rem;
     border-radius: 15px;
 	box-shadow: 10px 8px 10px silver;
 }
@@ -378,7 +483,7 @@ COMPETENCES
     background-color: #E6EEF6;
     width: 75%;
     margin-left: 50px;
-    padding: 1rem 3rem 1rem 3rem; /*top right bottom left*/
+    padding: 1rem 3rem 1rem 3rem;
     border-radius: 15px;
 	box-shadow: -10px 8px 10px silver;
 }
@@ -387,7 +492,7 @@ COMPETENCES
     background-color: #E6EEF6;
     width: 75%;
     margin-left: 45px;
-    padding: 1rem 3rem 2rem 1rem; /*top right bottom left*/
+    padding: 1rem 3rem 2rem 1rem;
     border-radius: 15px;
     flex-direction: column;
 	box-shadow: 10px 8px 10px silver;
@@ -567,13 +672,13 @@ EXPERIENCES
 }
 
 .adatech-school-h2-title {
-    padding: 1px 0rem 0rem 1rem; /*top right bottom left*/
+    padding: 1px 0rem 0rem 1rem;
     font-size: 30px;
     margin-top: 5px;
 }
 
 .adatech-school-h3-title {
-    padding: 1px 0rem 0rem 1rem; /*top right bottom left*/
+    padding: 1px 0rem 0rem 1rem;
     font-size: 30px;
 }
 
