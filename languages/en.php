@@ -5,7 +5,6 @@ $lang = [
     'Compétences' => 'Skills',
     'Formations' => 'Trainings',
     'Projets' => 'Projects',
-    'Contact' => 'Contact',
     'Langues' => 'Languages',
     'Bonjour, je m’appelle' => 'Hello, my name is',
     'et je suis une jeune' => 'and I\'m a young',
