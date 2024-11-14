@@ -24,10 +24,12 @@
                     </div>
                 </li>
             </ul>
+            
             <ul class="d-flex">
                 <li><a href="#competences"><?= __('Compétences')?></a></li>
                 <li><a href="#formations"><?= __('Formations')?></a></li>
                 <li><a href="#projects"><?= __('Projets')?></a></li>
+                <li><a href="#contact"><?= __('Contact')?></a></li>
             </ul>
         </div>
     </nav>
@@ -71,80 +73,56 @@
             
         <hr>
         
+        <div class="d-flex title-competences">
+            <h1 id="competences" class="d-flex"><?= __('Compétences')?></h1>
+        </div>
+        
         <section>
-            <div class="d-flex title-competences">
-                <h1 id="competences" class="d-flex"><?= __('Compétences')?></h1>
-            </div>
-            
-            <div class="left animation-item slide-right">
-                <article class="d-flex parent-languages slide-in from-right">
-                    <article class="languages">
-                        <h2 class="d-flex title"><?= __('Langues')?></h2>
-                        <ul>
-                            <li><?= __('Français : Langue maternelle')?></li>
-                            <li><?= __('Anglais : niveau B1')?></li>
-                        </ul>
-                    </article>
-                    <div class="icon-languages">
-                        <img src="imgs/icons/languages_icon.png" alt="Icône de l'article langues">
-                    </div>
+            <div class="d-flex parent">
+                <article>    
+                    <h2 class="d-flex title"><?= __('Langues')?></h2>
+                    <ul>
+                        <li><?= __('Français : Langue maternelle')?></li>
+                        <li><?= __('Anglais : niveau B1')?></li>
+                    </ul>
                 </article>
-            </div>
-            
-            <div class="right animation-item slide-left">
-                <article class="d-flex parent-soft-skills slide-in from-left">
-                    <div class="icon-soft-skills">
-                        <img src="imgs/icons/soft_skills_icon.png" alt="Icône de l'article soft skills">
-                    </div>
-                    <article class="soft-skills">
-                        <h2 class="d-flex title">Soft Skills</h2>
-                        <ul>
-                            <li><?= __('Prise de recul : Je suis ouverte à la critique et à la conversation') ?></li>
-                            <li><?= __('Curiosité : Je suis ouverte à de nouveaux outils et langages') ?></li>
-                            <li><?= __('Persévérance : Je fais toujours de mon mieux et je n\'abandonne pas face à la difficulté') ?></li>
-                        </ul>
-                    </article>
+                
+                <article>
+                    <h2 class="d-flex title">Soft Skills</h2>
+                    <ul>
+                        <li><?= __('Prise de recul : Je suis ouverte à la critique et à la conversation')?></li>
+                        <li><?= __('Curiosité : Je suis ouverte à de nouveaux outils et langages')?></li>
+                        <li><?= __('Persévérance : Je fais toujours de mon mieux et je n\'abandonne pas face à la difficulté')?></li>
+                    </ul>
                 </article>
-            </div>
-            
-            <div class="left animation-item slide-right">
-                <article class="d-flex parent-hard-skills-front slide-in from-right">
-                    <article class="hard-skills-front">
-                        <h2 class="d-flex title">Hard skills (front-end)</h2>
-                        <img class="logos-frontend" src="imgs/logos/logos_frontend.png" alt="Logo des langages et outils que j'utilise en frontend">
-                    </article>
-                    <div class="icon-hard-skills-front">
-                        <img src="imgs/icons/front_end_icon.png" alt="Icône de l'article hard skills (frontend)">
-                    </div>
+                
+                <hr>
+                
+                <h2 class="d-flex title">Hard skills (front-end)</h2>
+                <article class="hard-skills-front">
+                        <img class="logos-frontend" src="imgs/logos/logos_front-end.png" alt=<?= __('"Logos des langages et outils que j\'utilise en front-end"')?>>
                 </article>
-            </div>
-            
-            <div class="right animation-item slide-left">
-                <article class="d-flex parent-hard-skills-back slide-in from-left">
-                    <div class="icon-hard-skills-back">
-                        <img src="imgs/icons/back_end_icon.png" alt="Icône de l'article hard skills (backend)">
-                    </div>
-                    <article class="d-flex hard-skills-back">
-                        <h2 class="d-flex title">Hard skills (back-end)</h2>
-                        <img class="logos-backend" src="imgs/logos/logos_backend.png" alt="Logo des langages et outils que j'utilise en backend">
-                    </article>
+                
+                <h2 class="d-flex title">Hard skills (back-end)</h2>
+                <article class="hard-skills-back">
+                    <img class="logos-backend" src="imgs/logos/logos_back-end.png" alt=<?= __('"Logos des langages et outils que j\'utilise en back-end"')?>>
                 </article>
             </div>
         </section>
         
         <section>
             <div class="d-flex title-formations">
-                <h1 id="formations" class="d-flex"><?= __('Formations') ?></h1>
+                <h1 id="formations" class="d-flex"><?= __('Formations')?></h1>
             </div>
             <article class="d-flex parent-booster">
                 <article class="booster-live100">
                     <h2 class="booster-h2-title">Booster Live100 - 2024</h2>
                     <h3 class="booster-h3-title">3W Academy</h3>
                     <ul>
-                        <li><?= __('Apprendre l’intégration avec 4 langages de développement web : HTML, CSS, JavaScript et PHP') ?></li>
-                        <li><?= __('Découvrir les différents outils utilisés en développement full stack : Bootstrap (librairie), Vue.js (framework), MySQL (gestion de bases de données), le MCD, la POO et l’architecture MVC (Model View Controller)') ?></li>
+                        <li><?= __('Apprendre l’intégration avec 4 langages de développement web : HTML, CSS, JavaScript et PHP')?></li>
+                        <li><?= __('Découvrir les différents outils utilisés en développement full stack : Bootstrap (librairie), Vue.js (framework), MySQL (gestion de bases de données), le MCD, la POO et l’architecture MVC (Model View Controller)')?></li>
                     </ul>
-                    <img class="logos-booster" src="imgs/logos/logos_booster.png" alt="Logo des langages et outils utilisés pendant cette formation">
+                    <img class="logos-booster" src="imgs/logos/logos_booster-3wa.png" alt=<?= __('"Logos des langages et outils utilisés pendant cette formation"')?>>
                 </article>
             </article>
             
@@ -153,12 +131,12 @@
                     <h2 class="apple-foundation-program-h2-title">Apple Foundation Program - 2024</h2>
                     <h3 class="apple-foundation-program-h3-title">Simplon.co</h3>
                     <ul>
-                        <li><?= __('Concevoir une application mobile à partir d’une problématique') ?></li>
-                        <li><?= __('Développer une application mobile iOS') ?></li>
-                        <li><?= __('Développer des compétences transversales qui renforcent l’employabilité') ?></li>
+                        <li><?= __('Concevoir une application mobile à partir d’une problématique')?></li>
+                        <li><?= __('Développer une application mobile iOS')?></li>
+                        <li><?= __('Développer des compétences transversales qui renforcent l’employabilité')?></li>
                     </ul>
                 <div class="d-flex parent-logo-100">
-                    <img class="logos-afp" src="imgs/logos/logos_afp.png" alt="Logo des langages et outils utilisés pendant cette formation">
+                    <img class="logos-afp" src="imgs/logos/logos_afp.png" alt=<?= __('"Logos des langages et outils utilisés pendant cette formation"')?>>
                 </div>
                 </article>
             </article>
@@ -170,13 +148,13 @@
             </div>
             <article class="d-flex parent-ada">
                 <article class="adatech-school">
-                    <h2 class="adatech-school-h2-title"><?= __('Stage de découverte - 2023') ?></h2>
+                    <h2 class="adatech-school-h2-title"><?= __('Stage de découverte - 2023')?></h2>
                     <h3 class="adatech-school-h3-title">AdaTech School</h3>
                     <ul>
-                        <li><?= __('Découvrir le développement web') ?></li>
-                        <li><?= __('Découvrir et prendre en main les langages suivants : HTML et CSS') ?></li>
+                        <li><?= __('Découvrir le développement web')?></li>
+                        <li><?= __('Découvrir et prendre en main les langages suivants : HTML et CSS')?></li>
                     </ul>
-                    <img class="logos-adatech-school" src="imgs/logos/logos_adatech_school.png" alt="Logo des langages utilisés pendant ce stage">
+                    <img class="logos-adatech-school" src="imgs/logos/logos_adatech.png" alt=<?= __('"Logos des langages utilisés pendant ce stage"')?>>
                 </article>
             </article>
         </section>
@@ -187,7 +165,7 @@
             </div>
 	        <article class="d-flex parent-project">
                 <article class="project">
-                    <img src="imgs/projects/hk-quiz_thumbnail.png" alt="Capture d'écran du quiz Hollow Knight" class="project-img" />
+                    <img src="imgs/projects/hk-quiz_thumbnail.png" alt=<?= __('"Capture d\'écran du quiz Hollow Knight"')?> class="project-img" />
                     <ul>
                         <li><?= __('Année : 2024 (en cours)')?></li>
                         <li><?= __('Stacks utilisées : JavaScript, HTML, CSS')?></li>
@@ -198,7 +176,7 @@
 	
             <article class="d-flex parent-project">
                 <article class="project project-mb">
-                    <img src="imgs/projects/php-rpg_thumbnail.png" alt="Capture d'écran du RPG PHP" class="project-img" />
+                    <img src="imgs/projects/php-rpg_thumbnail.png" alt=<?= __('"Capture d\'écran du RPG PHP"')?> class="project-img" />
                     <ul>
                         <li><?= __('Année : 2024 (en cours)')?></li>
                         <li><?= __('Stacks utilisées : PHP, HTML, CSS')?></li>
