@@ -5,9 +5,9 @@ if(session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-require getLanguageFile();
+require getLanguage();
 
-function getLanguageFile() {
+function getLanguage() {
     
     $_SESSION['lang'] = $_SESSION['lang'] ?? 'fr';
     $_SESSION['lang'] = $_GET['lang'] ?? $_SESSION['lang'];
@@ -19,6 +19,7 @@ function getLanguageFile() {
 function __($str) {
     
     global $lang;
+    
     if(!empty($lang[$str])) {
         return $lang[$str];
     }
