@@ -2,7 +2,6 @@
 
 $lang = [
     'Langues' => 'Languages',
-    'Portfolio de Luna BURATTI FAYOLLE' => 'Luna BURATTI FAYOLLE\'s portfolio website',
     'Compétences' => 'Skills',
     'Formations' => 'Trainings',
     'Projets' => 'Projects',
