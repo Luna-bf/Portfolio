@@ -9,10 +9,14 @@ if(session_status() === PHP_SESSION_NONE) {
 require getLanguage();
 
 function getLanguage() {
-    
+
+    #Je vérifie si il existe une autre langue (?? / équivalent de isset), si ce n'est pas le cas, je met le français comme langue par défaut.
     $_SESSION['lang'] = $_SESSION['lang'] ?? 'fr';
+
+    #Si l'utilisateur change la langue alors il faut récupérer la langue en question (GET) si l'utilisateur ne change pas la langue alors on remet la langue par défaut.
     $_SESSION['lang'] = $_GET['lang'] ?? $_SESSION['lang'];
-    
+
+    #Enfin, je concatène $_SESSION['lang'] à l'extension .php pour aller chercher le fichier correspondant à la langue sélectionnée. Cela fonctionne même si je rajoute 50 langues.
     return 'languages/'.$_SESSION['lang'].'.php';
 }
 
