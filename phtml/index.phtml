@@ -79,89 +79,42 @@
         
         <section>
             <div class="d-flex parent">
-                <article>    
-                    <h2 class="d-flex title"><?= __('Langues')?></h2>
-                    <ul>
+                
+                <h2 class="d-flex title"><?= __('Langues')?></h2>
+                <article id="langues">    
+                    <ul class="d-flex">
                         <li><?= __('Français : Langue maternelle')?></li>
                         <li><?= __('Anglais : niveau B1')?></li>
                     </ul>
                 </article>
                 
-                <article>
-                    <h2 class="d-flex title">Soft Skills</h2>
-                    <ul>
-                        <li><?= __('Prise de recul : Je suis ouverte à la critique et à la conversation')?></li>
-                        <li><?= __('Curiosité : Je suis ouverte à de nouveaux outils et langages')?></li>
-                        <li><?= __('Persévérance : Je fais toujours de mon mieux et je n\'abandonne pas face à la difficulté')?></li>
-                    </ul>
+                <h2 class="d-flex title">Soft Skills</h2>
+                <article class="soft-skills">
+                        <ul>
+                            <li><?= __('Prise de recul : Je suis ouverte à la critique et à la conversation')?></li>
+                            <li><?= __('Curiosité : Je suis ouverte à de nouveaux outils et langages')?></li>
+                            <li><?= __('Persévérance : Je n\'abandonne pas face à la difficulté')?></li>
+                        </ul>
                 </article>
                 
                 <hr>
                 
                 <h2 class="d-flex title">Hard skills (front-end)</h2>
-                
-                <article class="hard-skills-front">
+                <article class="hard-skills-front-article">
                     <div class="logos-frontend">
                         <img src="imgs/logos/logos_front-end.png" alt=<?= __('"Logos des langages et outils que j\'utilise en front-end"')?>>
                     </div>
                 </article>
                 
+                <hr id="hard-skills-hr">
+                
                 <h2 class="d-flex title">Hard skills (back-end)</h2>
-                <article class="hard-skills-back">
+                <article class="hard-skills-back-article">
                     <div class="logos-backend">
                         <img src="imgs/logos/logos_back-end.png" alt=<?= __('"Logos des langages et outils que j\'utilise en back-end"')?>>
                     </div>
                 </article>
             </div>
-        </section>
-        
-        <section>
-            <div class="d-flex title-formations">
-                <h1 id="formations" class="d-flex"><?= __('Formations')?></h1>
-            </div>
-            <article class="d-flex parent-booster">
-                <article class="booster-live100">
-                    <h2 class="booster-h2-title">Booster Live100 - 2024</h2>
-                    <h3 class="booster-h3-title">3W Academy</h3>
-                    <ul>
-                        <li><?= __('Apprendre l’intégration avec 4 langages de développement web : HTML, CSS, JavaScript et PHP')?></li>
-                        <li><?= __('Découvrir les différents outils utilisés en développement full stack : Bootstrap (librairie), Vue.js (framework), MySQL (gestion de bases de données), le MCD, la POO et l’architecture MVC (Model View Controller)')?></li>
-                    </ul>
-                    <img class="logos-booster" src="imgs/logos/logos_booster-3wa.png" alt=<?= __('"Logos des langages et outils utilisés pendant cette formation"')?>>
-                </article>
-            </article>
-            
-            <article class="d-flex parent-booster">
-                <article class="apple-foundation-program">
-                    <h2 class="apple-foundation-program-h2-title">Apple Foundation Program - 2024</h2>
-                    <h3 class="apple-foundation-program-h3-title">Simplon.co</h3>
-                    <ul>
-                        <li><?= __('Concevoir une application mobile à partir d’une problématique')?></li>
-                        <li><?= __('Développer une application mobile iOS')?></li>
-                        <li><?= __('Développer des compétences transversales qui renforcent l’employabilité')?></li>
-                    </ul>
-                <div class="d-flex parent-logo-100">
-                    <img class="logos-afp" src="imgs/logos/logos_afp.png" alt=<?= __('"Logos des langages et outils utilisés pendant cette formation"')?>>
-                </div>
-                </article>
-            </article>
-        </section>
-        
-        <section>
-            <div class="d-flex title-experiences">
-                <h1 id="experiences">Expériences</h1>
-            </div>
-            <article class="d-flex parent-ada">
-                <article class="adatech-school">
-                    <h2 class="adatech-school-h2-title"><?= __('Stage de découverte - 2023')?></h2>
-                    <h3 class="adatech-school-h3-title">AdaTech School</h3>
-                    <ul>
-                        <li><?= __('Découvrir le développement web')?></li>
-                        <li><?= __('Découvrir et prendre en main les langages suivants : HTML et CSS')?></li>
-                    </ul>
-                    <img class="logos-adatech-school" src="imgs/logos/logos_adatech.png" alt=<?= __('"Logos des langages utilisés pendant ce stage"')?>>
-                </article>
-            </article>
         </section>
         
         <section>
