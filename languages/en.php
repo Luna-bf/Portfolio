@@ -3,7 +3,6 @@
 $lang = [
     'Langues' => 'Languages',
     'Compétences' => 'Skills',
-    'Formations' => 'Trainings',
     'Projets' => 'Projects',
     'Contact' => 'Contact',
     'Bonjour, je m’appelle' => 'Hello, my name is',
