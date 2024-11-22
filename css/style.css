@@ -128,6 +128,7 @@ nav ul li a:focus {
     padding: 25px;
     background-color: #fff;
     border: solid thin #aaa;
+    border-radius: 5%;
 }
 
 .lang-change:focus {
@@ -137,6 +138,34 @@ nav ul li a:focus {
 
 .hide {
     display: none;
+}
+
+.toggle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle:before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: transform 0.3s;
+}
+
+.toggle.dark {
+    background-color: #bbb;
 }
 
 /**********
