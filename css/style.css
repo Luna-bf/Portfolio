@@ -112,7 +112,7 @@ nav ul li a:focus {
     font-style: normal;
 }
 
-#go-right {
+.go-right {
     margin-right: auto;
 }
 
@@ -211,44 +211,37 @@ ACCUEIL
     margin: 0.5rem 0 0 0;
 }
 
-.profile {
+#profile {
     width: 15%;
     margin-top: 30px;
     flex-direction: column;
     margin-bottom: 6rem;
 }
 
-.profile-img {
+#profile-img {
     width: 100%;
     border-radius: 5%;
 }
 
-.socials {
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-}
-
-.find-me {
+#find-me {
     text-align: center;
     margin: 1rem;
     font-size: 18px;
 }
 
-.socials-icons {
+#socials-icons {
     flex-direction: row;
     font-size: 3rem;
     justify-content: space-evenly;
 }
 
-.searching-for {
+#searching-for {
     margin-top: 25px;
     width: 50%;
 }
 
-.searching-for h1 {
+#searching-for h2 {
     font-size: 25px;
-    margin-bottom: 5px;
 }
 
 .contact-resume {
