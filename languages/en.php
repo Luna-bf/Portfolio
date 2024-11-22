@@ -3,8 +3,6 @@
 $lang = [
     'Langues' => 'Languages',
     'Thème' => 'Theme',
-    'Lumineux' => 'Light',
-    'Sombre' => 'Dark',
     'Compétences' => 'Skills',
     'Projets' => 'Projects',
     'Contact' => 'Contact',
