@@ -14,12 +14,21 @@
     <nav>
         <div id="space-between">
             <ul class="d-flex">
-                <li id="go-right">
+                <li class="go-right">
                     <div class="dropdown">
                         <a href="#"><?= __('Langue')?></a>
                         <div class="dropdown-content hide">
                             <!--<img src="imgs/flags/france-flag.png" alt="France flag" class="flag">--><div><a href="index.php?lang=fr" class="lang-change">Français</a></div>
                             <!--<img src="imgs/flags/uk-flag.png" alt="UK flag" class="flag">--><div><a href="index.php?lang=en" class="lang-change">English</a></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="go-right">
+                    <div class="dropdown">
+                        <a href="#"><?= __('Thème')?></a>
+                        <div class="dropdown-content hide">
+                            <div><i class="fa-solid fa-sun"></i><a href="index.php?lang=fr" class="theme-change" id="light"><?= __('Lumineux') ?></a></div>
+                            <div><a href="index.php?lang=en" class="theme-change" id="dark"><?= __('Sombre') ?></a></div>
                         </div>
                     </div>
                 </li>
@@ -45,17 +54,17 @@
         
         <section class="home d-flex">
             
-            <div class="d-flex profile">
-                <img src="imgs/Photo_CV_30092024.jpg" class="profile-img" alt="Ma photo">
+            <div class="d-flex" id="profile">
+                <img src="imgs/Photo_CV_30092024.jpg" id="profile-img" alt="Ma photo">
     
-                <p class="find-me"><?= __('Vous pouvez me retrouver sur :')?></p>
-                <article class="d-flex socials-icons">
+                <p id="find-me"><?= __('Vous pouvez me retrouver sur :')?></p>
+                <article class="d-flex" id="socials-icons">
                     <a href="https://github.com/Luna-bf" target="_blank" class="fa-brands fa-github"></a>
                     <a href="https://www.linkedin.com/in/luna-buratti-fayolle/" target="_blank" class="fa-brands fa-linkedin"></a>
                 </article>
             </div>
             
-            <article class="searching-for">
+            <article id="searching-for">
                 <h2><?= __('Qui suis-je ?')?></h2>
                 <br>
                 <p><?= __('Actuellement en recherche à la 3W Academy, je suis une jeune développeuse web junior de 19 ans passionnée par le développement et la création de solutions innovantes. Dans l’optique d’évoluer dans ce domaine, je suis en quête d\'une opportunité d’apprentissage en alternance pour mettre en pratique mes compétences et apprendre auprès de professionnels expérimentés.')?></p>
