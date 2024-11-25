@@ -13,30 +13,27 @@
 <body>
     <nav>
         <div id="space-between">
-            <ul class="d-flex">
-                <li class="go-right">
-                    <div class="dropdown">
-                        <a href="#"><?= __('Langue')?></a>
-                        <div class="dropdown-content hide">
-                            <!--<img src="imgs/flags/france-flag.png" alt="France flag" class="flag">--><div><a href="index.php?lang=fr" class="lang-change">Français</a></div>
-                            <!--<img src="imgs/flags/uk-flag.png" alt="UK flag" class="flag">--><div><a href="index.php?lang=en" class="lang-change">English</a></div>
-                        </div>
+            <div class="d-flex">
+                <div class="dropdown-menu">
+                    <a href="#" class="drop-link"><?= __('Langue') ?></a>
+                    <div class="dropdown-content">
+                        <a href="index.php?lang=fr" class="lang-change"><img src="other/flags/france-flag.png" alt="France flag" class="flag">Français</a>
+                        <a href="index.php?lang=en" class="lang-change"><img src="other/flags/uk-flag.png" alt="UK flag" class="flag">English</a>
                     </div>
-                </li>
-                <li class="go-right">
-                    <div class="dropdown">
-                        <a href="#"><?= __('Thème')?></a>
-                        <div class="dropdown-content hide">
-                            <div class="toggle"></div>
-                            <i class="fa-solid fa-sun"></i>
-                        </div>
+                </div>
+                
+                <div class="dropdown-menu">
+                    <a href="#" class="drop-link"><?= __('Thème') ?></a>
+                    <div class="dropdown-content" id="themes">
+                        <a href="#"><?= __('Par défaut') ?></a>
+                        <a href="#"><?= __('Lumineux') ?></a>
+                        <a href="#"><?= __('Sombre') ?></a>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
             
             <ul class="d-flex">
                 <li><a href="#competences"><?= __('Compétences')?></a></li>
-                <!--<li><a href="#formations">Formations</a></li>-->
                 <li><a href="#projects"><?= __('Projets')?></a></li>
                 <li><a href="#contact"><?= __('Contact')?></a></li>
             </ul>
