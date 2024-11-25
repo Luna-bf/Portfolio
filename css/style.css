@@ -112,60 +112,88 @@ nav ul li a:focus {
     font-style: normal;
 }
 
-.go-right {
-    margin-right: auto;
-}
 
-.dropdown {
+/**********
+DROPDOWN
+**********/
+
+.dropdown-menu {
     position: relative;
-    justify-content: flex-start;
-    max-width: 50%;
+    display: inline-block;
 }
 
-.dropdown-content {
-    position: absolute;
-    margin-top: 10px;
-    padding: 25px;
-    background-color: #fff;
-    border: solid thin #aaa;
-    border-radius: 5%;
+.drop-link {
+    padding: 0 5px;
+    text-decoration: none;
+    color: black;
 }
+
+/*Le contenu du dropdown est caché par défaut*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+}
+
+.dropdown-content a {
+    display: block;
+    color: black;
+    padding: 1em 2em;
+    text-decoration: none;
+    min-width: 11em;
+}
+
+.dropdown-content a:hover {
+    background-color: #fbfaf5;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+/****************
+LANGUE ET THEMES
+****************/
 
 .lang-change:focus {
     color: firebrick;
     text-decoration: underline;
 }
 
-.hide {
-    display: none;
+.flag {
+    width: 28%;
+    height: 33%;
+    padding-right: 8px;
 }
 
-.toggle {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60px;
-    height: 30px;
-    background-color: #333;
-    border-radius: 30px;
-    position: relative;
-    cursor: pointer;
-    transition: background-color 0.3s;
+#themes a:first-child:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f042";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #000000;
+    font-size: 18px;
 }
 
-.toggle:before {
-    content: "";
-    width: 22px;
-    height: 22px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    transition: transform 0.3s;
+#themes a:nth-child(2):before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f185";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #000000;
+    font-size: 18px;
 }
 
-.toggle.dark {
-    background-color: #bbb;
+#themes a:last-child:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f186";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #000000;
+    font-size: 18px;
 }
 
 /**********
@@ -564,7 +592,20 @@ MEDIA QUERIES
 /***MOBILE***/
 
 /*Prévoir aussi le mode paysage*/
+/*overflow: auto; (voir texte si-dessous)*/
 
 @media (min-width : 320px) {
 
 }
+
+/*
+We have styled the dropdown button with a background-color, padding, etc.
+
+The .dropdown class uses position:relative, which is needed when we want the dropdown content to be placed right below the dropdown button (using position:absolute).
+
+The .dropdown-content class holds the actual dropdown menu. It is hidden by default, and will be displayed on hover (see below). Note the min-width is set to 160px. Feel free to change this. Tip: If you want the width of the dropdown content to be as wide as the dropdown button, set the width to 100% (and overflow:auto to enable scroll on small screens).
+
+Instead of using a border, we have used the box-shadow property to make the dropdown menu look like a "card". We also use z-index to place the dropdown in front of other elements.
+
+The :hover selector is used to show the dropdown menu when the user moves the mouse over the dropdown button.
+*/
