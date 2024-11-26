@@ -475,7 +475,7 @@ PROJETS
 #projects {
     padding: 8px 63px 8px 63px;
     justify-content: center;
-    margin-top: 2em;
+    margin: 50px 0 15px 0;
 }
 
 .title-projects {
@@ -517,8 +517,12 @@ PROJETS
     font-size: 18px;
 }
 
+.project ul li:first-child {
+    margin-top: 2rem;
+}
+
 .project ul li:last-child {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 /**************
@@ -528,7 +532,7 @@ CONTACT
 #contact {
     padding: 8px 46px 8px 46px;
     justify-content: center;
-    margin-top: 6em;
+    margin-top: 2em;
     margin-bottom: 2em;
 }
 
