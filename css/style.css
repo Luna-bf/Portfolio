@@ -343,6 +343,10 @@ ACCUEIL
 COMPETENCES
 **************/
 
+.section-padding {
+    padding-bottom: 6em;
+}
+
 .parent {
     background-color: #E6EEF6;
     flex-direction: column;
@@ -471,7 +475,7 @@ PROJETS
 #projects {
     padding: 8px 63px 8px 63px;
     justify-content: center;
-    margin-top: 6em;
+    margin-top: 2em;
 }
 
 .title-projects {
@@ -479,13 +483,14 @@ PROJETS
 }
 
 .parent-project {
+    padding-top: 3em;
+    margin: auto;
     justify-content: center;
-    margin-top: 6em;
-    margin-bottom: 2em;
+    justify-content: space-evenly;
 }
 
 .project {
-    width: 77%;
+    width: 41%;
 }
 
 .project-img {
@@ -496,7 +501,7 @@ PROJETS
 }
 
 .project ul li {
-    width: 65%;
+    width: 100%;
     margin: 1rem 0rem 0rem 5px;
     list-style: none;
     font-size: 25px;
@@ -512,7 +517,7 @@ PROJETS
     font-size: 18px;
 }
 
-.project-mb ul li:last-child {
+.project ul li:last-child {
     margin-bottom: 3rem;
 }
 
