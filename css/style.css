@@ -487,6 +487,7 @@ PROJETS
     margin: auto;
     justify-content: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .project {
