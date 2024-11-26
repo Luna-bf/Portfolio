@@ -38,7 +38,6 @@ $lang = [
     'Stacks utilisées : PHP, HTML, CSS' => 'Stacks used : PHP, HTML, CSS',
     '"Capture d\'écran du RPG PHP"' => '"Screenshot of the PHP RPG"',
     'Lien Github' => 'Github link',
-    'Pour voir plus de projets, n\'hésitez pas à visiter mon' => 'To see more projects, don\'t hesitate to visit my',
     'Contactez moi' => 'Contact me',
     '"Nom de l\'entreprise (obligatoire)"' => '"Company name (required)"',
     '"Votre adresse mail (obligatoire)"' => '"Your email address (required)"',
