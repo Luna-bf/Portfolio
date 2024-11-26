@@ -85,8 +85,7 @@
         
         <section>
             <div class="d-flex parent">
-                
-                <h2 class="d-flex title"><?= __('Langues')?></h2>
+                <h2 class="d-flex title-lang"><?= __('Langues')?></h2>
                 <article id="langues">    
                     <ul class="d-flex">
                         <li><?= __('Français : Langue maternelle')?></li>
@@ -94,7 +93,9 @@
                     </ul>
                 </article>
                 
-                <h2 class="d-flex title">Soft Skills</h2>
+                <hr>
+                
+                <h2 class="d-flex title-soft-skills">Soft Skills</h2>
                 <article class="soft-skills">
                         <ul>
                             <li><?= __('Prise de recul : Je suis ouverte à la critique et à la conversation')?></li>
@@ -105,7 +106,7 @@
                 
                 <hr>
                 
-                <h2 class="d-flex title">Hard skills (front-end)</h2>
+                <h2 class="d-flex title-hard-skills">Hard skills (front-end)</h2>
                 <article class="hard-skills-front-article">
                     <div class="logos-frontend">
                         <img src="imgs/logos/logos_front-end.png" alt=<?= __('"Logos des langages et outils que j\'utilise en front-end"')?>>
@@ -114,7 +115,7 @@
                 
                 <hr id="hard-skills-hr">
                 
-                <h2 class="d-flex title">Hard skills (back-end)</h2>
+                <h2 class="d-flex title-hard-skills">Hard skills (back-end)</h2>
                 <article class="hard-skills-back-article">
                     <div class="logos-backend">
                         <img src="imgs/logos/logos_back-end.png" alt=<?= __('"Logos des langages et outils que j\'utilise en back-end"')?>>
@@ -123,10 +124,12 @@
             </div>
         </section>
         
+        <hr>
+        
+        <div class="d-flex title-projects">
+            <h1 id="projects"><?= __('Projets')?></h1>
+        </div>
         <section>
-            <div class="d-flex title-projects">
-                <h1 id="projects"><?= __('Projets')?></h1>
-            </div>
 	        <article class="d-flex parent-project">
                 <article class="project">
                     <img src="imgs/projects/hk-quiz_thumbnail.png" alt=<?= __('"Capture d\'écran du quiz Hollow Knight"')?> class="project-img" />
