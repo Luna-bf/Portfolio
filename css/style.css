@@ -13,6 +13,7 @@
     --nav-a-color: #000000;
     --nav-a-focus-color: #fff;
     --skills-bg-color: #D9E6F2;
+    --github-link-visited: midnightblue;
 }
 
 /***Reset***/
@@ -154,6 +155,7 @@ RETURN TO TOP
     --nav-a-color: #fff;
     --nav-a-focus-color: #fff;
     --skills-bg-color: #A7BCD1;
+    --github-link-visited: powderblue;
 }
 
 /*****
@@ -329,13 +331,13 @@ header {
 header h1 {
     font-size: 2em;
     margin-left: 25px;
-    color: var(--text-color);
+    color: #fff;
 }
 
 header h2 {
     font-size: 25px;
     margin-left: 25px;
-    color: var(--text-color);
+    color: #fff;
 }
 
 span {
@@ -669,7 +671,7 @@ PROJETS
 }
 
 .github-link:visited {
-    color: powderblue;
+    color: var(--github-link-visited);
     text-decoration: none;
 }
 
