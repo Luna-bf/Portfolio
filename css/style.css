@@ -605,6 +605,21 @@ PROJETS
     margin-bottom: 5rem;
 }
 
+.github-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.github-link:visited {
+    color: midnightblue;
+    text-decoration: none;
+}
+
 /**************
 CONTACT
 **************/
