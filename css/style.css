@@ -687,6 +687,14 @@ CONTACT
     margin-bottom: 2em;
 }
 
+#contact-me {
+    min-height: 100vh;
+    background: url(../imgs/form-texture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .title-contact {
     justify-content: center;
 }
@@ -694,11 +702,6 @@ CONTACT
 /***FORM***/
 
 form {
-    min-height: 50vh;
-    background: url(../imgs/bricks.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     padding: 2em;
     justify-content: center;
 }
