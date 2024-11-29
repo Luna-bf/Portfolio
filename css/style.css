@@ -391,6 +391,7 @@ ACCUEIL
 #profile-img {
     width: 100%;
     border-radius: 5%;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
 }
 
 #find-me {
@@ -467,7 +468,7 @@ COMPETENCES
     width: 85%;
     margin: auto;
     border-radius: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
 }
 
 #competences {
@@ -501,7 +502,7 @@ COMPETENCES
 
 #langues ul li:before {
     font-family: "Font Awesome 5 Free";
-    content: "\f068";
+    content: "\2b";
     padding-right: 10px;
     vertical-align: middle;
     font-weight: 900;
@@ -528,7 +529,7 @@ COMPETENCES
 
 .soft-skills ul li:before {
     font-family: "Font Awesome 5 Free";
-    content: "\f068";
+    content: "\2b";
     padding-right: 10px;
     vertical-align: middle;
     font-weight: 900;
