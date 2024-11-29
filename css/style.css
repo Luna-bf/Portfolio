@@ -1,195 +1,788 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Luna BURATTI-FAYOLLE">
-    <title>Portfolio - Luna BURATTI-FAYOLLE</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" >
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" type="text/css" >
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="icon" type="image/x-icon" href="imgs/favicon-48x48.png" >
-</head>
-<body>
-    <nav>
-        <div id="space-between">
-            <div class="d-flex">
-                <div class="dropdown-menu">
-                    <a href="#" class="drop-link"><?= __('Langue') ?></a>
-                    <div class="dropdown-content">
-                        <a href="index.php?lang=fr" class="lang-change"><img src="imgs/flags/france-flag.png" alt="France flag" class="flag">Français</a>
-                        <a href="index.php?lang=en" class="lang-change"><img src="imgs/flags/uk-flag.png" alt="UK flag" class="flag">English</a>
-                    </div>
-                </div>
-                
-                <div class="dropdown-menu">
-                    <a href="#" class="drop-link"><?= __('Thème') ?></a>
-                    <div class="dropdown-content" id="themes">
-                        <a href="#" id="default"><?= __('Par défaut') ?></a>
-                        <a href="#" id="light"><?= __('Lumineux') ?></a>
-                        <a href="#" id="dark"><?= __('Sombre') ?></a>
-                    </div>
-                </div>
-            </div>
-            
-            <ul class="d-flex">
-                <li><a href="#competences"><?= __('Compétences')?></a></li>
-                <li><a href="#projects"><?= __('Projets')?></a></li>
-                <li><a href="#contact"><?= __('Contact')?></a></li>
-            </ul>
-        </div>
-    </nav>
-    
-    <header class="d-flex" id="header">
-        <h1><?= __('Bonjour, je m’appelle')?> <span>Luna</span> <?= __('et je suis une jeune')?> <span><?= __('développeuse web junior')?></span> <?= __('de 19 ans.')?></h1>
-        <h2><?= __('Je recherche une')?> <span><?= __('opportunité en alternance')?></span> <?= __('pour devenir une développeuse full stack confirmée.')?></h2>
-    </header>
-    
-    <main class="container" id="accueil">
-        
-        <section class="home d-flex">
-            
-            <div class="d-flex" id="profile">
-                <img src="imgs/Photo_CV_30092024.jpg" id="profile-img" alt="Ma photo">
-    
-                <p id="find-me"><?= __('Vous pouvez me retrouver sur :')?></p>
-                <article class="d-flex" id="socials-icons">
-                    <a href="https://github.com/Luna-bf" target="_blank" class="fa-brands fa-github"></a>
-                    <a href="https://www.linkedin.com/in/luna-buratti-fayolle/" target="_blank" class="fa-brands fa-linkedin"></a>
-                </article>
-            </div>
-            
-            <article id="searching-for">
-                <h2><?= __('Qui suis-je ?')?></h2>
-                <br>
-                <p><?= __('Actuellement en recherche à la 3W Academy, je suis une jeune développeuse web junior de 19 ans passionnée par le développement et la création de solutions innovantes. Dans l’optique d’évoluer dans ce domaine, je suis en quête d\'une opportunité d’apprentissage en alternance pour mettre en pratique mes compétences et apprendre auprès de professionnels expérimentés.')?></p>
-                <br>
-                <p><?= __('Motivation, curiosité et persévérance sont des soft skills qui me représentent et bien que je sois au début de mon parcours, je suis déterminée à monter en compétences aussi bien front-end qu’en back-end afin de devenir une développeuse full-stack confirmée. Je possède déjà des connaissances en HTML, CSS, PHP, MySQL et d’autres.')?></p>
-                <br>
-                <p><?= __('Je suis disponible immédiatement pour échanger avec vous alors n\'hésitez pas à me contacter !')?></p>
-            </article>
-        </section>
-        
-        <section class="d-flex contact-resume">
-            <a href="ressources/CV_Luna_16102024.pdf" download="CV de Luna BURATTI-FAYOLLE.pdf" class="resume">Télécharger mon CV (FR)</a>
-            <a href="ressources/Luna_Resume_16102024.pdf" download="Luna BURATTI-FAYOLLE's Resume.pdf" class="resume">Download my Resume (EN)</a>
-        </section>
-            
-        <hr>
-        
-        <div class="d-flex title-competences">
-            <h1 id="competences" class="d-flex"><?= __('Compétences')?></h1>
-        </div>
-        
-        <section class="section-padding">
-            <div class="d-flex parent">
-                <h2 class="d-flex title-lang"><?= __('Langues')?></h2>
-                <article id="langues">    
-                    <ul class="d-flex">
-                        <li><?= __('Français : Langue maternelle')?></li>
-                        <li><?= __('Anglais : niveau B1')?></li>
-                    </ul>
-                </article>
-                
-                <hr class="skills-hr">
-                
-                <h2 class="d-flex title-soft-skills">Soft Skills</h2>
-                <article class="soft-skills">
-                        <ul>
-                            <li><?= __('Prise de recul : Je suis ouverte à la critique et à la conversation')?></li>
-                            <li><?= __('Curiosité : Je suis ouverte à de nouveaux outils et langages')?></li>
-                            <li><?= __('Persévérance : Je n\'abandonne pas face à la difficulté')?></li>
-                        </ul>
-                </article>
-                
-                <hr class="skills-hr">
-                
-                <h2 class="d-flex title-hard-skills">Hard skills (front-end)</h2>
-                <article class="hard-skills-front-article">
-                    <div class="logos-frontend">
-                        <img src="imgs/logos/logos_front-end.png" alt=<?= __('"Logos des langages et outils que j\'utilise en front-end"')?>>
-                    </div>
-                </article>
-                
-                <hr id="hard-skills-hr">
-                
-                <h2 class="d-flex title-hard-skills">Hard skills (back-end)</h2>
-                <article class="hard-skills-back-article">
-                    <div class="logos-backend">
-                        <img src="imgs/logos/logos_back-end.png" alt=<?= __('"Logos des langages et outils que j\'utilise en back-end"')?>>
-                    </div>
-                </article>
-            </div>
-        </section>
-        
-        <hr>
-        
-        <div class="d-flex title-projects">
-            <h1 id="projects"><?= __('Projets')?></h1>
-        </div>
-        <section>
-	        <article class="d-flex parent-project">
-                <article class="project">
-                    <a href="https://github.com/Luna-bf/To-do_list_JavaScript" target="_blank">
-                        <img src="imgs/projects/todo-list_thumbnail.png" alt=<?= __('"Capture d\'écran de la To-do list Javascript"')?> class="project-img" />
-                    </a>
-                    <ul>
-                        <li><?= __('Année : 2024 (en cours)')?></li>
-                        <li><?= __('Stacks utilisées :') ?> <i class="fa-brands fa-js"></i>, <i class="fa-brands fa-html5"></i>, <i class="fa-brands fa-css3-alt"></i></li>
-                        <li><a href="https://github.com/Luna-bf/To-do_list_JavaScript" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
-                    </ul>
-                </article>
-            
-                <article class="project">
-                    <a href="https://github.com/Luna-bf/Hollow_Knight-Quiz" target="_blank">
-                        <img src="imgs/projects/hk-quiz_thumbnail.png" alt=<?= __('"Capture d\'écran du quiz Hollow Knight"')?> class="project-img" />
-                    </a>
-                    <ul>
-                        <li><?= __('Année : 2024 (en cours)')?></li>
-                        <li><?= __('Stacks utilisées :') ?> <i class="fa-brands fa-js"></i>, <i class="fa-brands fa-html5"></i>, <i class="fa-brands fa-css3-alt"></i></li>
-                        <li><a href="https://github.com/Luna-bf/Hollow_Knight-Quiz" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
-                    </ul>
-                </article>
-            
-                <article class="project">
-                    <a href="https://github.com/Luna-bf/PHP-RPG" target="_blank">
-                        <img src="imgs/projects/php-rpg_thumbnail.png" alt=<?= __('"Capture d\'écran du RPG PHP"')?> class="project-img" />
-                    </a>
-                    <ul>
-                        <li><?= __('Année : 2024 (en cours)')?></li>
-                        <li><?= __('Stacks utilisées :') ?> <i class="fa-brands fa-php"></i>, <i class="fa-brands fa-html5"></i>, <i class="fa-brands fa-css3-alt"></i></li>
-                        <li><a href="https://github.com/Luna-bf/PHP-RPG" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
-                    </ul>
-                </article>
-                
-            </article>
-        </section>
-        
-        <hr>
-        
-        <section id="contact-me">
-            <div class="d-flex title-contact">
-                <h1 id="contact"><?= __('Contactez moi')?></h1>
-            </div>
-            <form method="POST">
-                <div class="my-form">
-                    <input type="text" id="company_name" name="company_name" placeholder=<?= __('"Nom de l\'entreprise (obligatoire)"')?> required>
-                    <input type="email" id="email" name="email" placeholder=<?= __('"Votre adresse mail (obligatoire)"')?> required>
-                    <textarea id="message" name="message" placeholder=<?= __('"Votre message"')?>></textarea>
-					<button type="submit" class="button"><?= __('Envoyer')?></button>
-                </div>
-            </form>
-        </section>
-    </main>
-    
-    <footer>
-        <p>Contact 3WA</p>
-    </footer>
-        
-    <a href="#" id="return-to-top">
-        <i class="fa-solid fa-arrow-up"></i>
-    </a>
-    
-    <script type="text/javascript" src="js/app.js"></script>
-</body>
-</html>
+/***CSS variables***/
+
+:root {
+    --base-bg-color: #fff;
+    --text-color: #000000;
+    --hr-color: #808080;
+    --skills-hr-color: #808080;
+    --nav-bg-color: rgba(217, 230, 242, 0.7);
+    --theme-lang-border-color: #aaa;
+    --theme-lang-bg-color: #fff;
+    --theme-lang-bg-color-hover: #FAFBF5;
+    --theme-lang-color-focus: #b22222;
+    --nav-a-color: #000000;
+    --nav-a-focus-color: #fff;
+    --skills-bg-color: #D9E6F2;
+    --github-link-visited: midnightblue;
+}
+
+/***Reset***/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*************
+SMOOTH SCROLL
+*************/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/************
+FONTS
+************/
+
+/*Poppins light - pour le texte*/
+@font-face {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*Poppins medium - pour les titres*/
+@font-face {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/**************
+FONT AWESOME
+**************/
+
+.fa-github {
+    color: #000000;
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+    text-decoration: none;
+}
+
+.fa-js {
+    color: #F0DB4F;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.fa-html5 {
+    color: #e34c26;
+    font-size: 3rem;
+}
+
+.fa-css3-alt {
+    color: #264de4;
+    font-size: 3rem;
+}
+
+.fa-php {
+    color: #474A8A;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/***********
+DISPLAY
+***********/
+
+.d-flex {
+    display: flex;
+}
+
+/***********
+BODY
+***********/
+
+body {
+    background-color: var(--base-bg-color);
+    width: 100%;
+}
+
+/*************
+RETURN TO TOP
+*************/
+
+#return-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #283669;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    border-radius: 50%;
+    opacity: 80%;
+}
+
+#return-to-top:hover {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #324487;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    border-radius: 50%;
+    opacity: 100;
+}
+
+.fa-arrow-up {
+    color: #fff;
+    font-size: 2rem;
+}
+
+/***Dark mode***/
+
+.dark-mode {
+    --base-bg-color: #333333;
+    --text-color: #fff;
+    --hr-color: #fff;
+    --skills-hr-color: black;
+    --nav-bg-color: rgba(167, 188, 209, 0.7);
+    --theme-lang-border-color: #555555;
+    --theme-lang-bg-color: #333333;
+    --theme-lang-bg-color-hover: #444444;
+    --theme-lang-color-focus: #fff;
+    --nav-a-color: #fff;
+    --nav-a-focus-color: #fff;
+    --skills-bg-color: #A7BCD1;
+    --github-link-visited: powderblue;
+}
+
+/*****
+NAV
+*****/
+
+nav {
+    position: fixed;
+    z-index: 10; /*Pour que les éléments animés restent derrière la nav*/
+    top: 0;
+    left: 0;
+    padding: 1em;
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: var(--nav-bg-color);
+}
+
+#space-between {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0 5px;
+}
+
+nav ul li a:hover {
+    list-style: none;
+    text-decoration: underline;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+nav ul li a:focus {
+    list-style: none;
+    color: var(--nav-a-focus-color);
+    text-decoration: underline;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/**********
+DROPDOWN
+**********/
+
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-link {
+    padding: 0 5px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Le contenu du dropdown est caché par défaut*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--theme-lang-bg-color);
+    border: 1px solid var(--theme-lang-border-color);
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    display: block;
+    color: var(--text-color);
+    padding: 1em 2em;
+    text-decoration: none;
+    min-width: 11em;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--theme-lang-bg-color-hover);
+    border-radius: 5px;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+/****************
+LANGUE ET THEMES
+****************/
+
+.lang-change:focus {
+    color: var(--theme-lang-color-focus);
+    text-decoration: underline;
+}
+
+.flag {
+    width: 28%;
+    height: 33%;
+    padding-right: 8px;
+}
+
+#themes a:focus {
+    color: var(--theme-lang-color-focus);
+    text-decoration: underline;
+}
+
+#themes a:first-child:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f042";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+#themes a:nth-child(2):before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f185";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #FFC401;
+    font-size: 18px;
+}
+
+#themes a:last-child:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f186";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #525399;
+    font-size: 18px;
+}
+
+/**********
+HEADER
+**********/
+
+img {
+    width: 100%;
+}
+
+header {
+    min-height: 100vh;
+    background: url(../imgs/header-img.png);
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 12em;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-left: 25px;
+    color: #fff;
+}
+
+header h2 {
+    font-size: 25px;
+    margin-left: 25px;
+    color: #fff;
+}
+
+span {
+    text-decoration: underline 2px;
+}
+
+/**********
+MAIN
+**********/
+
+.container {
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p, li, a, input, textarea, button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+hr {
+    width: 90%;
+    margin: auto;
+    background-color: var(--hr-color);
+}
+
+/**********
+ACCUEIL
+**********/
+
+.home {
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 0.5rem 0 0 0;
+}
+
+#profile {
+    width: 15%;
+    margin-top: 30px;
+    flex-direction: column;
+    margin-bottom: 6rem;
+}
+
+#profile-img {
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+}
+
+#find-me {
+    text-align: center;
+    margin: 1rem;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+#socials-icons {
+    flex-direction: row;
+    font-size: 3rem;
+    justify-content: space-evenly;
+}
+
+#searching-for {
+    margin-top: 25px;
+    width: 50%;
+    color: var(--text-color);
+}
+
+#searching-for h2 {
+    font-size: 25px;
+    color: var(--text-color);
+}
+
+.contact-resume {
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 5em;
+}
+
+.resume {
+    background-color: #283669;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 40px 5px 40px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.resume:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f019";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #fff;
+    font-size: 18px;
+}
+
+.resume:hover {
+    background-color: #324487;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 40px 5px 40px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+}
+
+/**************
+COMPETENCES
+**************/
+
+.section-padding {
+    padding-bottom: 6em;
+}
+
+.parent {
+    background-color: var(--skills-bg-color);
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+}
+
+#competences {
+    width: 20%;
+    margin: 2em 0 2em 0;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.title-competences {
+    justify-content: center;
+}
+
+/***LANGUAGES***/
+
+.title-lang {
+    margin: 25px 0 80px 0;
+    font-size: 35px;
+    justify-content: center;
+}
+
+#langues ul li {
+    margin: auto;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 20px;
+    list-style: none;
+    padding-bottom: 3em;
+}
+
+#langues ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\2b";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #000000;
+    font-size: 18px;
+}
+
+/***SOFT SKILLS***/
+
+.title-soft-skills {
+    margin: 35px 0 70px 0;
+    font-size: 35px;
+    justify-content: center;
+}
+
+.soft-skills {
+    margin: auto;
+}
+
+.soft-skills ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.soft-skills ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\2b";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #000000;
+    font-size: 18px;
+}
+
+.soft-skills ul li:nth-child(2) {
+    margin-top: 20px;
+}
+
+.soft-skills ul li:last-child {
+    margin: 20px 0 3rem 0;
+    padding-bottom: 2em;
+}
+
+/***HARD SKILLS***/
+
+.title-hard-skills {
+    margin: 35px 0 70px 0;
+    font-size: 35px;
+    justify-content: center;
+}
+
+.hard-skills-front-article {
+    width: 75%;
+    margin: auto;
+}
+
+.hard-skills-back-article {
+    width: 75%;
+    margin: auto;
+}
+
+.skills-hr {
+    width: 90%;
+    margin: auto;
+    border-bottom: var(--skills-hr-color);
+}
+
+#hard-skills-hr {
+    width: 70%;
+    margin: auto;
+    border-bottom: var(--skills-hr-color);
+}
+
+/***LOGOS***/
+
+.logos-frontend {
+    width: 51%;
+    margin: auto;
+    padding-bottom: 3em;
+}
+
+.logos-backend {
+    width: 47%;
+    margin: auto;
+    padding-bottom: 3em;
+}
+
+/**************
+PROJETS
+**************/
+
+#projects {
+    padding: 8px 63px 8px 63px;
+    justify-content: center;
+    margin: 50px 0 15px 0;
+}
+
+.title-projects {
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.parent-project {
+    padding-top: 3em;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 41%;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+	transform: scale(1);
+    transition: color .2s, background-color 1s, transform .35s;
+}
+
+.project-img:hover {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+	transform: scale(1.1);
+    transition: color .2s, background-color 1s, transform .35s;
+}
+
+.project ul li {
+    width: 100%;
+    margin: 1rem 0rem 0rem 5px;
+    list-style: none;
+    font-size: 25px;
+    color: var(--text-color);
+}
+
+.project ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f005";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #FFBD59;
+    font-size: 18px;
+}
+
+.project ul li:first-child {
+    margin-top: 2rem;
+}
+
+.project ul li:last-child {
+    margin-bottom: 5rem;
+}
+
+.github-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.github-link:visited {
+    color: var(--github-link-visited);
+    text-decoration: none;
+}
+
+/**************
+CONTACT
+**************/
+
+#contact {
+    padding: 8px 46px 8px 46px;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.title-contact {
+    justify-content: center;
+}
+
+/***FORM***/
+
+form {
+    min-height: 50vh;
+    background: url(../imgs/bricks.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2em;
+    justify-content: center;
+}
+
+input {
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+textarea {
+	height: 15em;
+    padding: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px #283669 solid;
+    background-color: #283669;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    justify-content: center;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+button:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    padding-left: 8px;
+    vertical-align: middle;
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #324487;
+    border: 1px #324487 solid;
+    justify-content: center;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+}
+
+/**************
+FOOTER
+**************/
+
+footer {
+    height: 10vh;
+    background-color: var(--skills-bg-color);
+}
+
+/**************
+MEDIA QUERIES
+**************/
+
+/***MOBILE***/
+
+/*Prévoir aussi le mode paysage*/
+/*overflow: auto; (voir texte si-dessous)*/
+
+@media (min-width : 320px) {
+
+}
+
+/*
+We have styled the dropdown button with a background-color, padding, etc.
+
+The .dropdown class uses position:relative, which is needed when we want the dropdown content to be placed right below the dropdown button (using position:absolute).
+
+The .dropdown-content class holds the actual dropdown menu. It is hidden by default, and will be displayed on hover (see below). Note the min-width is set to 160px. Feel free to change this. Tip: If you want the width of the dropdown content to be as wide as the dropdown button, set the width to 100% (and overflow:auto to enable scroll on small screens).
+
+Instead of using a border, we have used the box-shadow property to make the dropdown menu look like a "card". We also use z-index to place the dropdown in front of other elements.
+
+The :hover selector is used to show the dropdown menu when the user moves the mouse over the dropdown button.
+*/
