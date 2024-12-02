@@ -89,12 +89,12 @@ FONT AWESOME
 }
 
 .fa-sun {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--theme-lang-icon-color);
 }
 
 .fa-moon {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--theme-lang-icon-color);
 }
 
@@ -295,8 +295,8 @@ DROPDOWN ET LANGUE
 }
 
 #change-theme-btn {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     padding: 0;
     border-radius: 50%;
     background-color: var(--theme-lang-btn-bg-color);
