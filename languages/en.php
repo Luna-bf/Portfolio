@@ -45,7 +45,7 @@ $lang = [
     '"Nom de l\'entreprise (obligatoire)"' => '"Company name (required)"',
     '"Votre adresse mail (obligatoire)"' => '"Your email address (required)"',
     '"Votre message"' => '"Your message"',
-    'Envoyer' => 'Send',
+    'Soumettre' => 'Submit',
 ];
 
 ?>
