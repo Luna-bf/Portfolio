@@ -24,10 +24,12 @@
                 
                 <div class="dropdown-menu">
                     <a href="#" class="drop-link"><?= __('Thème') ?></a>
-                    <div class="dropdown-content" id="themes">
-                        <a href="#" id="default"><?= __('Par défaut') ?></a>
-                        <a href="#" id="light"><?= __('Lumineux') ?></a>
-                        <a href="#" id="dark"><?= __('Sombre') ?></a>
+                    <div id="themes">
+                        <button id="change-theme-btn">
+                            <i class="fa-solid fa-moon"></i>
+                            <i class="fa-solid fa-sun"></i>
+                        </button>
+                        <p id="themes-p"><?= __('Cliquez pour changer de thème') ?></p>
                     </div>
                 </div>
             </div>
@@ -176,7 +178,7 @@
                     <input type="text" id="company_name" name="company_name" placeholder=<?= __('"Nom de l\'entreprise (obligatoire)"')?> required>
                     <input type="email" id="email" name="email" placeholder=<?= __('"Votre adresse mail (obligatoire)"')?> required>
                     <textarea id="message" name="message" placeholder=<?= __('"Votre message"')?>></textarea>
-					<button type="submit" class="button"><?= __('Soumettre')?></button>
+					<button type="submit" id="submit-button"><?= __('Soumettre')?></button>
                 </div>
             </form>
         </section>
@@ -184,12 +186,13 @@
     
     <footer>
         <p>Contact 3WA</p>
+        <p>Jérémy Rocamora</p>
     </footer>
         
     <a href="#" id="return-to-top">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
     
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/app.js" defer></script>
 </body>
 </html>
