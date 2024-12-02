@@ -688,8 +688,8 @@ CONTACT
 }
 
 #contact-me {
-    min-height: 100vh;
-    background: url(../imgs/form-texture.png);
+    min-height: 70vh;
+    background: url(../imgs/form-img.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
