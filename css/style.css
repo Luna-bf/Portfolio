@@ -699,8 +699,9 @@ CONTACT
 #contact {
     padding: 8px 46px 8px 46px;
     justify-content: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    color: var(--text-color);
 }
 
 #contact-me {
