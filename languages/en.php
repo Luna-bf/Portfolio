@@ -1,11 +1,9 @@
 <?php
 
 $lang = [
-    'Langues' => 'Languages',
+    'Langue' => 'Language',
     'Thème' => 'Theme',
-    'Par défaut' => 'Default',
-    'Lumineux' => 'Light',
-    'Sombre' => 'Dark',
+    'Cliquez pour changer de thème' => 'Click to change the theme',
     'Compétences' => 'Skills',
     'Projets' => 'Projects',
     'Contact' => 'Contact',
