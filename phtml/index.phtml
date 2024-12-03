@@ -172,17 +172,34 @@
         <div class="d-flex title-contact">
             <h1 id="contact"><?= __('Contactez moi')?></h1>
         </div>
+        
+        <?php
+            require 'form/form.php';
+            
+            if($message_sent):
+        ?>
+            
+            <h3>Thanks, we'll be in touch</h3>
+            
+        <?php
+            else:
+        ?>
         <section id="contact-me">
-            <form method="POST">
-                <div class="d-flex" id="my-form">
-                    <input type="text" id="company_name" name="company_name" placeholder=<?= __('"Nom de l\'entreprise (obligatoire)"')?> required>
-                    <input type="email" id="email" name="email" placeholder=<?= __('"Votre adresse mail (obligatoire)"')?> required>
+            <form action="form/form.php" method="POST">
+                <div class="d-flex" id="form-group">
+                    <input type="text" id="companyName" name="companyName" placeholder=<?= __('"Nom de l\'entreprise (obligatoire)"')?> required>
+                    <input type="email" id="email" name="userEmail" placeholder=<?= __('"Votre adresse mail (obligatoire)"')?> required>
+                    <input type="text" id="subject" name="subject" placeholder=<?= __('"Objet (obligatoire)"')?> required>
                     <textarea id="message" name="message" placeholder=<?= __('"Votre message"')?>></textarea>
 					<button type="submit" id="submit-button"><?= __('Soumettre')?></button>
                 </div>
             </form>
         </section>
+        <?php
+            endif;
+        ?>
     </main>
+    
     
     <footer>
         <ul class="contacts">
