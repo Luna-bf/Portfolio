@@ -24,6 +24,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: all .3s ease;
 }
 
 /*************
@@ -131,6 +132,7 @@ RETURN TO TOP
     padding: 0.8rem 1rem 0.8rem 1rem;
     border-radius: 50%;
     opacity: 80%;
+    transition: none;
 }
 
 #return-to-top:hover {
@@ -209,6 +211,7 @@ nav ul li a {
     text-decoration: none;
     color: #000000;
     padding: 0 5px;
+    transition: none;
 }
 
 nav ul li a:hover {
@@ -260,6 +263,7 @@ DROPDOWN ET LANGUE
     padding: 1em 2em;
     text-decoration: none;
     min-width: 11em;
+    transition: none;
 }
 
 .dropdown-content a:hover {
@@ -758,16 +762,6 @@ textarea {
     align-items: center;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-}
-
-#submit-button:after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f054";
-    padding-left: 8px;
-    vertical-align: middle;
-    font-weight: 600;
-    color: #fff;
-    font-size: 18px;
 }
 
 #submit-button:hover {
