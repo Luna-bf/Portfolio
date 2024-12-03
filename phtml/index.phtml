@@ -174,11 +174,11 @@
         </div>
         <section id="contact-me">
             <form method="POST">
-                <div class="my-form">
+                <div class="d-flex" id="my-form">
                     <input type="text" id="company_name" name="company_name" placeholder=<?= __('"Nom de l\'entreprise (obligatoire)"')?> required>
                     <input type="email" id="email" name="email" placeholder=<?= __('"Votre adresse mail (obligatoire)"')?> required>
                     <textarea id="message" name="message" placeholder=<?= __('"Votre message"')?>></textarea>
-					<input type="submit" value=<?= __('"Soumettre"')?> id="submit-button"></input>
+					<button type="submit" id="submit-button"><?= __('Soumettre')?></button>
                 </div>
             </form>
         </section>
