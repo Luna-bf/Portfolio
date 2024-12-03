@@ -42,6 +42,7 @@ $lang = [
     'Contactez moi' => 'Contact me',
     '"Nom de l\'entreprise (obligatoire)"' => '"Company name (required)"',
     '"Votre adresse mail (obligatoire)"' => '"Your email address (required)"',
+    '"Objet (obligatoire)"' => '"Subject (required)"',
     '"Votre message"' => '"Your message"',
     'Soumettre' => 'Submit',
     'Contact 3W Academy :' => '3W Academy contact :',
