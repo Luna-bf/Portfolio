@@ -43,7 +43,7 @@ $lang = [
     '"Nom de l\'entreprise (obligatoire)"' => '"Company name (required)"',
     '"Votre adresse mail (obligatoire)"' => '"Your email address (required)"',
     '"Votre message"' => '"Your message"',
-    '"Soumettre"' => '"Submit"',
+    'Soumettre' => 'Submit',
     'Contact 3W Academy :' => '3W Academy contact :',
     'Mon adresse mail :' => 'My email address :',
 ];
