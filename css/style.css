@@ -300,6 +300,7 @@ DROPDOWN ET LANGUE
     padding: 0;
     border-radius: 50%;
     background-color: var(--theme-lang-btn-bg-color);
+    cursor: pointer;
 }
 
 #themes-p {
@@ -756,6 +757,7 @@ textarea {
     justify-content: center;
     align-items: center;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 #submit-button:after {
@@ -773,6 +775,7 @@ textarea {
     border: 1px #324487 solid;
     justify-content: center;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 /**************
