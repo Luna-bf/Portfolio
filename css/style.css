@@ -14,7 +14,7 @@
     --theme-lang-color-focus: #b22222;
     --nav-a-color: #000000;
     --nav-a-focus-color: #fff;
-    --skills-bg-color: #D9E6F2;
+    --skills-bg-color: rgba(217, 230, 242, 1);
     --github-link-visited: midnightblue;
 }
 
@@ -758,7 +758,6 @@ textarea {
 #submit-button {
     align-items: center;
     width: 8em;
-    margin-bottom: 8px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #283669;
@@ -794,7 +793,7 @@ FOOTER
 **************/
 
 footer {
-    height: 10vh;
+    height: 12vh;
     background-color: var(--skills-bg-color);
     display: flex;
     flex-direction: row;
@@ -807,6 +806,10 @@ footer {
     flex-direction: column;
     align-items: center;
     list-style: none;
+}
+
+.contacts li:last-child {
+    margin-top: 8px;
 }
 
 /**************
