@@ -808,16 +808,26 @@ footer {
     list-style: none;
 }
 
-.contacts li img {
-    width: 100%;
-}
-
-#logo {
-    width: 4%;
-}
-
 .contacts li:last-child {
     margin-top: 8px;
+}
+
+#prompt {
+    width: 30%;
+    height: 30%;
+    border: 1px solid var(--theme-lang-border-color);
+    background-color: var(--theme-lang-bg-color);
+    color: var(--text-color);
+    border-radius: 5px;
+}
+
+#prompt button {
+    background-color: var(--base-bg-color);
+    border: none;
+}
+
+.none {
+    display: none;
 }
 
 /**************
