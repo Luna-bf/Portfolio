@@ -176,16 +176,15 @@
         <section id="contact-me">
             <form action="form/form.php" method="POST">
                 <div class="d-flex" id="form-group">
-                    <input type="text" id="companyName" name="companyName" placeholder=<?= __('"Nom de l\'entreprise (obligatoire)"')?> required>
-                    <input type="email" id="email" name="userEmail" placeholder=<?= __('"Votre adresse mail (obligatoire)"')?> required>
-                    <input type="text" id="subject" name="subject" placeholder=<?= __('"Objet (obligatoire)"')?> required>
-                    <textarea id="message" name="message" placeholder=<?= __('"Votre message"')?>></textarea>
+                    <input type="text" id="companyName" name="companyName" placeholder="Nom de l'entreprise (obligatoire)" tabindex="1" required>
+                    <input type="email" id="email" name="userEmail" placeholder="Votre adresse mail (obligatoire)" tabindex="2" required>
+                    <input type="text" id="subject" name="subject" placeholder="Objet (obligatoire)" tabindex="3" required>
+                    <textarea id="message" name="message" placeholder="Votre message" tabindex="4"></textarea>
 					<button type="submit" id="submit-button"><?= __('Soumettre')?></button>
                 </div>
             </form>
         </section>
     </main>
-    
     
     <footer>
         <ul class="contacts">
