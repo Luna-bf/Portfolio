@@ -173,17 +173,6 @@
             <h1 id="contact"><?= __('Contactez moi')?></h1>
         </div>
         
-        <?php
-            require 'form/form.php';
-            
-            if($message_sent):
-        ?>
-            
-            <h3>Thanks, we'll be in touch</h3>
-            
-        <?php
-            else:
-        ?>
         <section id="contact-me">
             <form action="form/form.php" method="POST">
                 <div class="d-flex" id="form-group">
@@ -195,9 +184,6 @@
                 </div>
             </form>
         </section>
-        <?php
-            endif;
-        ?>
     </main>
     
     
@@ -205,6 +191,10 @@
         <ul class="contacts">
             <li><?= __('Contact 3W Academy :') ?></li>
             <li>Jérémy Rocamora : jr.rocamora@gmail.com</li>
+        </ul>
+        
+        <ul class="contacts" id="logo">
+            <li><img src="imgs/logo-160x160.png" alt="Logo et favicon du portfolio"></li>
         </ul>
         
         <ul class="contacts">
