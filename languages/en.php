@@ -47,6 +47,7 @@ $lang = [
     'Soumettre' => 'Submit',
     'Contact 3W Academy :' => '3W Academy contact :',
     'Mon adresse mail :' => 'My email address :',
+    '"Logo et favicon du portfolio"' => '"Logo and favicon of the portfolio website"',
 ];
 
 ?>
