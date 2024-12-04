@@ -186,7 +186,7 @@
         </section>
     </main>
     
-    <footer>
+    <footer id="footer">
         <ul class="contacts">
             <li><?= __('Contact 3W Academy :') ?></li>
             <li>Jérémy Rocamora : jr.rocamora@gmail.com</li>
@@ -204,12 +204,12 @@
     
     <div id="prompt" class="hide-prompt">
         <button><i class="fa-solid fa-circle-xmark"></i></button>
-        <p>Bonjour/Bonsoir,</p>
-        <p>Cette boîte de texte est apparue pour vous prévenir que le formulaire de contact ne fonctionne actuellement pas.</p>
-        <p>Je vous invite à utiliser mon adresse mail présente dans le footer pour me contacter.</p>
-        <p>Je vous remercie pour votre temps et votre compréhension et vous souhaite de passer une excellente journée/soirée.</p>
-        <p>Cordialement,</p>
-        <p>Luna BURATTI-FAYOLLE</p>
+        <p class="prompt-first-p">Bonjour/Bonsoir,</p>
+        <p class="prompt-p">Cette boîte de texte est apparue pour vous prévenir que le formulaire de contact ne fonctionne actuellement pas.</p>
+        <p class="prompt-p">Je vous invite à utiliser mon adresse mail présente dans <a href="#footer" id="footer-link">le footer</a> pour me contacter.</p>
+        <p class="prompt-p">Je vous remercie pour votre temps et votre compréhension et vous souhaite de passer une excellente journée/soirée.</p>
+        <p class="prompt-polite">Cordialement,</p>
+        <p class="prompt-final-p">Luna BURATTI-FAYOLLE</p>
     </div>
     
     <script type="text/javascript" src="js/app.js" defer></script>
