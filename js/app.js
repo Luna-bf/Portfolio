@@ -30,3 +30,14 @@ changeTheme.addEventListener("click", () => {
     }
     */
 });
+
+const btn = document.querySelector('#prompt button');
+
+btn.addEventListener('click', () => {
+    console.log('ok');
+});
+
+//Apparition du prompt
+setTimeout(function() {
+    document.querySelector("#prompt p").innerHTML += 'Some text';
+}, 5000);
