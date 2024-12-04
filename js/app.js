@@ -43,5 +43,5 @@ setTimeout(function() {
 
 //Pour faire disparaitre le prompt
 elements.btn.addEventListener('click', () => {
-    elements.prompt.classList.add('none');
+    elements.prompt.classList.add('hide-prompt');
 });
