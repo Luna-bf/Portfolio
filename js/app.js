@@ -1,6 +1,11 @@
 //Je récupère mes éléments
-let darkMode = window.localStorage.getItem("dark-mode");
-const changeTheme = document.getElementById("change-theme-btn");
+const elements = {
+    darkMode: window.localStorage.getItem("dark-mode"),
+    changeTheme: document.getElementById("change-theme-btn"),
+    btn: document.querySelector('#prompt button'),
+    prompt: document.getElementById("prompt"),
+    paragraph: document.querySelector("#prompt p")
+};
 
 //Je déclare mes fonctions enableDarkMode et disableDarkMode
 const enableDarkMode = () => {
@@ -16,10 +21,10 @@ const disableDarkMode = () => {
 };
 
 //Puis je met un event listener sur le bouton, ce qui va me permettre de changer de thème
-changeTheme.addEventListener("click", () => {
+elements.changeTheme.addEventListener("click", () => {
     
-    darkMode = window.localStorage.getItem("dark-mode");
-    darkMode !== "active" ? enableDarkMode() : disableDarkMode();
+    elements.darkMode = window.localStorage.getItem("dark-mode");
+    elements.darkMode !== "active" ? enableDarkMode() : disableDarkMode();
     
     //C'est l'équivalent de :
     /*
@@ -31,13 +36,12 @@ changeTheme.addEventListener("click", () => {
     */
 });
 
-const btn = document.querySelector('#prompt button');
-
-btn.addEventListener('click', () => {
-    console.log('ok');
-});
-
 //Apparition du prompt
 setTimeout(function() {
-    document.querySelector("#prompt p").innerHTML += 'Some text';
+    elements.prompt.classList.remove('hide-prompt');
 }, 5000);
+
+//Pour faire disparaitre le prompt
+elements.btn.addEventListener('click', () => {
+    elements.prompt.classList.add('none');
+});
