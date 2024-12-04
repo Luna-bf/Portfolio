@@ -821,7 +821,7 @@ footer {
     bottom: 2rem;
     right: 2rem;
     width: 30%;
-    height: 60%;
+    height: 65%;
     border: 2px solid var(--theme-lang-border-color);
     background-color: var(--theme-lang-bg-color);
     color: var(--text-color);
@@ -833,8 +833,39 @@ footer {
     color: var(--text-color);
     background-color: var(--base-bg-color);
     border: none;
-    padding-left: 5em;
+    padding-left: 370px;
     cursor: pointer;
+}
+
+.prompt-first-p {
+    padding: 0rem 0rem 0.5rem 1rem;
+}
+
+.prompt-p {
+    padding: 0.5rem 0rem 0.5rem 1rem;
+}
+
+.prompt-polite {
+    padding: 0.8rem 0rem 0.1rem 1rem;
+}
+
+.prompt-final-p {
+    padding: 0.4rem 0rem 0.1rem 1rem;
+}
+
+#footer-link {
+    color: blue;
+    text-decoration: none;
+}
+
+#footer-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+#footer-link:visited {
+    color: var(--github-link-visited);
+    text-decoration: none;
 }
 
 /**************
