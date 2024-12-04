@@ -812,22 +812,29 @@ footer {
     margin-top: 8px;
 }
 
+.hide-prompt {
+    display: none;
+}
+
 #prompt {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
     width: 30%;
-    height: 30%;
-    border: 1px solid var(--theme-lang-border-color);
+    height: 60%;
+    border: 2px solid var(--theme-lang-border-color);
     background-color: var(--theme-lang-bg-color);
     color: var(--text-color);
     border-radius: 5px;
 }
 
 #prompt button {
+    font-size: 24px;
+    color: var(--text-color);
     background-color: var(--base-bg-color);
     border: none;
-}
-
-.none {
-    display: none;
+    padding-left: 5em;
+    cursor: pointer;
 }
 
 /**************
