@@ -826,6 +826,16 @@ footer {
     background-color: var(--theme-lang-bg-color);
     color: var(--text-color);
     border-radius: 5px;
+    animation: 1s ease-out 0s 1 appearFromRight forwards;
+}
+
+@keyframes appearFromRight {
+    0% {
+        transform: translateX(90%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 #prompt button {
