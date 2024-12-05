@@ -204,12 +204,14 @@
     
     <div id="prompt" class="hide-prompt">
         <button><i class="fa-solid fa-circle-xmark"></i></button>
-        <p class="prompt-first-p">Bonjour/Bonsoir,</p>
-        <p class="prompt-p">Cette boîte de texte est apparue pour vous prévenir que le formulaire de contact ne fonctionne actuellement pas.</p>
-        <p class="prompt-p">Je vous invite à utiliser mon adresse mail présente dans <a href="#footer" id="footer-link">le footer</a> pour me contacter.</p>
-        <p class="prompt-p">Je vous remercie pour votre temps et votre compréhension et vous souhaite de passer une excellente journée/soirée.</p>
-        <p class="prompt-polite">Cordialement,</p>
-        <p class="prompt-final-p">Luna BURATTI-FAYOLLE</p>
+        <div id="prompt-text">
+            <p class="prompt-first-p"><?= __('Bonjour/bonsoir,') ?></p>
+            <p class="prompt-p"><?= __('Cette boîte de texte est apparue pour vous prévenir que le formulaire de contact ne fonctionne actuellement pas.') ?></p>
+            <p class="prompt-p"><?= __('Je vous invite à utiliser mon adresse mail présente dans') ?> <a href="#footer" id="footer-link"><?= __('le footer') ?></a> <?= __('pour me contacter.') ?></p>
+            <p class="prompt-p"><?= __('Je vous remercie pour votre temps et votre compréhension et vous souhaite de passer une excellente journée/soirée.') ?></p>
+            <p class="prompt-polite"><?= __('Cordialement,') ?></p>
+            <p class="prompt-final-p">Luna BURATTI-FAYOLLE</p>
+        </div>
     </div>
     
     <script type="text/javascript" src="js/app.js" defer></script>
