@@ -821,7 +821,7 @@ footer {
     bottom: 2rem;
     right: 2rem;
     width: 30%;
-    height: 65%;
+    height: 68%;
     border: 2px solid var(--theme-lang-border-color);
     background-color: var(--theme-lang-bg-color);
     color: var(--text-color);
@@ -835,6 +835,19 @@ footer {
     border: none;
     padding-left: 370px;
     cursor: pointer;
+}
+
+#prompt button:hover {
+    font-size: 24px;
+    color: #b22222;
+    background-color: var(--base-bg-color);
+    border: none;
+    padding-left: 370px;
+    cursor: pointer;
+}
+
+#prompt-text {
+    width: 90%;
 }
 
 .prompt-first-p {
