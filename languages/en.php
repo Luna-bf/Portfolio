@@ -48,6 +48,13 @@ $lang = [
     'Contact 3W Academy :' => '3W Academy contact :',
     'Mon adresse mail :' => 'My email address :',
     '"Logo et favicon du portfolio"' => '"Logo and favicon of the portfolio website"',
+    'Bonjour/bonsoir,' => 'Hello/good evening,',
+    'Cette boîte de texte est apparue pour vous prévenir que le formulaire de contact ne fonctionne actuellement pas.' => 'This message box appeared to warn you that the contact form doesn\'t work at the moment.',
+    'Je vous invite à utiliser mon adresse mail présente dans' => 'I invite you to use my email address present inside of',
+    'le footer' => 'the footer of the page',
+    'pour me contacter.' => 'to contact me.',
+    'Je vous remercie pour votre temps et votre compréhension et vous souhaite de passer une excellente journée/soirée.' => 'I thank you for your time and understanding and I wish you an excellent day/evening.',
+    'Cordialement,' => 'Sincerely,',
 ];
 
 ?>
