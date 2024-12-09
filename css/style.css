@@ -405,6 +405,8 @@ header {
     background: url(../imgs/header-img.png);
     background-size: cover;
     background-position: center center;
+    justify-content: center;
+    align-items: center;
     line-height: 12em;
     margin-bottom: 10px;
 }
