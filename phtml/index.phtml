@@ -11,6 +11,22 @@
     <link rel="icon" type="image/x-icon" href="imgs/favicon-48x48.png" >
 </head>
 <body>
+    
+<!--
+
+- réduire la boite taille de la boite de compétences
+- drapeau à côté du texte langue correspondant à la langue sélectionnée
+- btn pour revenir en haut de la page dans la nav ?
+- Texte sous les icônes
+- remplacer thèmes par une icone accessibilité et y ranger thèmes dedans
+- permettre de diminuer/augmenter la taille de la police
+- rajouter les centres d'interêts
+- le rendre responsive (mobile et tablette)
+- faire en sorte que le thème sélectionné reste même après avoir quitté le site
+- changer le margin bottom du btn de la boite de texte
+
+-->
+    
     <nav>
         <div id="space-between">
             <div class="d-flex">
@@ -35,16 +51,18 @@
             </div>
             
             <ul class="d-flex">
-                <li><a href="#competences"><?= __('Compétences')?></a></li>
                 <li><a href="#projects"><?= __('Projets')?></a></li>
+                <li><a href="#competences"><?= __('Compétences')?></a></li>
                 <li><a href="#contact"><?= __('Contact')?></a></li>
             </ul>
         </div>
     </nav>
     
-    <header class="d-flex" id="header">
-        <h1><?= __('Bonjour, je m’appelle')?> <span>Luna</span> <?= __('et je suis une jeune')?> <span><?= __('développeuse web junior')?></span> <?= __('de 19 ans.')?></h1>
-        <h2><?= __('Je recherche une')?> <span><?= __('opportunité en alternance')?></span> <?= __('pour devenir une développeuse full stack confirmée.')?></h2>
+    <header>
+        <div id="header">
+            <h1><?= __('Bonjour, je m’appelle')?> <span>Luna</span> <?= __('et je suis une jeune')?> <span><?= __('développeuse web')?></span> <?= __('de 19 ans.')?></h1>
+            <h2><?= __('Je recherche une')?> <span><?= __('opportunité en alternance')?></span> <?= __('pour devenir une développeuse full stack confirmée.')?></h2>
+        </div>
     </header>
     
     <main class="container" id="accueil">
@@ -79,6 +97,49 @@
             
         <hr>
         
+        <div class="d-flex title-projects">
+            <h1 id="projects"><?= __('Projets')?></h1>
+        </div>
+        <section>
+	        <article class="d-flex parent-project">
+                <article class="project">
+                    <a href="https://github.com/Luna-bf/To-do_list_JavaScript" target="_blank">
+                        <img src="imgs/projects/todo-list_thumbnail.png" alt=<?= __('"Capture d\'écran de la To-do list Javascript"')?> class="project-img" />
+                    </a>
+                    <ul>
+                        <li><?= __('Année : 2024 (en cours)')?></li>
+                        <li><?= __('Stacks utilisées :') ?> JavaScript, HTML <?= __('et')?> CSS</li>
+                        <li><a href="https://github.com/Luna-bf/To-do_list_JavaScript" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
+                    </ul>
+                </article>
+            
+                <article class="project">
+                    <a href="https://github.com/Luna-bf/Hollow_Knight-Quiz" target="_blank">
+                        <img src="imgs/projects/hk-quiz_thumbnail.png" alt=<?= __('"Capture d\'écran du quiz Hollow Knight"')?> class="project-img" />
+                    </a>
+                    <ul>
+                        <li><?= __('Année : 2024 (en cours)')?></li>
+                        <li><?= __('Stacks utilisées :') ?> JavaScript, HTML <?= __('et')?> CSS</li>
+                        <li><a href="https://github.com/Luna-bf/Hollow_Knight-Quiz" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
+                    </ul>
+                </article>
+            
+                <article class="project">
+                    <a href="https://github.com/Luna-bf/PHP-RPG" target="_blank">
+                        <img src="imgs/projects/php-rpg_thumbnail.png" alt=<?= __('"Capture d\'écran du RPG PHP"')?> class="project-img" />
+                    </a>
+                    <ul>
+                        <li><?= __('Année : 2024 (en cours)')?></li>
+                        <li><?= __('Stacks utilisées :') ?> PHP, HTML <?= __('et')?> CSS</li>
+                        <li><a href="https://github.com/Luna-bf/PHP-RPG" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
+                    </ul>
+                </article>
+                
+            </article>
+        </section>
+        
+        <hr>
+        
         <div class="d-flex title-competences">
             <h1 id="competences" class="d-flex"><?= __('Compétences')?></h1>
         </div>
@@ -107,9 +168,37 @@
                 <hr class="skills-hr">
                 
                 <h2 class="d-flex title-hard-skills">Hard skills (front-end)</h2>
-                <article class="hard-skills-front-article">
-                    <div class="logos-frontend">
-                        <img src="imgs/logos/logos_front-end.png" alt=<?= __('"Logos des langages et outils que j\'utilise en front-end"')?>>
+                <article class="hard-skills-front-article-1">
+                    <div id="html">
+                        <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank"><img src="imgs/logos/HTML_logo.png" alt="Logo HTML" /></a>
+                        <h3>HTML</h3>
+                    </div>
+                    
+                    <div id="css">
+                        <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank"><img src="imgs/logos/CSS-logo.png" alt="Logo CSS" /></a>
+                        <h3>CSS</h3>
+                    </div>
+                    
+                    <div id="js">
+                        <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank"><img src="imgs/logos/JavaScript_logo.png" alt="Logo JavaScript" /></a>
+                        <h3>JavaScript</h3>
+                    </div>
+                </article>
+                
+                <article class="hard-skills-front-article-2">
+                    <div id="figma">
+                        <a href="https://fr.wikipedia.org/wiki/Figma" target="_blank"><img src="imgs/logos/Figma_logo.png" alt="Logo Figma" /></a>
+                        <h3>Figma</h3>
+                    </div>
+                    
+                    <div id="swift">
+                        <a href="https://fr.wikipedia.org/wiki/Swift_(langage_d%27Apple)" target="_blank"><img src="imgs/logos/Swift_logo.png" alt="Logo Swift" /></a>
+                        <h3>Swift</h3>
+                    </div>
+                    
+                    <div id="swift-ui">
+                        <a href="https://en.wikipedia.org/wiki/SwiftUI" target="_blank"><img src="imgs/logos/SwiftUI_logo.png" alt="Logo SwiftUI" /></a>
+                        <h3>SwiftUI</h3>
                     </div>
                 </article>
                 
@@ -122,49 +211,6 @@
                     </div>
                 </article>
             </div>
-        </section>
-        
-        <hr>
-        
-        <div class="d-flex title-projects">
-            <h1 id="projects"><?= __('Projets')?></h1>
-        </div>
-        <section>
-	        <article class="d-flex parent-project">
-                <article class="project">
-                    <a href="https://github.com/Luna-bf/To-do_list_JavaScript" target="_blank">
-                        <img src="imgs/projects/todo-list_thumbnail.png" alt=<?= __('"Capture d\'écran de la To-do list Javascript"')?> class="project-img" />
-                    </a>
-                    <ul>
-                        <li><?= __('Année : 2024 (en cours)')?></li>
-                        <li><?= __('Stacks utilisées :') ?> <i class="fa-brands fa-js"></i>, <i class="fa-brands fa-html5"></i>, <i class="fa-brands fa-css3-alt"></i></li>
-                        <li><a href="https://github.com/Luna-bf/To-do_list_JavaScript" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
-                    </ul>
-                </article>
-            
-                <article class="project">
-                    <a href="https://github.com/Luna-bf/Hollow_Knight-Quiz" target="_blank">
-                        <img src="imgs/projects/hk-quiz_thumbnail.png" alt=<?= __('"Capture d\'écran du quiz Hollow Knight"')?> class="project-img" />
-                    </a>
-                    <ul>
-                        <li><?= __('Année : 2024 (en cours)')?></li>
-                        <li><?= __('Stacks utilisées :') ?> <i class="fa-brands fa-js"></i>, <i class="fa-brands fa-html5"></i>, <i class="fa-brands fa-css3-alt"></i></li>
-                        <li><a href="https://github.com/Luna-bf/Hollow_Knight-Quiz" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
-                    </ul>
-                </article>
-            
-                <article class="project">
-                    <a href="https://github.com/Luna-bf/PHP-RPG" target="_blank">
-                        <img src="imgs/projects/php-rpg_thumbnail.png" alt=<?= __('"Capture d\'écran du RPG PHP"')?> class="project-img" />
-                    </a>
-                    <ul>
-                        <li><?= __('Année : 2024 (en cours)')?></li>
-                        <li><?= __('Stacks utilisées :') ?> <i class="fa-brands fa-php"></i>, <i class="fa-brands fa-html5"></i>, <i class="fa-brands fa-css3-alt"></i></li>
-                        <li><a href="https://github.com/Luna-bf/PHP-RPG" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
-                    </ul>
-                </article>
-                
-            </article>
         </section>
         
         <hr>
