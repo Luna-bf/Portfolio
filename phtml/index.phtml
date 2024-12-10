@@ -20,6 +20,7 @@
 - rajouter les centres d'interêts ?
 - le rendre responsive (mobile et tablette)
 - faire en sorte que le thème sélectionné reste même après avoir quitté le site
+- Ctrl + / pour commenter
 
 -->
     
@@ -27,21 +28,20 @@
         <div id="space-between">
             <div class="d-flex">
                 <div class="dropdown-menu">
-                    <a href="#" class="drop-link"><?= __('Langue') ?></a>
-                    <div class="dropdown-content">
-                        <a href="index.php?lang=fr" class="lang-change"><img src="imgs/flags/france-flag.png" alt="France flag" class="flag">Français</a>
-                        <a href="index.php?lang=en" class="lang-change"><img src="imgs/flags/uk-flag.png" alt="UK flag" class="flag">English</a>
+                    <a href="#" class="drop-link d-flex"><i class="fa-solid fa-universal-access"></i></a>
+                    <div class="dropdown-content" id="accessibility">
+                        <a href="#" id="increment"><?= __('Augmenter le texte') ?></a>
+                        <a href="#" id="decrement"><?= __('Diminuer le texte') ?></a>
+                        <a href="#" id="change-theme-btn"><?= __('Changer de thème') ?></a>
+                        <a href="#" id="reset-all"><?= __('Réinitialiser') ?></a>
                     </div>
                 </div>
                 
                 <div class="dropdown-menu">
-                    <a href="#" class="drop-link"><?= __('Thème') ?></a>
-                    <div id="themes">
-                        <button id="change-theme-btn">
-                            <i class="fa-solid fa-moon"></i>
-                            <i class="fa-solid fa-sun"></i>
-                        </button>
-                        <p id="themes-p"><?= __('Cliquez pour changer de thème') ?></p>
+                    <a href="#" class="drop-link"><?= __('Langue') ?></a>
+                    <div class="dropdown-content">
+                        <a href="index.php?lang=fr" class="lang-change"><img src="imgs/flags/france-flag.png" alt="France flag" class="flag">Français</a>
+                        <a href="index.php?lang=en" class="lang-change"><img src="imgs/flags/uk-flag.png" alt="UK flag" class="flag">English</a>
                     </div>
                 </div>
             </div>
@@ -132,13 +132,13 @@
                 </article>
                 
                 <article class="project">
-                    <a href="https://luna-bf.github.io/Simple-Accessibility.github.io/" target="_blank">
+                    <a href="https://github.com/Luna-bf/Simple-Accessibility.github.io" target="_blank">
                         <img src="imgs/projects/simple-accessibility_thumbnail.png" alt=<?= __('"Capture d\'écran du projet Simple Accessibility"')?> class="project-img" />
                     </a>
                     <ul>
-                        <li><?= __('Année :') ?> 2024 <?= __('(en cours)')?></li>
+                        <li><?= __('Année :') ?> 2024</li>
                         <li><?= __('Stacks utilisées :') ?> HTML, CSS <?= __('et')?> JavaScript</li>
-                        <li><a href="https://luna-bf.github.io/Simple-Accessibility.github.io/" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
+                        <li><a href="https://github.com/Luna-bf/Simple-Accessibility.github.io" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
                     </ul>
                 </article>
             </article>
@@ -258,13 +258,12 @@
     
     <footer id="footer">
         <ul class="contacts">
-            <li><?= __('Contact 3W Academy :') ?></li>
-            <li>Jérémy Rocamora : jr.rocamora@gmail.com</li>
+            <li><?= __('Mon adresse mail :') ?></li>
+            <li>lburattifayolle@gmail.com</li>
         </ul>
         
         <ul class="contacts">
-            <li><?= __('Mon adresse mail :') ?></li>
-            <li>lburattifayolle@gmail.com</li>
+            <li id="logo"><a href="#"><img src="imgs/logo-160x160.png" alt=<?= __('"Logo et favicon de mon portfolio"')?>></a></li>
         </ul>
     </footer>
         
