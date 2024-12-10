@@ -155,103 +155,9 @@ RETURN TO TOP
     font-size: 2rem;
 }
 
-#html {
-    width: 10%;
-    margin-right: 2px;
-}
-
-#html h3 {
-    display: flex;
-    justify-content: center;
-}
-
-#css {
-    width: 95px;
-}
-
-#css h3 {
-    display: flex;
-    justify-content: center;
-}
-
-#js {
-    width: 93px;
-}
-
-#js h3 {
-    display: flex;
-    justify-content: center;
-}
-
-#figma {
-    width: 55px;
-    margin-left: 13px;
-}
-
-#figma h3 {
-    display: flex;
-    justify-content: center;
-    margin-top: 2px;
-}
-
-#swift {
-    width: 10%;
-    margin-left: 21px;
-}
-
-#swift h3 {
-    display: flex;
-    justify-content: center;
-}
-
-#swift-ui {
-    width: 87px;
-    margin-left: 6px;
-}
-
-#swift-ui h3 {
-    display: flex;
-    justify-content: center;
-}
-
-#php {
-    width: 20%;
-    margin-right: 10px;
-}
-
-#php h3 {
-    display: flex;
-    justify-content: center;
-}
-
-#python {
-    width: 11%;
-}
-
-#python h3 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 8px;
-}
-
-#mySQL {
-    width: 16%;
-    margin-left: 16px;
-}
-
-#mySQL h3 {
-    display: flex;
-    justify-content: center;
-}
-
-#nodeJS {
-    width: 15%;
-    margin-left: 16px;
-}
-
-#nodeJS h3 {
-    display: flex;
-    justify-content: center;
+.fa-universal-access {
+    color: #000000;
+    font-size: 28px;
 }
 
 /***Dark mode***/
@@ -355,6 +261,7 @@ DROPDOWN ET LANGUE
     background-color: var(--theme-lang-bg-color);
     border: 1px solid var(--theme-lang-border-color);
     border-radius: 5px;
+    margin-top: 2px;
 }
 
 .dropdown-content a {
@@ -388,48 +295,83 @@ DROPDOWN ET LANGUE
 
 /***THEMES***/
 
-#themes {
+#accessibility {
     display: none;
     position: absolute;
     background-color: var(--theme-lang-bg-color);
     border: 1px solid var(--theme-lang-border-color);
     border-radius: 5px;
-    padding: 10px;
-    min-width: 11em;
+    min-width: 16em;
 }
 
-#change-theme-btn {
-    height: 40px;
-    width: 40px;
-    padding: 0;
-    border-radius: 50%;
-    background-color: var(--theme-lang-btn-bg-color);
-    cursor: pointer;
-}
-
-#themes-p {
-    color: var(--text-color);
-}
-
-.dropdown-menu:hover #themes {
+.dropdown-menu:hover #accessibility {
     display: block;
 }
 
-/*Je veux montrer une seule icône quand le mode lumineux (par défaut) est actif*/
-#change-theme-btn i:last-child {
-    display: none;
-    color: var(--theme-lang-icon-color);
+#accessibility a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: none;
 }
 
-/*Je fais donc pareil pour le mode sombre*/
-.dark-mode #change-theme-btn i:first-child {
-    display: none; /*Je rend l'icône lune invisible*/
-    color: var(--theme-lang-icon-color);
+#accessibility a:hover {
+    background-color: var(--theme-lang-bg-color-hover);
+    text-decoration: none;
+    transition: none;
 }
 
-.dark-mode #change-theme-btn i:last-child {
-    display: block; /*Et j'affiche celle du soleil*/
-    color: var(--theme-lang-icon-color);
+#accessibility a:focus {
+    color: var(--theme-lang-color-focus);
+    text-decoration: underline;
+    transition: none;
+}
+
+#accessibility a:first-child:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00e";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: var(--text-color);
+    font-size: 18px;
+    text-decoration: none;
+    transition: none;
+}
+
+#accessibility a:nth-child(2)::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f010";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: var(--text-color);
+    font-size: 18px;
+    text-decoration: none;
+    transition: none;
+}
+
+#accessibility a:nth-child(3)::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f042";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: var(--text-color);
+    font-size: 18px;
+    text-decoration: none;
+    transition: none;
+}
+
+#accessibility a:last-child:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f021";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: var(--text-color);
+    font-size: 18px;
+    text-decoration: none;
+    transition: none;
 }
 
 /**********
@@ -570,6 +512,92 @@ ACCUEIL
 }
 
 /**************
+PROJETS
+**************/
+
+#projects {
+    padding: 8px 63px 8px 63px;
+    justify-content: center;
+    margin: 50px 0 15px 0;
+}
+
+.title-projects {
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.parent-project {
+    padding-top: 3em;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 41%;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+	transform: scale(1);
+    transition: color .2s, background-color 1s, transform .35s;
+}
+
+.project-img:hover {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+	transform: scale(1.1);
+    transition: color .2s, background-color 1s, transform .35s;
+}
+
+.project ul li {
+    width: 100%;
+    margin: 1rem 0rem 0rem 5px;
+    list-style: none;
+    font-size: 25px;
+    color: var(--text-color);
+}
+
+.project ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f005";
+    padding-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #FFBD59;
+    font-size: 18px;
+}
+
+.project ul li:first-child {
+    margin-top: 2rem;
+}
+
+.project ul li:last-child {
+    margin-bottom: 5rem;
+}
+
+.github-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.github-link:visited {
+    color: var(--github-link-visited);
+    text-decoration: none;
+}
+
+/**************
 COMPETENCES
 **************/
 
@@ -688,6 +716,65 @@ COMPETENCES
     margin-bottom: 60px;
 }
 
+#html {
+    width: 10%;
+    margin-right: 2px;
+}
+
+#html h3 {
+    display: flex;
+    justify-content: center;
+}
+
+#css {
+    width: 95px;
+}
+
+#css h3 {
+    display: flex;
+    justify-content: center;
+}
+
+#js {
+    width: 93px;
+}
+
+#js h3 {
+    display: flex;
+    justify-content: center;
+}
+
+#figma {
+    width: 55px;
+    margin-left: 13px;
+}
+
+#figma h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+#swift {
+    width: 10%;
+    margin-left: 21px;
+}
+
+#swift h3 {
+    display: flex;
+    justify-content: center;
+}
+
+#swift-ui {
+    width: 87px;
+    margin-left: 6px;
+}
+
+#swift-ui h3 {
+    display: flex;
+    justify-content: center;
+}
+
 .hard-skills-back-article-1 {
     display: flex;
     width: 75%;
@@ -706,6 +793,46 @@ COMPETENCES
     margin-bottom: 60px;
 }
 
+#php {
+    width: 20%;
+    margin-right: 10px;
+}
+
+#php h3 {
+    display: flex;
+    justify-content: center;
+}
+
+#python {
+    width: 11%;
+}
+
+#python h3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+#mySQL {
+    width: 16%;
+    margin-left: 16px;
+}
+
+#mySQL h3 {
+    display: flex;
+    justify-content: center;
+}
+
+#nodeJS {
+    width: 15%;
+    margin-left: 16px;
+}
+
+#nodeJS h3 {
+    display: flex;
+    justify-content: center;
+}
+
 .skills-hr {
     width: 90%;
     margin: auto;
@@ -716,106 +843,6 @@ COMPETENCES
     width: 70%;
     margin: auto;
     border-bottom: var(--skills-hr-color);
-}
-
-/***LOGOS***/
-
-/*.logos-frontend {
-    width: 51%;
-    margin: auto;
-    padding-bottom: 3em;
-}
-
-.logos-backend {
-    width: 47%;
-    margin: auto;
-    padding-bottom: 3em;
-}*/
-
-/**************
-PROJETS
-**************/
-
-#projects {
-    padding: 8px 63px 8px 63px;
-    justify-content: center;
-    margin: 50px 0 15px 0;
-}
-
-.title-projects {
-    justify-content: center;
-    color: var(--text-color);
-}
-
-.parent-project {
-    padding-top: 3em;
-    margin: auto;
-    justify-content: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.project {
-    width: 41%;
-}
-
-.project-img {
-    width: 100%;
-    border-radius: 15px;
-    border: 2px solid #000000;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
-	transform: scale(1);
-    transition: color .2s, background-color 1s, transform .35s;
-}
-
-.project-img:hover {
-    width: 100%;
-    border-radius: 15px;
-    border: 2px solid #000000;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
-	transform: scale(1.1);
-    transition: color .2s, background-color 1s, transform .35s;
-}
-
-.project ul li {
-    width: 100%;
-    margin: 1rem 0rem 0rem 5px;
-    list-style: none;
-    font-size: 25px;
-    color: var(--text-color);
-}
-
-.project ul li:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f005";
-    padding-right: 10px;
-    vertical-align: middle;
-    font-weight: 900;
-    color: #FFBD59;
-    font-size: 18px;
-}
-
-.project ul li:first-child {
-    margin-top: 2rem;
-}
-
-.project ul li:last-child {
-    margin-bottom: 5rem;
-}
-
-.github-link {
-    color: blue;
-    text-decoration: none;
-}
-
-.github-link:hover {
-    color: blue;
-    text-decoration: underline;
-}
-
-.github-link:visited {
-    color: var(--github-link-visited);
-    text-decoration: none;
 }
 
 /**************
@@ -932,6 +959,10 @@ footer {
     margin-top: 8px;
 }
 
+#logo {
+    width: 35%;
+}
+
 .hide-prompt {
     display: none;
 }
@@ -1021,7 +1052,9 @@ MEDIA QUERIES
 /*overflow: auto; (voir texte si-dessous)*/
 
 @media screen and (max-width : 780px) {
-
+    body {
+        width: 100%;
+    }
 }
 
 /*
