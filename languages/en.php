@@ -3,7 +3,10 @@
 $lang = [
     'Langue' => 'Language',
     'Thème' => 'Theme',
-    'Cliquez pour changer de thème' => 'Click to change the theme',
+    'Augmenter le texte' => 'Increase text',
+    'Diminuer le texte' => 'Reduce text',
+    'Changer de thème' => 'Change theme',
+    'Réinitialiser' => 'Reset all',
     'Compétences' => 'Skills',
     'Projets' => 'Projects',
     'Contact' => 'Contact',
