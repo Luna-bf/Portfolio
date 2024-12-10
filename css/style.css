@@ -2,7 +2,7 @@
 
 :root {
     --base-bg-color: #fff;
-    --text-color: #333333;
+    --text-color: #000000;
     --hr-color: #808080;
     --skills-hr-color: #808080;
     --nav-bg-color: rgba(217, 230, 242, 0.7);
@@ -99,9 +99,9 @@ FONT AWESOME
     color: var(--theme-lang-icon-color);
 }
 
-/***********
-DISPLAY
-***********/
+/*************
+DISPLAY FLEX
+*************/
 
 .d-flex {
     display: flex;
@@ -1020,7 +1020,7 @@ MEDIA QUERIES
 /*Prévoir aussi le mode paysage*/
 /*overflow: auto; (voir texte si-dessous)*/
 
-@media (min-width : 320px) {
+@media screen and (max-width : 780px) {
 
 }
 
