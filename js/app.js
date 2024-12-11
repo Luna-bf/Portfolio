@@ -46,6 +46,7 @@ elements.changeTheme.addEventListener("click", () => {
 /*Accessibilité*/
 elements.increment.addEventListener("click", () => {
     document.querySelector("body").style.fontSize = "24px";
+    document.querySelectorAll("h1").style.fontSize = "24px";
 });
 
 elements.decrement.addEventListener("click", () => {
@@ -56,8 +57,6 @@ elements.reset.addEventListener("click", () => {
     document.querySelector("body").style.fontSize = "16px";
     elements.darkMode = disableDarkMode();
 });
-
-
 
 //Apparition du prompt
 setTimeout(function() {
