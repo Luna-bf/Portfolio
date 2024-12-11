@@ -261,7 +261,6 @@ DROPDOWN ET LANGUE
     background-color: var(--theme-lang-bg-color);
     border: 1px solid var(--theme-lang-border-color);
     border-radius: 5px;
-    margin-top: 2px;
 }
 
 .dropdown-content a {
