@@ -67,36 +67,14 @@ FONT AWESOME
     text-decoration: none;
 }
 
-.fa-js {
-    color: #F0DB4F;
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.fa-arrow-up {
+    color: #fff;
+    font-size: 2rem;
 }
 
-.fa-html5 {
-    color: #e34c26;
-    font-size: 3rem;
-}
-
-.fa-css3-alt {
-    color: #264de4;
-    font-size: 3rem;
-}
-
-.fa-php {
-    color: #474A8A;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.fa-sun {
-    font-size: 20px;
-    color: var(--theme-lang-icon-color);
-}
-
-.fa-moon {
-    font-size: 20px;
-    color: var(--theme-lang-icon-color);
+.fa-universal-access {
+    color: #000000;
+    font-size: 28px;
 }
 
 /*************
@@ -150,18 +128,7 @@ RETURN TO TOP
     opacity: 100;
 }
 
-.fa-arrow-up {
-    color: #fff;
-    font-size: 2rem;
-}
-
-.fa-universal-access {
-    color: #000000;
-    font-size: 28px;
-}
-
 /***Dark mode***/
-
 .dark-mode {
     --base-bg-color: #333333;
     --text-color: #fff;
