@@ -17,9 +17,9 @@
 - le rendre responsive (mobile et tablette)
 - faire en sorte que le thème sélectionné reste le même après avoir quitté ou réinitialisé la page
 - Ctrl + / pour commenter
+- faire en sorte que le burger menu ne soit visible qu'a partir d'une certaine largeur
 
 -->
-    
     <nav>
         <div id="space-between">
             <div class="d-flex">
@@ -48,6 +48,43 @@
                 <li><a href="#contact"><?= __('Contact')?></a></li>
             </ul>
         </div>
+        
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close"><i class="fa-solid fa-xmark"></i></a>
+            <div class="d-flex">
+                <div class="dropdown-menu">
+                    <a href="#" class="drop-link d-flex"><i class="fa-solid fa-universal-access"></i></a>
+                    <div class="dropdown-content" id="accessibility">
+                        <a href="#" id="increment"><?= __('Augmenter le texte') ?></a>
+                        <a href="#" id="decrement"><?= __('Diminuer le texte') ?></a>
+                        <a href="#" id="change-theme-btn"><?= __('Changer de thème') ?></a>
+                        <a href="#" id="reset-all"><?= __('Réinitialiser') ?></a>
+                    </div>
+                </div>
+                
+                <div class="dropdown-menu">
+                    <a href="#" class="drop-link"><?= __('Langue') ?></a>
+                    <div class="dropdown-content">
+                        <a href="index.php?lang=fr" class="lang-change"><img src="imgs/flags/france-flag.png" alt="France flag" class="flag">Français</a>
+                        <a href="index.php?lang=en" class="lang-change"><img src="imgs/flags/uk-flag.png" alt="UK flag" class="flag">English</a>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="d-flex">
+                <li><a href="#projects"><?= __('Projets')?></a></li>
+                <li><a href="#competences"><?= __('Compétences')?></a></li>
+                <li><a href="#contact"><?= __('Contact')?></a></li>
+            </ul>
+        </div>
+        
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
     </nav>
     
     <header class="d-flex">
