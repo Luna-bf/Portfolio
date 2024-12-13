@@ -1013,6 +1013,10 @@ footer {
     width: 35%;
 }
 
+.inactive {
+    display: none;
+}
+
 /**************
 MEDIA QUERIES
 **************/
@@ -1026,7 +1030,192 @@ MEDIA QUERIES
     body {
         width: 100%;
     }
+
+    .inactive {
+        display: none;
+    }
+    
+    .dropdown-menu {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .drop-link {
+        padding: 0 5px;
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    /*Le contenu du dropdown est caché par défaut*/
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--theme-lang-bg-color);
+        border: 1px solid var(--theme-lang-border-color);
+        border-radius: 5px;
+    }
+    
+    .dropdown-content a {
+        display: block;
+        color: var(--text-color);
+        padding: 1em 2em;
+        text-decoration: none;
+        min-width: 11em;
+        transition: none;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: var(--theme-lang-bg-color-hover);
+        border-radius: 5px;
+    }
+    
+    .dropdown-menu:hover .dropdown-content {
+        display: block;
+    }
+    
+    .lang-change:focus {
+        color: var(--theme-lang-color-focus);
+        text-decoration: underline;
+    }
+    
+    .flag {
+        width: 28%;
+        height: 33%;
+        padding-right: 8px;
+    }
+    
+    /***THEMES***/
+    
+    #accessibility {
+        display: none;
+        position: absolute;
+        background-color: var(--theme-lang-bg-color);
+        border: 1px solid var(--theme-lang-border-color);
+        border-radius: 5px;
+        min-width: 16em;
+    }
+    
+    .dropdown-menu:hover #accessibility {
+        display: block;
+    }
+    
+    #accessibility a {
+        color: var(--text-color);
+        text-decoration: none;
+        transition: none;
+    }
+    
+    #accessibility a:hover {
+        background-color: var(--theme-lang-bg-color-hover);
+        text-decoration: none;
+        transition: none;
+    }
+    
+    #accessibility a:focus {
+        color: var(--theme-lang-color-focus);
+        text-decoration: underline;
+        transition: none;
+    }
+    
+    #accessibility a:first-child:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f00e";
+        padding-right: 10px;
+        vertical-align: middle;
+        font-weight: 900;
+        color: var(--text-color);
+        font-size: 18px;
+        text-decoration: none;
+        transition: none;
+    }
+    
+    #accessibility a:nth-child(2)::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f010";
+        padding-right: 10px;
+        vertical-align: middle;
+        font-weight: 900;
+        color: var(--text-color);
+        font-size: 18px;
+        text-decoration: none;
+        transition: none;
+    }
+    
+    #accessibility a:nth-child(3)::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f042";
+        padding-right: 10px;
+        vertical-align: middle;
+        font-weight: 900;
+        color: var(--text-color);
+        font-size: 18px;
+        text-decoration: none;
+        transition: none;
+    }
+    
+    #accessibility a:last-child:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f021";
+        padding-right: 10px;
+        vertical-align: middle;
+        font-weight: 900;
+        color: var(--text-color);
+        font-size: 18px;
+        text-decoration: none;
+        transition: none;
+    }
+    
+    .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: -250px;
+      background-color: #e8e8e8;
+      padding-top: 60px;
+      transition: left 0.5s ease;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #111;
+    }
+    
+    .sidenav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .sidenav.active {
+      left: 0;
+    }
+    
+    .sidenav .close {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+    }
+    
+    .burger-icon span {
+      display: block;
+      width: 35px;
+      height: 5px;
+      background-color: black;
+      margin: 6px 0;
+    }
 }
+
 
 /*
 We have styled the dropdown button with a background-color, padding, etc.
