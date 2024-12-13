@@ -8,6 +8,12 @@ const elements = {
     btn: document.querySelector('#prompt button'),
     prompt: document.getElementById("prompt"),
     paragraph: document.querySelector("#prompt p"),
+    sidenav: document.getElementById("mySidenav"),
+    openBtn: document.getElementById("openBtn"),
+    closeBtn: document.getElementById("closeBtn"),
+    desktopNav: document.getElementById("space-between"),
+    mobileNav: document.getElementById("mySidenav"),
+    mobileWidth: 730,
 };
 
 
@@ -58,12 +64,39 @@ elements.reset.addEventListener("click", () => {
     elements.darkMode = disableDarkMode();
 });
 
+
 //Apparition du prompt
-setTimeout(function() {
+/*setTimeout(function() {
     elements.prompt.classList.remove('hide-prompt');
 }, 5000);
 
 //Disparition du prompt
 elements.btn.addEventListener('click', () => {
     elements.prompt.classList.add('hide-prompt');
+});*/
+
+
+/*Burger menu et responsive*/
+elements.openBtn.onclick = openNav;
+elements.closeBtn.onclick = closeNav;
+
+function openNav() {
+  elements.sidenav.classList.add("active");
+}
+
+function closeNav() {
+  elements.sidenav.classList.remove("active");
+}
+
+window.addEventListener("resize", () => {
+    let windowWidth = window.innerWidth;
+    console.log(windowWidth);
+    
+    if(windowWidth <= elements.mobileWidth) {
+        elements.desktopNav.classList.add("inactive");
+        elements.mobileNav.classList.remove("inactive");
+    } else {
+        elements.mobileNav.classList.add("inactive");
+        elements.desktopNav.classList.remove("inactive");
+    }
 });
