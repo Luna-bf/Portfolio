@@ -762,7 +762,7 @@ COMPETENCES
 
 #php {
     width: 20%;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 #php h3 {
@@ -772,6 +772,7 @@ COMPETENCES
 
 #python {
     width: 11%;
+    margin-right: 15px;
 }
 
 #python h3 {
@@ -780,9 +781,20 @@ COMPETENCES
     margin-bottom: 8px;
 }
 
+/*#ts {
+    width: 10%;
+    margin-right: 15px;
+}
+
+#ts h3 {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}*/
+
 #mySQL {
-    width: 16%;
-    margin-left: 16px;
+    width: 15%;
+    margin-left: 14px;
 }
 
 #mySQL h3 {
@@ -792,13 +804,22 @@ COMPETENCES
 
 #nodeJS {
     width: 15%;
-    margin-left: 16px;
+    margin-left: 15px;
 }
 
 #nodeJS h3 {
     display: flex;
     justify-content: center;
 }
+
+/*#java {
+    width: 13%;
+}
+
+#java h3 {
+    display: flex;
+    justify-content: center;
+}*/
 
 .skills-hr {
     width: 90%;
