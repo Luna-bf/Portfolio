@@ -742,6 +742,17 @@ COMPETENCES
     justify-content: center;
 }
 
+#ts {
+    width: 10%;
+    margin-right: 5px;
+}
+
+#ts h3 {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
 .hard-skills-back-article-1 {
     display: flex;
     width: 75%;
@@ -781,17 +792,6 @@ COMPETENCES
     margin-bottom: 8px;
 }
 
-#ts {
-    width: 10%;
-    margin-right: 5px;
-}
-
-#ts h3 {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 0 0;
-}
-
 #mySQL {
     width: 15%;
     margin-left: 14px;
@@ -819,6 +819,16 @@ COMPETENCES
 #java h3 {
     display: flex;
     justify-content: center;
+}
+
+#git {
+    width: 11%;
+}
+
+#git h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
 }
 
 .skills-hr {
