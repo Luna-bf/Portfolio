@@ -753,6 +753,16 @@ COMPETENCES
     margin: 10px 0 0 0;
 }
 
+#react {
+    width: 12%;
+}
+
+#react h3 {
+    display: flex;
+    justify-content: center;
+    margin: 1px 0 0 0;
+}
+
 .hard-skills-back-article-1 {
     display: flex;
     width: 75%;
