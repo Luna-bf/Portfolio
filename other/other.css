@@ -1,3 +1,40 @@
+/***CSS variables***/
+
+:root {
+    --base-bg-color: #fff;
+    --text-color: #000000;
+    --nav-bg-color: rgba(217, 230, 242, 0.7);
+    --theme-lang-border-color: #aaa;
+    --theme-lang-bg-color: #fff;
+    --theme-lang-btn-bg-color: #333333;
+    --theme-lang-icon-color: #fff;
+    --theme-lang-bg-color-hover: #FAFBF5;
+    --theme-lang-color-focus: #b22222;
+    --skills-bg-color: rgba(217, 230, 242, 1);
+}
+
+/***Reset***/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all .3s ease;
+}
+
+.dark-mode {
+    --base-bg-color: #333333;
+    --text-color: #fff;
+    --nav-bg-color: rgba(167, 188, 209, 0.7);
+    --theme-lang-border-color: #555555;
+    --theme-lang-bg-color: #333333;
+    --theme-lang-btn-bg-color: #fff;
+    --theme-lang-icon-color: #333333;
+    --theme-lang-bg-color-hover: #444444;
+    --theme-lang-color-focus: #fff;
+    --skills-bg-color: #A7BCD1;
+}
+
 /************
 FONTS
 ************/
@@ -30,6 +67,21 @@ p, li, a, input, textarea, button {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
+}
+
+nav {
+    position: fixed;
+    z-index: 10; /*Pour que les éléments animés restent derrière la nav*/
+    top: 0;
+    left: 0;
+    padding: 1em;
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: var(--nav-bg-color);
 }
 
 /*************
@@ -174,7 +226,7 @@ FORMATIONS
 }
 
 .booster-live100 ul li {
-    margin: 1rem 0rem 0px 1rem;
+    margin: 1rem 0rem 0px 3rem;
     font-size: 20px;
 }
 
@@ -208,7 +260,7 @@ FORMATIONS
 }
 
 .apple-foundation-program ul li {
-    margin: 1rem 0rem 0rem 1rem;
+    margin: 1rem 0rem 0px 3rem;
     font-size: 20px;
 }
 
@@ -216,13 +268,13 @@ FORMATIONS
 
 .logos-booster {
     width: 70%;
-    margin-top: 45px;
+    margin-top: 50px;
     margin-left: 150px;
 }
 
 .logos-afp {
     width: 55%;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-left: 200px;
 }
 
@@ -272,7 +324,7 @@ EXPERIENCES
 }
 
 .adatech-school ul li {
-    margin: 1rem 0rem 0rem 1rem;
+    margin: 1rem 0rem 0rem 3rem;
     font-size: 20px;
     list-style: none;
 }
@@ -285,10 +337,20 @@ EXPERIENCES
     margin-left: 330px;
 }
 
+
+/**************
+THEMES
+**************/
+
+.drop-link {
+    text-decoration: none;
+    color: #000000;
+}
+
 #themes {
     display: none;
     position: absolute;
-    background-color: var(--theme-lang-bg-color);
+    background-color: var(--base-bg-color);
     border: 1px solid var(--theme-lang-border-color);
     border-radius: 5px;
     padding: 10px;
@@ -312,19 +374,21 @@ EXPERIENCES
     display: block;
 }
 
+i {
+    color: var(--theme-lang-icon-color);
+}
+
 /*Je veux montrer une seule icône quand le mode lumineux (par défaut) est actif*/
 #change-theme-btn i:last-child {
     display: none;
-    color: var(--theme-lang-icon-color);
 }
 
 /*Je fais donc pareil pour le mode sombre*/
 .dark-mode #change-theme-btn i:first-child {
     display: none; /*Je rend l'icône lune invisible*/
-    color: var(--theme-lang-icon-color);
 }
 
-.dark-mode #change-theme-btn i:last-child {
+.dark-mode #change-theme-btn:last-child {
     display: block; /*Et j'affiche celle du soleil*/
     color: var(--theme-lang-icon-color);
 }
