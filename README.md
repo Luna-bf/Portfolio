@@ -5,7 +5,7 @@ Fonctionnalités à implémenter :
 - Responsive (mobile et tablet)
 
 
-##Astuce Responsive
+## Astuce Responsive
 
 Quelles astuces sont couramment utilisées pour rendre un site responsive ?
 
