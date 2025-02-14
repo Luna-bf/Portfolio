@@ -4,6 +4,7 @@ Fonctionnalités à implémenter :
 - Un thème qui persiste (comme la langue)
 - Responsive (mobile et tablet)
 
+
 Quelles astuces sont couramment utilisées pour rendre un site responsive ?
 
 - Changer  flex-direction  de  row  à  column
