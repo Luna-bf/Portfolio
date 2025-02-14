@@ -5,6 +5,8 @@ Fonctionnalités à implémenter :
 - Responsive (mobile et tablet)
 
 
+##Astuce Responsive
+
 Quelles astuces sont couramment utilisées pour rendre un site responsive ?
 
 - Changer  flex-direction  de  row  à  column
