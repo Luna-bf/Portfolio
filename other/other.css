@@ -1,3 +1,37 @@
+/************
+FONTS
+************/
+
+/*Poppins light - pour le texte*/
+@font-face {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*Poppins medium - pour les titres*/
+@font-face {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p, li, a, input, textarea, button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 /*************
 RETURN TO TOP
 *************/
@@ -94,6 +128,10 @@ ANIMATIONS
 FORMATIONS
 **************/
 
+.d-flex {
+    display: flex;
+}
+
 /***BOOSTER***/
 
 #formations {
@@ -178,13 +216,13 @@ FORMATIONS
 
 .logos-booster {
     width: 70%;
-    margin-top: 100px;
+    margin-top: 45px;
     margin-left: 150px;
 }
 
 .logos-afp {
     width: 55%;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: 200px;
 }
 
@@ -245,4 +283,48 @@ EXPERIENCES
     width: 30%;
     margin-top: 65px;
     margin-left: 330px;
+}
+
+#themes {
+    display: none;
+    position: absolute;
+    background-color: var(--theme-lang-bg-color);
+    border: 1px solid var(--theme-lang-border-color);
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 11em;
+}
+
+#change-theme-btn {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--theme-lang-btn-bg-color);
+    cursor: pointer;
+}
+
+#themes-p {
+    color: var(--text-color);
+}
+
+.dropdown-menu:hover #themes {
+    display: block;
+}
+
+/*Je veux montrer une seule icône quand le mode lumineux (par défaut) est actif*/
+#change-theme-btn i:last-child {
+    display: none;
+    color: var(--theme-lang-icon-color);
+}
+
+/*Je fais donc pareil pour le mode sombre*/
+.dark-mode #change-theme-btn i:first-child {
+    display: none; /*Je rend l'icône lune invisible*/
+    color: var(--theme-lang-icon-color);
+}
+
+.dark-mode #change-theme-btn i:last-child {
+    display: block; /*Et j'affiche celle du soleil*/
+    color: var(--theme-lang-icon-color);
 }
