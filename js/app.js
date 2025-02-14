@@ -49,10 +49,10 @@ elements.changeTheme.addEventListener("click", () => {
 });
 
 
-/*Accessibilité*/
+/*Accessibilité
 elements.increment.addEventListener("click", () => {
     document.querySelector("body").style.fontSize = "24px";
-    document.querySelectorAll("h1").style.fontSize = "24px";
+    document.querySelectorAll("h1").style.fontSize = "large";
 });
 
 elements.decrement.addEventListener("click", () => {
@@ -62,7 +62,7 @@ elements.decrement.addEventListener("click", () => {
 elements.reset.addEventListener("click", () => {
     document.querySelector("body").style.fontSize = "16px";
     elements.darkMode = disableDarkMode();
-});
+});*/
 
 
 //Apparition du prompt
@@ -76,7 +76,7 @@ elements.btn.addEventListener('click', () => {
 });*/
 
 
-/*Burger menu et responsive*/
+/*Burger menu et responsive
 elements.openBtn.onclick = openNav;
 elements.closeBtn.onclick = closeNav;
 
@@ -99,4 +99,4 @@ window.addEventListener("resize", () => {
         elements.mobileNav.classList.add("inactive");
         elements.desktopNav.classList.remove("inactive");
     }
-});
+});*/
