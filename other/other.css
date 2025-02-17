@@ -53,6 +53,10 @@ FONTS
     font-style: normal;
 }
 
+body {
+    background-color: var(--base-bg-color);
+}
+
 .container {
     width: 100%;
 }
@@ -187,6 +191,7 @@ FORMATIONS
 /***BOOSTER***/
 
 #formations {
+    color: var(--text-color);
     padding: 6px 8rem 6px 8rem;
     width: 20%;
     justify-content: center;
@@ -283,6 +288,7 @@ EXPERIENCES
 **************/
 
 #experiences {
+    color: var(--text-color);
     padding: 8px 63px 8px 63px;
     justify-content: center;
     margin-top: 6em;
@@ -381,11 +387,13 @@ i {
 /*Je veux montrer une seule icône quand le mode lumineux (par défaut) est actif*/
 #change-theme-btn i:last-child {
     display: none;
+    color: var(--theme-lang-icon-color);
 }
 
 /*Je fais donc pareil pour le mode sombre*/
 .dark-mode #change-theme-btn i:first-child {
     display: none; /*Je rend l'icône lune invisible*/
+    color: var(--theme-lang-icon-color);
 }
 
 .dark-mode #change-theme-btn:last-child {
