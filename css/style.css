@@ -802,6 +802,16 @@ COMPETENCES
     margin-bottom: 8px;
 }
 
+#git {
+    width: 11%;
+}
+
+#git h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+}
+
 #mySQL {
     width: 15%;
     margin-left: 14px;
@@ -826,19 +836,19 @@ COMPETENCES
     width: 13%;
 }
 
+#ruby {
+    width: 14%;
+}
+
+#ruby h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+
 #java h3 {
     display: flex;
     justify-content: center;
-}
-
-#git {
-    width: 11%;
-}
-
-#git h3 {
-    display: flex;
-    justify-content: center;
-    margin-top: 4px;
 }
 
 .skills-hr {
