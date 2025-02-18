@@ -66,14 +66,14 @@ elements.reset.addEventListener("click", () => {
 
 
 //Apparition du prompt
-/*setTimeout(function() {
+setTimeout(function() {
     elements.prompt.classList.remove('hide-prompt');
 }, 5000);
 
 //Disparition du prompt
 elements.btn.addEventListener('click', () => {
     elements.prompt.classList.add('hide-prompt');
-});*/
+});
 
 
 /*Burger menu et responsive
