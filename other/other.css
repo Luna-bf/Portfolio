@@ -209,7 +209,7 @@ FORMATIONS
 }
 
 .booster-live100 {
-    background-color: #E6EEF6;
+    background-color: var(--skills-bg-color);
     width: 80%;
     height: 576px;
     border-radius: 15px;
@@ -243,7 +243,7 @@ FORMATIONS
 }
 
 .apple-foundation-program {
-    background-color: #E6EEF6;
+    background-color: var(--skills-bg-color);
     width: 80%;
     height: 576px;
     border-radius: 15px;
@@ -307,7 +307,7 @@ EXPERIENCES
 }
 
 .adatech-school {
-    background-color: #E6EEF6;
+    background-color: var(--skills-bg-color);
     width: 80%;
     height: 576px;
     border-radius: 15px;
@@ -360,13 +360,14 @@ THEMES
     border: 1px solid var(--theme-lang-border-color);
     border-radius: 5px;
     padding: 10px;
-    min-width: 11em;
+    max-width: 11em;
 }
 
 #change-theme-btn {
     height: 40px;
     width: 40px;
     padding: 0;
+    font-size: 20px;
     border-radius: 50%;
     background-color: var(--theme-lang-btn-bg-color);
     cursor: pointer;
@@ -396,7 +397,7 @@ i {
     color: var(--theme-lang-icon-color);
 }
 
-.dark-mode #change-theme-btn:last-child {
+.dark-mode #change-theme-btn i:last-child {
     display: block; /*Et j'affiche celle du soleil*/
     color: var(--theme-lang-icon-color);
 }
