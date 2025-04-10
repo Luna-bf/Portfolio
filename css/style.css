@@ -5,7 +5,7 @@
     --text-color: #000000;
     --hr-color: #808080;
     --skills-hr-color: #808080;
-    --nav-bg-color: rgba(217, 230, 242, 0.7);
+    --nav-bg-color: rgba(202, 229, 255, 0.7);
     --theme-lang-border-color: #aaa;
     --theme-lang-bg-color: #fff;
     --theme-lang-btn-bg-color: #333333;
@@ -14,7 +14,7 @@
     --theme-lang-color-focus: #b22222;
     --nav-a-color: #000000;
     --nav-a-focus-color: #fff;
-    --skills-bg-color: rgba(217, 230, 242, 1);
+    --skills-bg-color: rgba(202, 229, 255, 1);
     --github-link-visited: midnightblue;
 }
 
@@ -154,11 +154,8 @@ NAV
 nav {
     position: fixed;
     z-index: 10; /*Pour que les éléments animés restent derrière la nav*/
-    top: 0;
-    left: 0;
     padding: 1em;
     text-align: center;
-    height: 10vh;
     width: 100%;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -837,13 +834,13 @@ COMPETENCES
 }
 
 #ruby {
-    width: 14%;
+    width: 12%;
 }
 
 #ruby h3 {
     display: flex;
     justify-content: center;
-    margin-top: 23px;
+    margin-top: 48px;
 }
 
 #java h3 {
@@ -892,6 +889,7 @@ CONTACT
 form {
     padding: 2em;
     width: 70%;
+    height: 70vh;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.6);
 }
