@@ -5,8 +5,8 @@ const elements = {
     increment: document.getElementById("increment"),
     decrement: document.getElementById("decrement"),
     reset: document.getElementById("reset-all"),
-    btn: document.querySelector('#prompt button'),
-    prompt: document.getElementById("prompt"),
+    i: document.querySelector('#prompt-x'),
+    prompt: document.querySelector("#prompt"),
     paragraph: document.querySelector("#prompt p"),
     sidenav: document.getElementById("mySidenav"),
     openBtn: document.getElementById("openBtn"),
@@ -68,10 +68,10 @@ elements.reset.addEventListener("click", () => {
 //Apparition du prompt
 setTimeout(function() {
     elements.prompt.classList.remove('hide-prompt');
-}, 5000);
+}, 8000);
 
 //Disparition du prompt
-elements.btn.addEventListener('click', () => {
+elements.i.addEventListener('click', () => {
     elements.prompt.classList.add('hide-prompt');
 });
 
