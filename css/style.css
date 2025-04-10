@@ -960,15 +960,17 @@ PROMPT ET FOOTER
 }
 
 .hide-prompt {
-    display: none;
+    display: none !important;
 }
 
 #prompt {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     bottom: 2rem;
     right: 2rem;
     width: 30%;
-    height: 68%;
+    height: 51%;
     border: 2px solid var(--theme-lang-border-color);
     background-color: var(--theme-lang-bg-color);
     color: var(--text-color);
@@ -985,26 +987,28 @@ PROMPT ET FOOTER
     }
 }
 
-#prompt button {
+#prompt-x {
+    display: flex;
+    justify-content: flex-end;
     font-size: 24px;
     color: var(--text-color);
     background-color: var(--base-bg-color);
     border: none;
-    padding: 0 0 4px 370px;
     cursor: pointer;
 }
 
-#prompt button:hover {
+#prompt-x:hover {
     font-size: 24px;
     color: #b22222;
     background-color: var(--base-bg-color);
     border: none;
-    padding: 0 0 4px 370px;
     cursor: pointer;
 }
 
 #prompt-text {
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
 #prompt-link {
