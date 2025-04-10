@@ -15,7 +15,7 @@
     --nav-a-color: #000000;
     --nav-a-focus-color: #fff;
     --skills-bg-color: rgba(202, 229, 255, 1);
-    --github-link-visited: midnightblue;
+    --github-link: blue;
 }
 
 /***Reset***/
@@ -134,7 +134,7 @@ RETURN TO TOP
     --text-color: #fff;
     --hr-color: #fff;
     --skills-hr-color: black;
-    --nav-bg-color: rgba(167, 188, 209, 0.7);
+    --nav-bg-color: rgba(132, 182, 230, 0.7);
     --theme-lang-border-color: #555555;
     --theme-lang-bg-color: #333333;
     --theme-lang-btn-bg-color: #fff;
@@ -143,8 +143,8 @@ RETURN TO TOP
     --theme-lang-color-focus: #fff;
     --nav-a-color: #fff;
     --nav-a-focus-color: #fff;
-    --skills-bg-color: #A7BCD1;
-    --github-link-visited: powderblue;
+    --skills-bg-color: rgba(132, 182, 230, 1);
+    --github-link: powderblue;
 }
 
 /*****
@@ -547,12 +547,12 @@ PROJETS
 }
 
 .github-link {
-    color: blue;
+    color: var(--github-link);
     text-decoration: none;
 }
 
 .github-link:hover {
-    color: blue;
+    color: var(--github-link);
     text-decoration: underline;
 }
 
@@ -1007,6 +1007,11 @@ PROMPT ET FOOTER
     width: 90%;
 }
 
+#prompt-link {
+    color: var(--github-link);
+    text-decoration: underline;
+}
+
 .prompt-first-p {
     padding: 0rem 0rem 0.5rem 1rem;
 }
@@ -1041,21 +1046,6 @@ footer {
 
 .contacts li:last-child {
     margin-top: 8px;
-}
-
-#footer-link {
-    color: blue;
-    text-decoration: underline;
-}
-
-#footer-link:hover {
-    color: blue;
-    text-decoration: underline;
-}
-
-#footer-link:visited {
-    color: var(--github-link-visited);
-    text-decoration: underline;;
 }
 
 #logo {
