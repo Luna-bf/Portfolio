@@ -995,6 +995,7 @@ PROMPT ET FOOTER
     background-color: var(--base-bg-color);
     border: none;
     cursor: pointer;
+    padding: 5px;
 }
 
 #prompt-x:hover {
