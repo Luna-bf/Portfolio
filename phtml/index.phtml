@@ -25,13 +25,13 @@
         <div id="space-between">
             <div class="d-flex">
                 <div class="dropdown-menu">
-                    <a href="#" class="drop-link d-flex">Thème</a>
+                    <a href="#" class="drop-link d-flex"><?= __('Thème') ?></a>
                     <div class="dropdown-content" id="themes">
                         <button id="change-theme">
                             <i class="fa-solid fa-moon"></i>
                             <i class="fa-solid fa-sun"></i>
                         </button>
-                        <p id="themes-p">Cliquez pour changer de thème</p>
+                        <p id="themes-p"><?= __('Cliquez pour changer de thème') ?></p>
                     </div>
                 </div>
                 
@@ -50,43 +50,6 @@
                 <li><a href="#contact"><?= __('Contact')?></a></li>
             </ul>
         </div>
-        
-        <!--<div id="mySidenav" class="sidenav">
-            <a id="closeBtn" href="#" class="close"><i class="fa-solid fa-xmark"></i></a>
-            <div class="d-flex">
-                <div class="dropdown-menu">
-                    <a href="#" class="drop-link d-flex"><i class="fa-solid fa-universal-access"></i></a>
-                    <div class="dropdown-content" id="accessibility">
-                        <a href="#" id="increment"><?= __('Augmenter le texte') ?></a>
-                        <a href="#" id="decrement"><?= __('Diminuer le texte') ?></a>
-                        <a href="#" id="change-theme-btn"><?= __('Changer de thème') ?></a>
-                        <a href="#" id="reset-all"><?= __('Réinitialiser') ?></a>
-                    </div>
-                </div>
-                
-                <div class="dropdown-menu">
-                    <a href="#" class="drop-link"><?= __('Langue') ?></a>
-                    <div class="dropdown-content">
-                        <a href="index.php?lang=fr" class="lang-change"><img src="imgs/flags/france-flag.png" alt="France flag" class="flag">Français</a>
-                        <a href="index.php?lang=en" class="lang-change"><img src="imgs/flags/uk-flag.png" alt="UK flag" class="flag">English</a>
-                    </div>
-                </div>
-            </div>
-            
-            <ul class="d-flex">
-                <li><a href="#projects"><?= __('Projets')?></a></li>
-                <li><a href="#competences"><?= __('Compétences')?></a></li>
-                <li><a href="#contact"><?= __('Contact')?></a></li>
-            </ul>
-        </div>
-        
-        <a href="#" id="openBtn">
-            <span class="burger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-        </a>-->
     </nav>
     
     <header class="d-flex">
@@ -154,18 +117,6 @@
                         <li><a href="https://github.com/Luna-bf/Hollow_Knight-Quiz" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
                     </ul>
                 </article>
-            <!--
-                <article class="project">
-                    <a href="https://github.com/Luna-bf/PHP-RPG" target="_blank">
-                        <img src="imgs/projects/php-rpg_thumbnail.png" alt=<?= __('"Capture d\'écran du RPG PHP"')?> class="project-img" />
-                    </a>
-                    <ul>
-                        <li><?= __('Année :') ?> 2024 <?= __('(en cours)')?></li>
-                        <li><?= __('Stacks utilisées :') ?> PHP, HTML <?= __('et')?> CSS</li>
-                        <li><a href="https://github.com/Luna-bf/PHP-RPG" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
-                    </ul>
-                </article>
-            -->
                 
                 <article class="project">
                     <a href="https://luna-bf.github.io/Simple-Accessibility.github.io/" target="_blank">
@@ -255,18 +206,6 @@
                     </div>
                 </article>
                 
-                <article class="hard-skills-front-article-2">
-                    <!--<div id="ts">
-                        <a href="https://en.wikipedia.org/wiki/TypeScript" target="_blank"><img src="imgs/logos/TypeScript_logo.png" alt=<?= __('"Logo de TypeScript"')?> /></a>
-                        <h3>TypeScript</h3>
-                    </div>
-                    
-                    <div id="react">
-                        <a href="https://fr.wikipedia.org/wiki/React" target="_blank"><img src="imgs/logos/React_logo.png" alt=<?= __('"Logo de React"')?> /></a>
-                        <h3>React</h3>
-                    </div>-->
-                </article>
-                
                 <hr id="hard-skills-hr">
                 
                 <h2 class="d-flex title-hard-skills">Hard skills (back-end)</h2>
@@ -302,13 +241,6 @@
                         <a href="https://fr.wikipedia.org/wiki/Ruby" target="_blank"><img src="imgs/logos/Ruby_logo.png" alt=<?= __('"Logo de Ruby"')?> /></a>
                         <h3>Ruby</h3>
                     </div>
-                </article>
-                
-                <article class="hard-skills-back-article-2">
-                    <!--<div id="java">
-                        <a href="https://fr.wikipedia.org/wiki/Java_(langage)" target="_blank"><img src="imgs/logos/Java_logo.png" alt=<?= __('"Logo de Java"')?> /></a>
-                        <h3>Java</h3>
-                    </div>-->
                 </article>
             </div>
         </section>
