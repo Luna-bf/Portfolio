@@ -509,7 +509,7 @@ PROJETS
     font-family: "Font Awesome 5 Free";
     content: "\f005";
     padding-right: 10px;
-    vertical-align: middle;
+    vertical-align: 15%;
     font-weight: 900;
     color: #FFBD59;
     font-size: 18px;
@@ -1046,29 +1046,467 @@ MEDIA QUERIES
 
 /*Prévoir aussi le mode paysage*/
 /*overflow: auto; (voir texte si-dessous)*/
-
-@media screen and (max-width : 780px) {
+@media only screen and (max-width: 370px) {
     body {
+      width: 100%;
+      background-color: powderblue;
+    }
+
+    /*ACCUEIL*/
+
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
+        margin: 0.5rem 0 0 0;
         width: 100%;
-        background-color: blue;
     }
 
-    .inactive {
-        display: none;
+    #profile {
+        width: 15%;
+        margin-top: 30px;
+        flex-direction: column;
+        margin-bottom: 6rem;
     }
-    
-    .dropdown-menu {
-        position: relative;
-        display: inline-block;
+
+    #profile-img {
+        width: 100%;
+        border-radius: 5%;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.5);
     }
-    
-    .drop-link {
-        padding: 0 5px;
+
+    #find-me {
+        text-align: center;
+        margin: 1rem;
+        font-size: 18px;
+        color: var(--text-color);
+    }
+
+    #socials-icons {
+        flex-direction: row;
+        font-size: 3rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #searching-for {
+        margin-top: 25px;
+        width: 50%;
+        color: var(--text-color);
+    }
+
+    #searching-for h2 {
+        font-size: 25px;
+        color: var(--text-color);
+    }
+
+    .contact-resume {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        margin: 2rem 0 5em 0;
+    }
+
+    .resume {
+        background-color: #283669;
+        color: #fff;
         text-decoration: none;
-        color: #000000;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+        width: 65%;
     }
-}
 
+    .resume:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f019";
+        padding-right: 10px;
+        vertical-align: middle;
+        font-weight: 900;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .resume:hover {
+        background-color: #324487;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    /***PROJETS***/
+
+    #projects {
+        justify-content: center;
+        margin: 2em 0 2em 0;
+    }
+
+    .title-projects {
+        font-size: 13px;
+        justify-content: center;
+        color: var(--text-color);
+    }
+
+    .parent-project {
+        padding-top: 3em;
+        margin: 0 auto;
+        justify-content: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .project {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .project-img {
+        width: 100%;
+        border-radius: 15px;
+        border: 2px solid #000000;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+        transform: scale(1);
+        transition: color .2s, background-color 1s, transform .35s;
+    }
+
+    .project-img:hover {
+        width: 100%;
+        border-radius: 15px;
+        border: 2px solid #000000;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+        transform: scale(1.1);
+        transition: color .2s, background-color 1s, transform .35s;
+    }
+
+    .project ul li {
+        width: 100%;
+        margin: 1rem 0rem 0rem 5px;
+        list-style: none;
+        font-size: 18px;
+        color: var(--text-color);
+    }
+
+    .project ul li:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f005";
+        padding-right: 10px;
+        vertical-align: 30%;
+        font-weight: 900;
+        color: #FFBD59;
+        font-size: 10px;
+    }
+
+    .project ul li:first-child {
+        margin-top: 2rem;
+    }
+
+    .project ul li:last-child {
+        margin-bottom: 5rem;
+    }
+
+    .github-link {
+        color: var(--github-link);
+        text-decoration: none;
+    }
+
+    .github-link:hover {
+        color: var(--github-link);
+        text-decoration: underline;
+    }
+
+    .github-link:visited {
+        color: var(--github-link-visited);
+        text-decoration: none;
+    }
+
+    /***COMPETENCES***/
+
+    .section-padding {
+        padding-bottom: 6em;
+    }
+
+    .parent {
+        background-color: var(--skills-bg-color);
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        margin: auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    }
+
+    #competences {
+        width: 20%;
+        margin: 2em 0 2em 0;
+        justify-content: center;
+        color: var(--text-color);
+    }
+
+    .title-competences {
+        justify-content: center;
+        font-size: 13px;
+    }
+
+    /***LANGUAGES***/
+
+    .title-lang {
+        margin: 25px 0 80px 0;
+        font-size: 23px;
+        justify-content: center;
+    }
+
+    #langues ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #langues ul li {
+        margin: auto;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 18px;
+        list-style: none;
+        padding-bottom: 3em;
+    }
+
+    #langues ul li:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\2b";
+        padding-right: 10px;
+        vertical-align: 2%;
+        font-weight: 900;
+        color: #000000;
+        font-size: 18px;
+    }
+
+    /***SOFT SKILLS***/
+
+    .title-soft-skills {
+        margin: 35px 0 70px 0;
+        font-size: 23px;
+        justify-content: center;
+    }
+
+    .soft-skills ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .soft-skills {
+        margin: auto;
+    }
+
+    .soft-skills ul li {
+        list-style: none;
+        font-size: 18px;
+    }
+
+    .soft-skills ul li:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\2b";
+        padding-right: 10px;
+        vertical-align: 2%;
+        font-weight: 900;
+        color: #000000;
+        font-size: 18px;
+    }
+
+    .soft-skills ul li:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .soft-skills ul li:last-child {
+        margin: 20px 0 3rem 0;
+        padding-bottom: 2em;
+    }
+
+    /***HARD SKILLS***/
+
+    .title-hard-skills {
+        margin: 35px 0 70px 0;
+        font-size: 23px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hard-skills-front-article-1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 45px;
+    }
+
+    .hard-skills-front-article-2 {
+        display: flex;
+        width: 95%;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    #html {
+        width: 10%;
+        margin-right: 2px;
+    }
+
+    #html h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    #css {
+        width: 11%;
+    }
+
+    #css h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    #js {
+        width: 11%;
+    }
+
+    #js h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    #figma {
+        width: 6.5%;
+        margin-left: 13px;
+    }
+
+    #figma h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    #swift {
+        width: 10%;
+        margin-left: 21px;
+    }
+
+    #swift h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        margin-top: 2px;
+    }
+
+    #swift-ui {
+        width: 10.4%;
+        margin-left: 6px;
+    }
+
+    #swift-ui h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    .hard-skills-back-article-1 {
+        display: flex;
+        width: 75%;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 45px;
+    }
+
+    .hard-skills-back-article-2 {
+        display: flex;
+        width: 75%;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    #php {
+        width: 20%;
+        margin-right: 5px;
+    }
+
+    #php h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #python {
+        width: 11%;
+        margin-right: 15px;
+    }
+
+    #python h3 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    #git {
+        width: 11%;
+    }
+
+    #git h3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 4px;
+    }
+
+    #mySQL {
+        width: 15%;
+        margin-left: 14px;
+    }
+
+    #mySQL h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nodeJS {
+        width: 15%;
+        margin-left: 15px;
+    }
+
+    #nodeJS h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    #ruby {
+        width: 12%;
+    }
+
+    #ruby h3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 48px;
+    }
+
+    .skills-hr {
+        width: 90%;
+        margin: auto;
+        border-bottom: var(--skills-hr-color);
+    }
+
+    #hard-skills-hr {
+        width: 70%;
+        margin: auto;
+        border-bottom: var(--skills-hr-color);
+    }
+  }
 
 /*
 We have styled the dropdown button with a background-color, padding, etc.
