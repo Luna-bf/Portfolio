@@ -10,7 +10,7 @@ const elements = {
     closeBtn: document.getElementById("closeBtn"),
     desktopNav: document.getElementById("space-between"),
     mobileNav: document.getElementById("mySidenav"),
-    mobileWidth: 730,
+    //mobileWidth: 730,
 };
 
 
