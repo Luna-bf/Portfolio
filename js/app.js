@@ -1,10 +1,7 @@
 //Je récupère mes éléments
 const elements = {
     darkMode: window.localStorage.getItem("dark-mode"),
-    changeTheme: document.getElementById("change-theme-btn"),
-    increment: document.getElementById("increment"),
-    decrement: document.getElementById("decrement"),
-    reset: document.getElementById("reset-all"),
+    changeTheme: document.getElementById("change-theme"),
     i: document.querySelector('#prompt-x'),
     prompt: document.querySelector("#prompt"),
     paragraph: document.querySelector("#prompt p"),
