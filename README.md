@@ -1,6 +1,5 @@
 Fonctionnalités à implémenter :
 
-- Accessibilité (à améliorer de toute urgence !!!)
 - Un thème qui persiste (comme la langue)
 - Responsive (mobile et tablet)
 
