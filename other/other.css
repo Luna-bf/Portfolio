@@ -344,6 +344,39 @@ EXPERIENCES
 }
 
 
+
+#ts {
+    width: 10%;
+    margin-right: 5px;
+}
+
+#ts h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin: 10px 0 0 0;
+}
+
+#react {
+    width: 12%;
+}
+
+#react h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin: 1px 0 0 0;
+}
+
+#java {
+    width: 13%;
+}
+
+#java h3 {
+    display: flex;
+    justify-content: center;
+}
+
 /**************
 THEMES
 **************/
