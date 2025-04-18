@@ -283,6 +283,12 @@ FORMATIONS
     margin-left: 200px;
 }
 
+.logos-adatech-school {
+    width: 30%;
+    margin-top: 65px;
+    margin-left: 330px;
+}
+
 /**************
 EXPERIENCES
 **************/
@@ -335,15 +341,7 @@ EXPERIENCES
     list-style: none;
 }
 
-/***LOGOS***/
-
-.logos-adatech-school {
-    width: 30%;
-    margin-top: 65px;
-    margin-left: 330px;
-}
-
-
+/***HARD-SKILLS***/
 
 #ts {
     width: 10%;
@@ -375,62 +373,4 @@ EXPERIENCES
 #java h3 {
     display: flex;
     justify-content: center;
-}
-
-/**************
-THEMES
-**************/
-
-.drop-link {
-    text-decoration: none;
-    color: #000000;
-}
-
-#themes {
-    display: none;
-    position: absolute;
-    background-color: var(--base-bg-color);
-    border: 1px solid var(--theme-lang-border-color);
-    border-radius: 5px;
-    padding: 10px;
-    max-width: 11em;
-}
-
-#change-theme-btn {
-    height: 40px;
-    width: 40px;
-    padding: 0;
-    font-size: 20px;
-    border-radius: 50%;
-    background-color: var(--theme-lang-btn-bg-color);
-    cursor: pointer;
-}
-
-#themes-p {
-    color: var(--text-color);
-}
-
-.dropdown-menu:hover #themes {
-    display: block;
-}
-
-i {
-    color: var(--theme-lang-icon-color);
-}
-
-/*Je veux montrer une seule icône quand le mode lumineux (par défaut) est actif*/
-#change-theme-btn i:last-child {
-    display: none;
-    color: var(--theme-lang-icon-color);
-}
-
-/*Je fais donc pareil pour le mode sombre*/
-.dark-mode #change-theme-btn i:first-child {
-    display: none; /*Je rend l'icône lune invisible*/
-    color: var(--theme-lang-icon-color);
-}
-
-.dark-mode #change-theme-btn i:last-child {
-    display: block; /*Et j'affiche celle du soleil*/
-    color: var(--theme-lang-icon-color);
 }
