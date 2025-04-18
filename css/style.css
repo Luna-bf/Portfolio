@@ -716,27 +716,6 @@ COMPETENCES
     justify-content: center;
 }
 
-#ts {
-    width: 10%;
-    margin-right: 5px;
-}
-
-#ts h3 {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 0 0;
-}
-
-#react {
-    width: 12%;
-}
-
-#react h3 {
-    display: flex;
-    justify-content: center;
-    margin: 1px 0 0 0;
-}
-
 .hard-skills-back-article-1 {
     display: flex;
     width: 75%;
@@ -806,10 +785,6 @@ COMPETENCES
     justify-content: center;
 }
 
-#java {
-    width: 13%;
-}
-
 #ruby {
     width: 12%;
 }
@@ -818,11 +793,6 @@ COMPETENCES
     display: flex;
     justify-content: center;
     margin-top: 48px;
-}
-
-#java h3 {
-    display: flex;
-    justify-content: center;
 }
 
 .skills-hr {
