@@ -4,6 +4,7 @@ echo "<pre>";
     print_r($_POST);
 echo "</pre>";
 
+var_dump($_POST);
     $message_sent = false; #Par défaut, le message n'est pas envoyé, il ne peut l'être que si les deux conditions if sont true
     
     #Si les une des deux conditions ne sont pas valides, alors le form ne pourra pas être validé
