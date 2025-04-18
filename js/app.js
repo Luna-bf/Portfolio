@@ -16,84 +16,83 @@ const elements = {
 
 /*Dark mode*/
 
+const body = document.querySelector('body');
+const button = document.getElementById("change-theme");
+
+function darkMode() {
+  if (body.classList.contains('')) {
+    body.classList.remove('dark-mode');
+    localStorage.setItem("theme", "light");
+  } else {
+    body.classList.add('dark-mode');
+    localStorage.setItem("theme", "dark");
+  }
+}
+
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add('dark-mode');
+}
+
+document.getElementById("change-theme").addEventListener('click', darkMode);
+
+// function darkMode() {
+//     let setTheme = document.body;
+//     setTheme.classList.toggle("dark-mode")
+//     let theme;
+
+//     if (setTheme.classList.contains("dark-mode")){
+//         console.log("Dark mode");
+//         theme = "Dark";
+    
+//     } else {
+//         console.log("Light mode");
+//         theme = "Light";
+//     }
+//     // save to localStorage
+//     localStorage.setItem("PageTheme", JSON.stringify(theme));
+//     // ensure you convert to JSON like i have done -----JSON.stringify(theme)
+// }
+
+// // Mauvais pratique, à changer
+// setInterval(() => {
+//     let getTheme = JSON.parse(localStorage.getItem("PageTheme"));
+    
+//     if(getTheme === "Dark"){
+//         document.body.classList = "dark-mode";
+//         clearInterval(getTheme);
+//     } else {
+//         document.body.classList = "";
+//         clearInterval(getTheme);
+//     }
+// }, 5);
+
+
+
 //Je déclare mes fonctions enableDarkMode et disableDarkMode
-const enableDarkMode = () => {
+// const enableDarkMode = () => {
     
-    document.body.classList.add("dark-mode");
-    window.localStorage.setItem("dark-mode", "active"); //Je ne peux mettre que des strings dans le localStorage, au lieu de mettre isActive (true ou false) je met juste 'active'
-};
+//     document.body.classList.add("dark-mode");
+//     window.localStorage.setItem("dark-mode", "active"); //Je ne peux mettre que des strings dans le localStorage, au lieu de mettre isActive (true ou false) je met juste 'active'
+// };
 
-const disableDarkMode = () => {
+// const disableDarkMode = () => {
     
-    document.body.classList.remove("dark-mode");
-    window.localStorage.setItem("dark-mode", null);
-};
+//     document.body.classList.remove("dark-mode");
+//     window.localStorage.setItem("dark-mode", null);
+// };
 
-//Puis je met un event listener sur le bouton, ce qui va me permettre de changer de thème
-elements.changeTheme.addEventListener("click", () => {
+// //Puis je met un event listener sur le bouton, ce qui va me permettre de changer de thème
+// elements.changeTheme.addEventListener("click", () => {
     
-    elements.darkMode = window.localStorage.getItem("dark-mode");
-    elements.darkMode !== "active" ? enableDarkMode() : disableDarkMode();
+//     elements.darkMode = window.localStorage.getItem("dark-mode");
+//     elements.darkMode !== "active" ? enableDarkMode() : disableDarkMode();
     
-    //C'est l'équivalent de :
-    /*
-    if(darkMode !== "isActive") {
-        enableDarkMode();
-    } else {
-        disableDarkMode();
-    }
-    */
-});
-
-
-/*Accessibilité
-elements.increment.addEventListener("click", () => {
-    document.querySelector("body").style.fontSize = "24px";
-    document.querySelectorAll("h1").style.fontSize = "large";
-});
-
-elements.decrement.addEventListener("click", () => {
-    document.querySelector("body").style.fontSize = "16px";
-});
-
-elements.reset.addEventListener("click", () => {
-    document.querySelector("body").style.fontSize = "16px";
-    elements.darkMode = disableDarkMode();
-});*/
-
-
-//Apparition du prompt
-setTimeout(function() {
-    elements.prompt.classList.remove('hide-prompt');
-}, 8000);
-
-//Disparition du prompt
-elements.i.addEventListener('click', () => {
-    elements.prompt.classList.add('hide-prompt');
-});
-
-
-/*Burger menu et responsive
-elements.openBtn.onclick = openNav;
-elements.closeBtn.onclick = closeNav;
-
-function openNav() {
-  elements.sidenav.classList.add("active");
-}
-
-function closeNav() {
-  elements.sidenav.classList.remove("active");
-}
-
-window.addEventListener("resize", () => {
-    let windowWidth = window.innerWidth;
-    console.log(windowWidth);
-    
-    if(windowWidth <= elements.mobileWidth) {
-        elements.desktopNav.classList.add("inactive");
-        elements.mobileNav.classList.remove("inactive");
-    } else {
-        elements.mobileNav.classList.add("inactive");
-        elements.desktopNav.classList.remove("inactive");
-    }
-});*/
+//     //C'est l'équivalent de :
+//     /*
+//     if(darkMode !== "isActive") {
+//         enableDarkMode();
+//     } else {
+//         disableDarkMode();
+//     }
+//     */
+// });
