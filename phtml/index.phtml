@@ -14,12 +14,9 @@
 <body>
     
 <!--
-
 - le rendre responsive (mobile et tablette)
 - faire en sorte que le thème sélectionné reste le même après avoir quitté ou réinitialisé la page
 - Ctrl + / pour commenter
-- faire en sorte que le burger menu ne soit visible qu'a partir d'une certaine largeur
-
 -->
     <nav>
         <div id="space-between">
@@ -27,7 +24,7 @@
                 <div class="dropdown-menu">
                     <a href="#" class="drop-link d-flex"><?= __('Thème') ?></a>
                     <div class="dropdown-content" id="themes">
-                        <button id="change-theme">
+                        <button id="change-theme" onClick="darkMode()">
                             <i class="fa-solid fa-moon"></i>
                             <i class="fa-solid fa-sun"></i>
                         </button>
@@ -85,8 +82,8 @@
         </section>
         
         <section class="d-flex contact-resume">
-            <a href="ressources/CV_Luna_18032025.pdf" download="CV de Luna BURATTI-FAYOLLE.pdf" class="resume">Télécharger mon CV (FR)</a>
-            <a href="ressources/Luna_Resume_18032025.pdf" download="Luna BURATTI-FAYOLLE's Resume.pdf" class="resume">Download my Resume (EN)</a>
+            <a href="ressources/CV_Luna_17042025.pdf" download="CV de Luna BURATTI-FAYOLLE.pdf" class="resume">Télécharger mon CV (FR)</a>
+            <a href="ressources/Luna_Resume_17042025.pdf" download="Luna BURATTI-FAYOLLE's Resume.pdf" class="resume">Download my Resume (EN)</a>
         </section>
             
         <hr>
@@ -258,7 +255,7 @@
                     <input type="email" id="email" name="userEmail" placeholder=<?= __('"Votre adresse mail (obligatoire)"')?> required>
                     <input type="text" id="subject" name="subject" placeholder=<?= __('"Objet (obligatoire)"')?> required>
                     <textarea id="message" name="message" placeholder=<?= __('"Votre message"')?>></textarea>
-					<button type="submit" id="submit-button"><?= __('Soumettre')?></button>
+                    <button type="submit" id="submit-button"><?= __('Soumettre')?></button>
                 </div>
             </form>
         </section>
