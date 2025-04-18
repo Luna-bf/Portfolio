@@ -65,3 +65,55 @@ $(document).ready(function() {
     });
     $(window).trigger('scroll');
 });
+
+
+//Accessibilité
+elements.increment.addEventListener("click", () => {
+    document.querySelector("body").style.fontSize = "24px";
+    document.querySelectorAll("h1").style.fontSize = "large";
+});
+
+elements.decrement.addEventListener("click", () => {
+    document.querySelector("body").style.fontSize = "16px";
+});
+
+elements.reset.addEventListener("click", () => {
+    document.querySelector("body").style.fontSize = "16px";
+    elements.darkMode = disableDarkMode();
+});
+
+//Apparition du prompt
+setTimeout(function() {
+    elements.prompt.classList.remove('hide-prompt');
+}, 8000);
+
+//Disparition du prompt
+    elements.i.addEventListener('click', () => {
+    elements.prompt.classList.add('hide-prompt');
+});
+
+
+//Burger menu et responsive
+elements.openBtn.onclick = openNav;
+elements.closeBtn.onclick = closeNav;
+
+function openNav() {
+  elements.sidenav.classList.add("active");
+}
+
+function closeNav() {
+  elements.sidenav.classList.remove("active");
+}
+
+window.addEventListener("resize", () => {
+    let windowWidth = window.innerWidth;
+    console.log(windowWidth);
+    
+    if(windowWidth <= elements.mobileWidth) {
+        elements.desktopNav.classList.add("inactive");
+        elements.mobileNav.classList.remove("inactive");
+    } else {
+        elements.mobileNav.classList.add("inactive");
+        elements.desktopNav.classList.remove("inactive");
+    }
+});
