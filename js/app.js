@@ -1,6 +1,7 @@
 //Je récupère mes éléments
 const elements = {
     darkMode: window.localStorage.getItem("dark-mode"),
+    body: document.querySelector('body'),
     changeTheme: document.getElementById("change-theme"),
     i: document.querySelector('#prompt-x'),
     prompt: document.querySelector("#prompt"),
@@ -16,24 +17,21 @@ const elements = {
 
 /*Dark mode*/
 
-const body = document.querySelector('body');
-const button = document.getElementById("change-theme");
-
 function darkMode() {
-  if (body.classList.contains('')) {
-    body.classList.remove('dark-mode');
+  if (elements.body.classList.contains("")) {
+    elements.body.classList.remove("dark-mode");
     localStorage.setItem("theme", "light");
   } else {
-    body.classList.add('dark-mode');
+    elements.body.classList.add("dark-mode");
     localStorage.setItem("theme", "dark");
   }
 }
 
 if (localStorage.getItem("theme") === "dark") {
-  body.classList.add('dark-mode');
-}
+  elements.body.classList.add('dark-mode');
 
-document.getElementById("change-theme").addEventListener('click', darkMode);
+  elements.changeTheme.addEventListener('click', darkMode);
+}
 
 // function darkMode() {
 //     let setTheme = document.body;
