@@ -19,7 +19,6 @@ $lang = [
     'Motivation, curiosité et persévérance sont des soft skills qui me représentent et bien que je sois au début de mon parcours, je suis déterminée à monter en compétences aussi bien front-end qu’en back-end afin de devenir une développeuse full-stack confirmée. Je possède déjà des connaissances en HTML, CSS, PHP, MySQL et d’autres.' => 'Motivation, curiosity and perseverance are soft skills that represent me and while I\'m still at the beginning of my journey, I\'m determined to gain skills both in front-end and back-end in order to become an experienced full-stack developper. I already possess knowledge in HTML, CSS, PHP, MySQL and others.',
     'Je suis à la recherche d\'une opportunité de stage afin de compléter une formation continue se déroulant sur 12 mois.' => 'I\'m looking for an internship opportunity to complete a 12 month training.',
     'Je suis disponible immédiatement pour échanger avec vous alors n\'hésitez pas à me contacter !' => 'I\'m available immediately to have an exchange with you so don\'t hesitate to contact me !',
-    'Projets' => 'Projects',
     'Année :' => 'Year :',
     '(en cours)' => '(ongoing)',
     'Stacks utilisées :' => 'Stacks used :',
