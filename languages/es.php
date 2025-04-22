@@ -8,6 +8,7 @@ $lang = [
     'Projets' => 'Proyectos',
     'Compétences' => 'Habilidades',
     'Contact' => 'Contacto',
+    'Télécharger mon CV (FR)' => 'Subir mi CV (FR)',
 ];
 
 ?>
