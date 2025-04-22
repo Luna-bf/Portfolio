@@ -15,23 +15,23 @@ const elements = {
 };
 
 
-/*Dark mode*/
+/*Dark mode (me laisse bloquée sur le mode sombre, trouver l'origine du problème)*/
 
-function darkMode() {
-  if (elements.body.classList.contains("")) {
-    elements.body.classList.remove("dark-mode");
-    localStorage.setItem("theme", "light");
-  } else {
-    elements.body.classList.add("dark-mode");
-    localStorage.setItem("theme", "dark");
-  }
-}
+// function darkMode() {
+//   if (elements.body.classList.contains("")) {
+//     elements.body.classList.remove("dark-mode");
+//     localStorage.setItem("theme", "light");
+//   } else {
+//     elements.body.classList.add("dark-mode");
+//     localStorage.setItem("theme", "dark");
+//   }
+// }
 
-if (localStorage.getItem("theme") === "dark") {
-  elements.body.classList.add('dark-mode');
+// if (localStorage.getItem("theme") === "dark") {
+//   elements.body.classList.add('dark-mode');
 
-  elements.changeTheme.addEventListener('click', darkMode);
-}
+//   elements.changeTheme.addEventListener('click', darkMode);
+// }
 
 // function darkMode() {
 //     let setTheme = document.body;
@@ -67,23 +67,23 @@ if (localStorage.getItem("theme") === "dark") {
 
 
 //Je déclare mes fonctions enableDarkMode et disableDarkMode
-// const enableDarkMode = () => {
+const enableDarkMode = () => {
     
-//     document.body.classList.add("dark-mode");
-//     window.localStorage.setItem("dark-mode", "active"); //Je ne peux mettre que des strings dans le localStorage, au lieu de mettre isActive (true ou false) je met juste 'active'
-// };
+     document.body.classList.add("dark-mode");
+     window.localStorage.setItem("dark-mode", "active"); //Je ne peux mettre que des strings dans le localStorage, au lieu de mettre isActive (true ou false) je met juste 'active'
+};
 
-// const disableDarkMode = () => {
+const disableDarkMode = () => {
     
-//     document.body.classList.remove("dark-mode");
-//     window.localStorage.setItem("dark-mode", null);
-// };
+     document.body.classList.remove("dark-mode");
+     window.localStorage.setItem("dark-mode", null);
+};
 
-// //Puis je met un event listener sur le bouton, ce qui va me permettre de changer de thème
-// elements.changeTheme.addEventListener("click", () => {
+//Puis je met un event listener sur le bouton, ce qui va me permettre de changer de thème
+elements.changeTheme.addEventListener("click", () => {
     
-//     elements.darkMode = window.localStorage.getItem("dark-mode");
-//     elements.darkMode !== "active" ? enableDarkMode() : disableDarkMode();
+     elements.darkMode = window.localStorage.getItem("dark-mode");
+     elements.darkMode !== "active" ? enableDarkMode() : disableDarkMode();
     
 //     //C'est l'équivalent de :
 //     /*
@@ -93,4 +93,4 @@ if (localStorage.getItem("theme") === "dark") {
 //         disableDarkMode();
 //     }
 //     */
-// });
+});
