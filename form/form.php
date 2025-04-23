@@ -28,7 +28,11 @@ var_dump($_POST);
             mail($to, $subject, $body); #La structure du mail, rangée dans la fonction mail() de PHP
         
             $message_sent = true;
+
+            echo("Message sent successfully !");
         }
+
+        echo("Failed to sent the message.");
     }
 
 ?>
