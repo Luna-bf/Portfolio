@@ -11,9 +11,7 @@ const elements = {
     closeBtn: document.getElementById("closeBtn"),
     desktopNav: document.getElementById("space-between"),
     mobileNav: document.getElementById("mySidenav"),
-    //mobileWidth: 730,
-};
-
+}
 
 /*Dark mode (me laisse bloquée sur le mode sombre, trouver l'origine du problème)*/
 
