@@ -92,3 +92,13 @@ elements.changeTheme.addEventListener("click", () => {
 //     }
 //     */
 });
+
+//Apparition du prompt
+setTimeout(function() {
+     elements.prompt.classList.remove('hide-prompt');
+ }, 8000);
+ 
+ //Disparition du prompt
+     elements.i.addEventListener('click', () => {
+     elements.prompt.classList.add('hide-prompt');
+ });
