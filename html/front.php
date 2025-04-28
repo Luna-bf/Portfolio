@@ -105,7 +105,7 @@
                     </ul>
                 </article>
             
-                <article class="project">
+                <!-- <article class="project">
                     <a href="https://github.com/Luna-bf/Hollow_Knight-Quiz" target="_blank">
                         <img src="imgs/projects/hk-quiz_thumbnail.png" alt=<?= __('"Capture d\'écran du quiz Hollow Knight"')?> class="project-img" />
                     </a>
@@ -114,7 +114,7 @@
                         <li><?= __('Stacks utilisées :') ?> JavaScript, HTML <?= __('et')?> CSS</li>
                         <li><a href="https://github.com/Luna-bf/Hollow_Knight-Quiz" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
                     </ul>
-                </article>
+                </article> -->
                 
                 <article class="project">
                     <a href="https://luna-bf.github.io/Simple-Accessibility.github.io/" target="_blank">
