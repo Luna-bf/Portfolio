@@ -169,6 +169,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
 
 nav ul {
@@ -253,6 +254,19 @@ DROPDOWN ET LANGUE
     text-decoration: underline;
 }
 
+.fa-sort-down {
+    vertical-align: center;
+    margin-left: 5px;
+}
+
+#nav-ul {
+    align-items: center;
+}
+
+.big {
+    width: 40%;
+}
+
 .flag {
     width: 35%;
     height: 39%;
@@ -287,10 +301,6 @@ DROPDOWN ET LANGUE
     border-radius: 50%;
     background-color: var(--theme-lang-btn-bg-color);
     cursor: pointer;
-}
-
-#themes-p {
-    color: var(--text-color);
 }
 
 .dropdown-menu:hover #themes {
