@@ -216,9 +216,9 @@ DROPDOWN ET LANGUE
 }
 
 .drop-link {
-    padding: 0 5px;
-    text-decoration: none;
-    color: #000000;
+    padding-top: 0.5em;
+    justify-content: center;
+    align-self: center;
 }
 
 /*Le contenu du dropdown est caché par défaut*/
@@ -228,7 +228,7 @@ DROPDOWN ET LANGUE
     background-color: var(--theme-lang-bg-color);
     border: 1px solid var(--theme-lang-border-color);
     border-radius: 5px;
-    margin: 0.3em 0 0 2em;
+    margin: 0.3em 0 0 1.3em;
 }
 
 .dropdown-content a {
