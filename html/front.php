@@ -17,6 +17,7 @@
 - le rendre responsive (mobile et tablette)
 - faire en sorte que le thème sélectionné reste le même après avoir quitté ou réinitialisé la page
 - Ctrl + / pour commenter
+- Essayer de changer le button en a href (theme switcher)
 -->
     <nav>
         <div id="space-between">
