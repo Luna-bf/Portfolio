@@ -13,15 +13,6 @@
     --skills-bg-color: rgba(217, 230, 242, 1);
 }
 
-/***Reset***/
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    transition: all .3s ease;
-}
-
 .dark-mode {
     --base-bg-color: #333333;
     --text-color: #fff;
@@ -35,105 +26,12 @@
     --skills-bg-color: #A7BCD1;
 }
 
-/************
-FONTS
-************/
-
-/*Poppins light - pour le texte*/
-@font-face {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-/*Poppins medium - pour les titres*/
-@font-face {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-body {
-    background-color: var(--base-bg-color);
-}
-
 .container {
     width: 100%;
 }
 
-h1, h2, h3, h4 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-p, li, a, input, textarea, button {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
 nav {
-    position: fixed;
-    z-index: 10; /*Pour que les éléments animés restent derrière la nav*/
-    top: 0;
-    left: 0;
-    padding: 1em;
-    text-align: center;
     height: 10vh;
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    background-color: var(--nav-bg-color);
-}
-
-/*************
-RETURN TO TOP
-*************/
-
-#return-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.7);
-    width: 50px;
-    height: 50px;
-    display: block;
-    text-decoration: none;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    border-radius: 35px;
-    display: none;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-#return-to-top i {
-    color: #fff;
-    margin: 0;
-    position: relative;
-    left: 16px;
-    top: 13px;
-    font-size: 19px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-#return-to-top:hover {
-    background: rgba(0, 0, 0, 0.9);
-}
-
-#return-to-top:hover i {
-    color: #fff;
-    top: 5px;
 }
 
 /**********
@@ -183,10 +81,6 @@ ANIMATIONS
 /**************
 FORMATIONS
 **************/
-
-.d-flex {
-    display: flex;
-}
 
 /***BOOSTER***/
 
