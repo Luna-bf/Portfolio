@@ -6,6 +6,7 @@ const elements = {
      i: document.querySelector('#prompt-x'),
      prompt: document.querySelector("#prompt"),
      paragraph: document.querySelector("#prompt p"),
+     changeFlag: document.querySelector(".big"),
 }
 
 /*Dark mode (me laisse bloquée sur le mode sombre, trouver l'origine du problème)*/
@@ -77,16 +78,18 @@ elements.changeTheme.addEventListener("click", () => {
     
      elements.darkMode = window.localStorage.getItem("dark-mode");
      elements.darkMode !== "active" ? enableDarkMode() : disableDarkMode();
-    
-//     //C'est l'équivalent de :
-//     /*
-//     if(darkMode !== "isActive") {
-//         enableDarkMode();
-//     } else {
-//         disableDarkMode();
-//     }
-//     */
+     
+     //C'est l'équivalent de :
+     /*
+     if(darkMode !== "isActive") {
+          enableDarkMode();
+     } else {
+          disableDarkMode();
+     }
+     */
 });
+
+
 
 //Apparition du prompt
 // setTimeout(function() {
