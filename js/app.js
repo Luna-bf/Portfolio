@@ -7,6 +7,8 @@ const elements = {
      prompt: document.querySelector("#prompt"),
      paragraph: document.querySelector("#prompt p"),
      changeFlag: document.querySelector(".big"),
+     en: document.querySelector("#en"),
+     es: document.querySelector("#es"),
 }
 
 /*Dark mode (me laisse bloquée sur le mode sombre, trouver l'origine du problème)*/
@@ -89,14 +91,13 @@ elements.changeTheme.addEventListener("click", () => {
      */
 });
 
-
-
 //Apparition du prompt
-// setTimeout(function() {
-//      elements.prompt.classList.remove('hide-prompt');
-//  }, 8000);
+
+setTimeout(function() {
+     elements.prompt.classList.remove('hide-prompt');
+}, 8000);
  
-//  //Disparition du prompt
-//      elements.i.addEventListener('click', () => {
-//      elements.prompt.classList.add('hide-prompt');
-//  });
+//Disparition du prompt
+elements.i.addEventListener('click', () => {
+     elements.prompt.classList.add('hide-prompt');
+});
