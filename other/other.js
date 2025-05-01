@@ -1,7 +1,10 @@
 //Je récupère mes éléments
 const elements = {
-    darkMode: window.localStorage.getItem("dark-mode"),
-    changeTheme: document.getElementById("change-theme-btn"),
+    sidenav: document.getElementById("mySidenav"),
+    openBtn: document.getElementById("openBtn"),
+    closeBtn: document.getElementById("closeBtn"),
+    desktopNav: document.getElementById("space-between"),
+    mobileNav: document.getElementById("mySidenav"),
 };
 
 
