@@ -1,16 +1,11 @@
 //Je récupère mes éléments
 const elements = {
-    darkMode: window.localStorage.getItem("dark-mode"),
-    body: document.querySelector('body'),
-    changeTheme: document.getElementById("change-theme"),
-    i: document.querySelector('#prompt-x'),
-    prompt: document.querySelector("#prompt"),
-    paragraph: document.querySelector("#prompt p"),
-    sidenav: document.getElementById("mySidenav"),
-    openBtn: document.getElementById("openBtn"),
-    closeBtn: document.getElementById("closeBtn"),
-    desktopNav: document.getElementById("space-between"),
-    mobileNav: document.getElementById("mySidenav"),
+     body: document.querySelector('body'),
+     darkMode: window.localStorage.getItem("dark-mode"),
+     changeTheme: document.getElementById("change-theme"),
+     i: document.querySelector('#prompt-x'),
+     prompt: document.querySelector("#prompt"),
+     paragraph: document.querySelector("#prompt p"),
 }
 
 /*Dark mode (me laisse bloquée sur le mode sombre, trouver l'origine du problème)*/
@@ -94,11 +89,11 @@ elements.changeTheme.addEventListener("click", () => {
 });
 
 //Apparition du prompt
-setTimeout(function() {
-     elements.prompt.classList.remove('hide-prompt');
- }, 8000);
+// setTimeout(function() {
+//      elements.prompt.classList.remove('hide-prompt');
+//  }, 8000);
  
- //Disparition du prompt
-     elements.i.addEventListener('click', () => {
-     elements.prompt.classList.add('hide-prompt');
- });
+//  //Disparition du prompt
+//      elements.i.addEventListener('click', () => {
+//      elements.prompt.classList.add('hide-prompt');
+//  });
