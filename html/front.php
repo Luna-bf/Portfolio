@@ -212,11 +212,6 @@
                         <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"><img src="imgs/logos/Python_logo.png" alt=<?= __('"Logo de Python"')?> /></a>
                         <h3>Python</h3>
                     </div>
-                    
-                    <div id="git">
-                        <a href="https://fr.wikipedia.org/wiki/Git" target="_blank"><img src="imgs/logos/git_logo.png" alt=<?= __('"Logo de Git"')?> /></a>
-                        <h3>Git</h3>
-                    </div>
                 </article>
                 
                 <article class="hard-skills-back-article-2">
@@ -233,6 +228,14 @@
                     <div id="ruby">
                         <a href="https://fr.wikipedia.org/wiki/Ruby" target="_blank"><img src="imgs/logos/Ruby_logo.png" alt=<?= __('"Logo de Ruby"')?> /></a>
                         <h3>Ruby</h3>
+                    </div>
+                </article>
+
+                <h2 class="d-flex title-hard-skills">Hard skills (outils)</h2>
+                <article class="hard-skills-tools-article-1">
+                    <div id="git">
+                        <a href="https://fr.wikipedia.org/wiki/Git" target="_blank"><img src="imgs/logos/git_logo.png" alt=<?= __('"Logo de Git"')?> /></a>
+                        <h3>Git</h3>
                     </div>
                 </article>
             </div>
