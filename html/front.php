@@ -234,10 +234,6 @@
                         <h3>Ruby</h3>
                     </div>
                 </article>
-
-                <!-- <h2 class="d-flex title-hard-skills">Hard skills (outils)</h2>
-                <article class="hard-skills-tools-article-1">-->
-                </article>
             </div>
         </section>
         
