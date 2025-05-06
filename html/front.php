@@ -32,7 +32,6 @@
                     <div class="dropdown-content">
                         <a href="index.php?lang=fr" class="lang-change" id="fr"><img src="imgs/flags/france-flag.png" alt="France flag" class="flag">Français</a>
                         <a href="index.php?lang=en" class="lang-change" id="en"><img src="imgs/flags/uk-flag.png" alt="UK flag" class="flag">English</a>
-                        <a href="index.php?lang=es" class="lang-change" id="es"><img src="imgs/flags/spain-flag.png" alt="Spain flag" class="flag">Español</a>
                     </div>
                 </div>
             </div>
