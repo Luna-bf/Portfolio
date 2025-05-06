@@ -750,15 +750,6 @@ COMPETENCES
     margin-bottom: 60px;
 }
 
-.hard-skills-tools-article-1 {
-    display: flex;
-    width: 75%;
-    margin: auto;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 60px;
-}
-
 #php {
     width: 20%;
     margin-right: 5px;
