@@ -5,7 +5,7 @@
     --text-color: #000000;
     --hr-color: #808080;
     --skills-hr-color: #808080;
-    --nav-bg-color: rgba(202, 229, 255, 0.7);
+    --nav-bg-color: rgba(202, 229, 255, 0.8);
     --theme-lang-border-color: #aaa;
     --theme-lang-bg-color: #fff;
     --theme-lang-btn-bg-color: #333333;
@@ -16,6 +16,7 @@
     --nav-a-focus-color: #fff;
     --skills-bg-color: rgba(202, 229, 255, 1);
     --github-link: blue;
+    --github-link-visited: midnightblue;
 }
 
 /***Reset***/
@@ -136,7 +137,7 @@ RETURN TO TOP
     --text-color: #fff;
     --hr-color: #fff;
     --skills-hr-color: black;
-    --nav-bg-color: rgba(132, 182, 230, 0.7);
+    --nav-bg-color: rgba(181, 199, 235, 0.8);
     --theme-lang-border-color: #555555;
     --theme-lang-bg-color: #333333;
     --theme-lang-btn-bg-color: #fff;
@@ -145,8 +146,9 @@ RETURN TO TOP
     --theme-lang-color-focus: #fff;
     --nav-a-color: #fff;
     --nav-a-focus-color: #fff;
-    --skills-bg-color: rgba(132, 182, 230, 1);
-    --github-link: powderblue;
+    --skills-bg-color: #B5C7EB;
+    --github-link: #b5c7eb;
+    --github-link-visited: powderblue;
 }
 
 /*****
@@ -545,7 +547,6 @@ PROJETS
 }
 
 .github-link:hover {
-    color: var(--github-link);
     text-decoration: underline;
 }
 
