@@ -1,1 +1,0 @@
-Fonts will go inside of the fonts folder.
