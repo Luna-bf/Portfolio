@@ -793,24 +793,14 @@ COMPETENCES
     justify-content: center;
 }
 
-#nodeJS {
-    width: 15%;
-    margin-left: 15px;
-}
-
-#nodeJS h3 {
-    display: flex;
-    justify-content: center;
-}
-
 #ruby {
-    width: 12%;
+    width: 10%;
 }
 
 #ruby h3 {
     display: flex;
     justify-content: center;
-    margin-top: 48px;
+    margin-top: 18px;
 }
 
 .skills-hr {
