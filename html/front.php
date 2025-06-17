@@ -77,8 +77,8 @@
         </section>
         
         <section class="d-flex contact-resume">
-            <a href="ressources/CV_Luna_26052025.pdf" download="CV de Luna BURATTI-FAYOLLE.pdf" class="resume"><?= __('Télécharger mon CV (FR)') ?></a>
-            <a href="ressources/Luna_Resume_17042025.pdf" download="Luna BURATTI-FAYOLLE's Resume.pdf" class="resume">Download my Resume (EN)</a>
+            <a href="assets/ressources/CV_Luna_26052025.pdf" download="CV de Luna BURATTI-FAYOLLE.pdf" class="resume"><?= __('Télécharger mon CV (FR)') ?></a>
+            <a href="assets/ressources/CV_Luna_26052025.pdf" download="Luna BURATTI-FAYOLLE's Resume.pdf" class="resume">Download my Resume (EN)</a>
         </section>
             
         <hr>
