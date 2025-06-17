@@ -271,7 +271,7 @@
         <i class="fa-solid fa-arrow-up"></i>
     </a>
     
-    <!-- <div id="prompt" class="hide-prompt auto">
+    <div id="prompt" class="hide-prompt auto">
         <i id="prompt-x" class="fa-solid fa-circle-xmark"></i>
         <div id="prompt-text">
             <p class="prompt-first-p"><?= __('Bonjour/bonsoir,') ?></p>
@@ -281,7 +281,7 @@
             <p class="prompt-polite"><?= __('Cordialement,') ?></p>
             <p class="prompt-final-p">Luna BURATTI-FAYOLLE</p>
         </div>
-    </div> -->
+    </div>
     
     <script type="text/javascript" src="js/app.js" defer></script>
 </body>
