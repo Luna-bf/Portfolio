@@ -434,7 +434,7 @@ img {
 
 header {
     min-height: 100vh;
-    background: url("../imgs/header-img.png");
+    background: url("../assets/imgs/header-img.png");
     background-size: cover;
     background-position: center center;
     justify-content: center;
@@ -921,7 +921,7 @@ CONTACT
 
 #contact-me {
     min-height: 70vh;
-    background: url("../imgs/form-img.png");
+    background: url("../assets/imgs/form-img.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
