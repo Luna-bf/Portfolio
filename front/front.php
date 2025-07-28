@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Luna BURATTI-FAYOLLE">
     <title>Portfolio - Luna BURATTI-FAYOLLE</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" >
+    <link rel="stylesheet" href="assets-folder/css/style.css" type="text/css" >
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" type="text/css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -18,7 +18,6 @@
 - faire en sorte que le thème sélectionné reste le même après avoir quitté ou réinitialisé la page
 - Ctrl + / pour commenter
 -->
-
     <nav>
         <div id="space-between">
             <div class="d-flex">
@@ -28,10 +27,10 @@
                     </button>
                 
                 <div class="dropdown-menu d-flex">
-                    <a href="#" class="drop-link d-flex"><img src="assets/imgs/flags/france-flag-80x53.png" alt="France flag big" class="big"><i class="fa-solid fa-sort-down"></i></a>
+                    <a href="#" class="drop-link d-flex"><img src="assets-folder/imgs/flags/france-flag-80x53.png" alt="France flag big" class="big"><i class="fa-solid fa-sort-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="index.php?lang=fr" class="lang-change" id="fr"><img src="assets/imgs/flags/france-flag.png" alt="France flag" class="flag">Français</a>
-                        <a href="index.php?lang=en" class="lang-change" id="en"><img src="assets/imgs/flags/uk-flag.png" alt="UK flag" class="flag">English</a>
+                        <a href="index.php?lang=fr" class="lang-change" id="fr"><img src="assets-folder/imgs/flags/france-flag.png" alt="France flag" class="flag">Français</a>
+                        <a href="index.php?lang=en" class="lang-change" id="en"><img src="assets-folder/imgs/flags/uk-flag.png" alt="UK flag" class="flag">English</a>
                     </div>
                 </div>
             </div>
@@ -56,7 +55,7 @@
         <section class="home d-flex">
             
             <div class="d-flex" id="profile">
-                <img src="assets/imgs/Photo_portfolio_15012025.jpg" id="profile-img" alt="Ma photo">
+                <img src="assets-folder/imgs/Photo_portfolio_15012025.jpg" id="profile-img" alt="Ma photo">
     
                 <p id="find-me"><?= __('Vous pouvez me retrouver sur :')?></p>
                 <article class="d-flex" id="socials-icons">
@@ -90,7 +89,7 @@
 	        <article class="d-flex parent-project">
                 <article class="project">
                     <a href="https://github.com/Luna-bf/To-do_list_JavaScript" target="_blank">
-                        <img src="assets/imgs/projects/js_todo-list_thumbnail.png" alt=<?= __('"Capture d\'écran de la To-do list Javascript"')?> class="project-img" />
+                        <img src="assets-folder/imgs/projects/js_todo-list_thumbnail.png" alt=<?= __('"Capture d\'écran de la To-do list Javascript"')?> class="project-img" />
                     </a>
                     <ul>
                         <li><?= __('Année :') ?> 2024 <?= __('(en cours)')?></li>
@@ -98,21 +97,10 @@
                         <li><a href="https://github.com/Luna-bf/To-do_list_JavaScript" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
                     </ul>
                 </article>
-            
-                <!-- <article class="project">
-                    <a href="https://github.com/Luna-bf/Hollow_Knight-Quiz" target="_blank">
-                        <img src="imgs/projects/hk-quiz_thumbnail.png" alt=<?= __('"Capture d\'écran du quiz Hollow Knight"')?> class="project-img" />
-                    </a>
-                    <ul>
-                        <li><?= __('Année :') ?> 2024 <?= __('(en cours)')?></li>
-                        <li><?= __('Stacks utilisées :') ?> JavaScript, HTML <?= __('et')?> CSS</li>
-                        <li><a href="https://github.com/Luna-bf/Hollow_Knight-Quiz" target="_blank" class="github-link"><?= __('Lien Github')?></a></li>
-                    </ul>
-                </article> -->
                 
                 <article class="project">
                     <a href="https://luna-bf.github.io/Simple-Accessibility.github.io/" target="_blank">
-                        <img src="assets/imgs/projects/simple-accessibility_thumbnail.png" alt=<?= __('"Capture d\'écran du projet Simple Accessibility"')?> class="project-img" />
+                        <img src="assets-folder/imgs/projects/simple-accessibility_thumbnail.png" alt=<?= __('"Capture d\'écran du projet Simple Accessibility"')?> class="project-img" />
                     </a>
                     <ul>
                         <li><?= __('Année :') ?> 2024</li>
@@ -123,7 +111,7 @@
                 
                 <article class="project">
                     <a href="https://github.com/Luna-bf/Simple_translation_backend" target="_blank">
-                        <img src="assets/imgs/projects/simple_translation-backend_thumbnail.png" alt=<?= __('"Capture d\'écran du projet Simple Translation"')?> class="project-img" />
+                        <img src="assets-folder/imgs/projects/simple_translation-backend_thumbnail.png" alt=<?= __('"Capture d\'écran du projet Simple Translation"')?> class="project-img" />
                     </a>
                     <ul>
                         <li><?= __('Année :') ?> 2025</li>
@@ -166,34 +154,34 @@
                 <h2 class="d-flex title-hard-skills">Hard skills (front-end)</h2>
                 <article class="hard-skills-front-article-1">
                     <div id="html">
-                        <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank"><img src="assets/imgs/logos/HTML_logo.png" alt=<?= __('"Logo d\'HTML"')?> /></a>
+                        <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank"><img src="assets-folder/imgs/logos/HTML_logo.png" alt=<?= __('"Logo d\'HTML"')?> /></a>
                         <h3>HTML</h3>
                     </div>
                     
                     <div id="css">
-                        <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank"><img src="assets/imgs/logos/CSS_logo.png" alt=<?= __('"Logo de CSS"')?> /></a>
+                        <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank"><img src="assets-folder/imgs/logos/CSS_logo.png" alt=<?= __('"Logo de CSS"')?> /></a>
                         <h3>CSS</h3>
                     </div>
                     
                     <div id="js">
-                        <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank"><img src="assets/imgs/logos/JavaScript_logo.png" alt=<?= __('"Logo de JavaScript"')?> /></a>
+                        <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank"><img src="assets-folder/imgs/logos/JavaScript_logo.png" alt=<?= __('"Logo de JavaScript"')?> /></a>
                         <h3>JavaScript</h3>
                     </div>
                 </article>
                 
                 <article class="hard-skills-front-article-2">
                     <div id="figma">
-                        <a href="https://fr.wikipedia.org/wiki/Figma" target="_blank"><img src="assets/imgs/logos/Figma_logo.png" alt=<?= __('"Logo de Figma"')?> /></a>
+                        <a href="https://fr.wikipedia.org/wiki/Figma" target="_blank"><img src="assets-folder/imgs/logos/Figma_logo.png" alt=<?= __('"Logo de Figma"')?> /></a>
                         <h3>Figma</h3>
                     </div>
                     
                     <div id="swift">
-                        <a href="https://fr.wikipedia.org/wiki/Swift_(langage_d%27Apple)" target="_blank"><img src="assets/imgs/logos/Swift_logo.png" alt=<?= __('"Logo de Swift"')?> /></a>
+                        <a href="https://fr.wikipedia.org/wiki/Swift_(langage_d%27Apple)" target="_blank"><img src="assets-folder/imgs/logos/Swift_logo.png" alt=<?= __('"Logo de Swift"')?> /></a>
                         <h3>Swift</h3>
                     </div>
                     
                     <div id="swift-ui">
-                        <a href="https://en.wikipedia.org/wiki/SwiftUI" target="_blank"><img src="assets/imgs/logos/SwiftUI_logo.png" alt=<?= __('"Logo de SwiftUI"')?> /></a>
+                        <a href="https://en.wikipedia.org/wiki/SwiftUI" target="_blank"><img src="assets-folder/imgs/logos/SwiftUI_logo.png" alt=<?= __('"Logo de SwiftUI"')?> /></a>
                         <h3>SwiftUI</h3>
                     </div>
                 </article>
@@ -203,24 +191,24 @@
                 <h2 class="d-flex title-hard-skills">Hard skills (back-end)</h2>
                 <article class="hard-skills-back-article-1">
                     <div id="php">
-                        <a href="https://fr.wikipedia.org/wiki/PHP" target="_blank"><img src="assets/imgs/logos/PHP_logo.png" alt=<?= __('"Logo de PHP"')?> /></a>
+                        <a href="https://fr.wikipedia.org/wiki/PHP" target="_blank"><img src="assets-folder/imgs/logos/PHP_logo.png" alt=<?= __('"Logo de PHP"')?> /></a>
                         <h3>PHP</h3>
                     </div>
                     
                     <div id="python">
-                        <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"><img src="assets/imgs/logos/Python_logo.png" alt=<?= __('"Logo de Python"')?> /></a>
+                        <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank"><img src="assets-folder/imgs/logos/Python_logo.png" alt=<?= __('"Logo de Python"')?> /></a>
                         <h3>Python</h3>
                     </div>
                     
                     <div id="ruby">
-                        <a href="https://fr.wikipedia.org/wiki/Ruby" target="_blank"><img src="assets/imgs/logos/Ruby_logo.png" alt=<?= __('"Logo de Ruby"')?> /></a>
+                        <a href="https://fr.wikipedia.org/wiki/Ruby" target="_blank"><img src="assets-folder/imgs/logos/Ruby_logo.png" alt=<?= __('"Logo de Ruby"')?> /></a>
                         <h3>Ruby</h3>
                     </div>
                 </article>
                 
                 <article class="hard-skills-back-article-2">
                     <div id="mySQL">
-                        <a href="https://fr.wikipedia.org/wiki/MySQL" target="_blank"><img src="assets/imgs/logos/MySQL_logo.png" alt=<?= __('"Logo de MySQL"')?> /></a>
+                        <a href="https://fr.wikipedia.org/wiki/MySQL" target="_blank"><img src="assets-folder/imgs/logos/MySQL_logo.png" alt=<?= __('"Logo de MySQL"')?> /></a>
                         <h3>MySQL</h3>
                     </div>
                 </article>
@@ -230,7 +218,7 @@
                 <h2 class="d-flex title-hard-skills">Outils et autres</h2>
                 <article class="hard-skills-back-article-1">
                     <div id="git">
-                        <a href="https://fr.wikipedia.org/wiki/Git" target="_blank"><img src="assets/imgs/logos/git_logo.png" alt=<?= __('"Logo de Git"')?> /></a>
+                        <a href="https://fr.wikipedia.org/wiki/Git" target="_blank"><img src="assets-folder/imgs/logos/git_logo.png" alt=<?= __('"Logo de Git"')?> /></a>
                         <h3>Git</h3>
                     </div>
                 </article>
@@ -263,7 +251,7 @@
         </ul>
         
         <ul class="contacts">
-            <li id="logo"><a href="#"><img src="assets/imgs/logo-160x160.png" alt=<?= __('"Logo et favicon de mon portfolio"')?>></a></li>
+            <li id="logo"><a href="#"><img src="assets-folder/imgs/logo-160x160.png" alt=<?= __('"Logo et favicon de mon portfolio"')?>></a></li>
         </ul>
     </footer>
         
@@ -283,6 +271,6 @@
         </div>
     </div>
     
-    <script type="text/javascript" src="js/app.js" defer></script>
+    <script type="text/javascript" src="assets-folder/js/app.js"></script>
 </body>
 </html>

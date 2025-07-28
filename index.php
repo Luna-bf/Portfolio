@@ -2,6 +2,6 @@
 
 require 'languages/lang.php';
 
-require 'html/front.php';
+require 'front/front.php';
 
 ?>
