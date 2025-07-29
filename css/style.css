@@ -1,5 +1,4 @@
 /***CSS variables***/
-
 :root {
     --base-bg-color: #fff;
     --text-color: #000000;
@@ -28,156 +27,161 @@
     transition: all .3s ease;
 }
 
-/*************
-SMOOTH SCROLL
-*************/
-
+/*** SMOOTH SCROLL ***/
 html {
     scroll-behavior: smooth;
 }
 
-/************
-FONTS
-************/
 
-.poppins-thin {
-    font-family: "Poppins", sans-serif;
+/*** FONT (Roboto) ***/
+
+/***** NORMAL *****/
+
+/***Thin***/
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url("../fonts/Roboto/static/Roboto-Thin.ttf");
     font-weight: 100;
     font-style: normal;
 }
 
-.poppins-extralight {
-    font-family: "Poppins", sans-serif;
+/***ExtraLight***/
+@font-face {
+    font-family: "Roboto-ExtraLight";
+    src: url("../fonts/Roboto/static/Roboto-ExtraLight.ttf");
     font-weight: 200;
     font-style: normal;
 }
 
-.poppins-light {
-    font-family: "Poppins", sans-serif;
+/***Light***/
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../fonts/Roboto/static/Roboto-Light.ttf");
     font-weight: 300;
     font-style: normal;
 }
 
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
+/***Regular***/
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto/static/Roboto-Regular.ttf");
     font-weight: 400;
     font-style: normal;
 }
 
-.poppins-medium {
-    font-family: "Poppins", sans-serif;
+/***Medium***/
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("../fonts/Roboto/static/Roboto-Medium.ttf");
     font-weight: 500;
     font-style: normal;
 }
 
-.poppins-semibold {
-    font-family: "Poppins", sans-serif;
+/***SemiBold***/
+@font-face {
+    font-family: "Roboto-SemiBold";
+    src: url("../fonts/Roboto/static/Roboto-SemiBold.ttf");
     font-weight: 600;
     font-style: normal;
 }
 
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
+/***Bold***/
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../fonts/Roboto/static/Roboto-Bold.ttf");
     font-weight: 700;
     font-style: normal;
 }
 
-.poppins-extrabold {
-    font-family: "Poppins", sans-serif;
+/***ExtraBold***/
+@font-face {
+    font-family: "Roboto-ExtraBold";
+    src: url("../fonts/Roboto/static/Roboto-ExtraBold.ttf");
     font-weight: 800;
     font-style: normal;
 }
 
-.poppins-black {
-    font-family: "Poppins", sans-serif;
+/***Black (heavy)***/
+@font-face {
+    font-family: "Roboto-Black";
+    src: url("../fonts/Roboto/static/Roboto-Black.ttf");
     font-weight: 900;
     font-style: normal;
 }
 
-.poppins-thin-italic {
-    font-family: "Poppins", sans-serif;
+
+/*** ITALIC ***/
+
+/***ThinItalic***/
+@font-face {
+    font-family: "Roboto-ThinItalic";
+    src: url("../fonts/Roboto/static/Roboto-ThinItalic.ttf");
     font-weight: 100;
     font-style: italic;
 }
 
-.poppins-extralight-italic {
-    font-family: "Poppins", sans-serif;
+/***ExtraLightItalic***/
+@font-face {
+    font-family: "Roboto-ExtraLightItalic";
+    src: url("../fonts/Roboto/static/Roboto-ExtraLightItalic.ttf");
     font-weight: 200;
     font-style: italic;
 }
 
-.poppins-light-italic {
-    font-family: "Poppins", sans-serif;
+/***LightItalic***/
+@font-face {
+    font-family: "Roboto-LightItalic";
+    src: url("../fonts/Roboto/static/Roboto-LightItalic.ttf");
     font-weight: 300;
     font-style: italic;
 }
 
-.poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
+/***RegularItalic***/
+@font-face {
+    font-family: "Roboto-RegularItalic";
+    src: url("../fonts/Roboto/static/Roboto-Italic.ttf");
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
 }
 
-.poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
+/***MediumItalic***/
+@font-face {
+    font-family: "Roboto-MediumItalic";
+    src: url("../fonts/Roboto/static/Roboto-MediumItalic.ttf");
     font-weight: 500;
     font-style: italic;
 }
 
-.poppins-semibold-italic {
-    font-family: "Poppins", sans-serif;
+/***SemiBoldItalic***/
+@font-face {
+    font-family: "Roboto-SemiBoldItalic";
+    src: url("../fonts/Roboto/static/Roboto-SemiBoldItalic.ttf");
     font-weight: 600;
     font-style: italic;
 }
 
-.poppins-bold-italic {
-    font-family: "Poppins", sans-serif;
+/***BoldItalic***/
+@font-face {
+    font-family: "Roboto-BoldItalic";
+    src: url("../fonts/Roboto/static/Roboto-BoldItalic.ttf");
     font-weight: 700;
     font-style: italic;
 }
 
-.poppins-extrabold-italic {
-    font-family: "Poppins", sans-serif;
+/***ExtraBoldItalic***/
+@font-face {
+    font-family: "Roboto-ExtraBoldItalic";
+    src: url("../fonts/Roboto/static/Roboto-ExtraBoldItalic.ttf");
     font-weight: 800;
     font-style: italic;
 }
 
-.poppins-black-italic {
-    font-family: "Poppins", sans-serif;
+/***BlackItalic (heavy)***/
+@font-face {
+    font-family: "Roboto-BlackItalic";
+    src: url("../fonts/Roboto/static/Roboto-BlackItalic.ttf");
     font-weight: 900;
     font-style: italic;
-}
-
-/**************
-FONT AWESOME
-**************/
-
-.fa-github {
-    color: #000000;
-    text-decoration: none;
-}
-
-.fa-linkedin {
-    color: #0077B5;
-    text-decoration: none;
-}
-
-.fa-arrow-up {
-    color: #fff;
-    font-size: 2rem;
-}
-
-.fa-universal-access {
-    color: #000000;
-    font-size: 28px;
-}
-
-/*************
-DISPLAY FLEX
-*************/
-
-.d-flex {
-    display: flex;
 }
 
 /***********
@@ -187,7 +191,21 @@ BODY
 body {
     background-color: var(--base-bg-color);
     width: 100%;
-    font-size: 16px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto-Bold", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 /*************
@@ -223,6 +241,12 @@ RETURN TO TOP
     opacity: 100;
 }
 
+.fa-arrow-up {
+    color: #fff;
+    font-size: 2rem;
+}
+
+
 /***Dark mode***/
 .dark-mode {
     --base-bg-color: #333333;
@@ -249,7 +273,8 @@ NAV
 
 nav {
     position: fixed;
-    z-index: 10; /*Pour que les éléments animés restent derrière la nav*/
+    z-index: 10;
+    /*Pour que les éléments animés restent derrière la nav*/
     padding: 1em;
     text-align: center;
     width: 100%;
@@ -267,11 +292,12 @@ nav {
 }
 
 nav ul {
-    list-style: none;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto-Light", sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: 18px;
+    list-style: none;
+    text-decoration: none;
 }
 
 nav ul li a {
@@ -285,9 +311,6 @@ nav ul li a:hover {
     list-style: none;
     text-decoration: underline;
     border-radius: 5px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
 }
 
 nav ul li a:focus {
@@ -295,9 +318,6 @@ nav ul li a:focus {
     color: var(--nav-a-focus-color);
     text-decoration: underline;
     border-radius: 5px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
 }
 
 /******************
@@ -365,14 +385,15 @@ DROPDOWN ET LANGUE
     width: 35%;
     height: 39%;
     padding-right: 15px;
-} */
-
-/***THEMES***/
-
+}
+    
 .drop-link {
     text-decoration: none;
     color: #000000;
 }
+*/
+
+/***THEMES***/
 
 #themes {
     display: none;
@@ -397,11 +418,6 @@ DROPDOWN ET LANGUE
     cursor: pointer;
 }
 
-.dropdown-menu:hover #themes {
-    display: block;
-    width: 500px;
-}
-
 #change-theme svg {
     fill: var(--theme-lang-icon-color);
 }
@@ -414,12 +430,14 @@ DROPDOWN ET LANGUE
 
 /*Je fais donc pareil pour le mode sombre*/
 .dark-mode #change-theme svg:first-child {
-    display: none; /*Je rend l'icône lune invisible*/
+    display: none;
+    /*Je rend l'icône lune invisible*/
     color: var(--theme-lang-icon-color);
 }
 
 .dark-mode #change-theme svg:last-child {
-    display: block; /*Et j'affiche celle du soleil*/
+    display: block;
+    /*Et j'affiche celle du soleil*/
     color: var(--theme-lang-icon-color);
 }
 
@@ -439,18 +457,60 @@ header {
     background-position: center center;
     justify-content: center;
     align-items: center;
-    line-height: 12em;
     margin-bottom: 10px;
+    flex-direction: column;
 }
 
-#header {
+header>div {
+    text-align: center;
     color: #fff;
-    margin: auto;
+    font-size: 17px;
+    margin: 0 auto;
 }
 
-span {
+header div h1 {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 3em;
+}
+
+#underline {
     text-decoration: underline 2px;
 }
+
+.resume {
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    border: 3px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 5em;
+    padding: 15px 50px 15px 50px;
+}
+
+.fa-download {
+    padding-right: 15px;
+    font-size: 22px;
+}
+
+.resume:hover {
+    background-color: #283669;
+    border-color: #283669;
+}
+
+.resume:active {
+    background-color: #324487;
+    border-color: #324487;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+    transition: none;
+}
+
 
 /**********
 MAIN
@@ -460,29 +520,11 @@ MAIN
     width: 100%;
 }
 
-h1, h2, h3, h4 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-p, li, a, input, textarea, button {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-hr {
-    width: 90%;
-    margin: auto;
-    background-color: var(--hr-color);
-}
-
 /**********
 ACCUEIL
 **********/
 
-.home {
+/* .home {
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
@@ -500,7 +542,7 @@ ACCUEIL
 #profile-img {
     width: 100%;
     border-radius: 5%;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 #find-me {
@@ -525,63 +567,29 @@ ACCUEIL
 #searching-for h2 {
     font-size: 25px;
     color: var(--text-color);
-}
+} */
 
-.contact-resume {
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
-    margin-bottom: 5em;
-}
-
-.resume {
-    background-color: #283669;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 5px 40px 5px 40px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
-}
-
-.resume:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f019";
-    padding-right: 10px;
-    vertical-align: middle;
-    font-weight: 900;
-    color: #fff;
-    font-size: 18px;
-}
-
-.resume:hover {
-    background-color: #324487;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 5px 40px 5px 40px;
-    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
-}
 
 /**************
 PROJETS
 **************/
-
-#projects {
-    padding: 8px 63px 8px 63px;
-    justify-content: center;
-    margin: 50px 0 15px 0;
+.projects {
+    font-size: 20px;
+    margin-top: 135px;
+    flex-direction: column;
 }
 
-.title-projects {
-    justify-content: center;
+.projects>h1 {
     color: var(--text-color);
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .parent-project {
     padding-top: 3em;
-    margin: auto;
     justify-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -590,29 +598,29 @@ PROJETS
 }
 
 .project-img {
-    width: 100%;
     border-radius: 15px;
     border: 2px solid #000000;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
-	transform: scale(1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
     transition: color .2s, background-color 1s, transform .35s;
 }
 
 .project-img:hover {
-    width: 100%;
     border-radius: 15px;
     border: 2px solid #000000;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
-	transform: scale(1.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
     transition: color .2s, background-color 1s, transform .35s;
 }
 
 .project ul li {
-    width: 100%;
-    margin: 1rem 0rem 0rem 5px;
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     list-style: none;
-    font-size: 25px;
+    font-size: 22px;
     color: var(--text-color);
+    margin: 1rem 0rem 0rem 5px;
 }
 
 .project ul li:before {
@@ -651,8 +659,17 @@ PROJETS
 COMPETENCES
 **************/
 
-.section-padding {
-    padding-bottom: 6em;
+.skills {
+    font-size: 20px;
+    margin-top: 135px;
+    flex-direction: column;
+}
+
+.skills>h1 {
+    color: var(--text-color);
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .parent {
@@ -662,82 +679,7 @@ COMPETENCES
     width: 85%;
     margin: auto;
     border-radius: 15px;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
-}
-
-#competences {
-    width: 20%;
-    margin: 2em 0 2em 0;
-    justify-content: center;
-    color: var(--text-color);
-}
-
-.title-competences {
-    justify-content: center;
-}
-
-/***LANGUAGES***/
-
-.title-lang {
-    margin: 25px 0 80px 0;
-    font-size: 35px;
-    justify-content: center;
-}
-
-#langues ul li {
-    margin: auto;
-    justify-content: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    font-size: 20px;
-    list-style: none;
-    padding-bottom: 3em;
-}
-
-#langues ul li:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\2b";
-    padding-right: 10px;
-    vertical-align: middle;
-    font-weight: 900;
-    color: #000000;
-    font-size: 18px;
-}
-
-/***SOFT SKILLS***/
-
-.title-soft-skills {
-    margin: 35px 0 70px 0;
-    font-size: 35px;
-    justify-content: center;
-}
-
-.soft-skills {
-    margin: auto;
-}
-
-.soft-skills ul li {
-    list-style: none;
-    font-size: 20px;
-}
-
-.soft-skills ul li:before {
-    font-family: "Font Awesome 5 Free";
-    content: "\2b";
-    padding-right: 10px;
-    vertical-align: middle;
-    font-weight: 900;
-    color: #000000;
-    font-size: 18px;
-}
-
-.soft-skills ul li:nth-child(2) {
-    margin-top: 20px;
-}
-
-.soft-skills ul li:last-child {
-    margin: 20px 0 3rem 0;
-    padding-bottom: 2em;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 /***HARD SKILLS***/
@@ -853,17 +795,6 @@ COMPETENCES
     justify-content: center;
 }
 
-#python {
-    width: 11%;
-    margin-right: 15px;
-}
-
-#python h3 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 8px;
-}
-
 #git {
     width: 11%;
     justify-self: center;
@@ -893,18 +824,6 @@ COMPETENCES
     display: flex;
     justify-content: center;
     margin-top: 18px;
-}
-
-.skills-hr {
-    width: 90%;
-    margin: auto;
-    border-bottom: var(--skills-hr-color);
-}
-
-#hard-skills-hr {
-    width: 70%;
-    margin: auto;
-    border-bottom: var(--skills-hr-color);
 }
 
 /**************
@@ -956,7 +875,7 @@ input {
 }
 
 textarea {
-	height: 15em;
+    height: 15em;
     padding: 15px;
     margin-bottom: 10px;
     width: 100%;
@@ -998,88 +917,7 @@ textarea {
     cursor: pointer;
 }
 
-/****************
-PROMPT ET FOOTER
-****************/
-
-.auto {
-    overflow: auto;
-}
-
-.hide-prompt {
-    display: none !important;
-}
-
-#prompt {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 30%;
-    height: 51%;
-    border: 2px solid var(--theme-lang-border-color);
-    background-color: var(--theme-lang-bg-color);
-    color: var(--text-color);
-    border-radius: 5px;
-    animation: 1s ease-out 0s 1 appearFromRight forwards;
-}
-
-@keyframes appearFromRight {
-    0% {
-        transform: translateX(90%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-#prompt-x {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 24px;
-    color: var(--text-color);
-    background-color: var(--base-bg-color);
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-}
-
-#prompt-x:hover {
-    font-size: 24px;
-    color: #b22222;
-    background-color: var(--base-bg-color);
-    border: none;
-    cursor: pointer;
-}
-
-#prompt-text {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-}
-
-#prompt-link {
-    color: var(--github-link);
-    text-decoration: underline;
-}
-
-.prompt-first-p {
-    padding: 0rem 0rem 0.5rem 1rem;
-}
-
-.prompt-p {
-    padding: 0.5rem 0rem 0.5rem 1rem;
-}
-
-.prompt-polite {
-    padding: 0.8rem 0rem 0.1rem 1rem;
-}
-
-.prompt-final-p {
-    padding: 0.4rem 0rem 0.1rem 1rem;
-}
-
+/***** FOOTER *****/
 footer {
     height: 12vh;
     background-color: var(--skills-bg-color);
@@ -1087,6 +925,16 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.fa-github {
+    color: #000000;
+    text-decoration: none;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+    text-decoration: none;
 }
 
 .contacts {
@@ -1104,10 +952,6 @@ footer {
     width: 35%;
 }
 
-.inactive {
-    display: none;
-}
-
 /**************
 MEDIA QUERIES
 **************/
@@ -1118,8 +962,8 @@ MEDIA QUERIES
 /*overflow: auto; (voir texte si-dessous)*/
 @media only screen and (max-width: 370px) {
     body {
-      width: 100%;
-      background-color: pink;
+        width: 100%;
+        background-color: pink;
     }
 
     /*ACCUEIL*/
@@ -1142,7 +986,7 @@ MEDIA QUERIES
     #profile-img {
         width: 100%;
         border-radius: 5%;
-        box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     }
 
     #find-me {
@@ -1237,7 +1081,7 @@ MEDIA QUERIES
         width: 100%;
         border-radius: 15px;
         border: 2px solid #000000;
-        box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
         transform: scale(1);
         transition: color .2s, background-color 1s, transform .35s;
     }
@@ -1246,7 +1090,7 @@ MEDIA QUERIES
         width: 100%;
         border-radius: 15px;
         border: 2px solid #000000;
-        box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
         transform: scale(1.1);
         transition: color .2s, background-color 1s, transform .35s;
     }
@@ -1305,7 +1149,7 @@ MEDIA QUERIES
         width: 85%;
         margin: auto;
         border-radius: 15px;
-        box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     }
 
     #competences {
@@ -1582,7 +1426,7 @@ MEDIA QUERIES
         justify-content: center;
         font-size: 13px;
     }
-  }
+}
 
 /*
 We have styled the dropdown button with a background-color, padding, etc.
