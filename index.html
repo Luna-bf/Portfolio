@@ -23,84 +23,56 @@
     - faire en sorte que le thème sélectionné reste le même après avoir quitté ou réinitialisé la page
     - Ctrl + / pour commenter
     -->
-    <nav>
-        <div id="space-between">
-            <div class="d-flex">
-                <button id="change-theme" class="d-flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
-                        fill="#1f1f1f">
-                        <path
-                            d="M479.96-144Q340-144 242-242t-98-238q0-140 97.93-238t237.83-98q13.06 0 25.65 1 12.59 1 25.59 3-39 29-62 72t-23 92q0 85 58.5 143.5T648-446q49 0 92-23t72-62q2 13 3 25.59t1 25.65q0 139.9-98.04 237.83t-238 97.93Z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
-                        fill="#1f1f1f">
-                        <path
-                            d="M479.77-288Q400-288 344-344.23q-56-56.22-56-136Q288-560 344.23-616q56.22-56 136-56Q560-672 616-615.77q56 56.22 56 136Q672-400 615.77-344q-56.22 56-136 56ZM216-444H48v-72h168v72Zm696 0H744v-72h168v72ZM444-744v-168h72v168h-72Zm0 696v-168h72v168h-72ZM269-642 166-742l51-55 102 104-50 51Zm474 475L642-268l49-51 103 101-51 51ZM640-691l102-101 51 49-100 103-53-51ZM163-217l105-99 49 47-98 104-56-52Z" />
-                    </svg>
-                </button>
+    <header>
+        <nav>
+            <div id="space-between">
+                <div class="d-flex">
+                    <button id="change-theme" class="d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                            fill="#1f1f1f">
+                            <path
+                                d="M479.96-144Q340-144 242-242t-98-238q0-140 97.93-238t237.83-98q13.06 0 25.65 1 12.59 1 25.59 3-39 29-62 72t-23 92q0 85 58.5 143.5T648-446q49 0 92-23t72-62q2 13 3 25.59t1 25.65q0 139.9-98.04 237.83t-238 97.93Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                            fill="#1f1f1f">
+                            <path
+                                d="M479.77-288Q400-288 344-344.23q-56-56.22-56-136Q288-560 344.23-616q56.22-56 136-56Q560-672 616-615.77q56 56.22 56 136Q672-400 615.77-344q-56.22 56-136 56ZM216-444H48v-72h168v72Zm696 0H744v-72h168v72ZM444-744v-168h72v168h-72Zm0 696v-168h72v168h-72ZM269-642 166-742l51-55 102 104-50 51Zm474 475L642-268l49-51 103 101-51 51ZM640-691l102-101 51 49-100 103-53-51ZM163-217l105-99 49 47-98 104-56-52Z" />
+                        </svg>
+                    </button>
 
-                <!-- <div class="dropdown-menu d-flex">
+                    <!-- <div class="dropdown-menu d-flex">
                     <a href="#" class="drop-link d-flex"><img src="assets-folder/imgs/flags/france-flag-80x53.png" alt="France flag big" class="big"><i class="fa-solid fa-sort-down"></i></a>
                     <div class="dropdown-content">
                         <a href="index.php?lang=fr" class="lang-change" id="fr"><img src="assets-folder/imgs/flags/france-flag.png" alt="France flag" class="flag">Français</a>
                         <a href="index.php?lang=en" class="lang-change" id="en"><img src="assets-folder/imgs/flags/uk-flag.png" alt="UK flag" class="flag">English</a>
                     </div>
                 </div> -->
+                </div>
+
+                <ul class="d-flex" id="nav-ul">
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-
-            <ul class="d-flex" id="nav-ul">
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="d-flex">
-        <div>
-            <h1>Je m'appelle Luna BURATTI-FAYOLLE, je suis une jeune développeuse web.</h1>
-            <h1>Je recherche une <span id="underline">opportunité de stage</span> afin de devenir une développeuse full
-                stack confirmée.</h1>
-        </div>
-
-        <a href="assets-folder/ressources/CV_Luna_28072025.pdf" download="CV de Luna BURATTI-FAYOLLE.pdf"
-            class="resume"><i class="fa-solid fa-download"></i>Télécharger mon CV</a>
+        </nav>
     </header>
 
-    <main class="container" id="accueil">
-
-        <!-- <section class="home d-flex">
-
-            <div class="d-flex" id="profile">
-                <img src="imgs/Photo_portfolio_15012025.jpg" id="profile-img" alt="Ma photo">
-
-                <p id="find-me">Vous pouvez me retrouver sur :</p>
-                <article class="d-flex" id="socials-icons">
-                    <a href="https://github.com/Luna-bf" target="_blank" class="fa-brands fa-github"></a>
-                    <a href="https://www.linkedin.com/in/luna-buratti-fayolle/" target="_blank"
-                        class="fa-brands fa-linkedin"></a>
-                </article>
+    <main class="container">
+        <section class="d-flex hero">
+            <div class="hero-titles">
+                <h1>Je m'appelle Luna BURATTI-FAYOLLE, je suis une jeune développeuse web.</h1>
+                <h1>Je recherche une <span id="underline">opportunité de stage</span> afin de devenir une développeuse
+                    full
+                    stack confirmée.</h1>
             </div>
 
-            <div id="searching-for">
-                <h2>Qui suis-je ?</h2>
-                <br>
-                <p>Actuellement en recherche à l'AFEC, je suis une jeune développeuse web junior passionnée par le
-                    développement et la création de solutions innovantes. Dans l'optique d'évoluer dans ce domaine, je
-                    suis en quête d\'une opportunité de stage pour mettre en pratique mes compétences et apprendre
-                    auprès de professionnels expérimentés.</p>
-                <br>
-                <p>Motivation, curiosité et persévérance sont des soft skills qui me représentent et bien que je sois au
-                    début de mon parcours, je suis déterminée à monter en compétences aussi bien front-end qu'en
-                    back-end afin de devenir une développeuse full-stack confirmée. Je possède déjà des connaissances en
-                    HTML, CSS, PHP, MySQL et d'autres.</p>
-                <br>
-                <p>Je suis disponible immédiatement pour échanger avec vous alors n'hésitez pas à me contacter !</p>
-            </div>
-        </section> -->
-        
+            <a href="assets-folder/ressources/CV_Luna_28072025.pdf" download="CV de Luna BURATTI-FAYOLLE.pdf"
+                class="resume"><i class="fa-solid fa-download"></i>Télécharger mon CV</a>
+        </section>
+
         <section class="d-flex projects">
-            <h1 id="projects">Mes projets</h1>
+            <h2 id="projects">Mes projets</h2>
 
             <article class="d-flex parent-project">
                 <article class="project">
@@ -147,81 +119,165 @@
         <section class="d-flex skills">
             <h1 id="competences">Compétences</h1>
 
-            <div class="d-flex parent">
+            <!-- HTML card -->
+            <article class="card d-flex">
+                <figure><img src="imgs/logos/HTML_logo.png" alt="Logo d'HTML" /></figure>
 
-                <h2 class="d-flex title-hard-skills">Hard skills (front-end)</h2>
-                <article class="hard-skills-front-article-1">
-                    <div id="html">
-                        <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank"><img
-                                src="imgs/logos/HTML_logo.png" alt="Logo d'HTML" /></a>
-                        <h3>HTML</h3>
-                    </div>
+                <div class="titles">
+                    <h3>HTML</h3>
+                    <h4>Catégorie : Front-end</h4>
+                </div>
 
-                    <div id="css">
-                        <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank"><img
-                                src="imgs/logos/CSS_logo.png" alt="Logo de CSS" /></a>
-                        <h3>CSS</h3>
-                    </div>
+                <div class="text">
+                    <p>Le HyperText Markup Language, généralement abrégé HTML ou, dans sa dernière version, HTML5, est
+                        le langage de balisage conçu pour écrire les pages web. Il s'agit d'un format ouvert très
+                        utilisé en informatique.</p>
+                    <p class="src">Source : <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"
+                            target="_blank">Wikipédia</a></p>
+                </div>
+            </article>
 
-                    <div id="js">
-                        <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank"><img
-                                src="imgs/logos/JavaScript_logo.png" alt="Logo de JavaScript" /></a>
-                        <h3>JavaScript</h3>
-                    </div>
-                </article>
+            <!-- CSS card -->
+            <article class="card d-flex">
+                <figure><img src="imgs/logos/CSS_logo.png" alt="Logo CSS" /></figure>
 
-                <article class="hard-skills-front-article-2">
-                    <div id="figma">
-                        <a href="https://fr.wikipedia.org/wiki/Figma" target="_blank"><img
-                                src="imgs/logos/Figma_logo.png" alt="Logo de Figma" /></a>
-                        <h3>Figma</h3>
-                    </div>
+                <div class="titles">
+                    <h3>CSS</h3>
+                    <h4>Catégorie : Front-end</h4>
+                </div>
 
-                    <div id="swift">
-                        <a href="https://fr.wikipedia.org/wiki/Swift_(langage_d%27Apple)" target="_blank"><img
-                                src="imgs/logos/Swift_logo.png" alt="Logo de Swift" /></a>
-                        <h3>Swift</h3>
-                    </div>
+                <div class="text">
+                    <p>Les feuilles de style en cascade, généralement appelées CSS de l'anglais Cascading Style Sheets,
+                        forment un langage informatique qui décrit la présentation des documents HTML et XML.</p>
+                    <p class="src">Source : <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"
+                            target="_blank">Wikipédia</a></p>
+                </div>
+            </article>
 
-                    <div id="swift-ui">
-                        <a href="https://en.wikipedia.org/wiki/SwiftUI" target="_blank"><img
-                                src="imgs/logos/SwiftUI_logo.png" alt="Logo de SwiftUI" /></a>
-                        <h3>SwiftUI</h3>
-                    </div>
-                </article>
+            <!-- JS card -->
+            <article class="card d-flex">
+                <figure><img src="imgs/logos/JavaScript_logo.png" alt="Logo JavaScript" /></figure>
 
-                <h2 class="d-flex title-hard-skills">Hard skills (back-end)</h2>
-                <article class="hard-skills-back-article-1">
-                    <div id="php">
-                        <a href="https://fr.wikipedia.org/wiki/PHP" target="_blank"><img src="imgs/logos/PHP_logo.png"
-                                alt="Logo de PHP" /></a>
-                        <h3>PHP</h3>
-                    </div>
+                <div class="titles">
+                    <h3>JavaScript</h3>
+                    <h4>Catégorie : Front-end</h4>
+                </div>
 
-                    <div id="ruby">
-                        <a href="https://fr.wikipedia.org/wiki/Ruby" target="_blank"><img src="imgs/logos/Ruby_logo.png"
-                                alt="Logo de Ruby" /></a>
-                        <h3>Ruby</h3>
-                    </div>
-                </article>
+                <div class="text">
+                    <p>JavaScript est un langage de programmation de scripts principalement employé dans les pages web
+                        interactives et à ce titre est une partie essentielle des applications web.</p>
+                    <p class="src">Source : <a href="https://fr.wikipedia.org/wiki/JavaScript"
+                            target="_blank">Wikipédia</a></p>
+                </div>
+            </article>
 
-                <article class="hard-skills-back-article-2">
-                    <div id="mySQL">
-                        <a href="https://fr.wikipedia.org/wiki/MySQL" target="_blank"><img
-                                src="imgs/logos/MySQL_logo.png" alt="Logo de MySQL" /></a>
-                        <h3>MySQL</h3>
-                    </div>
-                </article>
+            <!-- Figma card -->
+            <article class="card d-flex">
+                <figure><img src="imgs/logos/Figma_logo.png" alt="Logo Figma" /></figure>
 
-                <h2 class="d-flex title-hard-skills">Outils et autres</h2>
-                <article class="hard-skills-back-article-1">
-                    <div id="git">
-                        <a href="https://fr.wikipedia.org/wiki/Git" target="_blank"><img src="imgs/logos/git_logo.png"
-                                alt="Logo de Git" /></a>
-                        <h3>Git</h3>
-                    </div>
-                </article>
-            </div>
+                <div class="titles">
+                    <h3>Figma</h3>
+                    <h4>Catégorie : Front-end</h4>
+                </div>
+
+                <div class="text">
+                    <p>Figma est un éditeur de graphiques vectoriels et un outil de prototypage. Il est principalement
+                        fondé sur le web, avec des fonctionnalités hors ligne supplémentaires activées par des
+                        applications de bureau pour macOS et Windows.</p>
+                    <p class="src">Source : <a href="https://fr.wikipedia.org/wiki/Figma" target="_blank">Wikipédia</a>
+                    </p>
+                </div>
+            </article>
+
+            <!-- Swift card -->
+            <article class="card d-flex">
+                <figure><img src="imgs/logos/Swift_logo.png" alt="Logo Swift" /></figure>
+
+                <div class="titles">
+                    <h3>Swift</h3>
+                    <h4>Catégorie : Front-end</h4>
+                </div>
+
+                <div class="text">
+                    <p>Swift est un langage de programmation objet compilé, multi-paradigmes, qui se veut simple,
+                        performant et sûr. Il est développé en open source. Le projet de développement de Swift est géré
+                        par Apple, qui en est également le principal contributeur.</p>
+                    <p class="src">Source : <a href="https://fr.wikipedia.org/wiki/Swift_(langage_d%27Apple)"
+                            target="_blank">Wikipédia</a></p>
+                </div>
+            </article>
+
+            <!-- SwiftUI card -->
+            <article class="card d-flex">
+                <figure><img src="imgs/logos/SwiftUI_logo.png" alt="Logo SwiftUI" /></figure>
+
+                <div class="titles">
+                    <h3>SwiftUI</h3>
+                    <h4>Catégorie : Front-end</h4>
+                </div>
+
+                <div class="text">
+                    <p>SwiftUI est un framework déclaratif permettant de créer des interfaces utilisateur pour iOS,
+                        iPadOS, watchOS, tvOS, visionOS et macOS, développé par Apple Inc. pour le langage de
+                        programmation Swift.</p>
+                    <p class="src">Source : <a href="https://en.wikipedia.org/wiki/SwiftUI"
+                            target="_blank">Wikipédia</a></p>
+                </div>
+            </article>
+
+            <!-- PHP card -->
+            <article class="card d-flex">
+                <figure><img src="imgs/logos/PHP_logo.png" alt="Logo PHP" /></figure>
+
+                <div class="titles">
+                    <h3>PHP</h3>
+                    <h4>Catégorie : Back-end</h4>
+                </div>
+
+                <div class="text">
+                    <p>PHP: Hypertext Preprocessor, plus connu sous son sigle PHP, est un langage de programmation
+                        libre. Celui-ci est principalement utilisé pour produire des pages web dynamiques via un serveur
+                        web.</p>
+                    <p class="src">Source : <a href="https://fr.wikipedia.org/wiki/PHP" target="_blank">Wikipédia</a>
+                    </p>
+                </div>
+            </article>
+
+            <!-- Ruby card -->
+            <article class="card d-flex">
+                <figure><img src="imgs/logos/Ruby_logo.png" alt="Logo Ruby" /></figure>
+
+                <div class="titles">
+                    <h3>Ruby</h3>
+                    <h4>Catégorie : Back-end</h4>
+                </div>
+
+                <div class="text">
+                    <p>Ruby est un langage de programmation libre. Il est interprété orienté objet et multi-paradigmes.
+                        Depuis l'arrivée d'une documentation anglophone, et du framework Ruby on Rails en 2004, Ruby a
+                        connu un certain engouement qui n'a cessé de croître jusqu'en 2008.</p>
+                    <p class="src">Source : <a href="https://fr.wikipedia.org/wiki/Ruby" target="_blank">Wikipédia</a>
+                    </p>
+                </div>
+            </article>
+
+            <!-- Git card -->
+            <article class="card d-flex">
+                <figure><img src="imgs/logos/git_logo.png" alt="Logo Git" /></figure>
+
+                <div class="titles">
+                    <h3>Git</h3>
+                    <h4>Catégorie : Logiciel de versioning</h4>
+                </div>
+
+                <div class="text">
+                    <p>Ruby est un langage de programmation libre. Il est interprété orienté objet et multi-paradigmes.
+                        Depuis l'arrivée d'une documentation anglophone, et du framework Ruby on Rails en 2004, Ruby a
+                        connu un certain engouement qui n'a cessé de croître jusqu'en 2008.</p>
+                    <p class="src">Source : <a href="https://fr.wikipedia.org/wiki/Git" target="_blank">Wikipédia</a>
+                    </p>
+                </div>
+            </article>
         </section>
 
         <div class="d-flex title-contact">
@@ -243,7 +299,8 @@
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="d-flex">
         <ul class="contacts">
             <li id="logo"><a href="#"><img src="imgs/logo-160x160.png" alt="Logo"></a></li>
         </ul>
