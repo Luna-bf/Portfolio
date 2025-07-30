@@ -7,8 +7,7 @@
     --theme-btn-bg-color: #333333;
     --nav-a-color: #000000;
     --nav-a-focus-color: #fff;
-    --github-link: blue;
-    --github-link-visited: midnightblue;
+    --github-link: #324487;
     --footer-bg-color: rgba(202, 229, 255, 1);
 }
 
@@ -203,6 +202,7 @@ h6 {
     font-style: normal;
     text-align: center;
     text-transform: uppercase;
+    color: var(--text-color);
 }
 
 img {
@@ -258,7 +258,6 @@ RETURN TO TOP
     --nav-a-color: #fff;
     --nav-a-focus-color: #fff;
     --github-link: #b5c7eb;
-    --github-link-visited: powderblue;
     --footer-bg-color: rgba(202, 229, 255, 1);
 }
 
@@ -430,7 +429,6 @@ nav ul li a:focus {
     color: var(--text-color);
     margin-bottom: 50px;
     text-align: center;
-    text-transform: uppercase;
 }
 
 .parent-project {
@@ -497,11 +495,6 @@ nav ul li a:focus {
     text-decoration: underline;
 }
 
-.github-link:visited {
-    color: var(--github-link-visited);
-    text-decoration: none;
-}
-
 
 /***** COMPETENCES *****/
 .skills {
@@ -511,12 +504,17 @@ nav ul li a:focus {
 }
 
 .skills>h2 {
-    color: var(--text-color);
     margin-bottom: 50px;
 }
 
 
 /**CARDS**/
+.cards-container {
+    margin-top: 70px;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 /*HTML*/
 .card {
@@ -530,10 +528,16 @@ nav ul li a:focus {
 .card>figure {
     width: 30%;
     margin: 0 auto;
+    margin-bottom: 5px;
 }
 
 .card .titles {
     text-align: center;
+    line-height: 1.6em;
+}
+
+.card .titles>h3 {
+    text-transform: none;
 }
 
 .card .titles>h4 {
@@ -549,131 +553,34 @@ nav ul li a:focus {
     font-family: "Roboto-Light", sans-serif;
     font-weight: 300;
     font-style: normal;
+    margin-top: 20px;
+    color: var(--text-color);
 }
 
 .card .text>.src {
     text-align: center;
+    margin-top: 20px;
 }
 
-
-#css {
-    width: 11%;
-}
-
-#css h3 {
-    display: flex;
-    justify-content: center;
-}
-
-#js {
-    width: 11%;
-}
-
-#js h3 {
-    display: flex;
-    justify-content: center;
+.card .text .src>a {
+    text-decoration: none;
+    color: var(--github-link);
 }
 
 #figma {
-    width: 6.5%;
-    margin-left: 13px;
-}
-
-#figma h3 {
-    display: flex;
-    justify-content: center;
-    margin-top: 2px;
-}
-
-#swift {
-    width: 10%;
-    margin-left: 21px;
-}
-
-#swift h3 {
-    display: flex;
-    justify-content: center;
-}
-
-#swift-ui {
-    width: 10.4%;
-    margin-left: 6px;
-}
-
-#swift-ui h3 {
-    display: flex;
-    justify-content: center;
-}
-
-.hard-skills-back-article-1 {
-    display: flex;
-    width: 75%;
-    margin: auto;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 45px;
-}
-
-.hard-skills-back-article-2 {
-    display: flex;
-    width: 75%;
-    margin: auto;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 60px;
+    width: 20%;
 }
 
 #php {
-    width: 20%;
-    margin-right: 5px;
+    width: 50%;
 }
 
-#php h3 {
-    display: flex;
-    justify-content: center;
-}
-
-#git {
-    width: 11%;
-    justify-self: center;
-}
-
-#git h3 {
-    display: flex;
-    justify-content: center;
-    margin-top: 4px;
-}
-
-#mySQL {
-    width: 15%;
-    margin-left: 14px;
-}
-
-#mySQL h3 {
-    display: flex;
-    justify-content: center;
-}
-
-#ruby {
-    width: 10%;
-}
-
-#ruby h3 {
-    display: flex;
-    justify-content: center;
-    margin-top: 18px;
-}
-
-/**************
-CONTACT
-**************/
-
+/***** CONTACT ******/
 #contact {
     padding: 8px 46px 8px 46px;
     justify-content: center;
     margin-top: 1.5em;
     margin-bottom: 1em;
-    color: var(--text-color);
 }
 
 #contact-me {
