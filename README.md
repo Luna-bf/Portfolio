@@ -1,3 +1,5 @@
+## PROJET EN COURS
+
 Fonctionnalités à implémenter :
 
 - Un thème qui persiste (comme la langue)
