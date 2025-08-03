@@ -10,7 +10,7 @@ const elements = {
 // Slider
 new Swiper('.card-wrapper', {
     loop: true,
-    spaceBetween: 20,
+    spaceBetween: 40,
 
     // If we need pagination
     pagination: {

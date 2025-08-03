@@ -511,8 +511,9 @@ nav ul li a:focus {
 
 /**CARDS**/
 .cards-container {
+    /* background-color: #0077B5; */
+    width: 80%;
     margin-top: 70px;
-    width: 60%;
     flex-direction: row;
     justify-content: space-around;
     justify-content: center;
@@ -522,7 +523,7 @@ nav ul li a:focus {
 
 /* card-wrapper */
 .card-wrapper {
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 60px 35px;
     overflow: hidden;
 }
@@ -536,6 +537,9 @@ nav ul li a:focus {
     border: 3px solid #B5C7EB;
     border-radius: 6px;
     padding: 20px 25px 20px 25px;
+    height: auto !important;
+    display: flex;
+    align-content: center;
 }
 
 .card-item>figure {
@@ -597,16 +601,16 @@ nav ul li a:focus {
 }
 
 .swiper-pagination-bullet {
-    background-color: #b5c7eb !important;
+    background-color: #788cb5 !important;
 }
 
 
 /***** CONTACT ******/
 #contact {
-    padding: 8px 46px 8px 46px;
     justify-content: center;
-    margin-top: 1.5em;
-    margin-bottom: 1em;
+    font-size: 28px;
+    margin: 135px 0 1em 0;
+    padding: 8px 46px 8px 46px;
 }
 
 #contact-me {
