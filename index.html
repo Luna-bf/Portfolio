@@ -170,7 +170,8 @@
                             <div class="text">
                                 <p>JavaScript est un langage de programmation de scripts principalement employé dans les
                                     pages web interactives et à ce titre est une partie essentielle des applications
-                                    web. Avec les langages HTML et CSS, JavaScript est au coeur des langages utilisés par
+                                    web. Avec les langages HTML et CSS, JavaScript est au coeur des langages utilisés
+                                    par
                                     les développeurs web.</p>
                                 <p class="src">Source : <a href="https://fr.wikipedia.org/wiki/JavaScript"
                                         target="_blank">Wikipédia</a></p>
@@ -303,19 +304,23 @@
         </section>
 
         <div class="d-flex title-contact">
-            <h1 id="contact">Contactez moi</h1>
+            <h1>Contactez moi</h1>
         </div>
 
-        <section id="contact-me">
-            <form action="form/form.php" method="POST">
-                <div class="d-flex" id="form-group">
-                    <input type="text" id="companyName" name="companyName"
-                        placeholder="Nom de l'entreprise (obligatoire)" required>
-                    <input type="email" id="email" name="userEmail" placeholder="Votre adresse mail (obligatoire)"
-                        required>
-                    <input type="text" id="subject" name="subject" placeholder="Objet (obligatoire)" required>
+        <section class="contact-me d-flex">
+            <form action="form/form.php" method="POST" class="d-flex">
+                <div class="d-flex form-elements">
+                    <div class="d-flex form-group">
+                        <input type="text" id="companyName" name="companyName"
+                            placeholder="Nom de l'entreprise" required>
+                        <input type="email" id="email" name="userEmail" placeholder="Votre adresse mail"
+                            required>
+                    </div>
+
+                    <input type="text" name="subject" placeholder="Objet" class="subject" required>
                     <textarea id="message" name="message" placeholder="Votre message"></textarea>
-                    <button type="submit" id="submit-button">Envoyer</button>
+
+                    <button type="submit" class="submit-button">Envoyer</button>
                 </div>
             </form>
         </section>
@@ -323,15 +328,20 @@
 
     <!-- Footer -->
     <footer class="d-flex">
-        <ul class="contacts">
-            <li id="logo"><a href="#"><img src="imgs/logos/logo-160x160.png" alt="Logo"></a></li>
-        </ul>
+        <div class="icons-container d-flex">
+            <a href="#" class="d-flex"><img src="imgs/logos/logo-160x160.png" alt="Logo"></a>
+
+            <div class="socials-icons d-flex">
+                <a href="https://github.com/Luna-bf" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/luna-buratti-fayolle/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
 
     <a href="#" id="return-to-top">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
-
 
     <!-- Le JS de SwiperJS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
