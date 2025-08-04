@@ -308,7 +308,7 @@
         </div>
 
         <section class="contact-me d-flex">
-            <form action="form/form.php" method="POST" class="d-flex">
+            <form class="d-flex">
                 <input type="hidden" name="time" value="">
                 <div class="d-flex form-elements">
                     <div class="d-flex form-group">
@@ -320,7 +320,7 @@
                     <input type="text" name="subject" placeholder="Objet" class="subject" required>
                     <textarea id="message" name="message" placeholder="Votre message" required></textarea>
 
-                    <button type="submit" class="submit-button">Envoyer</button>
+                    <button type="submit" class="submit-button" onclick="sendMail()">Envoyer</button>
                 </div>
             </form>
         </section>
