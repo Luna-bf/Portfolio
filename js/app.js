@@ -2,7 +2,7 @@
 const elements = {
      body: document.querySelector('body'),
      darkMode: window.localStorage.getItem("dark-mode"),
-     changeTheme: document.getElementById("change-theme"),
+     changeTheme: document.querySelector(".change-theme"),
      changeFlag: document.querySelector(".big"),
      en: document.querySelector("#en"),
 }

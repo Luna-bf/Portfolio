@@ -21,9 +21,9 @@
 <body>
     <header>
         <nav>
-            <div id="space-between">
+            <div class="d-flex space-between">
                 <div class="d-flex">
-                    <button id="change-theme" class="d-flex">
+                    <button class="change-theme d-flex">
                         <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
                             fill="#1f1f1f">
                             <path
@@ -45,7 +45,7 @@
                 </div> -->
                 </div>
 
-                <ul class="d-flex" id="nav-ul">
+                <ul class="d-flex">
                     <li><a href="#projects">Projets</a></li>
                     <li><a href="#competences">Compétences</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -58,7 +58,7 @@
         <section class="d-flex hero">
             <div class="hero-titles">
                 <h1>Je m'appelle Luna BURATTI-FAYOLLE, je suis une jeune développeuse web.</h1>
-                <h1>Je recherche une <span id="underline">opportunité de stage</span> afin de devenir une développeuse
+                <h1>Je recherche une opportunité de stage afin de devenir une développeuse
                     full stack confirmée.</h1>
             </div>
 
@@ -171,8 +171,7 @@
                                 <p>JavaScript est un langage de programmation de scripts principalement employé dans les
                                     pages web interactives et à ce titre est une partie essentielle des applications
                                     web. Avec les langages HTML et CSS, JavaScript est au coeur des langages utilisés
-                                    par
-                                    les développeurs web.</p>
+                                    par les développeurs web.</p>
                                 <p class="src">Source : <a href="https://fr.wikipedia.org/wiki/JavaScript"
                                         target="_blank">Wikipédia</a></p>
                             </div>
@@ -180,7 +179,7 @@
 
                         <!-- Figma card -->
                         <div class="card-item swiper-slide">
-                            <figure id="figma"><img src="imgs/logos/Figma_logo.png" alt="Logo Figma" /></figure>
+                            <figure class="figma"><img src="imgs/logos/Figma_logo.png" alt="Logo Figma" /></figure>
 
                             <div class="titles">
                                 <h3>Figma</h3>
@@ -237,7 +236,7 @@
 
                         <!-- PHP card -->
                         <div class="card-item swiper-slide">
-                            <figure id="php"><img src="imgs/logos/PHP_logo.png" alt="Logo PHP" /></figure>
+                            <figure class="php"><img src="imgs/logos/PHP_logo.png" alt="Logo PHP" /></figure>
 
                             <div class="titles">
                                 <h3>PHP</h3>
@@ -311,10 +310,9 @@
             <form action="form/form.php" method="POST" class="d-flex">
                 <div class="d-flex form-elements">
                     <div class="d-flex form-group">
-                        <input type="text" id="companyName" name="companyName"
-                            placeholder="Nom de l'entreprise" required>
-                        <input type="email" id="email" name="userEmail" placeholder="Votre adresse mail"
+                        <input type="text" id="companyName" name="companyName" placeholder="Nom de l'entreprise"
                             required>
+                        <input type="email" id="email" name="userEmail" placeholder="Votre adresse mail" required>
                     </div>
 
                     <input type="text" name="subject" placeholder="Objet" class="subject" required>
@@ -339,7 +337,7 @@
         </div>
     </footer>
 
-    <a href="#" id="return-to-top">
+    <a href="#" class="return-to-top">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
 
