@@ -494,12 +494,13 @@ nav ul li a:focus {
 
 /* card-item */
 .card-item {
+    display: flex;
+    align-content: center;
+    height: auto !important;
     border: 3px solid #B5C7EB;
     border-radius: 6px;
     padding: 20px 25px 20px 25px;
-    height: auto !important;
-    display: flex;
-    align-content: center;
+    margin-bottom: 10px;
 }
 
 .card-item>figure {
@@ -547,11 +548,11 @@ nav ul li a:focus {
     color: var(--github-link);
 }
 
-.figma {
+.card-item>.figma {
     width: 20%;
 }
 
-.php {
+.card-item>.php {
     width: 50%;
 }
 
@@ -711,12 +712,8 @@ footer {
         font-size: 25px;
     }
 
-    body {
-        background-color: pink;
-    }
-
     /*** RETURN TO TOP ***/
-    #return-to-top {
+    .return-to-top {
         position: fixed;
         bottom: 2rem;
         right: 2rem;
@@ -731,7 +728,7 @@ footer {
         transition: none;
     }
 
-    #return-to-top:hover {
+    .return-to-top:hover {
         background-color: #324487;
         opacity: 100;
     }
@@ -741,10 +738,19 @@ footer {
         font-size: 1.6rem;
     }
 
+    /***NAV***/
+    nav ul {
+        font-size: 17.5px;
+    }
+
     /***THEME SWITCHER***/
-    #change-theme {
-        height: 37px;
-        width: 37px;
+    .change-theme {
+        height: 35px;
+        width: 35px;
+    }
+
+    .change-theme svg {
+        height: 18px;
     }
 
     /***HERO***/
@@ -774,10 +780,6 @@ footer {
     }
 
     /***PROJETS***/
-    #projects {
-        justify-content: center;
-    }
-
     .project {
         width: 75%;
         margin: 0 auto;
@@ -799,9 +801,22 @@ footer {
         display: none;
     }
 
+    .text {
+        font-size: 18px;
+    }
+
     /***CONTACT***/
     .title-contact>h1 {
         font-size: 23px;
+    }
+
+    .contact-me {
+        padding: 1em 0 1em 0;
+    }
+
+    form {
+        width: 90%;
+        padding: 1.5em 0 1.5em 0;
     }
 
     /***FOOTER***/
