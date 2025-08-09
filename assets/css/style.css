@@ -175,7 +175,19 @@ html {
     font-style: italic;
 }
 
-/*** BODY ***/
+/***Dark mode***/
+.dark-mode {
+    --base-bg-color: #333333;
+    --text-color: #fff;
+    --nav-bg-color: rgba(181, 199, 235, 0.8);
+    --theme-icon-color: #333333;
+    --theme-btn-bg-color: #fff;
+    --nav-a-color: #fff;
+    --nav-a-focus-color: #fff;
+    --github-link: #b5c7eb;
+    --footer-bg-color: rgba(181, 199, 235, 1);
+}
+
 body {
     background-color: var(--base-bg-color);
     width: 100%;
@@ -207,6 +219,11 @@ li {
     list-style: none;
 }
 
+
+/***********
+    CODE
+***********/
+
 /*** RETURN TO TOP ***/
 .return-to-top {
     position: fixed;
@@ -231,20 +248,6 @@ li {
 .fa-arrow-up {
     color: #fff;
     font-size: 2rem;
-}
-
-
-/***Dark mode***/
-.dark-mode {
-    --base-bg-color: #333333;
-    --text-color: #fff;
-    --nav-bg-color: rgba(181, 199, 235, 0.8);
-    --theme-icon-color: #333333;
-    --theme-btn-bg-color: #fff;
-    --nav-a-color: #fff;
-    --nav-a-focus-color: #fff;
-    --github-link: #b5c7eb;
-    --footer-bg-color: rgba(181, 199, 235, 1);
 }
 
 /***NAV***/
