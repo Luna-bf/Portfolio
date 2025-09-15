@@ -1,0 +1,39 @@
+/***NAV***/
+nav {
+    position: fixed;
+    z-index: 10;
+    /*Pour que les éléments animés restent derrière la nav*/
+    padding: 0.6em;
+    text-align: center;
+    width: 100%;
+    background-color: var(--nav-bg-color);
+}
+
+.space-between {
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+nav ul {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0 5px;
+    transition: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a:focus {
+    color: var(--nav-a-focus-color);
+    text-decoration: underline;
+}

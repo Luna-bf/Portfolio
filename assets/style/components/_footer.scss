@@ -1,0 +1,131 @@
+/*** CONTACT ***/
+.title-contact {
+    justify-content: center;
+}
+
+.title-contact>h1 {
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.contact-me {
+    min-height: 70vh;
+    background: url("../imgs/form-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+}
+
+/***FORM***/
+form {
+    background-color: rgba(255, 255, 255, 0.4);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2.5em 0 2.5em 0;
+    width: 60%;
+    border-radius: 15px;
+}
+
+input {
+    font-family: "Roboto-Light", sans-serif;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #777777;
+}
+
+
+/* form-group */
+.form-group {
+    width: 100%;
+}
+
+.form-group>input:first-child {
+    margin-right: 10px;
+}
+
+
+/* form-elements */
+.form-elements {
+    flex-direction: column;
+    width: 80%;
+}
+
+.form-elements>textarea {
+    font-family: "Roboto-Light", sans-serif;
+    font-size: 16px;
+    height: 15em;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #777777;
+}
+
+/* submit-button */
+.form-elements>.submit-button {
+    font-family: "Roboto-Light", sans-serif;
+    align-self: flex-start;
+    border: 1px solid #283669;
+    background-color: #283669;
+    color: #fff;
+    padding: 12px 20px 12px 20px;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+}
+
+.form-elements>.submit-button:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f054";
+    padding-left: 15px;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #fff;
+    font-size: 18px;
+}
+
+.form-elements>.submit-button:hover {
+    background-color: #324487;
+    border: 1px #324487 solid;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/*** FOOTER ***/
+footer {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.6em;
+    background-color: var(--footer-bg-color);
+}
+
+/* icons-container */
+.icons-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons-container>a {
+    align-items: center;
+    width: 20%;
+}
+
+/* socials-icons */
+.socials-icons a>i {
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.fa-github {
+    color: #000000;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+}

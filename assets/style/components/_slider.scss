@@ -1,0 +1,107 @@
+/*** COMPETENCES ***/
+.skills {
+    font-size: 20px;
+    margin: 135px 0 160px 0;
+    flex-direction: column;
+}
+
+.skills>h2 {
+    margin-bottom: 50px;
+}
+
+/**CARDS**/
+.cards-container {
+    /* background-color: #0077B5; */
+    width: 80%;
+    margin-top: 70px;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* card-wrapper */
+.card-wrapper {
+    max-width: 100%;
+    margin: 0 60px 35px;
+    overflow: hidden;
+}
+
+.card-list {
+    width: 50%;
+}
+
+/* card-item */
+.card-item {
+    display: flex;
+    align-content: center;
+    height: auto !important;
+    border: 3px solid #B5C7EB;
+    border-radius: 6px;
+    padding: 20px 25px 20px 25px;
+    margin-bottom: 10px;
+}
+
+.card-item>figure {
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.card-item:active {
+    cursor: grabbing;
+}
+
+.card-item>.titles {
+    text-align: center;
+    line-height: 1.6em;
+}
+
+.card-item .titles>h3 {
+    text-transform: none;
+}
+
+.card-item .titles>h4 {
+    font-family: "Roboto-LightItalic", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    text-transform: none;
+    color: #AAAAAA;
+}
+
+.card-item>.text {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+.card-item .text>.src {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-item .text .src>a {
+    text-decoration: none;
+    color: var(--github-link);
+}
+
+.card-item>.figma {
+    width: 20%;
+}
+
+.card-item>.php {
+    width: 50%;
+}
+
+/* swiper buttons + pagination */
+.swiper-button-next, .swiper-button-prev {
+  --swiper-navigation-color: var(--text-color);
+  --swiper-navigation-size: 28px;
+}
+
+.swiper-pagination-bullet {
+    --swiper-pagination-color: #788cb5;
+}

@@ -1,0 +1,159 @@
+/*** RETURN TO TOP ***/
+.return-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #283669;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    border-radius: 50%;
+    opacity: 80%;
+    transition: none;
+}
+
+.return-to-top:hover {
+    background-color: #324487;
+    opacity: 100;
+}
+
+.fa-arrow-up {
+    color: #fff;
+    font-size: 2rem;
+}
+
+/*** HERO ***/
+.hero {
+    min-height: 100vh;
+    background: url("../imgs/header-img.png");
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 40em rgba(0, 0, 0, 0.5) inset;
+    margin-bottom: 10px;
+}
+
+.hero .hero-titles>h1 {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: #fff;
+    margin: 0 auto;
+    line-height: 3em;
+    text-align: center;
+    text-transform: none;
+}
+
+.resume {
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    border: 3px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 5em;
+    padding: 15px 50px 15px 50px;
+    text-transform: uppercase;
+    transition: none;
+}
+
+.fa-download {
+    padding-right: 15px;
+    font-size: 22px;
+}
+
+.resume:hover {
+    background-color: #283669;
+    border-color: #283669;
+}
+
+.resume:active {
+    background-color: #324487;
+    border-color: #324487;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+    transition: none;
+}
+
+
+/***** MAIN *****/
+.container {
+    width: 100%;
+}
+
+
+/***** PROJETS *****/
+.projects {
+    font-size: 20px;
+    margin-top: 135px;
+    flex-direction: column;
+}
+
+.projects>h2 {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.parent-project {
+    padding-top: 3em;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 41%;
+}
+
+.project-img {
+    border-radius: 15px;
+    border: 2px solid #000000;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+    transition: color .2s, background-color 1s, transform .35s;
+}
+
+.project-img:hover {
+    transform: scale(1.1);
+}
+
+.project ul li {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: var(--text-color);
+    margin: 1rem 0rem 0rem 5px;
+}
+
+.project ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f005";
+    padding-right: 10px;
+    vertical-align: 15%;
+    font-weight: 900;
+    color: #FFBD59;
+    font-size: 18px;
+}
+
+.project ul li:first-child {
+    margin-top: 2rem;
+}
+
+.project ul li:last-child {
+    margin-bottom: 5rem;
+}
+
+.github-link {
+    color: var(--github-link);
+    text-decoration: none;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
