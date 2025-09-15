@@ -1,4 +1,10 @@
+@forward 'fonts/fonts';
 @forward 'components/nav';
+@forward 'page';
+@forward 'components/slider';
+@forward 'components/footer';
+@forward 'themes/themes';
+@forward 'responsive/responsive';
 
 /***Reset***/
 * {
