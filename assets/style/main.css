@@ -272,7 +272,6 @@ nav ul li a:focus {
   text-decoration: none;
   margin-top: 5em;
   padding: 15px 50px 15px 50px;
-  text-transform: uppercase;
   transition: none;
 }
 
