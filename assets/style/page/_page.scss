@@ -48,6 +48,10 @@
     text-transform: none;
 }
 
+span {
+    text-decoration: underline;
+}
+
 .resume {
     font-family: "Roboto-Regular", sans-serif;
     font-weight: 400;
@@ -83,6 +87,38 @@
 /***** MAIN *****/
 .container {
     width: 100%;
+}
+
+.about-me {
+    justify-content: center;
+    margin: 75px 0 210px 0;
+}
+
+.about-me>figure {
+    width: 18%;
+    margin-right: 5em;
+}
+
+.about-me figure>img {
+    border-radius: 15px;
+}
+
+.about-me>.searching-for {
+    width: 50%;
+}
+
+.about-me>.searching-for h3 {
+    text-align: left;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.about-me>.searching-for p {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    color: var(--text-color);
+    line-height: 1.5;
+    font-size: 21px;
 }
 
 
