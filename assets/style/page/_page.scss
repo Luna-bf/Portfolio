@@ -37,7 +37,7 @@
     margin-bottom: 10px;
 }
 
-.hero .hero-titles>h1 {
+.hero .hero-title>h1 {
     font-family: "Roboto-Light", sans-serif;
     font-weight: 300;
     font-size: 32px;
@@ -51,17 +51,17 @@
 .resume {
     font-family: "Roboto-Regular", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     border: 3px solid #fff;
     border-radius: 6px;
     color: #fff;
     text-decoration: none;
-    margin-top: 5em;
-    padding: 15px 50px 15px 50px;
+    margin-top: 2em;
+    padding: 18px 40px 18px 40px;
 }
 
 .fa-download {
-    padding-right: 15px;
+    padding-right: 18px;
     font-size: 22px;
 }
 
@@ -94,12 +94,14 @@
 }
 
 .projects>h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
     color: var(--text-color);
     text-align: center;
 }
 
 .parent-project {
-    padding-top: 3em;
+    margin-top: 3em;
     justify-content: center;
     justify-content: space-around;
     flex-wrap: wrap;

@@ -5,15 +5,16 @@
     flex-direction: column;
 }
 
-.skills>h2 {
-    margin-bottom: 50px;
+.skills>h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
 /**CARDS**/
 .cards-container {
     /* background-color: #0077B5; */
     width: 80%;
-    margin-top: 70px;
+    margin-top: 3em;
     flex-direction: row;
     justify-content: space-around;
     justify-content: center;
@@ -37,7 +38,7 @@
     display: flex;
     align-content: center;
     height: auto !important;
-    border: 3px solid #B5C7EB;
+    border: 3px solid var(--footer-bg-color);
     border-radius: 6px;
     padding: 20px 25px 20px 25px;
     margin-bottom: 10px;
