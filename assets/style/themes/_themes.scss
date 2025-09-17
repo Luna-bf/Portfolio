@@ -2,26 +2,26 @@
 :root {
     --base-bg-color: #fff;
     --text-color: #000000;
-    --nav-bg-color: rgba(202, 229, 255, 0.8);
+    --nav-bg-color: rgba(181, 199, 235, 0.8);
     --theme-icon-color: #fff;
     --theme-btn-bg-color: #333333;
     --nav-a-color: #000000;
     --nav-a-focus-color: #fff;
     --github-link: #324487;
-    --footer-bg-color: rgba(202, 229, 255, 1);
+    --footer-bg-color: #b5c7ebcc;
 }
 
 /***Dark mode***/
 .dark-mode {
     --base-bg-color: #333333;
     --text-color: #fff;
-    --nav-bg-color: rgba(181, 199, 235, 0.8);
+    --nav-bg-color: rgb(51, 61, 101, 0.8);
     --theme-icon-color: #333333;
     --theme-btn-bg-color: #fff;
     --nav-a-color: #fff;
     --nav-a-focus-color: #fff;
     --github-link: #b5c7eb;
-    --footer-bg-color: rgba(181, 199, 235, 1);
+    --footer-bg-color: #333D65;
 }
 
 /***THEME SWITCHER***/

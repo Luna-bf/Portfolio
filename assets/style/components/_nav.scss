@@ -24,7 +24,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #000000;
+    color: var(--text-color);
     padding: 0 5px;
     transition: none;
 }
