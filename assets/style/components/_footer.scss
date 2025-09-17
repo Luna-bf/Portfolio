@@ -10,21 +10,22 @@
 
 .contact-me {
     min-height: 70vh;
-    background: url("../imgs/form-img.png");
+    background: url("../imgs/form-bg-img.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 0 40em rgba(0, 0, 0, 0.5) inset;
     align-items: center;
 }
 
 /***FORM***/
 form {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.3);
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 2.5em 0 2.5em 0;
-    width: 60%;
+    padding: 2em 0 2em 0;
+    width: 55%;
     border-radius: 15px;
 }
 
