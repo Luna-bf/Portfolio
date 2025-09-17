@@ -109,6 +109,10 @@
     width: 41%;
 }
 
+.project>a {
+    text-decoration: none;
+}
+
 .project-img {
     border-radius: 15px;
     border: 2px solid #000000;
@@ -146,6 +150,34 @@
 .project ul li:last-child {
     margin-bottom: 5rem;
 }
+
+/*.project-card {
+    margin: 0 auto;
+    height: 45vh;
+    width: 80%;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+}
+
+.project-card>p {
+    font-family: "Roboto-Light", sans-serif;
+    font-size: 21px;
+    position: relative;
+    bottom: -313px;
+    background-color: #000000;
+    color: #fff;
+    padding: 0.8em;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+}
+
+#joke-generator {
+    background: url("../imgs/projects/ajax-joke-generator_thumbnail.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}*/
 
 .github-link {
     color: var(--github-link);
