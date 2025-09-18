@@ -240,7 +240,6 @@ nav ul li a:focus {
   align-items: center;
   flex-direction: column;
   box-shadow: 0 40em rgba(0, 0, 0, 0.5) inset;
-  margin-bottom: 10px;
 }
 
 .hero .hero-titles > h1 {
@@ -329,7 +328,7 @@ span {
 /***** PROJETS *****/
 .projects {
   font-size: 20px;
-  margin-top: 135px;
+  margin: 135px;
   flex-direction: column;
 }
 
@@ -389,7 +388,7 @@ span {
 }
 
 .project ul li:last-child {
-  margin-bottom: 5rem;
+  margin-bottom: 100px;
 }
 
 /*.project-card {
@@ -431,7 +430,8 @@ span {
 /*** COMPETENCES ***/
 .skills {
   font-size: 20px;
-  margin: 135px 0 220px 0;
+  margin: 135px 0 100px 0;
+  margin-top: 135px;
   flex-direction: column;
 }
 
@@ -542,7 +542,7 @@ span {
 }
 
 .title-contact > h1 {
-  margin-bottom: 75px;
+  margin: 135px 0 20px 0;
 }
 
 .contact-me {
@@ -553,6 +553,7 @@ span {
   background-position: center;
   box-shadow: 0 40em rgba(0, 0, 0, 0.5) inset;
   align-items: center;
+  margin-top: 3em;
 }
 
 /***FORM***/
@@ -704,7 +705,7 @@ footer {
   }
   /***PROJETS***/
   .project {
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
   }
   .project-img {
