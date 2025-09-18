@@ -714,7 +714,10 @@ footer {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   }
   .project ul li {
-    font-size: 21px;
+    font-size: 20px;
+  }
+  .fa-star {
+    font-size: 16px;
   }
   /***CARD WRAPPER***/
   .card-wrapper .swiper-slide-button {
