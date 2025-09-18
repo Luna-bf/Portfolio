@@ -724,6 +724,18 @@ footer {
   .card-wrapper .swiper-slide-button {
     display: none;
   }
+  .card-item > figure {
+    width: 50%;
+  }
+  .card-item > .figma {
+    width: 30%;
+  }
+  .card-item > .php {
+    width: 80%;
+  }
+  .card-item .titles > h3 {
+    font-size: 22px;
+  }
   .text {
     font-size: 18px;
   }
