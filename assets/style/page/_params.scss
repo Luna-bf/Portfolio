@@ -1,3 +1,16 @@
+/***CSS variables***/
+:root{
+    --base-bg-color: #333333;
+    --text-color: #fff;
+    --nav-bg-color: rgb(51, 61, 101, 0.8);
+    --theme-icon-color: #333333;
+    --theme-btn-bg-color: #fff;
+    --nav-a-color: #fff;
+    --nav-a-focus-color: #fff;
+    --github-link: #b5c7eb;
+    --footer-bg-color: #333D65;
+}
+
 /***Reset***/
 * {
     box-sizing: border-box;
