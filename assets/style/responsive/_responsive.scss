@@ -7,7 +7,7 @@
     h4,
     h5,
     h6 {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     /*** RETURN TO TOP ***/
@@ -24,16 +24,6 @@
         border-radius: 50%;
         opacity: 80%;
         transition: none;
-    }
-
-    .return-to-top:hover {
-        background-color: #324487;
-        opacity: 100;
-    }
-
-    .fa-arrow-up {
-        color: #fff;
-        font-size: 1.6rem;
     }
 
     /***NAV***/
@@ -53,7 +43,7 @@
 
     /***HERO***/
     .hero .hero-titles>h1 {
-        font-size: 21px;
+        font-size: 18px;
         line-height: 32px;
     }
 
@@ -101,11 +91,6 @@
 
     .text {
         font-size: 18px;
-    }
-
-    /***CONTACT***/
-    .title-contact>h1 {
-        font-size: 23px;
     }
 
     .contact-me {
