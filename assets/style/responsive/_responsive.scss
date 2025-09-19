@@ -12,8 +12,36 @@
 
     /***NAV***/
     nav ul {
-        font-size: 17.5px;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        height: 100vh;
+        font-size: 21px;
+        background-color: #000000;
+        transition: all 0.2 ease-in-out;
     }
+
+    nav ul li {
+        margin-top: 40px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+
+    nav ul #check:checked {
+        right: 0;
+    }
+
 
     /***HERO***/
     .hero .hero-titles>h1 {

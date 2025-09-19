@@ -7,7 +7,6 @@
   --theme-icon-color: #333333;
   --theme-btn-bg-color: #fff;
   --nav-a-color: #fff;
-  --nav-a-focus-color: #fff;
   --github-link: #b5c7eb;
   --footer-bg-color: #333D65;
 }
@@ -208,10 +207,12 @@ nav {
 }
 
 nav ul {
+  flex-direction: row;
   font-family: "Roboto-Light", sans-serif;
   font-weight: 300;
   font-size: 18px;
   text-decoration: none;
+  align-items: center;
 }
 
 nav ul li a {
@@ -226,8 +227,30 @@ nav ul li a:hover {
 }
 
 nav ul li a:focus {
-  color: var(--nav-a-focus-color);
   text-decoration: underline;
+}
+
+.open-menu, .close-menu {
+  display: none;
+  position: absolute;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.open-menu {
+  top: 13%;
+  right: 20px;
+  transform: translateY(50%);
+}
+
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+
+#check {
+  display: none;
 }
 
 /*** HERO ***/
@@ -680,7 +703,30 @@ footer {
   }
   /***NAV***/
   nav ul {
-    font-size: 17.5px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 100vh;
+    font-size: 21px;
+    background-color: #000000;
+    transition: all 0.2 ease-in-out;
+  }
+  nav ul li {
+    margin-top: 40px;
+  }
+  nav ul li a {
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  nav ul #check:checked {
+    right: 0;
   }
   /***HERO***/
   .hero .hero-titles > h1 {

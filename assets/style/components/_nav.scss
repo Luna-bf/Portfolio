@@ -21,10 +21,12 @@ nav {
 }
 
 nav ul {
+    flex-direction: row;
     font-family: "Roboto-Light", sans-serif;
     font-weight: 300;
     font-size: 18px;
     text-decoration: none;
+    align-items: center;
 }
 
 nav ul li a {
@@ -39,6 +41,28 @@ nav ul li a:hover {
 }
 
 nav ul li a:focus {
-    color: var(--nav-a-focus-color);
     text-decoration: underline;
+}
+
+.open-menu, .close-menu {
+    display: none;
+    position: absolute;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.open-menu {
+    top: 13%;
+    right: 20px;
+    transform: translateY(50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {
+    display: none;
 }
