@@ -708,12 +708,15 @@ footer {
     right: -100%;
     z-index: 100;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     width: 70%;
     height: 100vh;
     font-size: 21px;
     background-color: #000000;
     transition: all 0.2 ease-in-out;
+  }
+  nav ul li:first-child {
+    margin-top: 8em;
   }
   nav ul li {
     margin-top: 40px;
