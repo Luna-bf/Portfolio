@@ -725,7 +725,7 @@ footer {
   .close-menu {
     display: block;
   }
-  nav ul #check:checked {
+  #check:checked ~ ul {
     right: 0;
   }
   /***HERO***/
