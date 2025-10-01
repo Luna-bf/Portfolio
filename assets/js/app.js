@@ -1,45 +1,13 @@
-// Slider
-new Swiper('.card-wrapper', {
-    loop: true,
-    spaceBetween: 40,
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // Responsive
-    breakpoints: {
-        0: {
-            slidesPerView: 1
-        },
-        768: {
-            slidesPerView: 2
-        },
-        1024: {
-            slidesPerView: 3
-        },
-    }
-});
-
-
-// Cover background (active burger menu)
 const coverBackground = document.getElementById('cover-background');
-const burgerMenuBtn = document.querySelector('.open-menu');
+const burgerMenuBtn = document.getElementById('check');
 
 burgerMenuBtn.addEventListener('click', function () {
 
-    // Faire en sorte que le fond sois sombre uniquement lorsque le burger menu est ouvert
-    coverBackground.classList.toggle('covering');
-    window.setTimeout(function () { coverBackground.classList.toggle('covering'); }, 5000);
+    if (burgerMenuBtn.checked) { // Si l'élément du burger menu a l'attribut "checked" alors :
 
-    // if(coverBackground.classList)
+        coverBackground.classList.add('cover'); // J'ajoute la classe .cover à l'élément coverBackground
+    } else { // Sinon (si l'élément n'a pas l'attribut "checked") :
+
+        coverBackground.classList.remove('cover'); // Je retire la classe .cover à l'élément coverBackground
+    }
 });

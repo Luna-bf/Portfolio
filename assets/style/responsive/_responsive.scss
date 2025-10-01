@@ -15,7 +15,7 @@
         position: fixed;
         top: 0;
         right: -100%;
-        z-index: 100;
+        z-index: 1;
         flex-direction: column;
         justify-content: flex-start;
         width: 70%;
@@ -46,23 +46,15 @@
         right: 0;
     }
 
-    // #cover-background {
-    //     display: none;
-    //     position: fixed;
-    //     top: 0;
-    //     left: 0;
-    //     height: 0;
-    //     width: 0;
-    //     z-index: -1;
-    // }
-
-    // #cover-background.covering {
-    //     display: block;
-    //     height: 100%;
-    //     width: 100%;
-    //     z-index: 1;
-    //     background-color: rgba(0, 0, 0, 0.3);
-    // }
+    .cover {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 
 
     /***HERO***/
@@ -127,6 +119,10 @@
 
     .card-item>.php {
         width: 80%;
+    }
+
+    .card-item>.mongodb {
+        width: 52%;
     }
 
     .text {
