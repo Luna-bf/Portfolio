@@ -550,6 +550,11 @@ span {
   width: 50%;
 }
 
+.card-item > .mongodb {
+  width: 32%;
+  margin-bottom: 2px;
+}
+
 /* swiper buttons + pagination */
 .swiper-button-next, .swiper-button-prev {
   --swiper-navigation-color: var(--text-color);
