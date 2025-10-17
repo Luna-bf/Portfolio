@@ -555,6 +555,11 @@ span {
   margin-bottom: 2px;
 }
 
+.card-item > .wordpress {
+  width: 40%;
+  margin-bottom: 0;
+}
+
 /* swiper buttons + pagination */
 .swiper-button-next, .swiper-button-prev {
   --swiper-navigation-color: var(--text-color);
