@@ -281,8 +281,8 @@ span {
 }
 
 .resume {
-  font-family: "Roboto-Regular", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto-Light", sans-serif;
+  font-weight: 300;
   font-size: 20px;
   border: 3px solid #fff;
   border-radius: 6px;
@@ -290,6 +290,7 @@ span {
   text-decoration: none;
   margin-top: 2em;
   padding: 18px 40px 18px 40px;
+  box-shadow: 0px 2.5px 30px rgba(199, 199, 199, 0.5);
 }
 
 .fa-download {
@@ -307,7 +308,6 @@ span {
   border-color: #324487;
   color: #fff;
   text-decoration: none;
-  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
   transition: none;
 }
 
@@ -580,7 +580,7 @@ span {
 }
 
 .contact-me {
-  min-height: 70vh;
+  min-height: 63vh;
   background: url("../imgs/form-bg-img.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -593,19 +593,20 @@ span {
 /***FORM***/
 form {
   background-color: rgba(255, 255, 255, 0.3);
+  min-height: 63vh;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   padding: 2em 0 2em 0;
   width: 55%;
-  border-radius: 15px;
 }
 
 input {
   font-family: "Roboto-Light", sans-serif;
   font-size: 16px;
-  padding: 12px;
+  height: 2.9em;
   width: 100%;
+  padding-left: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
   border: 1px solid #777777;
@@ -630,7 +631,7 @@ input {
   font-family: "Roboto-Light", sans-serif;
   font-size: 16px;
   height: 15em;
-  padding: 15px;
+  padding: 15px 15px 15px 10px;
   width: 100%;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -648,16 +649,7 @@ input {
   border-radius: 5px;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
   font-size: 16px;
-}
-
-.form-elements > .submit-button:after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f054";
-  padding-left: 15px;
-  vertical-align: middle;
-  font-weight: 900;
-  color: #fff;
-  font-size: 18px;
+  width: 20%;
 }
 
 .form-elements > .submit-button:hover {
@@ -766,7 +758,7 @@ footer {
     color: #fff;
     text-decoration: none;
     margin-top: 5em;
-    padding: 10px 45px 10px 45px;
+    padding: 15px 45px 15px 45px;
   }
   .fa-download {
     padding-right: 15px;
@@ -808,12 +800,14 @@ footer {
   .text {
     font-size: 18px;
   }
-  .contact-me {
-    padding: 1em 0 1em 0;
-  }
   form {
+    min-height: 65vh;
     width: 90%;
     padding: 1.5em 0 1.5em 0;
+  }
+  /* submit-button */
+  .form-elements > .submit-button {
+    width: 45%;
   }
   /***FOOTER***/
   /* icons container */

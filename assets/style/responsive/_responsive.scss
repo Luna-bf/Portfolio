@@ -77,7 +77,7 @@
         color: #fff;
         text-decoration: none;
         margin-top: 5em;
-        padding: 10px 45px 10px 45px;
+        padding: 15px 45px 15px 45px;
     }
 
     .fa-download {
@@ -131,13 +131,15 @@
         font-size: 18px;
     }
 
-    .contact-me {
-        padding: 1em 0 1em 0;
-    }
-
     form {
+        min-height: 65vh;
         width: 90%;
         padding: 1.5em 0 1.5em 0;
+    }
+
+    /* submit-button */
+    .form-elements>.submit-button {
+        width: 45%;
     }
 
     /***FOOTER***/
