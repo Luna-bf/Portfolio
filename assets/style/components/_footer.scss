@@ -8,7 +8,7 @@
 }
 
 .contact-me {
-    min-height: 70vh;
+    min-height: 63vh;
     background: url("../imgs/form-bg-img.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,17 +21,18 @@
 /***FORM***/
 form {
     background-color: rgba(255, 255, 255, 0.3);
+    min-height: 63vh;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding: 2em 0 2em 0;
     width: 55%;
-    border-radius: 15px;
+    // border-radius: 15px;
 }
 
 input {
     font-family: "Roboto-Light", sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     height: 2.9em;
     width: 100%;
     padding-left: 10px;
@@ -59,7 +60,7 @@ input {
 
 .form-elements>textarea {
     font-family: "Roboto-Light", sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     height: 15em;
     padding: 15px 15px 15px 10px;
     width: 100%;
@@ -79,17 +80,18 @@ input {
     border-radius: 5px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
     font-size: 16px;
+    width: 20%;
 }
 
-.form-elements>.submit-button:after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f054";
-    padding-left: 15px;
-    vertical-align: middle;
-    font-weight: 900;
-    color: #fff;
-    font-size: 18px;
-}
+// .form-elements>.submit-button:after {
+//     font-family: "Font Awesome 5 Free";
+//     content: "\f054";
+//     padding-left: 15px;
+//     vertical-align: middle;
+//     font-weight: 900;
+//     color: #fff;
+//     font-size: 18px;
+// }
 
 .form-elements>.submit-button:hover {
     background-color: #324487;
