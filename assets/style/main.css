@@ -603,8 +603,8 @@ form {
 
 input {
   font-family: "Roboto-Light", sans-serif;
-  font-size: 16px;
-  height: 2.9em;
+  font-size: 15px;
+  height: 2.7em;
   width: 100%;
   padding-left: 10px;
   margin-bottom: 20px;
@@ -629,7 +629,7 @@ input {
 
 .form-elements > textarea {
   font-family: "Roboto-Light", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   height: 15em;
   padding: 15px 15px 15px 10px;
   width: 100%;
