@@ -73,8 +73,8 @@ input {
 .form-elements>.submit-button {
     font-family: "Roboto-Light", sans-serif;
     align-self: flex-start;
-    border: 1px solid #283669;
-    background-color: #283669;
+    border: 1px solid  var(--footer-bg-color);
+    background-color:  var(--footer-bg-color);
     color: #fff;
     padding: 12px 20px 12px 20px;
     border-radius: 5px;
@@ -94,8 +94,8 @@ input {
 // }
 
 .form-elements>.submit-button:hover {
-    background-color: #324487;
-    border: 1px #324487 solid;
+    background-color: var(--btn-hover);
+    border: 1px var(--btn-hover) solid;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }

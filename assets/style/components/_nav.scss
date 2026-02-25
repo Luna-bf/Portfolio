@@ -1,9 +1,10 @@
 /***NAV***/
 nav {
     position: fixed;
+    top: 0;
     z-index: 10;
     /*Pour que les éléments animés restent derrière la nav*/
-    padding: 0.6em;
+    padding: 0.8em;
     text-align: center;
     width: 100%;
     background-color: var(--nav-bg-color);
@@ -24,7 +25,7 @@ nav ul {
     flex-direction: row;
     font-family: "Roboto-Light", sans-serif;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 17.5px;
     text-decoration: none;
     align-items: center;
 }
