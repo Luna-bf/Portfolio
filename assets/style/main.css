@@ -3,12 +3,11 @@
 :root {
   --base-bg-color: #333333;
   --text-color: #fff;
-  --nav-bg-color: rgb(51, 61, 101, 0.8);
+  --nav-bg-color: rgb(38, 52, 101, 0.8);
   --theme-icon-color: #333333;
-  --theme-btn-bg-color: #fff;
-  --nav-a-color: #fff;
   --github-link: #b5c7eb;
-  --footer-bg-color: #333D65;
+  --btn-hover: #324487;
+  --footer-bg-color: #263465;
 }
 
 /***Reset***/
@@ -187,9 +186,10 @@ li {
 /***NAV***/
 nav {
   position: fixed;
+  top: 0;
   z-index: 10;
   /*Pour que les éléments animés restent derrière la nav*/
-  padding: 0.6em;
+  padding: 0.8em;
   text-align: center;
   width: 100%;
   background-color: var(--nav-bg-color);
@@ -210,7 +210,7 @@ nav ul {
   flex-direction: row;
   font-family: "Roboto-Light", sans-serif;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 17.5px;
   text-decoration: none;
   align-items: center;
 }
@@ -253,64 +253,6 @@ nav ul li a:focus {
   display: none;
 }
 
-/*** HERO ***/
-.hero {
-  min-height: 75vh;
-  background: url("../imgs/header-bg-img.png");
-  background-size: cover;
-  background-position: center center;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0 40em rgba(0, 0, 0, 0.5) inset;
-}
-
-.hero .hero-titles > h1 {
-  font-family: "Roboto-Light", sans-serif;
-  font-weight: 300;
-  font-size: 32px;
-  color: #fff;
-  margin: 0 auto;
-  line-height: 3em;
-  text-align: center;
-  text-transform: none;
-}
-
-span {
-  text-decoration: underline;
-}
-
-.resume {
-  font-family: "Roboto-Light", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  border: 3px solid #fff;
-  border-radius: 6px;
-  color: #fff;
-  text-decoration: none;
-  margin-top: 2em;
-  padding: 18px 40px 18px 40px;
-  box-shadow: 0px 2.5px 30px rgba(199, 199, 199, 0.5);
-}
-
-.fa-download {
-  padding-right: 18px;
-  font-size: 22px;
-}
-
-.resume:hover {
-  background-color: #283669;
-  border-color: #283669;
-}
-
-.resume:active {
-  background-color: #324487;
-  border-color: #324487;
-  color: #fff;
-  text-decoration: none;
-  transition: none;
-}
-
 /***** MAIN *****/
 .container {
   width: 100%;
@@ -318,11 +260,11 @@ span {
 
 .about-me {
   justify-content: center;
-  margin: 75px 0 210px 0;
+  margin: 220px 0 210px 0;
 }
 
 .about-me > figure {
-  width: 18%;
+  width: 19%;
   margin-right: 5em;
 }
 
@@ -331,12 +273,13 @@ span {
 }
 
 .about-me > .searching-for {
-  width: 51%;
+  width: 52%;
 }
 
 .about-me > .searching-for h3 {
+  text-transform: none;
   text-align: left;
-  font-size: 32px;
+  font-size: 34px;
   margin-bottom: 10px;
 }
 
@@ -345,7 +288,7 @@ span {
   font-weight: 300;
   color: var(--text-color);
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .searching-for > .icons {
@@ -355,6 +298,33 @@ span {
 
 .searching-for .icons > .github {
   margin-right: 20px;
+}
+
+.resume {
+  font-family: "Roboto-Light", sans-serif;
+  font-weight: 300;
+  font-size: 17.5px;
+  background-color: var(--footer-bg-color);
+  border-color: var(--footer-bg-color);
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 2.5em;
+  padding: 13.5px 45px 13.5px 45px;
+  box-shadow: 0px 2.5px 30px rgba(199, 199, 199, 0.236);
+}
+
+.fa-download {
+  padding-right: 18px;
+  font-size: 21px;
+}
+
+.resume:hover {
+  background-color: var(--btn-hover);
+  border-color: var(--btn-hover);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0px 2.5px 30px rgba(199, 199, 199, 0.5);
 }
 
 /***** PROJETS 2 *****/
@@ -556,14 +526,14 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
   height: auto !important;
   border: 3px solid #b5c7eb;
   border-radius: 6px;
-  padding: 40px 25px 40px 25px;
+  padding: 40px 30px 40px 30px;
   margin-bottom: 10px;
 }
 
 .card-item > figure {
-  width: 28%;
+  width: 29%;
   margin: 0 auto;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .card-item:active {
@@ -597,37 +567,50 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
   text-align: center;
 }
 
-.card-item .text > .level {
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 50px;
-}
-
-.card-item .text > p:first-child {
+.card-item .text > p {
   text-align: start;
-  margin: 30px 0 20px 0;
+  margin: 30px 0 30px 0;
 }
 
-.card-item .text > .solid-star {
-  color: #FFBD59;
+.card-item .text > .wiki {
+  color: #B5C7EB;
+  font-size: 18px;
+}
+
+.card-item > .bootstrap {
+  width: 34%;
+  margin-bottom: 5px;
 }
 
 .card-item > .figma {
   width: 20%;
 }
 
+.card-item > .mySQL {
+  width: 53%;
+}
+
 .card-item > .php {
-  width: 50%;
+  width: 52%;
+}
+
+.card-item > .git {
+  margin-bottom: 2.5px;
 }
 
 .card-item > .mongodb {
-  width: 32%;
+  width: 35%;
   margin-bottom: 2px;
 }
 
 .card-item > .wordpress {
   width: 40%;
   margin-bottom: 0;
+}
+
+.card-item > .symfony {
+  width: 31%;
+  margin-bottom: 10px;
 }
 
 /* swiper buttons + pagination */
@@ -651,7 +634,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 
 .contact-me {
   min-height: 63vh;
-  background: url("../imgs/form-bg-img.png");
+  background: url("../imgs/header-bg-img.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -712,8 +695,8 @@ input {
 .form-elements > .submit-button {
   font-family: "Roboto-Light", sans-serif;
   align-self: flex-start;
-  border: 1px solid #283669;
-  background-color: #283669;
+  border: 1px solid var(--footer-bg-color);
+  background-color: var(--footer-bg-color);
   color: #fff;
   padding: 12px 20px 12px 20px;
   border-radius: 5px;
@@ -723,8 +706,8 @@ input {
 }
 
 .form-elements > .submit-button:hover {
-  background-color: #324487;
-  border: 1px #324487 solid;
+  background-color: var(--btn-hover);
+  border: 1px var(--btn-hover) solid;
   box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
@@ -746,7 +729,7 @@ input {
 footer {
   flex-direction: row;
   justify-content: center;
-  padding: 0.6em;
+  padding: 0.8em;
   background-color: var(--footer-bg-color);
 }
 
@@ -764,7 +747,7 @@ footer {
 
 /* socials-icons */
 .socials-icons a > i {
-  font-size: 35px;
+  font-size: 40px;
   margin-left: 20px;
 }
 
