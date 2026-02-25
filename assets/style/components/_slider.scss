@@ -40,14 +40,14 @@
     height: auto !important;
     border: 3px solid #b5c7eb;
     border-radius: 6px;
-    padding: 40px 25px 40px 25px;
+    padding: 20px;
     margin-bottom: 10px;
 }
 
 .card-item>figure {
     width: 28%;
     margin: 0 auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .card-item:active {
@@ -96,8 +96,16 @@
     color: #FFBD59;
 }
 
+.card-item>.bootstrap {
+    width: 32%;
+}
+
 .card-item>.figma {
     width: 20%;
+}
+
+.card-item>.mySQL {    
+    width: 52%;
 }
 
 .card-item>.php {
@@ -105,7 +113,7 @@
 }
 
 .card-item>.mongodb {
-    width: 32%;
+    width: 35%;
     margin-bottom: 2px;
 }
 
