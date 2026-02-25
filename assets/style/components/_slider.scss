@@ -40,12 +40,12 @@
     height: auto !important;
     border: 3px solid #b5c7eb;
     border-radius: 6px;
-    padding: 20px;
+    padding: 30px 40px 30px 40px;
     margin-bottom: 10px;
 }
 
 .card-item>figure {
-    width: 28%;
+    width: 29%;
     margin: 0 auto;
     margin-bottom: 10px;
 }
@@ -81,15 +81,9 @@
     text-align: center;
 }
 
-.card-item .text>.level {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 50px;
-}
-
-.card-item .text>p:first-child {
+.card-item .text>p {
     text-align: start;
-    margin: 30px 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 
 .card-item .text>.solid-star {
@@ -97,7 +91,8 @@
 }
 
 .card-item>.bootstrap {
-    width: 32%;
+    width: 34%;
+    margin-bottom: 5px;
 }
 
 .card-item>.figma {
@@ -105,11 +100,15 @@
 }
 
 .card-item>.mySQL {    
-    width: 52%;
+    width: 53%;
 }
 
 .card-item>.php {
-    width: 50%;
+    width: 52%;
+}
+
+.card-item>.git {
+    margin-bottom: 2.5px;
 }
 
 .card-item>.mongodb {
@@ -123,7 +122,7 @@
 }
 
 .card-item>.symfony {
-    width: 32%;
+    width: 33%;
     margin-bottom: 10px;
 }
 
