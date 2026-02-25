@@ -114,6 +114,11 @@
     margin-bottom: 0;
 }
 
+.card-item>.symfony {
+    width: 32%;
+    margin-bottom: 10px;
+}
+
 /* swiper buttons + pagination */
 .swiper-button-next, .swiper-button-prev {
   --swiper-navigation-color: var(--text-color);
