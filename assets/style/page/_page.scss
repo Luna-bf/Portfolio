@@ -56,7 +56,7 @@
     text-decoration: none;
     margin-top: 2.5em;
     padding: 13.5px 45px 13.5px 45px;
-    box-shadow: 0px 2.5px 30px rgba(199, 199, 199, 0.236);
+    box-shadow: 0px 0px 30px rgba(199, 199, 199, 0.2);
 }
 
 .fa-download {
@@ -69,12 +69,12 @@
     border-color: var(--btn-hover);
     color: #fff;
     text-decoration: none;
-    box-shadow: 0px 2.5px 30px rgba(199, 199, 199, 0.5);
+    box-shadow: 0px 0px 40px rgba(199, 199, 199, 0.5);
 }
 
 /***** PROJETS 2 *****/
 .all-cards {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
@@ -86,7 +86,7 @@
 .card {
     border-radius: 15px;
     flex-direction: column;
-    width: 430px;
+    width: 380px;
     margin-bottom: 130px;
     box-shadow: 0px 0px 15px #d1d1d1;
 }
@@ -103,8 +103,8 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 */
 .card>figure {
     display: flex;
-    width: 383px;
-    height: 280px;
+    width: 332px;
+    height: 200px;
     margin: 0 auto;
     overflow: hidden;
     margin: 20px 25px 20px 25px;
@@ -121,7 +121,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .card .image-infos>h2 {
-    font-size: 27px;
+    font-size: 26px;
     margin-top: 10px;
     margin-bottom: 1.2em;
 }
@@ -130,7 +130,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
     font-family: "Roboto-Light", sans-serif;
     color: var(--text-color);
     width: 92%;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .card .image-infos>.stacks {
@@ -138,12 +138,12 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
     color: var(--text-color);
     margin-top: 20px;
     width: 92%;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .card .image-infos>.project-link {
     font-family: "Roboto-Light", sans-serif;
-    font-size: 19px;
+    font-size: 18px;
     color: #B5C7EB;
     margin: 2em 0 35px 0;
 }
@@ -151,7 +151,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 /***** PROJETS *****/
 .projects {
     font-size: 20px;
-    margin-top: 135px;
+    margin-top: 13em;
     flex-direction: column;
 }
 
@@ -173,5 +173,10 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 
 .card>.joke-generator {
     background-image: url("../../assets/imgs/projects/joke_generator.png");
-    background-position: -190px -2080px;
+    background-position: -190px -2093px;
+}
+
+.card>.translation {
+    background-image: url("../../assets/imgs/projects/simple_translation.png");
+    background-position: -350px top;
 }
