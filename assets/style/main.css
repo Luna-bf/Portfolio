@@ -264,7 +264,7 @@ nav ul li a:focus {
 }
 
 .about-me > figure {
-  width: 19%;
+  width: 21.2%;
   margin-right: 5em;
 }
 
@@ -311,7 +311,7 @@ nav ul li a:focus {
   text-decoration: none;
   margin-top: 2.5em;
   padding: 13.5px 45px 13.5px 45px;
-  box-shadow: 0px 2.5px 30px rgba(199, 199, 199, 0.236);
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
 }
 
 .fa-download {
@@ -324,12 +324,12 @@ nav ul li a:focus {
   border-color: var(--btn-hover);
   color: #fff;
   text-decoration: none;
-  box-shadow: 0px 2.5px 30px rgba(199, 199, 199, 0.5);
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.5);
 }
 
 /***** PROJETS 2 *****/
 .all-cards {
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
   flex-direction: row;
   flex-wrap: wrap;
@@ -339,11 +339,11 @@ nav ul li a:focus {
 }
 
 .card {
-  border-radius: 15px;
+  border-radius: 10px;
   flex-direction: column;
-  width: 370px;
+  width: 380px;
   margin-bottom: 130px;
-  box-shadow: 0px 4px 15px #d1d1d1;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 
 /*
@@ -358,15 +358,13 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 */
 .card > figure {
   display: flex;
-  width: 320px;
-  height: 480px;
-  margin: 0 auto;
+  width: 100%;
+  height: 200px;
   overflow: hidden;
-  margin: 20px 25px 20px 25px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 15px;
-  background-size: 1300px;
+  border-radius: 10px 10px 0 0;
+  background-size: 900px;
 }
 
 .card > .image-infos {
@@ -377,28 +375,37 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .card .image-infos > h2 {
-  font-size: 22px;
-  margin-bottom: 1.5em;
+  font-size: 26px;
+  margin-top: 25px;
+  margin-bottom: 1.2em;
 }
 
-.card .image-infos > .details {
+.card .image-infos > .project-description {
   font-family: "Roboto-Light", sans-serif;
+  color: var(--text-color);
+  width: 92%;
   font-size: 18px;
-  color: #7390C8;
-  margin-bottom: 1em;
+}
+
+.card .image-infos > .stacks {
+  font-family: "Roboto-Light", sans-serif;
+  color: var(--text-color);
+  margin-top: 20px;
+  width: 92%;
+  font-size: 18px;
 }
 
 .card .image-infos > .project-link {
   font-family: "Roboto-Light", sans-serif;
   font-size: 18px;
   color: #B5C7EB;
-  margin-bottom: 1.5em;
+  margin: 2em 0 35px 0;
 }
 
 /***** PROJETS *****/
 .projects {
   font-size: 20px;
-  margin-top: 135px;
+  margin-top: 13em;
   flex-direction: column;
 }
 
@@ -408,6 +415,10 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
   text-align: center;
 }
 
+.project-links {
+  flex-direction: row;
+}
+
 /***** PROJETS DETAILS *****/
 .card > .accessibility {
   background-image: url("../../assets/imgs/projects/simple_accessibility.png");
@@ -415,7 +426,12 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 
 .card > .joke-generator {
   background-image: url("../../assets/imgs/projects/joke_generator.png");
-  background-position: -190px -2080px;
+  background-position: -190px -2093px;
+}
+
+.card > .translation {
+  background-image: url("../../assets/imgs/projects/simple_translation.png");
+  background-position: -240px top;
 }
 
 .details-body {
@@ -488,7 +504,6 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 .skills {
   font-size: 20px;
   margin: 135px 0 100px 0;
-  margin-top: 135px;
   flex-direction: column;
 }
 
@@ -777,7 +792,7 @@ footer {
     z-index: 1;
     flex-direction: column;
     justify-content: flex-start;
-    width: 70%;
+    width: 55%;
     height: 100vh;
     font-size: 21px;
     background-color: #000000;
