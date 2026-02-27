@@ -58,26 +58,70 @@
         background-color: rgba(0, 0, 0, 0.4);
     }
 
-
-    /***HERO***/
-    .hero .hero-titles>h1 {
-        font-size: 20px;
-        line-height: 32px;
+    /***ABOUT ME***/
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        margin: 150px 0 210px 0;
     }
 
-    .hero .hero-titles>h1:first-child {
-        margin-bottom: 3em;
+    .about-me>figure {
+        width: 42%;
+        margin: 0 0 4em 0;
     }
 
-    /***RESUME***/
+    .about-me figure>img {
+        border-radius: 15px;
+    }
+
+    .about-me>.searching-for {
+        width: 60%;
+    }
+
+    .about-me>.searching-for h3 {
+        text-transform: none;
+        text-align: left;
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .about-me>.searching-for p {
+        font-family: "Roboto-Light", sans-serif;
+        font-weight: 300;
+        color: var(--text-color);
+        line-height: 1.5;
+        font-size: 21px;
+    }
+
+    .searching-for>.icons {
+        font-size: 45px;
+        margin-top: 40px;
+    }
+
+    .searching-for .icons>.github {
+        margin-right: 20px;
+    }
+
     .resume {
-        font-size: 16px;
-        border: 3px solid #fff;
+        font-family: "Roboto-Light", sans-serif;
+        font-weight: 300;
+        font-size: 17.5px;
+        background-color: var(--footer-bg-color);
+        border-color: var(--footer-bg-color);
         border-radius: 6px;
         color: #fff;
         text-decoration: none;
-        margin-top: 5em;
-        padding: 15px 45px 15px 45px;
+        margin-top: 2.5em;
+        padding: 13.5px 45px 13.5px 45px;
+        box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+    }
+
+    .resume:hover {
+        background-color: var(--btn-hover);
+        border-color: var(--btn-hover);
+        color: #fff;
+        text-decoration: none;
+        box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.5);
     }
 
     .fa-download {
@@ -86,6 +130,10 @@
     }
 
     /***PROJETS***/
+    .projects > h2 {
+        font-size: 34px;        
+    }
+
     .project {
         width: 90%;
         margin: 0 auto;
@@ -98,48 +146,59 @@
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     }
 
-    .project ul li {
-        font-size: 20px;
-    }
-
-    .fa-star {
-        font-size: 16px;
-    }
-
     /***CARD WRAPPER***/
     .card-wrapper .swiper-slide-button {
         display: none;
     }
 
     .card-item>figure {
-        width: 50%;
+        width: 35%;
     }
 
     .card-item>.figma {
-        width: 30%;
+        width: 25%;
+    }
+
+    .card-item>.mySQL {
+        width: 62.5%;
     }
 
     .card-item>.php {
-        width: 80%;
+        width: 60%;
     }
 
     .card-item>.mongodb {
         width: 52%;
     }
 
+    .card-item>.symfony {
+        width: 34%;
+        margin-bottom: 10px;
+    }
+
     .text {
         font-size: 18px;
+    }
+
+    /***SKILLS***/
+    .skills > h1 {
+        font-size: 34px;
+    }
+
+    /*** FOOTER ***/
+    .title-contact > h1 {
+        font-size: 34px;
     }
 
     form {
         min-height: 65vh;
         width: 90%;
-        padding: 1.5em 0 1.5em 0;
+        padding: 2.5em 0 2.5em 0;
     }
 
     /* submit-button */
     .form-elements>.submit-button {
-        width: 45%;
+        width: 40%;
     }
 
     /***FOOTER***/
@@ -150,7 +209,7 @@
 
     /* socials-icons */
     .socials-icons a>i {
-        font-size: 30px;
-        margin-left: 15px;
+        font-size: 40px;
+        margin-left: 25px;
     }
 }
