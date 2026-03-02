@@ -2,10 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Initialisation du carrousel
     const swiper = new Swiper('.card-wrapper', {
-        // modules: [Navigation, Pagination],
-
         loop: true,
-        spaceBetween: 40,
 
         // Pagination (points sous le slider)
         pagination: {
@@ -23,13 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
         // Responsive : défini combien de diapositives je vais afficher selon la taille de l'écran
         breakpoints: {
             0: {
-                slidesPerView: 1
+                slidesPerView: 1,
+                spaceBetween: 0
             },
             768: {
-                slidesPerView: 2
+                slidesPerView: 2,
+                spaceBetween: 25
             },
             1024: {
-                slidesPerView: 3
+                slidesPerView: 3,
+                spaceBetween: 40
             },
         }
     });
