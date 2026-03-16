@@ -11574,6 +11574,9 @@ footer {
   .close-menu {
     display: block;
   }
+  .open-menu > .fa-bars {
+    font-size: 28px;
+  }
   #check:checked ~ ul {
     right: 0;
   }
