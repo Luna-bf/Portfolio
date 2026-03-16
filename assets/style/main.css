@@ -11275,7 +11275,6 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 
 /**CARDS**/
 .cards-container {
-  /* background-color: #0077B5; */
   width: 80%;
   margin-top: 3em;
   flex-direction: row;
@@ -11648,12 +11647,15 @@ footer {
     border: 2px solid #000000;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
   }
-  /***CARD WRAPPER***/
+  /***SLIDER***/
+  .cards-container {
+    width: 93%;
+  }
   .card-wrapper .swiper-slide-button {
     display: none;
   }
   .card-item > figure {
-    width: 32%;
+    width: 30%;
   }
   .card-item > .figma {
     width: 22%;
