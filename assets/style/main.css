@@ -11537,7 +11537,7 @@ footer {
 
 /*** RESPONSIVE DESIGN ***/
 /* 0px – 639px (Mobile) */
-@media (min-width: 0px) and (max-width: 640px) {
+@media (min-width: 0px) and (max-width: 639.9px) {
   h1,
   h2,
   h3,
@@ -11696,7 +11696,7 @@ footer {
   }
 }
 /* 640px - 767px (Small Tablet/Large phone) */
-@media (min-width: 641px) and (max-width: 767px) {
+@media (min-width: 640px) and (max-width: 767.9px) {
   h1,
   h2,
   h3,
@@ -11706,7 +11706,7 @@ footer {
     font-size: 28px;
   }
   body {
-    background-color: pink;
+    background-color: rgb(111, 71, 78);
   }
   /***NAV***/
   nav ul {
@@ -11740,7 +11740,7 @@ footer {
   }
   #check:checked ~ ul {
     right: 0;
-    width: 70%;
+    width: 45%;
   }
   .cover {
     position: fixed;
@@ -11758,14 +11758,14 @@ footer {
     margin: 150px 0 210px 0;
   }
   .about-me > figure {
-    width: 45%;
+    width: 40%;
     margin: 0 0 4em 0;
   }
   .about-me figure > img {
     border-radius: 15px;
   }
   .about-me > .searching-for {
-    width: 70%;
+    width: 80%;
   }
   .about-me > .searching-for h3 {
     text-transform: none;
@@ -11793,9 +11793,6 @@ footer {
     padding: 13.5px 45px 13.5px 45px;
     box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
   }
-  .fa-download {
-    display: none;
-  }
   /***PROJETS***/
   .projects > h2 {
     font-size: 34px;
@@ -11812,19 +11809,16 @@ footer {
   }
   /***SLIDER***/
   .cards-container {
-    width: 95%;
-  }
-  .card-wrapper .swiper-slide-button {
-    display: none;
+    width: 65%;
   }
   .card-item > figure {
-    width: 30%;
+    width: 28%;
   }
   .card-item > .figma {
-    width: 22%;
+    width: 20%;
   }
   .card-item > .mySQL {
-    width: 62.5%;
+    width: 56%;
   }
   .card-item > .php {
     width: 50%;
@@ -11854,7 +11848,7 @@ footer {
   }
   /* submit-button */
   .form-elements > .submit-button {
-    width: 35%;
+    width: 28%;
   }
   /***FOOTER***/
   /* icons container */

@@ -1,6 +1,6 @@
 /*** RESPONSIVE DESIGN ***/
 /* 0px – 639px (Mobile) */
-@media (min-width: 0px) and (max-width: 640px) {
+@media (min-width: 0px) and (max-width: 639.9px) {
     
     h1,
     h2,
@@ -205,7 +205,7 @@
 }
 
 /* 640px - 767px (Small Tablet/Large phone) */
-@media (min-width: 641px) and (max-width: 767px) {
+@media (min-width: 640px) and (max-width: 767.9px) {
     
     h1,
     h2,
@@ -217,7 +217,7 @@
     }
 
     body {
-        background-color: pink;
+        background-color: rgb(111, 71, 78);
     }
 
     /***NAV***/
@@ -258,7 +258,7 @@
 
     #check:checked~ul {
         right: 0;
-        width: 70%;
+        width: 45%;
     }
 
     .cover {
@@ -279,7 +279,7 @@
     }
 
     .about-me>figure {
-        width: 45%;
+        width: 40%;
         margin: 0 0 4em 0;
     }
 
@@ -288,7 +288,7 @@
     }
 
     .about-me>.searching-for {
-        width: 70%;
+        width: 80%;
     }
 
     .about-me>.searching-for h3 {
@@ -320,10 +320,6 @@
         box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
     }
 
-    .fa-download {
-        display: none;
-    }
-
     /***PROJETS***/
     .projects > h2 {
         font-size: 34px;        
@@ -343,23 +339,19 @@
 
     /***SLIDER***/
     .cards-container {
-        width: 95%;
-    }
-
-    .card-wrapper .swiper-slide-button {
-        display: none;
+        width: 65%;
     }
 
     .card-item>figure {
-        width: 30%;
+        width: 28%;
     }
 
     .card-item>.figma {
-        width: 22%;
+        width: 20%;
     }
 
     .card-item>.mySQL {
-        width: 62.5%;
+        width: 56%;
     }
 
     .card-item>.php {
@@ -397,7 +389,7 @@
 
     /* submit-button */
     .form-elements>.submit-button {
-        width: 35%;
+        width: 28%;
     }
 
     /***FOOTER***/
@@ -414,7 +406,9 @@
 }
 
 /* 767px - 1023px (Tablet) */
-@media (min-width: 768px) and (max-width: 1023px) {}
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+}
 
 /* 1024 (desktop) le code déclaré avant (desktop first) */
 
