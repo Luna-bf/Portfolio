@@ -11034,14 +11034,14 @@ nav {
 
 .logo-nav > a {
   align-items: center;
-  width: 30%;
+  width: 33%;
 }
 
 nav ul {
   flex-direction: row;
   font-family: "Roboto-Light", sans-serif;
   font-weight: 300;
-  font-size: 17.5px;
+  font-size: 18px;
   text-decoration: none;
   align-items: center;
 }
@@ -11097,6 +11097,7 @@ nav ul li a:focus {
 .about-me > figure {
   width: 21.2%;
   margin-right: 5em;
+  align-content: center;
 }
 
 .about-me figure > img {
@@ -11558,7 +11559,7 @@ footer {
     height: 100vh;
     font-size: 21px;
     background-color: #000000;
-    transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   nav ul li:first-child {
     margin-top: 8em;
@@ -11673,7 +11674,6 @@ footer {
   .text {
     font-size: 18px;
   }
-  /***SKILLS***/
   /*** FOOTER ***/
   form {
     min-height: 65vh;
@@ -11703,10 +11703,7 @@ footer {
   h4,
   h5,
   h6 {
-    font-size: 28px;
-  }
-  body {
-    background-color: rgb(111, 71, 78);
+    font-size: 30px;
   }
   /***NAV***/
   nav ul {
@@ -11720,7 +11717,7 @@ footer {
     height: 100vh;
     font-size: 21px;
     background-color: #000000;
-    transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   nav ul li:first-child {
     margin-top: 8em;
@@ -11794,9 +11791,6 @@ footer {
     box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
   }
   /***PROJETS***/
-  .projects > h2 {
-    font-size: 34px;
-  }
   .project {
     width: 90%;
     margin: 0 auto;
@@ -11833,10 +11827,6 @@ footer {
   .text {
     font-size: 18px;
   }
-  /***SKILLS***/
-  .skills > h1 {
-    font-size: 34px;
-  }
   /*** FOOTER ***/
   .title-contact > h1 {
     font-size: 34px;
@@ -11862,6 +11852,119 @@ footer {
   }
 }
 /* 767px - 1023px (Tablet) */
-/* 1024 (desktop) le code déclaré avant (desktop first) */
-/* 1281px et plus */
-/*** MEDIA QUERIES ***//*# sourceMappingURL=main.css.map */
+@media (min-width: 768px) and (max-width: 1023.9px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 34px;
+  }
+  /***NAV***/
+  nav ul li a {
+    padding: 10px;
+  }
+  /***ABOUT ME***/
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 0 210px 0;
+  }
+  .about-me > figure {
+    width: 32%;
+    margin: 0 0 4em 0;
+  }
+  .about-me figure > img {
+    border-radius: 15px;
+  }
+  .about-me > .searching-for {
+    width: 80%;
+  }
+  .about-me > .searching-for h3 {
+    text-transform: none;
+    text-align: left;
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .about-me > .searching-for p {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    color: var(--text-color);
+    line-height: 1.5;
+    font-size: 21px;
+  }
+  .resume {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    font-size: 17.5px;
+    background-color: var(--footer-bg-color);
+    border-color: var(--footer-bg-color);
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    margin: 3em auto 0 auto;
+    padding: 13.5px 45px 13.5px 45px;
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+  }
+  /***PROJETS***/
+  .project {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .project-img {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  .all-cards {
+    width: 85%;
+  }
+  /***SLIDER***/
+  .cards-container {
+    width: 90%;
+  }
+  .card-item > figure {
+    width: 28%;
+  }
+  .card-item > .figma {
+    width: 20%;
+  }
+  .card-item > .mySQL {
+    width: 56%;
+  }
+  .card-item > .php {
+    width: 50%;
+  }
+  .card-item > .mongodb {
+    width: 52%;
+  }
+  .card-item > .symfony {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  .text {
+    font-size: 18px;
+  }
+  /*** FOOTER ***/
+  form {
+    min-height: 65vh;
+    width: 90%;
+    padding: 2.5em 0 2.5em 0;
+  }
+  /* submit-button */
+  .form-elements > .submit-button {
+    width: 22%;
+  }
+  /***FOOTER***/
+  /* icons container */
+  .icons-container > a {
+    width: 18%;
+  }
+  /* socials-icons */
+  .socials-icons a > i {
+    font-size: 42px;
+    margin-left: 15px;
+  }
+}/*# sourceMappingURL=main.css.map */
