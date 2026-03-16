@@ -11411,7 +11411,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 
 .contact-me {
   min-height: 63vh;
-  background: url("../imgs/header-bg-img.png");
+  background: url("../imgs/form-img.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11536,8 +11536,9 @@ footer {
   color: #0077B5;
 }
 
-/*** MEDIA QUERIES ***/
-@media screen and (max-width: 768px) {
+/*** RESPONSIVE DESIGN ***/
+/* 0px – 639px (Mobile) */
+@media (min-width: 0px) and (max-width: 639px) {
   h1,
   h2,
   h3,
@@ -11614,13 +11615,6 @@ footer {
     line-height: 1.5;
     font-size: 21px;
   }
-  .searching-for > .icons {
-    font-size: 45px;
-    margin-top: 40px;
-  }
-  .searching-for .icons > .github {
-    margin-right: 20px;
-  }
   .resume {
     font-family: "Roboto-Light", sans-serif;
     font-weight: 300;
@@ -11630,20 +11624,12 @@ footer {
     border-radius: 6px;
     color: #fff;
     text-decoration: none;
-    margin-top: 2.5em;
+    margin: 3em auto 0 auto;
     padding: 13.5px 45px 13.5px 45px;
     box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
   }
-  .resume:hover {
-    background-color: var(--btn-hover);
-    border-color: var(--btn-hover);
-    color: #fff;
-    text-decoration: none;
-    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.5);
-  }
   .fa-download {
-    padding-right: 15px;
-    font-size: 20px;
+    display: none;
   }
   /***PROJETS***/
   .projects > h2 {
@@ -11664,22 +11650,22 @@ footer {
     display: none;
   }
   .card-item > figure {
-    width: 35%;
+    width: 32%;
   }
   .card-item > .figma {
-    width: 25%;
+    width: 22%;
   }
   .card-item > .mySQL {
     width: 62.5%;
   }
   .card-item > .php {
-    width: 60%;
+    width: 50%;
   }
   .card-item > .mongodb {
     width: 52%;
   }
   .card-item > .symfony {
-    width: 34%;
+    width: 30%;
     margin-bottom: 10px;
   }
   .text {
@@ -11700,7 +11686,7 @@ footer {
   }
   /* submit-button */
   .form-elements > .submit-button {
-    width: 40%;
+    width: 35%;
   }
   /***FOOTER***/
   /* icons container */
@@ -11709,7 +11695,12 @@ footer {
   }
   /* socials-icons */
   .socials-icons a > i {
-    font-size: 37px;
-    margin-left: 25px;
+    font-size: 42px;
+    margin-left: 15px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/* 640px - 767px (Small Tablet/Large phone) */
+/* 767px - 1023px (Tablet) */
+/* 1024 (desktop) le code déclaré avant (desktop first) */
+/* 1281px et plus */
+/*** MEDIA QUERIES ***//*# sourceMappingURL=main.css.map */
