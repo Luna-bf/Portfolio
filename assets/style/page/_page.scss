@@ -129,6 +129,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
     color: var(--text-color);
     width: 92%;
     font-size: 18px;
+    line-height: 1.5;
 }
 
 .card .image-infos>.stacks {
@@ -169,12 +170,17 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
     background-image: url("../../assets/imgs/projects/simple_accessibility.png");
 }
 
-.card>.joke-generator {
-    background-image: url("../../assets/imgs/projects/joke_generator.png");
-    background-position: -190px -2093px;
-}
-
 .card>.translation {
     background-image: url("../../assets/imgs/projects/simple_translation.png");
     background-position: -240px top;
+}
+
+.card>.todo_list {
+    background-image: url("../../assets/imgs/projects/todo_list_php.png");
+    background-position: -198px -180px;
+}
+
+.card>.joke-generator {
+    background-image: url("../../assets/imgs/projects/joke_generator.png");
+    background-position: -190px -2093px;
 }
