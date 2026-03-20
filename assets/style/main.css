@@ -11152,7 +11152,7 @@ nav ul li a:focus {
 
 /***** PROJETS 2 *****/
 .all-cards {
-  width: 75%;
+  width: 74%;
   margin: 0 auto;
   flex-direction: row;
   flex-wrap: wrap;
@@ -11920,7 +11920,6 @@ footer {
   }
   .all-cards {
     width: 85%;
-    flex-wrap: wrap;
   }
   /***SLIDER***/
   .cards-container {
