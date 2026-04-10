@@ -132,6 +132,10 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
     font-size: 18px;
 }
 
+.card .image-infos .stacks>span {
+    text-decoration: underline;
+}
+
 .card .image-infos>.project-link {
     font-family: "Roboto-Light", sans-serif;
     font-size: 18px;
