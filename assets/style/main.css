@@ -11219,6 +11219,10 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
   font-size: 18px;
 }
 
+.card .image-infos .stacks > span {
+  text-decoration: underline;
+}
+
 .card .image-infos > .project-link {
   font-family: "Roboto-Light", sans-serif;
   font-size: 18px;
@@ -11256,6 +11260,11 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 .card > .todo_list {
   background-image: url("../../assets/imgs/projects/todo_list_php.png");
   background-position: -198px -180px;
+}
+
+.card > .blog_bootstrap {
+  background-image: url("../../assets/imgs/projects/blog_bootstrap_symfony.png");
+  background-position: -2.5px 5px;
 }
 
 .card > .joke-generator {
