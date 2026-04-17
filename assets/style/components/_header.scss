@@ -6,7 +6,6 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0 70em rgba(0, 0, 0, 0.5) inset;
-    align-items: center;
 }
 
 /***NAV***/
@@ -21,24 +20,15 @@ nav {
     background-color: var(--nav-bg-color);
 }
 
-.space-between {
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-}
-
 .logo-nav>a {
     align-items: center;
     width: 33%;
 }
 
 nav ul {
-    flex-direction: row;
     font-family: "Roboto-Light", sans-serif;
     font-weight: 300;
     font-size: 18px;
-    text-decoration: none;
-    align-items: center;
 }
 
 nav ul li a {
@@ -52,15 +42,11 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-nav ul li a:focus {
-    text-decoration: underline;
-}
-
 .open-menu, .close-menu {
     display: none;
     position: absolute;
     font-size: 1.5rem;
-    color: var(--text-color);
+    color: #fff;
     cursor: pointer;
 }
 
@@ -77,4 +63,70 @@ nav ul li a:focus {
 
 #check {
     display: none;
+}
+
+/***ABOUT ME***/
+.about-me>figure {
+    width: 21.2%;
+    margin-right: 5em;
+}
+
+.about-me>figure:hover {
+    transform: scale(1.1);
+}
+
+.about-me figure>img {
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+}
+
+.about-me>.searching-for {
+    width: 52%;
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 40px 30px 40px 30px;
+    border-radius: 10px;
+}
+
+.about-me>.searching-for h3 {
+    text-transform: none;
+    text-align: left;
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.about-me>.searching-for p {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 21px;
+}
+
+.resume {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    font-size: 17.5px;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 6px;
+    margin-top: 2.5em;
+    padding: 10px 30px 10px 30px;
+}
+
+.fa-cloud-arrow-down {
+    margin-right: 14px;
+    font-size: 21px;
+}
+
+.resume:hover {
+    background-color: var(--btn-hover);
+    border-color: var(--btn-hover);
+    text-decoration: none;
+}
+
+.resume:active {
+    background-color: var(--btn-active);
+    border-color: var(--btn-active);
+    transition: none;
 }
