@@ -1,0 +1,45 @@
+/***CSS variables***/
+:root{
+    --base-bg-color: #333333;
+    --text-color: #fff;
+    --nav-bg-color: rgb(38, 52, 101, 0.8);
+    --theme-icon-color: #333333;
+    --github-link: #b5c7eb;
+    --btn-hover: #324487;
+    --footer-bg-color: #263465;
+}
+
+/***Reset***/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all .3s ease;
+}
+
+/*** SMOOTH SCROLL ***/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--base-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 32px;
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+img {
+    width: 100%;
+}
