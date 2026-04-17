@@ -24,11 +24,6 @@ html {
 
 body {
     background-color: var(--base-bg-color);
-    width: 100%;
-}
-
-.d-flex {
-    display: flex;
 }
 
 h1,
@@ -47,8 +42,4 @@ h6 {
 
 img {
     width: 100%;
-}
-
-li {
-    list-style: none;
 }
