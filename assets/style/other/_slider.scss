@@ -1,7 +1,7 @@
 /*** COMPETENCES ***/
 .skills {
     font-size: 20px;
-    margin: 135px 0 100px 0;
+    margin: 200px 0 100px 0;
     flex-direction: column;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .card-item .text>.wiki {
-    color: #B5C7EB;
+    color: var(--project-link);
     font-size: 18px;
 }
 
