@@ -4,10 +4,10 @@ Font Awesome appelés ci-dessous puissent afficher les icônes */
 @use "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @use "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @use "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
-@forward 'page/params';
+@forward 'pages/params';
 @forward 'fonts/fonts';
 @forward 'components/header';
-@forward 'page/home';
+@forward 'pages/home';
 @forward 'components/slider';
 @forward 'components/footer';
 // @forward 'responsive/responsive';
