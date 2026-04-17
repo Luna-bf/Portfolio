@@ -73,14 +73,14 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 .project-card .image-infos>.project-link {
     font-family: "Roboto-Light", sans-serif;
     font-size: 18px;
-    color: #B5C7EB;
+    color: var(--project-link);
     margin: 2em 0 35px 0;
 }
 
 /***** PROJETS *****/
 .projects {
     font-size: 20px;
-    margin-top: 13em;
+    margin-top: 200px;
     flex-direction: column;
 }
 
@@ -94,6 +94,20 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
     flex-direction: row;
 }
 
+.see-more {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    background-color: var(--btn-hover);
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 6px;
+    padding: 12px 30px 12px 30px;
+}
+
+.fa-laptop-code {
+    margin-right: 14px;
+}
 
 /***** PROJETS DETAILS *****/
 .project-card>.accessibility {
