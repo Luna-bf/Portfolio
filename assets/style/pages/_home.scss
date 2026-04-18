@@ -17,6 +17,10 @@
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 
+.project-card:hover {
+    transform: scale(1.1);
+}
+
 /*
 Mon image devient rectangulaire car je lui impose des mesures précises : le navigateur va recalculer les dimmensions de l'image
 pour que celle-ci ai les dimmensions suivantes : 320x480px.
@@ -100,9 +104,21 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
     font-size: 20px;
     background-color: var(--btn-hover);
     color: #fff;
-    border: 3px solid #fff;
+    border: 3px solid var(--btn-hover);
     border-radius: 6px;
     padding: 12px 30px 12px 30px;
+}
+
+.see-more:hover {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    background-color: var(--btn-active);
+    color: #fff;
+    border: 3px solid var(--btn-active);
+    border-radius: 6px;
+    padding: 12px 30px 12px 30px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 
 .fa-laptop-code {
