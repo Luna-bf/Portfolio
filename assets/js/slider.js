@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         loop: true,
 
         coverflowEffect: {
-            rotate: -20,
+            rotate: -30,
             depth: 100,
         },
 
