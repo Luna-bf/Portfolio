@@ -1,0 +1,119 @@
+/*** PROJECTS ***/
+.projects-h1 {
+    margin-bottom: 100px !important;
+}
+
+#projects-card {
+    margin-top: 100px !important;
+}
+
+.languages-links>li {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    margin: 10px 0 30px 40px;
+    padding: 12px 35px 12px 35px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.languages-links li a>i {
+    font-size: 21px;
+    vertical-align: middle;
+}
+
+/***LANGUAGES-LINKS***/
+/* Figma */
+.figma-link {
+    background-color: #1ABCFE;
+}
+
+.figma-link a>i {
+    margin-right: 10px;
+    color: #F24E1E;
+}
+
+/* JavaScript */
+.javascript-link {
+    background-color: #F0DB4F;
+    color: #323330;
+}
+
+.javascript-link a {
+    color: #323330;
+}
+
+.javascript-link a>i {
+    margin-right: 10px;
+}
+
+/* Vue.js */
+.vuejs-link {
+    background-color: #41B883;
+}
+
+.vuejs-link a>i {
+    margin-right: 10px;
+    color: #34495E;
+}
+
+/* WordPress */
+.wordpress-link {
+    background-color: #444140;
+}
+
+.wordpress-link a>i {
+    margin-right: 10px;
+    color: #00749C;
+}
+
+/* MySQL */
+.mysql-link {
+    background-color: #00758F;
+}
+
+.mysql-link a>i {
+    margin-right: 10px;
+    color: #F29111;
+}
+
+/* MongoDB */
+.mongodb-link {
+    background-color: #E8E7D5;
+}
+
+.mongodb-link a {
+    color: #3FA037;
+}
+
+.mongodb-link a>i {
+    margin-right: 10px;
+    color: #3FA037;
+}
+
+/* PHP */
+.php-link {
+    background-color: #787CB5;
+}
+
+.php-link a>i {
+    margin-right: 10px;
+    color: #474A8A;
+}
+
+#php-fs {
+    font-size: 27px;
+}
+
+/* Symfony */
+.symfony-link {
+    background-color: #000;
+    color: #fff;
+}
+
+.symfony-link a>i {
+    margin-right: 10px;
+}
+
+#symfony-fs {
+    font-size: 25px;
+}
