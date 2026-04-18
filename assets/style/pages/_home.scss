@@ -101,7 +101,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 .see-more {
     font-family: "Roboto-Light", sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     background-color: var(--btn-hover);
     color: #fff;
     border: 3px solid var(--btn-hover);
@@ -110,14 +110,8 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .see-more:hover {
-    font-family: "Roboto-Light", sans-serif;
-    font-weight: 300;
-    font-size: 20px;
     background-color: var(--btn-active);
-    color: #fff;
     border: 3px solid var(--btn-active);
-    border-radius: 6px;
-    padding: 12px 30px 12px 30px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 
