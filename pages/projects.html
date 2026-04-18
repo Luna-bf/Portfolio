@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes projets - Luna BURATTI-FAYOLLE</title>
+    <link rel="stylesheet" href="../assets/style/main.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon-48x48.png">
+</head>
+
+<body>
+    <div id="cover-background"></div>
+
+    <!-- Début HEADER -->
+    <header class="d-flex align-items-center" id="projects-header">
+        <!-- Début NAV -->
+        <nav>
+            <div class="d-flex justify-content-center justify-content-between">
+                <div class="d-flex logo-nav">
+                    <a href="#" class="d-flex"><img src="../assets/imgs/logos/other/logo-160x160.png"
+                            alt="Logo du portfolio"></a>
+                </div>
+
+                <input type="checkbox" id="check">
+
+                <ul class="list-unstyled mb-0 ps-0 d-flex align-items-center">
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="../index.html">Compétences</a></li>
+                    <li><a href="../index.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
+                </ul>
+                <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
+            </div>
+        </nav>
+        <!-- Fin NAV -->
+    </header>
+    <!-- Fin HEADER -->
+
+    <!-- Début MAIN -->
+    <main class="container-fluid gx-0">
+        <!-- Début PROJECTS -->
+        <section class="d-flex projects">
+            <h1 class="projects-h1" id="projects">Mes projets</h1>
+
+            <!-- Début LANGUAGES-LINKS -->
+            <ul class="list-unstyled d-flex justify-content-center flex-wrap languages-links">
+                <li class="figma-link"><a href="#" class="text-decoration-none text-white"><i class="fa-brands fa-figma"></i>Figma</a></li>
+                <li class="javascript-link"><a href="#" class="text-decoration-none"><i class="fa-brands fa-js"></i>JavaScript</a></li>
+                <li class="vuejs-link"><a href="#" class="text-decoration-none text-white"><i class="fa-brands fa-vuejs"></i>Vue.js</a></li>
+                <li class="wordpress-link"><a href="#" class="text-decoration-none text-white"><i class="fa-brands fa-wordpress"></i>WordPress</a></li>
+                <li class="mysql-link"><a href="#" class="text-decoration-none text-white"><i class="fa-solid fa-database"></i>MySQL</a></li>
+                <li class="mongodb-link"><a href="#" class="text-decoration-none"><i class="fa-solid fa-database"></i>MongoDB</a></li>
+                <li class="php-link"><a href="#" class="text-decoration-none text-white"><i class="fa-brands fa-php" id="php-fs"></i>PHP</a></li>
+                <li class="symfony-link"><a href="#" class="text-decoration-none text-white"><i class="fa-brands fa-symfony" id="symfony-fs"></i>Symfony</a></li>
+            </ul>
+            <!-- Fin LANGUAGES-LINKS -->
+
+            <!-- Début ALL-CARDS -->
+            <!-- Ajouter une classe .row (voir doc Bootstrap) -->
+            <div class="all-cards d-flex" id="projects-card">
+                <!-- Ajouter une classe .col à tous les articles (voir doc Bootstrap) -->
+                <!-- Début ACCESSIBILITY -->
+                <article class="project-card d-flex">
+                    <figure class="accessibility"></figure>
+                    <div class="image-infos d-flex">
+                        <h2>Simple Accessibility</h2>
+                        <p class="project-description mb-0">Ce projet m'a permis de m'exercer à la conception de sites
+                            accessibles en donnant la possibilité de changer : la taille du texte, le thème de la page
+                            (sombre ou lumineux) et la langue du site (Français ou Anglais).</p>
+                        <p class="stacks mb-0"><span>Stacks utilisées :</span> HTML, CSS, JavaScript</p>
+                        <p class="stacks mb-0"><span>Année :</span> 2024</p>
+                        <a href="https://luna-bf.github.io/Simple-Accessibility/" target="_blank"
+                            class="project-link">Lien GitHub
+                            Pages</a>
+                    </div>
+                </article>
+                <!-- Fin ACCESSIBILITY -->
+
+                <!-- Début TRANSLATION -->
+                <article class="project-card d-flex">
+                    <figure class="translation"></figure>
+                    <div class="image-infos d-flex">
+                        <h2>Simple Translation</h2>
+                        <p class="project-description mb-0">Ce projet m'a permis de m'exercer à la conception de la
+                            partie
+                            back-end d'un site en donnant la possibilité de changer la langue de la page : Français,
+                            Anglais ou Espagnol, en PHP natif (sans framework).</p>
+                        <p class="stacks mb-0"><span>Stacks utilisées :</span> HTML, CSS, PHP (natif)</p>
+                        <p class="stacks mb-0"><span>Année :</span> 2024</p>
+                        <a href="https://github.com/Luna-bf/Simple_translation_backend" target="_blank"
+                            class="project-link">Lien du repository GitHub</a>
+                    </div>
+                </article>
+                <!-- Fin TRANSLATION -->
+
+                <!-- Début TODO LIST -->
+                <article class="project-card d-flex">
+                    <figure class="todo_list"></figure>
+                    <div class="image-infos d-flex">
+                        <h2>Todo List PHP</h2>
+                        <p class="project-description mb-0">Ce projet de Todo List m'a permis d'optimiser ma maîtrise de
+                            la
+                            POO (Programmation Orientée Objet), de la PDO (PHP Data Object) et de l'architecture MVC
+                            (Model View Controller).</p>
+                        <p class="stacks mb-0"><span>Stacks utilisées :</span> PHP (natif), MySQL, Twig, CSS, phpdotenv
+                        </p>
+                        <p class="stacks mb-0"><span>Année :</span> 2026</p>
+                        <a href="https://github.com/Luna-bf/To-do_list" target="_blank" class="project-link">Lien du
+                            repository GitHub</a>
+                    </div>
+                </article>
+                <!-- Fin TODO LIST -->
+
+                <!-- Début BLOG BOOTSTRAP -->
+                <article class="project-card d-flex">
+                    <figure class="blog_bootstrap"></figure>
+                    <div class="image-infos d-flex">
+                        <h2>Blog Bootstrap</h2>
+                        <p class="project-description mb-0">Ce projet de blog m'a permis d'optimiser ma maîtrise de
+                            Symfony (framework PHP) ainsi que de m'entraîner à la création d'un projet en "mobile-first"
+                            avec Bootstrap.</p>
+                        <p class="stacks mb-0"><span>Stacks utilisées :</span> Symfony, Twig, Bootstrap, CSS</p>
+                        <p class="stacks mb-0"><span>Année :</span> 2026 (en cours)</p>
+                        <a href="https://github.com/Luna-bf/Blog_Bootstrap_symfony" target="_blank"
+                            class="project-link">Lien du
+                            repository GitHub</a>
+                    </div>
+                </article>
+                <!-- Fin BLOG BOOTSTRAP -->
+            </div>
+        </section>
+        <!-- Fin PROJECTS -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="d-flex">
+        <div class="icons-container d-flex">
+            <a href="#" class="d-flex"><img src="../assets/imgs/logos/other/logo-160x160.png" alt="Logo du portfolio"></a>
+
+            <div class="socials-icons d-flex">
+                <a href="https://github.com/Luna-bf" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/luna-buratti-fayolle/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
