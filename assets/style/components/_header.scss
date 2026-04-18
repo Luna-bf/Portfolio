@@ -19,15 +19,10 @@ nav {
     top: 0;
     z-index: 10;
     /*Pour que les éléments animés restent derrière la nav*/
-    padding: 0.8em;
+    padding: 1.4em 0.8em 1.4em 0.8em;
     text-align: center;
     width: 100%;
     background-color: var(--nav-bg-color);
-}
-
-.logo-nav>a {
-    align-items: center;
-    width: 33%;
 }
 
 nav ul {
