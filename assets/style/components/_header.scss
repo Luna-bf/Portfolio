@@ -8,6 +8,11 @@ header {
     box-shadow: 0 70em rgba(0, 0, 0, 0.5) inset;
 }
 
+#projects-header {
+    min-height: 0;
+    background: none;
+}
+
 /***NAV***/
 nav {
     position: fixed;
@@ -68,7 +73,7 @@ nav ul li a:hover {
 /***ABOUT ME***/
 .about-me>figure {
     width: 21.2%;
-    margin-right: 5em;
+    margin-left: 5em;
 }
 
 .about-me>figure:hover {
