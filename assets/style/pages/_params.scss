@@ -3,10 +3,26 @@
     --base-bg-color: #fff;
     --text-color: #000;
     --nav-bg-color: rgb(212, 237, 255, 0.9);
-    --project-link: #324487;
+    --theme-icon-color: #fff;
+    --theme-bg-color: #212529;
     --button: #283669;
     --button-hover: #324487;
+    --project-link: #324487;
+    --see-more-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
     --footer-bg-color: #D4EDFF;
+}
+
+.dark-mode {
+    --base-bg-color: #212529;
+    --text-color: #fff;
+    --nav-bg-color: rgb(37, 49, 94, 0.9);
+    --theme-icon-color: #212529;
+    --theme-bg-color: #fff;
+    --button: #283669;
+    --button-hover: #324487;
+    --project-link: #B5C7EB;
+    --see-more-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
+    --footer-bg-color: #25315E;
 }
 
 /***Reset***/
