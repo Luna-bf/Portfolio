@@ -13,7 +13,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0 40em rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 0 40em rgba(0, 0, 0, 0.6) inset;
     align-items: center;
     margin-top: 3em;
 }
@@ -70,8 +70,8 @@ input {
 .form-elements>.submit-button {
     font-family: "Roboto-Light", sans-serif;
     align-self: flex-start;
-    border: 1px solid var(--btn-hover);
-    background-color: var(--btn-hover);
+    border: 1px solid var(--button);
+    background-color: var(--button);
     color: #fff;
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
@@ -82,9 +82,9 @@ input {
 }
 
 .form-elements>.submit-button:hover {
-    background-color: var(--btn-active);
-    border: 1px var(--btn-active) solid;
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.7);
+    background-color: var(--button-hover);
+    border: 1px var(--button-hover) solid;
+    box-shadow: 0 0 24px rgba(255, 255, 255, 0.7);
     cursor: pointer;
 }
 
