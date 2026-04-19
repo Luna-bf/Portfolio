@@ -15,23 +15,23 @@
     <!-- Début HEADER -->
     <header class="d-flex align-items-center" id="projects-header">
         <!-- Début NAV -->
-        <nav>
-            <div class="d-flex justify-content-center justify-content-between">
-                <div class="d-flex logo-nav">
-                    <a href="#" class="d-flex"><img src="../assets/imgs/logos/other/logo-160x160.png"
-                            alt="Logo du portfolio"></a>
+        <nav class="d-flex justify-content-center justify-content-between">
+            <div class="theme-switcher">
+                <div class="theme-button d-flex align-content-center align-items-center justify-content-center">
+                    <i class="fa-solid fa-moon text-white text-center"></i>
+                    <i class="fa-solid fa-sun"></i>
                 </div>
-
-                <input type="checkbox" id="check">
-
-                <ul class="list-unstyled mb-0 ps-0 d-flex align-items-center">
-                    <li><a href="#projets">Projets</a></li>
-                    <li><a href="../index.html">Compétences</a></li>
-                    <li><a href="../index.html">Contact</a></li>
-                    <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
-                </ul>
-                <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
             </div>
+
+            <input type="checkbox" id="check">
+
+            <ul class="list-unstyled mb-0 ps-0 d-flex align-items-center">
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="../../index.html#competences">Compétences</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
+                <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
+            </ul>
+            <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
         </nav>
         <!-- Fin NAV -->
     </header>
@@ -112,6 +112,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mes fichiers JS -->
+    <script type="text/javascript" src="../../assets/js/app.js"></script>
+    <script type="text/javascript" src="../../assets/js/theme/theme.js"></script>
 </body>
 
 </html>
