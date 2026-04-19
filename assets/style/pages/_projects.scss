@@ -22,6 +22,16 @@
 }
 
 /***LANGUAGES-LINKS***/
+/* All */
+.all-link {
+    background-color: var(--button);
+}
+
+.all-link a>i {
+    margin-right: 10px;
+    vertical-align: baseline !important;
+}
+
 /* Figma */
 .figma-link {
     background-color: #1ABCFE;
@@ -116,4 +126,48 @@
 
 #symfony-fs {
     font-size: 25px;
+}
+
+/***** NO PROJECT *****/
+.all-cards>#no-project {
+    box-shadow: none;
+    width: 100%;
+}
+
+.all-cards>#no-project:hover {
+    transform: none;
+}
+
+.all-cards #no-project .image-infos>h2 {
+    box-shadow: none;
+    text-transform: none;
+}
+
+/***** PROJETS DETAILS *****/
+.project-card>.accessibility {
+    background-image: url("../../assets/imgs/projects/simple_accessibility.png");
+}
+
+.project-card>.translation {
+    background-image: url("../../assets/imgs/projects/simple_translation.png");
+    background-position: -240px top;
+}
+
+.project-card>.todo_list {
+    background-image: url("../../assets/imgs/projects/todo_list_php.png");
+    background-position: -198px -180px;
+}
+
+.project-card>.blog_bootstrap {
+    background-image: url("../../assets/imgs/projects/blog_bootstrap_symfony.png");
+    background-position: -2.5px 5px;
+}
+
+.project-card>.portfolio {
+    background-image: url("../../assets/imgs/projects/maquette_portfolio.png");
+}
+
+.project-card>.joke-generator {
+    background-image: url("../../assets/imgs/projects/joke_generator.png");
+    background-position: -190px -2093px;
 }
