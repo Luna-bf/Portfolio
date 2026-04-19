@@ -102,44 +102,19 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
     font-family: "Roboto-Light", sans-serif;
     font-weight: 300;
     font-size: 18px;
-    background-color: var(--btn-hover);
+    background-color: var(--button);
     color: #fff;
-    border: 3px solid var(--btn-hover);
+    border: 3px solid var(--button);
     border-radius: 6px;
     padding: 12px 30px 12px 30px;
 }
 
 .see-more:hover {
-    background-color: var(--btn-active);
-    border: 3px solid var(--btn-active);
+    background-color: var(--button-hover);
+    border: 3px solid var(--button-hover);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 
 .fa-laptop-code {
     margin-right: 14px;
-}
-
-/***** PROJETS DETAILS *****/
-.project-card>.accessibility {
-    background-image: url("../../assets/imgs/projects/simple_accessibility.png");
-}
-
-.project-card>.translation {
-    background-image: url("../../assets/imgs/projects/simple_translation.png");
-    background-position: -240px top;
-}
-
-.project-card>.todo_list {
-    background-image: url("../../assets/imgs/projects/todo_list_php.png");
-    background-position: -198px -180px;
-}
-
-.project-card>.blog_bootstrap {
-    background-image: url("../../assets/imgs/projects/blog_bootstrap_symfony.png");
-    background-position: -2.5px 5px;
-}
-
-.project-card>.joke-generator {
-    background-image: url("../../assets/imgs/projects/joke_generator.png");
-    background-position: -190px -2093px;
 }
