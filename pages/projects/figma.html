@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes projets Figma - Portfolio de Luna BURATTI-FAYOLLE</title>
+    <link rel="stylesheet" href="../../assets/style/main.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="../../assets/imgs/favicon-48x48.png">
+</head>
+
+<body>
+    <div id="cover-background"></div>
+
+    <!-- Début HEADER -->
+    <header class="d-flex align-items-center" id="projects-header">
+        <!-- Début NAV -->
+        <nav>
+            <div class="d-flex justify-content-center justify-content-between">
+                <div class="d-flex logo-nav">
+                    <a href="#" class="d-flex"><img src="../assets/imgs/logos/other/logo-160x160.png"
+                            alt="Logo du portfolio"></a>
+                </div>
+
+                <input type="checkbox" id="check">
+
+                <ul class="list-unstyled mb-0 ps-0 d-flex align-items-center">
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="../index.html">Compétences</a></li>
+                    <li><a href="../index.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
+                </ul>
+                <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
+            </div>
+        </nav>
+        <!-- Fin NAV -->
+    </header>
+    <!-- Fin HEADER -->
+
+    <!-- Début MAIN -->
+    <main class="container-fluid gx-0">
+        <!-- Début PROJECTS -->
+        <section class="d-flex projects">
+            <h1 class="projects-h1" id="projects">Mes projets Figma</h1>
+
+            <!-- Début LANGUAGES-LINKS -->
+            <ul class="list-unstyled d-flex justify-content-center flex-wrap m-auto w-75 languages-links">
+                <li class="all-link"><a href="../all-projects.html" class="text-decoration-none text-white"><i class="fa-solid fa-file-code"></i>Tous</a></li>
+                <li class="figma-link ms-4"><a href="#" class="text-decoration-none text-white"><i class="fa-brands fa-figma"></i>Figma</a></li>
+                <li class="javascript-link ms-4"><a href="javascript.html" class="text-decoration-none"><i class="fa-brands fa-js"></i>JavaScript</a></li>
+                <li class="vuejs-link ms-4"><a href="vuejs.html" class="text-decoration-none text-white"><i class="fa-brands fa-vuejs"></i>Vue.js</a></li>
+                <li class="wordpress-link ms-4"><a href="wordpress.html" class="text-decoration-none text-white"><i class="fa-brands fa-wordpress"></i>WordPress</a></li>
+                <li class="mysql-link ms-4"><a href="mysql.html" class="text-decoration-none text-white"><i class="fa-solid fa-database"></i>MySQL</a></li>
+                <li class="mongodb-link ms-4"><a href="mongodb.html" class="text-decoration-none"><i class="fa-solid fa-database"></i>MongoDB</a></li>
+                <li class="php-link ms-4"><a href="php.html" class="text-decoration-none text-white"><i class="fa-brands fa-php" id="php-fs"></i>PHP</a></li>
+                <li class="symfony-link ms-4"><a href="symfony.html" class="text-decoration-none text-white"><i class="fa-brands fa-symfony" id="symfony-fs"></i>Symfony</a></li>
+            </ul>
+            <!-- Fin LANGUAGES-LINKS -->
+
+            <!-- Début ALL-CARDS -->
+            <!-- Ajouter une classe .row (voir doc Bootstrap) -->
+            <div class="all-cards d-flex" id="projects-card">
+                <!-- Ajouter une classe .col à tous les articles (voir doc Bootstrap) -->
+                <!-- Début TODO LIST PHP -->
+                <article class="project-card d-flex">
+                    <figure class="accessibility"></figure>
+                    <div class="image-infos d-flex">
+                        <h2>Todo List PHP - Maquette</h2>
+                        <p class="project-description mb-0">Ce projet m'a permis de m'exercer à la conception de sites
+                            accessibles en donnant la possibilité de changer : la taille du texte, le thème de la page
+                            (sombre ou lumineux) et la langue du site (Français ou Anglais).</p>
+                        <p class="stacks mb-0"><span>Stacks utilisées :</span> HTML, CSS, JavaScript</p>
+                        <p class="stacks mb-0"><span>Année :</span> 2024</p>
+                        <a href="https://luna-bf.github.io/Simple-Accessibility/" target="_blank"
+                            class="project-link">Lien GitHub
+                            Pages</a>
+                    </div>
+                </article>
+                <!-- Fin ACCESSIBILITY -->
+            </div>
+        </section>
+        <!-- Fin PROJECTS -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="d-flex">
+        <div class="icons-container d-flex">
+            <a href="#" class="d-flex"><img src="../../assets/imgs/logos/other/logo-160x160.png" alt="Logo du portfolio"></a>
+
+            <div class="socials-icons d-flex">
+                <a href="https://github.com/Luna-bf" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/luna-buratti-fayolle/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
