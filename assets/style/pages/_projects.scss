@@ -70,6 +70,16 @@
     color: #34495E;
 }
 
+/* Tailwind CSS */
+.tailwind-link {
+    border: 1px solid #AAAAAA;
+}
+
+.tailwind-link a>i {
+    margin-right: 10px;
+    color: #38BDF8;
+}
+
 /* WordPress */
 .wordpress-link {
     background-color: #444140;
