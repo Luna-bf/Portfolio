@@ -23276,6 +23276,10 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
   vertical-align: middle;
 }
 
+.languages-links li:hover {
+  box-shadow: var(--see-more-shadow);
+}
+
 /***LANGUAGES-LINKS***/
 /* All */
 .all-link {
