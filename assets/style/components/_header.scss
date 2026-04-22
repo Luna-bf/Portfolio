@@ -19,7 +19,7 @@ nav {
     top: 0;
     z-index: 10;
     /*Pour que les éléments animés restent derrière la nav*/
-    padding: 1.4em 0.8em 1.4em 0.8em;
+    padding: 1.4em 0.8em 1.4em 0.8em !important;
     text-align: center;
     width: 100%;
     background-color: var(--nav-bg-color);
@@ -68,7 +68,6 @@ nav ul li a:hover {
 /***ABOUT ME***/
 .about-me>figure {
     width: 21.2%;
-    margin-left: 5em;
 }
 
 .about-me>figure:hover {
@@ -81,7 +80,6 @@ nav ul li a:hover {
 }
 
 .about-me>.searching-for {
-    width: 52%;
     background-color: rgb(255, 255, 255, 0.2);
     padding: 40px 30px 40px 30px;
     border-radius: 10px;
