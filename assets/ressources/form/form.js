@@ -32,7 +32,7 @@ window.addEventListener('load', function() {
         emailjs.sendForm("service_n3udj4q", "template_eo63ht2", contactForm)
             .then((response) => {
                 console.log('Succès !', 'Statut :', response.status, response.text);
-                submitMessage.classList.remove('none');
+                submitMessage.classList.remove('d-none');
                 contactForm.reset(); // Vider le formulaire une fois celui-ci envoyé.
 
             }) .catch((error) => {
