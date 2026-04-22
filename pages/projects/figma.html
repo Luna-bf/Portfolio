@@ -40,11 +40,11 @@
     <!-- Début MAIN -->
     <main class="container-fluid gx-0">
         <!-- Début PROJECTS -->
-        <section class="d-flex projects">
+        <section class="row gx-0 d-flex projects">
             <h1 class="projects-h1" id="projects">Mes projets Figma</h1>
 
             <!-- Début LANGUAGES-LINKS -->
-            <ul class="list-unstyled d-flex justify-content-center flex-wrap m-auto languages-links">
+            <ul class="col-10 col-md-12 list-unstyled d-flex justify-content-center flex-wrap m-auto languages-links">
                 <li class="all-link"><a href="../all-projects.html" class="text-decoration-none text-white"><i class="fa-solid fa-file-code"></i>Tous</a></li>
                 <li class="figma-link ms-4"><a href="figma.html" class="text-decoration-none text-white"><i class="fa-brands fa-figma"></i>Figma</a></li>
                 <li class="javascript-link ms-4"><a href="javascript.html" class="text-decoration-none"><i class="fa-brands fa-js"></i>JavaScript</a></li>
@@ -59,15 +59,14 @@
             <!-- Fin LANGUAGES-LINKS -->
 
             <!-- Début ALL-CARDS -->
-            <!-- Ajouter une classe .row (voir doc Bootstrap) -->
-            <div class="all-cards d-flex" id="projects-card">
-                <!-- Ajouter une classe .col à tous les articles (voir doc Bootstrap) -->
+            <div class="row d-flex flex-row justify-content-center justify-content-evenly m-auto flex-wrap all-cards" id="projects-card">
                 <article class="project-card d-flex" id="no-project">
-                    <div class="image-infos d-flex">
+                    <div class="image-infos d-flex m-auto">
                         <h2>Des projets sont en cours de création, revenez plus tard !</h2>
                     </div>
                 </article>
             </div>
+            <!-- Fin ALL-CARDS -->
         </section>
         <!-- Fin PROJECTS -->
     </main>

@@ -40,11 +40,11 @@
     <!-- Début MAIN -->
     <main class="container-fluid gx-0">
         <!-- Début PROJECTS -->
-        <section class="d-flex projects">
+        <section class="row gx-0 d-flex projects">
             <h1 class="projects-h1" id="projects">Mes projets MySQL</h1>
 
             <!-- Début LANGUAGES-LINKS -->
-            <ul class="list-unstyled d-flex justify-content-center flex-wrap m-auto languages-links">
+            <ul class="col-10 col-md-12 list-unstyled d-flex justify-content-center flex-wrap m-auto languages-links">
                 <li class="all-link"><a href="../all-projects.html" class="text-decoration-none text-white"><i class="fa-solid fa-file-code"></i>Tous</a></li>
                 <li class="figma-link ms-4"><a href="figma.html" class="text-decoration-none text-white"><i class="fa-brands fa-figma"></i>Figma</a></li>
                 <li class="javascript-link ms-4"><a href="javascript.html" class="text-decoration-none"><i class="fa-brands fa-js"></i>JavaScript</a></li>
@@ -59,13 +59,11 @@
             <!-- Fin LANGUAGES-LINKS -->
 
             <!-- Début ALL-CARDS -->
-            <!-- Ajouter une classe .row (voir doc Bootstrap) -->
-            <div class="all-cards d-flex" id="projects-card">
-                <!-- Ajouter une classe .col à tous les articles (voir doc Bootstrap) -->
+            <div class="row d-flex flex-row justify-content-center justify-content-evenly m-auto flex-wrap all-cards" id="projects-card">
                 <!-- Début TODO LIST -->
-                <article class="project-card d-flex">
+                <article class="col-7 col-sm-8 col-md-4 col-xl-3 me-1 px-0 d-flex flex-column project-card">
                     <figure class="todo_list"></figure>
-                    <div class="image-infos d-flex">
+                    <div class="image-infos d-flex flex-column align-items-center justify-content-center">
                         <h2>Todo List PHP</h2>
                         <p class="project-description mb-0">Ce projet de Todo List m'a permis d'optimiser ma maîtrise de
                             la
