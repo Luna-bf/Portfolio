@@ -48,7 +48,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: 32px;
+    /* Il est préférable d'utiliser l'unité "rem" plutôt que "px" car celle-ci s'adapte mieux en fonction à la taille de l'écran */
+    font-size: 2rem;
     font-family: "Roboto-Regular", sans-serif;
     font-weight: 400;
     text-align: center;

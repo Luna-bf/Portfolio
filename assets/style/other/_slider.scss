@@ -1,6 +1,6 @@
 /*** COMPETENCES ***/
 .skills {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 200px 0 100px 0;
     flex-direction: column;
 }
@@ -63,14 +63,14 @@
 
 .card-item .titles>h3 {
     text-transform: none;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .card-item .titles>h4 {
     font-family: "Roboto-LightItalic", sans-serif;
     font-weight: 300;
     font-style: italic;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-transform: none;
     color: #AAAAAA;
 }
@@ -90,7 +90,7 @@
 
 .card-item .text>.wiki {
     color: var(--project-link);
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .card-item>.bootstrap {

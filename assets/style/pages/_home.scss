@@ -41,7 +41,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .project-card .image-infos>h2 {
-    font-size: 26px;
+    font-size: 1.625rem;
     margin-top: 25px;
     margin-bottom: 1.2em;
 }
@@ -50,7 +50,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
     font-family: "Roboto-Light", sans-serif;
     color: var(--text-color);
     width: 92%;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.5;
 }
 
@@ -59,7 +59,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
     color: var(--text-color);
     margin-top: 20px;
     width: 92%;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .project-card .image-infos .stacks>span {
@@ -68,14 +68,14 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 
 .project-card .image-infos>.project-link {
     font-family: "Roboto-Light", sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--project-link);
     margin: 2em 0 35px 0;
 }
 
 /***** PROJETS *****/
 .projects {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-top: 200px;
     flex-direction: column;
 }
@@ -93,7 +93,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 .see-more {
     font-family: "Roboto-Light", sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.125rem;
     background-color: var(--button);
     color: #fff;
     border: 3px solid var(--button);
