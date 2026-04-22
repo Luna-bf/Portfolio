@@ -22819,6 +22819,7 @@ textarea.form-control-lg {
   --theme-bg-color: #212529;
   --button: #283669;
   --button-hover: #324487;
+  --project-border: 1px solid #aaa;
   --project-link: #324487;
   --see-more-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
   --footer-bg-color: #D4EDFF;
@@ -22832,6 +22833,7 @@ textarea.form-control-lg {
   --theme-bg-color: #fff;
   --button: #283669;
   --button-hover: #324487;
+  --project-border: 0px solid #aaa;
   --project-link: #B5C7EB;
   --see-more-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
   --footer-bg-color: #25315E;
@@ -22847,6 +22849,7 @@ textarea.form-control-lg {
 
 /*** SMOOTH SCROLL ***/
 html {
+  font-size: 1rem;
   scroll-behavior: smooth;
 }
 
@@ -22860,7 +22863,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 32px;
+  /* Il est préférable d'utiliser l'unité "rem" plutôt que "px" car celle-ci s'adapte mieux en fonction à la taille de l'écran */
+  font-size: 2rem;
   font-family: "Roboto-Regular", sans-serif;
   font-weight: 400;
   text-align: center;
@@ -23018,10 +23022,8 @@ header {
 
 /***NAV***/
 nav {
-  position: fixed;
-  top: 0;
-  z-index: 10;
   /*Pour que les éléments animés restent derrière la nav*/
+  z-index: 10;
   padding: 1.4em 0.8em 1.4em 0.8em !important;
   text-align: center;
   width: 100%;
@@ -23031,41 +23033,18 @@ nav {
 nav ul {
   font-family: "Roboto-Light", sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 nav ul li a {
   text-decoration: none;
   color: var(--text-color);
-  padding: 0 5px;
+  padding: 0 0.278em;
   transition: none;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
-}
-
-.open-menu, .close-menu {
-  display: none;
-  position: absolute;
-  font-size: 1.5rem;
-  color: #fff;
-  cursor: pointer;
-}
-
-.open-menu {
-  top: 13%;
-  right: 20px;
-  transform: translateY(50%);
-}
-
-.close-menu {
-  top: 20px;
-  right: 20px;
-}
-
-#check {
-  display: none;
 }
 
 /***ABOUT ME***/
@@ -23084,15 +23063,15 @@ nav ul li a:hover {
 
 .about-me > .searching-for {
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 40px 30px 40px 30px;
+  padding: 2.5em 1.875em;
   border-radius: 10px;
 }
 
 .about-me > .searching-for h3 {
   text-transform: none;
   text-align: left;
-  font-size: 34px;
-  margin-bottom: 10px;
+  font-size: 2.125rem;
+  margin-bottom: 1em;
   color: #fff;
 }
 
@@ -23101,25 +23080,25 @@ nav ul li a:hover {
   font-weight: 300;
   color: #fff;
   line-height: 1.5;
-  font-size: 21px;
+  font-size: 1.313rem;
 }
 
 .resume {
   font-family: "Roboto-Light", sans-serif;
   font-weight: 300;
-  font-size: 17.5px;
+  font-size: 1.094rem;
   background-color: var(--button);
   border: 3px solid var(--button);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
   color: #fff;
   border-radius: 6px;
   margin-top: 2.5em;
-  padding: 10px 30px 10px 30px;
+  padding: 0.6em 1.72em;
 }
 
 .fa-cloud-arrow-down {
-  margin-right: 14px;
-  font-size: 21px;
+  margin-right: 0.7em;
+  font-size: 1.313rem;
 }
 
 .resume:hover {
@@ -23130,13 +23109,13 @@ nav ul li a:hover {
 }
 
 /***** PROJETS *****/
-.all-cards {
-  margin-top: 3em;
+.container-fluid .projects > .all-cards, .languages-links {
+  margin-top: 5em !important;
 }
 
 .project-card {
   border-radius: 10px;
-  margin-bottom: 130px;
+  margin-bottom: 6.5em;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -23163,18 +23142,16 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
      object-fit: cover;
   border-radius: 10px 10px 0 0;
   background-size: 900px;
+  border-bottom: var(--project-border);
 }
 
 .project-card > .image-infos {
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 15px 0 15px;
+  margin: 0 1.5em 0 1.5em;
 }
 
 .project-card .image-infos > h2 {
-  font-size: 26px;
-  margin-top: 25px;
+  font-size: 1.8rem;
+  margin-top: 0.8em;
   margin-bottom: 1.2em;
 }
 
@@ -23182,16 +23159,16 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
   font-family: "Roboto-Light", sans-serif;
   color: var(--text-color);
   width: 92%;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.5;
 }
 
 .project-card .image-infos > .stacks {
   font-family: "Roboto-Light", sans-serif;
   color: var(--text-color);
-  margin-top: 20px;
+  margin-top: 1.12em;
   width: 92%;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .project-card .image-infos .stacks > span {
@@ -23200,20 +23177,19 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 
 .project-card .image-infos > .project-link {
   font-family: "Roboto-Light", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: var(--project-link);
-  margin: 2em 0 35px 0;
+  margin: 2em 0;
 }
 
 /***** PROJETS *****/
 .projects {
-  font-size: 20px;
-  margin-top: 200px;
+  font-size: 1.25rem;
+  margin-top: 10em;
   flex-direction: column;
 }
 
 .projects > h2 {
-  margin-bottom: 20px;
   color: var(--text-color);
   text-align: center;
 }
@@ -23225,12 +23201,12 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 .see-more {
   font-family: "Roboto-Light", sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125rem;
   background-color: var(--button);
   color: #fff;
   border: 3px solid var(--button);
   border-radius: 6px;
-  padding: 12px 30px 12px 30px;
+  padding: 0.67em 1.7em;
 }
 
 .see-more:hover {
@@ -23240,34 +23216,25 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .fa-laptop-code {
-  margin-right: 14px;
+  margin-right: 0.78em;
 }
 
 /*** PROJECTS ***/
-.projects > h2 {
-  margin-bottom: 100px;
-}
-
-.projects-h1 {
-  margin-bottom: 100px !important;
-}
-
-#projects-card {
-  margin-top: 100px !important;
+#projects-cards {
+  margin-top: 5em !important;
 }
 
 .languages-links > li {
   font-family: "Roboto-Light", sans-serif;
   font-weight: 300;
-  margin: 10px 0 30px 0;
-  padding: 12px 35px 12px 35px;
-  font-size: 18px;
+  margin: 0.56em 0 1.7em 0;
+  padding: 0.67em 1.95em;
+  font-size: 1.125rem;
   border-radius: 5px;
 }
 
 .languages-links li a > i {
-  font-size: 21px;
-  vertical-align: middle;
+  font-size: 1.313rem;
 }
 
 .languages-links li:hover {
@@ -23281,8 +23248,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .all-link a > i {
-  margin-right: 10px;
-  vertical-align: baseline !important;
+  margin-right: 0.48em;
 }
 
 /* Figma */
@@ -23291,7 +23257,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .figma-link a > i {
-  margin-right: 10px;
+  margin-right: 0.48em;
   color: #F24E1E;
 }
 
@@ -23306,7 +23272,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .javascript-link a > i {
-  margin-right: 10px;
+  margin-right: 0.48em;
 }
 
 /* Vue.js */
@@ -23315,7 +23281,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .vuejs-link a > i {
-  margin-right: 10px;
+  margin-right: 0.48em;
   color: #34495E;
 }
 
@@ -23325,7 +23291,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .tailwind-link a > i {
-  margin-right: 10px;
+  margin-right: 0.48em;
   color: #38BDF8;
 }
 
@@ -23335,7 +23301,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .wordpress-link a > i {
-  margin-right: 10px;
+  margin-right: 0.48em;
   color: #00749C;
 }
 
@@ -23345,7 +23311,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .mysql-link a > i {
-  margin-right: 10px;
+  margin-right: 0.48em;
   color: #F29111;
 }
 
@@ -23359,7 +23325,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .mongodb-link a > i {
-  margin-right: 10px;
+  margin-right: 0.48em;
   color: #3FA037;
 }
 
@@ -23369,12 +23335,12 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .php-link a > i {
-  margin-right: 10px;
+  margin-right: 0.48em;
   color: #474A8A;
 }
 
 #php-fs {
-  font-size: 27px;
+  font-size: 1.688rem;
 }
 
 /* Symfony */
@@ -23384,11 +23350,11 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .symfony-link a > i {
-  margin-right: 10px;
+  margin-right: 0.48em;
 }
 
 #symfony-fs {
-  font-size: 25px;
+  font-size: 1.563rem;
 }
 
 /***** NO PROJECT *****/
@@ -23438,34 +23404,29 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 
 /*** COMPETENCES ***/
 .skills {
-  font-size: 20px;
-  margin: 200px 0 100px 0;
+  font-size: 1.25rem;
+  margin: 10em 0 5em 0;
   flex-direction: column;
 }
 
 .skills > h1 {
-  margin-bottom: 20px;
+  margin-bottom: 0.63em;
 }
 
 /**CARDS**/
 .card-wrapper {
-  padding-bottom: 50px;
+  padding-bottom: 2.5em;
 }
 
 .cards-container {
   width: 90%;
   margin-top: 3em;
-  flex-direction: row;
-  justify-content: space-around;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
 }
 
 /* card-wrapper */
 .card-wrapper {
   max-width: 100%;
-  margin: 0 60px 35px;
+  margin: 0 3em 1.75em;
   overflow: hidden;
 }
 
@@ -23480,14 +23441,14 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
   height: auto !important;
   border: 3px solid #b5c7eb;
   border-radius: 6px;
-  padding: 40px 30px 40px 30px;
-  margin-bottom: 10px;
+  padding: 2em 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .card-item > figure {
   width: 25%;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 0.5em;
 }
 
 .card-item:active {
@@ -23501,14 +23462,14 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 
 .card-item .titles > h3 {
   text-transform: none;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 .card-item .titles > h4 {
   font-family: "Roboto-LightItalic", sans-serif;
   font-weight: 300;
   font-style: italic;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-transform: none;
   color: #AAAAAA;
 }
@@ -23516,24 +23477,24 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 .card-item > .text {
   font-family: "Roboto-Light", sans-serif;
   font-weight: 300;
-  margin-top: 20px;
+  margin-top: 1em;
   color: var(--text-color);
   text-align: center;
 }
 
 .card-item .text > p {
   text-align: start;
-  margin: 30px 0 30px 0;
+  margin: 1.5em 0;
 }
 
 .card-item .text > .wiki {
   color: var(--project-link);
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .card-item > .bootstrap {
   width: 32%;
-  margin-bottom: 5px;
+  margin-bottom: 0.25em;
 }
 
 .card-item > .figma {
@@ -23549,12 +23510,12 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .card-item > .git {
-  margin-bottom: 2.5px;
+  margin-bottom: 0.13em;
 }
 
 .card-item > .mongodb {
   width: 35%;
-  margin-bottom: 2px;
+  margin-bottom: 0.1em;
 }
 
 .card-item > .wordpress {
@@ -23564,13 +23525,13 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 
 .card-item > .symfony {
   width: 28%;
-  margin-bottom: 10px;
+  margin-bottom: 0.5em;
 }
 
 /* swiper buttons + pagination */
 .swiper-button-next, .swiper-button-prev {
   --swiper-navigation-color: var(--text-color);
-  --swiper-navigation-size: 28px;
+  --swiper-navigation-size: 1.75rem;
 }
 
 .swiper-pagination-bullet {
@@ -23579,7 +23540,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 
 /*** CONTACT ***/
 .title-contact > h1 {
-  margin: 135px 0 20px 0;
+  margin: 4.22em 0 0.782em 0;
 }
 
 .contact-me {
@@ -23602,18 +23563,12 @@ form {
 
 input {
   font-family: "Roboto-Light", sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   height: 2.7em;
   width: 100%;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   border-radius: 5px;
   border: 1px solid #777777;
-}
-
-/* form-group */
-.form-group > input:first-child {
-  margin-right: 10px;
 }
 
 /* form-elements */
@@ -23623,10 +23578,10 @@ input {
 
 .form-elements > textarea {
   font-family: "Roboto-Light", sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   height: 15em;
-  padding: 15px 15px 15px 10px;
-  margin-bottom: 10px;
+  padding-top: 0.63em;
+  margin-bottom: 0.625em;
   border-radius: 5px;
   border: 1px solid #777777;
 }
@@ -23637,12 +23592,11 @@ input {
   border: 1px solid var(--button);
   background-color: var(--button);
   color: #fff;
-  padding: 10px 20px 10px 20px;
+  padding: 0.63em 2.8em;
   border-radius: 5px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
-  font-size: 16px;
-  width: 20%;
-  margin-top: 10px;
+  font-size: 1rem;
+  margin-top: 0.625em;
 }
 
 .form-elements > .submit-button:hover {
@@ -23653,14 +23607,10 @@ input {
 }
 
 /* Message */
-.none {
-  display: none;
-}
-
 #submit-message > p {
   font-family: "Roboto-Light", sans-serif;
-  font-size: 18px;
-  margin: 20px 0 30px 0;
+  font-size: 1.125rem;
+  margin: 1.112em 0 1.67em 0;
   color: #fff;
 }
 
@@ -23669,7 +23619,7 @@ input {
   border: 2px solid var(--theme-bg-color);
   border-radius: 10em;
   width: 4.5em;
-  padding: 2.5px;
+  padding: 0.2em;
 }
 
 .theme-switcher:hover {
@@ -23686,7 +23636,7 @@ input {
 
 .theme-switcher .theme-button > i {
   color: var(--theme-icon-color);
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 /*** INACTIVE DARK MODE ***/
@@ -23696,7 +23646,7 @@ input {
 
 /*** ACTIVE DARK MODE ***/
 .dark-mode .theme-switcher > .theme-button {
-  transform: translateX(2.4em);
+  transform: translateX(2.35em);
 }
 
 .dark-mode .theme-switcher .theme-button > .fa-sun {
@@ -23729,7 +23679,7 @@ footer {
 
 /* socials-icons */
 .socials-icons a > i {
-  font-size: 40px;
+  font-size: 2.5rem;
   margin-left: 10px;
 }
 
