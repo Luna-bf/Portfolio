@@ -31,6 +31,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     background-size: 900px;
+    border-bottom: var(--project-border);
 }
 
 .project-card>.image-infos {
@@ -38,8 +39,8 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .project-card .image-infos>h2 {
-    font-size: 1.625rem;
-    margin-top: 0.97em;
+    font-size: 1.8rem;
+    margin-top: 0.80em;
     margin-bottom: 1.2em;
 }
 
