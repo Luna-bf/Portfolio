@@ -1,33 +1,28 @@
 /*** COMPETENCES ***/
 .skills {
     font-size: 1.25rem;
-    margin: 200px 0 100px 0;
+    margin: 10em 0 5em 0;
     flex-direction: column;
 }
 
 .skills>h1 {
-    margin-bottom: 20px;
+    margin-bottom: 0.63em;
 }
 
 /**CARDS**/
 .card-wrapper {
-    padding-bottom: 50px;
+    padding-bottom: 2.5em;
 }
 
 .cards-container {
     width: 90%;
     margin-top: 3em;
-    flex-direction: row;
-    justify-content: space-around;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
 }
 
 /* card-wrapper */
 .card-wrapper {
     max-width: 100%;
-    margin: 0 60px 35px;
+    margin: 0 3em 1.75em;
     overflow: hidden;
 }
 
@@ -43,13 +38,13 @@
     border: 3px solid #b5c7eb;
     border-radius: 6px;
     padding: 40px 30px 40px 30px;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 
 .card-item>figure {
     width: 25%;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 
 .card-item:active {
@@ -78,14 +73,14 @@
 .card-item>.text {
     font-family: "Roboto-Light", sans-serif;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 1em;
     color: var(--text-color);
     text-align: center;
 }
 
 .card-item .text>p {
     text-align: start;
-    margin: 30px 0 30px 0;
+    margin: 1.5em 0;
 }
 
 .card-item .text>.wiki {
@@ -95,7 +90,7 @@
 
 .card-item>.bootstrap {
     width: 32%;
-    margin-bottom: 5px;
+    margin-bottom: 0.25em;
 }
 
 .card-item>.figma {
@@ -111,12 +106,12 @@
 }
 
 .card-item>.git {
-    margin-bottom: 2.5px;
+    margin-bottom: 0.13em;
 }
 
 .card-item>.mongodb {
     width: 35%;
-    margin-bottom: 2px;
+    margin-bottom: 0.1em;
 }
 
 .card-item>.wordpress {
@@ -126,13 +121,13 @@
 
 .card-item>.symfony {
     width: 28%;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 
 /* swiper buttons + pagination */
 .swiper-button-next, .swiper-button-prev {
   --swiper-navigation-color: var(--text-color);
-  --swiper-navigation-size: 28px;
+  --swiper-navigation-size: 1.75rem;
 }
 
 .swiper-pagination-bullet {

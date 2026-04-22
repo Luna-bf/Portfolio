@@ -1,20 +1,12 @@
 /*** PROJECTS ***/
-.projects>h2 {
-    margin-bottom: 100px;
-}
-
-.projects-h1 {
-    margin-bottom: 100px !important;
-}
-
-#projects-card {
-    margin-top: 100px !important;
+#projects-cards {
+    margin-top: 5em !important;
 }
 
 .languages-links>li {
     font-family: "Roboto-Light", sans-serif;
     font-weight: 300;
-    margin: 10px 0 30px 0;
+    margin: 0.56em 0 1.7em 0;
     padding: 12px 35px 12px 35px;
     font-size: 1.125rem;
     border-radius: 5px;
@@ -22,7 +14,6 @@
 
 .languages-links li a>i {
     font-size: 1.313rem;
-    vertical-align: middle;
 }
 
 .languages-links li:hover {
@@ -36,8 +27,7 @@
 }
 
 .all-link a>i {
-    margin-right: 10px;
-    vertical-align: baseline !important;
+    margin-right: 0.48em;
 }
 
 /* Figma */
@@ -46,7 +36,7 @@
 }
 
 .figma-link a>i {
-    margin-right: 10px;
+    margin-right: 0.48em;
     color: #F24E1E;
 }
 
@@ -61,7 +51,7 @@
 }
 
 .javascript-link a>i {
-    margin-right: 10px;
+    margin-right: 0.48em;
 }
 
 /* Vue.js */
@@ -70,7 +60,7 @@
 }
 
 .vuejs-link a>i {
-    margin-right: 10px;
+    margin-right: 0.48em;
     color: #34495E;
 }
 
@@ -80,7 +70,7 @@
 }
 
 .tailwind-link a>i {
-    margin-right: 10px;
+    margin-right: 0.48em;
     color: #38BDF8;
 }
 
@@ -90,7 +80,7 @@
 }
 
 .wordpress-link a>i {
-    margin-right: 10px;
+    margin-right: 0.48em;
     color: #00749C;
 }
 
@@ -100,7 +90,7 @@
 }
 
 .mysql-link a>i {
-    margin-right: 10px;
+    margin-right: 0.48em;
     color: #F29111;
 }
 
@@ -114,7 +104,7 @@
 }
 
 .mongodb-link a>i {
-    margin-right: 10px;
+    margin-right: 0.48em;
     color: #3FA037;
 }
 
@@ -124,7 +114,7 @@
 }
 
 .php-link a>i {
-    margin-right: 10px;
+    margin-right: 0.48em;
     color: #474A8A;
 }
 
@@ -139,7 +129,7 @@
 }
 
 .symfony-link a>i {
-    margin-right: 10px;
+    margin-right: 0.48em;
 }
 
 #symfony-fs {
