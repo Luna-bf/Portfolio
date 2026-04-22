@@ -17,7 +17,7 @@
     <!-- Début HEADER -->
     <header class="d-flex align-items-center">
         <!-- Début NAV -->
-        <nav class="d-flex justify-content-center justify-content-between">
+        <nav class="d-flex flex-row justify-content-center justify-content-between">
             <div class="theme-switcher">
                 <div class="theme-button d-flex align-content-center align-items-center justify-content-center">
                     <i class="fa-solid fa-moon text-white text-center"></i>
@@ -25,24 +25,19 @@
                 </div>
             </div>
 
-            <input type="checkbox" id="check">
-
             <ul class="list-unstyled mb-0 ps-0 d-flex align-items-center">
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="#competences">Compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <label for="check" class="close-menu"><i class="fa-solid fa-xmark"></i></label>
             </ul>
-            <label for="check" class="open-menu"><i class="fa-solid fa-bars"></i></label>
         </nav>
         <!-- Fin NAV -->
 
         <!-- Début ABOUT ME -->
-        <section class="d-flex justify-content-center about-me">
-            <div class="searching-for">
+        <section class="container-fluid row gx-0 d-flex flex-column flex-sm-column mt-sm-5 flex-md-row justify-content-center align-items-center about-me">
+            <div class="col-8 mt-5 mb-5 col-sm-9 mb-sm-5 m-sm-auto mt-sm-5 col-md-6 m-md-5 searching-for">
                 <h3>Je m'appelle Luna BURATTI-FAYOLLE</h3>
-                <br>
-                <p>Je suis une <u>développeuse web junior</u> captivée par le code. <u>Diplômée d'une formation RNCP de
+                <p class="mb-0">Je suis une <u>développeuse web junior</u> captivée par le code. <u>Diplômée d'une formation RNCP de
                         niveau 5 (BAC+2)</u>, je suis en quête d'une opportunité d'emploi qui me permettrait de mettre
                     mes
                     compétences en pratique et de les enrichir auprès de professionnels expérimentés.</p>
@@ -52,7 +47,7 @@
                         CV</a>
                 </div>
             </div>
-            <figure class="align-content-center">
+            <figure class="ms-0 mb-5 mb-md-0 ms-md-3 w-sm-25 align-content-center align-items-center">
                 <img src="assets/imgs/Photo-CV_19092025.jpg" alt="Photo CV">
             </figure>
         </section>
@@ -67,13 +62,13 @@
             <h2 id="projects">Mes projets</h2>
 
             <!-- Début ALL-CARDS -->
-            <!-- Ajouter une classe .row (voir doc Bootstrap) -->
-            <div class="all-cards d-flex">
-                <!-- Ajouter une classe .col à tous les articles (voir doc Bootstrap) -->
+            <div class="row d-flex flex-row justify-content-center justify-content-evenly m-auto flex-wrap all-cards">
                 <!-- Début ACCESSIBILITY -->
-                <article class="project-card d-flex">
+                <!-- .col vient définir le nombre de case qu'un élément à l'intérieur d'un conteneur portant la classe ".row"
+                doit prendre, je ne dois donc pas définir une largeur (width) car la classe ".col" s'en occupe -->
+                <article class="col-7 col-sm-8 col-md-4 me-1 px-0 d-flex flex-column project-card">
                     <figure class="accessibility"></figure>
-                    <div class="image-infos d-flex">
+                    <div class="image-infos d-flex flex-column align-items-center justify-content-center">
                         <h2>Simple Accessibility</h2>
                         <p class="project-description mb-0">Ce projet m'a permis de m'exercer à la conception de sites
                             accessibles en donnant la possibilité de changer : la taille du texte, le thème de la page
@@ -88,9 +83,9 @@
                 <!-- Fin ACCESSIBILITY -->
 
                 <!-- Début TRANSLATION -->
-                <article class="project-card d-flex">
+                <article class="col-7 col-sm-8 col-md-4 me-1 px-0 d-flex flex-column project-card">
                     <figure class="translation"></figure>
-                    <div class="image-infos d-flex">
+                    <div class="image-infos d-flex flex-column align-items-center justify-content-center">
                         <h2>Simple Translation</h2>
                         <p class="project-description mb-0">Ce projet m'a permis de m'exercer à la conception de la
                             partie
@@ -105,9 +100,9 @@
                 <!-- Fin TRANSLATION -->
 
                 <!-- Début TODO LIST -->
-                <article class="project-card d-flex">
+                <article class="col-7 col-sm-8 col-md-4 me-1 px-0 d-flex flex-column project-card">
                     <figure class="todo_list"></figure>
-                    <div class="image-infos d-flex">
+                    <div class="image-infos d-flex flex-column align-items-center justify-content-center">
                         <h2>Todo List PHP</h2>
                         <p class="project-description mb-0">Ce projet de Todo List m'a permis d'optimiser ma maîtrise de
                             la
@@ -123,9 +118,9 @@
                 <!-- Fin TODO LIST -->
 
                 <!-- Début BLOG BOOTSTRAP -->
-                <article class="project-card d-flex">
+                <article class="col-7 col-sm-8 col-md-4 me-1 px-0 d-flex flex-column project-card">
                     <figure class="blog_bootstrap"></figure>
-                    <div class="image-infos d-flex">
+                    <div class="image-infos d-flex flex-column align-items-center justify-content-center">
                         <h2>Blog Bootstrap</h2>
                         <p class="project-description mb-0">Ce projet de blog m'a permis d'optimiser ma maîtrise de
                             Symfony (framework PHP) ainsi que de m'entraîner à la création d'un projet en "mobile-first"
@@ -149,12 +144,11 @@
             <h1 id="competences">Mes compétences</h1>
 
             <!-- Début SWIPER -->
-            <div class="d-flex cards-container swiper">
+            <div class="swiper cards-container col-md-12 w-md-75">
                 <!-- Début CARD WRAPPER -->
                 <div class="d-flex card-wrapper">
                     <!-- Début SWIPER WRAPPER -->
                     <div class="card-list swiper-wrapper">
-
                         <!-- HTML card -->
                         <div class="card-item swiper-slide">
                             <figure><img src="assets/imgs/logos/front/HTML_logo.png" alt="Logo d'HTML" /></figure>
@@ -316,8 +310,8 @@
 
                     <div class="swiper-pagination"></div>
 
-                    <div class="swiper-slide-button swiper-button-prev"></div>
-                    <div class="swiper-slide-button swiper-button-next"></div>
+                    <div class="swiper-slide-button swiper-button-prev d-none d-sm-none d-md-block"></div>
+                    <div class="swiper-slide-button swiper-button-next d-none d-sm-none d-md-block"></div>
                 </div>
                 <!-- Fin CARD WRAPPER -->
             </div>
@@ -325,25 +319,25 @@
         </section>
         <!-- Fin SKILLS -->
 
-        <div class="d-flex title-contact">
+        <div class="d-flex justify-content-center title-contact">
             <h1 id="contact">Contactez-moi</h1>
         </div>
 
         <!-- Début CONTACT ME -->
-        <section class="contact-me d-flex">
+        <section class="row gx-0 d-flex contact-me">
             <!-- Début FORM -->
-            <form class="d-flex" id="contact-form" method="post">
-                <div class="d-flex form-elements">
-                    <div class="d-flex form-group">
-                        <input type="text" id="username" name="username" placeholder="Votre nom" required>
-                        <input type="email" id="email" name="user_email" placeholder="Votre email" required>
+            <form class="d-flex justify-content-center align-items-center m-auto col-md-7" id="contact-form" method="post">
+                <div class="d-flex flex-column form-elements">
+                    <div class="row gx-0 d-flex flex-md-column form-group">
+                        <input type="text" id="username" name="username" placeholder="Votre nom" class="col-md-6 ps-2" required>
+                        <input type="email" id="email" name="user_email" placeholder="Votre email" class="col-md-6 ps-2" required>
                     </div>
 
-                    <input type="text" name="subject" placeholder="Objet" class="subject" required>
-                    <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                    <input type="text" name="subject" placeholder="Objet" class="subject ps-2" required>
+                    <textarea class="w-100 ps-2" id="message" name="message" placeholder="Votre message" required></textarea>
 
-                    <div class="none" id="submit-message">
-                        <p>Merci pour votre message ! Je vous recontacterai dès que possible.</p>
+                    <div class="d-none" id="submit-message">
+                        <p class="text-center">Merci pour votre message ! Je vous recontacterai dès que possible.</p>
                     </div>
 
                     <button type="submit" class="submit-button">Envoyer</button>
@@ -374,7 +368,6 @@
     <!-- Le cdn de l'API EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!-- Mes fichiers JS -->
-    <script type="text/javascript" src="assets/js/app.js"></script>
     <script type="text/javascript" src="assets/js/theme/theme.js"></script>
     <script type="text/javascript" src="assets/js/slider.js"></script>
     <script type="text/javascript" src="assets/ressources/form/form.js"></script>
