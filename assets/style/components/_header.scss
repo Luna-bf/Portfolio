@@ -15,10 +15,8 @@ header {
 
 /***NAV***/
 nav {
-    position: fixed;
-    top: 0;
-    z-index: 10;
     /*Pour que les éléments animés restent derrière la nav*/
+    z-index: 10;
     padding: 1.4em 0.8em 1.4em 0.8em !important;
     text-align: center;
     width: 100%;
