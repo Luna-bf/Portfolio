@@ -42,29 +42,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.open-menu, .close-menu {
-    display: none;
-    position: absolute;
-    font-size: 1.5rem;
-    color: #fff;
-    cursor: pointer;
-}
-
-.open-menu {
-    top: 13%;
-    right: 20px;
-    transform: translateY(50%);
-}
-
-.close-menu {
-    top: 20px;
-    right: 20px;
-}
-
-#check {
-    display: none;
-}
-
 /***ABOUT ME***/
 .about-me>figure {
     width: 21.2%;
