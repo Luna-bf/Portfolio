@@ -1,4 +1,8 @@
 /*** PROJECTS ***/
+.projects>h2 {
+    margin-bottom: 100px;
+}
+
 .projects-h1 {
     margin-bottom: 100px !important;
 }
@@ -164,12 +168,12 @@
 
 .project-card>.translation {
     background-image: url("../../assets/imgs/projects/simple_translation.png");
-    background-position: -240px top;
+    background-position: top;
 }
 
 .project-card>.todo_list {
     background-image: url("../../assets/imgs/projects/todo_list_php.png");
-    background-position: -198px -180px;
+    background-position: -170px -180px;
 }
 
 .project-card>.blog_bootstrap {
@@ -179,6 +183,7 @@
 
 .project-card>.portfolio {
     background-image: url("../../assets/imgs/projects/maquette_portfolio.png");
+    background-position: -80.5px -180px;
 }
 
 .project-card>.joke-generator {
