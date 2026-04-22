@@ -34,7 +34,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: var(--text-color);
-    padding: 0 5px;
+    padding: 0 0.278em;
     transition: none;
 }
 
@@ -81,7 +81,7 @@ nav ul li a:hover {
 
 .about-me>.searching-for {
     background-color: rgb(255, 255, 255, 0.2);
-    padding: 40px 30px 40px 30px;
+    padding: 2.5em 1.875em;
     border-radius: 10px;
 }
 
@@ -111,7 +111,7 @@ nav ul li a:hover {
     color: #fff;
     border-radius: 6px;
     margin-top: 2.5em;
-    padding: 10px 30px 10px 30px;
+    padding: 0.6em 1.72em;
 }
 
 .fa-cloud-arrow-down {

@@ -40,7 +40,7 @@ input {
     font-family: "Roboto-Light", sans-serif;
     font-size: 1rem; // 16px
     height: 15em;
-    padding-top: 10px;
+    padding-top: 0.63em;
     margin-bottom: 0.625em;
     border-radius: 5px;
     border: 1px solid #777777;
@@ -52,7 +52,7 @@ input {
     border: 1px solid var(--button);
     background-color: var(--button);
     color: #fff;
-    padding: 10px 20px 10px 20px;
+    padding: 0.63em 1.3em;
     border-radius: 5px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
     font-size: 1rem; // 16px

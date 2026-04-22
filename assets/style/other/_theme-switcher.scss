@@ -3,7 +3,7 @@
     border: 2px solid var(--theme-bg-color);
     border-radius: 10em;
     width: 4.5em;
-    padding: 2.5px;
+    padding: 0.2em;
 }
 
 .theme-switcher:hover {
@@ -30,7 +30,7 @@
 
 /*** ACTIVE DARK MODE ***/
 .dark-mode .theme-switcher>.theme-button {
-    transform: translateX(2.4em);
+    transform: translateX(2.35em);
 }
 
 .dark-mode .theme-switcher .theme-button>.fa-sun {
