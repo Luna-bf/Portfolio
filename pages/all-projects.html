@@ -41,31 +41,29 @@
     <main class="container-fluid gx-0">
         <!-- Début PROJECTS -->
         <section class="d-flex projects">
-            <h1 class="projects-h1" id="projects">Tous mes projets</h1>
+            <h2 id="projects" class="mb-0">Tous mes projets</h2>
 
             <!-- Début LANGUAGES-LINKS -->
-            <ul class="list-unstyled d-flex justify-content-center flex-wrap m-auto languages-links">
-                <li class="all-link"><a href="#" class="text-decoration-none text-white"><i class="fa-solid fa-file-code"></i>Tous</a></li>
-                <li class="figma-link ms-4"><a href="projects/figma.html" class="text-decoration-none text-white"><i class="fa-brands fa-figma"></i>Figma</a></li>
-                <li class="javascript-link ms-4"><a href="projects/javascript.html" class="text-decoration-none"><i class="fa-brands fa-js"></i>JavaScript</a></li>
-                <li class="vuejs-link ms-4"><a href="projects/vuejs.html" class="text-decoration-none text-white"><i class="fa-brands fa-vuejs"></i>Vue.js</a></li>
-                <li class="tailwind-link ms-4 bg-white"><a href="projects/tailwind.html" class="text-decoration-none text-black"><i class="fa-brands fa-tailwind-css"></i>Tailwind CSS</a></li>
-                <li class="wordpress-link ms-4"><a href="projects/wordpress.html" class="text-decoration-none text-white"><i class="fa-brands fa-wordpress"></i>WordPress</a></li>
-                <li class="mysql-link ms-4"><a href="projects/mysql.html" class="text-decoration-none text-white"><i class="fa-solid fa-database"></i>MySQL</a></li>
-                <li class="mongodb-link ms-4"><a href="projects/mongodb.html" class="text-decoration-none"><i class="fa-solid fa-database"></i>MongoDB</a></li>
-                <li class="php-link ms-4"><a href="projects/php.html" class="text-decoration-none text-white"><i class="fa-brands fa-php" id="php-fs"></i>PHP</a></li>
-                <li class="symfony-link ms-4"><a href="projects/symfony.html" class="text-decoration-none text-white"><i class="fa-brands fa-symfony" id="symfony-fs"></i>Symfony</a></li>
+            <ul class="col-10 list-unstyled d-flex justify-content-center flex-wrap m-auto languages-links">
+                <li class="all-link"><a href="#" class="text-decoration-none text-white"><i class="fa-solid fa-file-code align-text-top"></i>Tous</a></li>
+                <li class="figma-link ms-4"><a href="projects/figma.html" class="text-decoration-none text-white"><i class="fa-brands fa-figma align-text-top"></i>Figma</a></li>
+                <li class="javascript-link ms-4"><a href="projects/javascript.html" class="text-decoration-none"><i class="fa-brands fa-js align-text-top"></i>JavaScript</a></li>
+                <li class="vuejs-link ms-4"><a href="projects/vuejs.html" class="text-decoration-none text-white"><i class="fa-brands fa-vuejs align-text-top"></i>Vue.js</a></li>
+                <li class="tailwind-link ms-4 bg-white"><a href="projects/tailwind.html" class="text-decoration-none text-black"><i class="fa-brands fa-tailwind-css align-text-top"></i>Tailwind CSS</a></li>
+                <li class="wordpress-link ms-4"><a href="projects/wordpress.html" class="text-decoration-none text-white"><i class="fa-brands fa-wordpress align-text-top"></i>WordPress</a></li>
+                <li class="mysql-link ms-4"><a href="projects/mysql.html" class="text-decoration-none text-white"><i class="fa-solid fa-database align-text-top"></i>MySQL</a></li>
+                <li class="mongodb-link ms-4"><a href="projects/mongodb.html" class="text-decoration-none"><i class="fa-solid fa-database align-text-top"></i>MongoDB</a></li>
+                <li class="php-link ms-4"><a href="projects/php.html" class="text-decoration-none text-white"><i class="fa-brands fa-php align-middle" id="php-fs"></i>PHP</a></li>
+                <li class="symfony-link ms-4"><a href="projects/symfony.html" class="text-decoration-none text-white"><i class="fa-brands fa-symfony align-middle" id="symfony-fs"></i>Symfony</a></li>
             </ul>
             <!-- Fin LANGUAGES-LINKS -->
 
             <!-- Début ALL-CARDS -->
-            <!-- Ajouter une classe .row (voir doc Bootstrap) -->
-            <div class="all-cards d-flex" id="projects-card">
-                <!-- Ajouter une classe .col à tous les articles (voir doc Bootstrap) -->
+            <div class="row d-flex flex-row justify-content-center justify-content-evenly m-auto flex-wrap" id="projects-cards">
                 <!-- Début ACCESSIBILITY -->
-                <article class="project-card d-flex">
+                <article class="col-7 col-sm-8 col-md-4 me-1 px-0 d-flex flex-column project-card">
                     <figure class="accessibility"></figure>
-                    <div class="image-infos d-flex">
+                    <div class="image-infos d-flex flex-column align-items-center justify-content-center">
                         <h2>Simple Accessibility</h2>
                         <p class="project-description mb-0">Ce projet m'a permis de m'exercer à la conception de sites
                             accessibles en donnant la possibilité de changer : la taille du texte, le thème de la page
@@ -80,9 +78,9 @@
                 <!-- Fin ACCESSIBILITY -->
 
                 <!-- Début TRANSLATION -->
-                <article class="project-card d-flex">
+                <article class="col-7 col-sm-8 col-md-4 me-1 px-0 d-flex flex-column project-card">
                     <figure class="translation"></figure>
-                    <div class="image-infos d-flex">
+                    <div class="image-infos d-flex flex-column align-items-center justify-content-center">
                         <h2>Simple Translation</h2>
                         <p class="project-description mb-0">Ce projet m'a permis de m'exercer à la conception de la
                             partie
@@ -97,9 +95,9 @@
                 <!-- Fin TRANSLATION -->
 
                 <!-- Début TODO LIST -->
-                <article class="project-card d-flex">
+                <article class="col-7 col-sm-8 col-md-4 me-1 px-0 d-flex flex-column project-card">
                     <figure class="todo_list"></figure>
-                    <div class="image-infos d-flex">
+                    <div class="image-infos d-flex flex-column align-items-center justify-content-center">
                         <h2>Todo List PHP</h2>
                         <p class="project-description mb-0">Ce projet de Todo List m'a permis d'optimiser ma maîtrise de
                             la
@@ -115,9 +113,9 @@
                 <!-- Fin TODO LIST -->
 
                 <!-- Début BLOG BOOTSTRAP -->
-                <article class="project-card d-flex">
+                <article class="col-7 col-sm-8 col-md-4 me-1 px-0 d-flex flex-column project-card">
                     <figure class="blog_bootstrap"></figure>
-                    <div class="image-infos d-flex">
+                    <div class="image-infos d-flex flex-column align-items-center justify-content-center">
                         <h2>Blog Bootstrap</h2>
                         <p class="project-description mb-0">Ce projet de blog m'a permis d'optimiser ma maîtrise de
                             Symfony (framework PHP) ainsi que de m'entraîner à la création d'un projet en "mobile-first"
