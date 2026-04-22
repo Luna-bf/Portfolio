@@ -1,8 +1,4 @@
 /*** CONTACT ***/
-.title-contact {
-    justify-content: center;
-}
-
 .title-contact>h1 {
     margin: 135px 0 20px 0;
 }
@@ -14,7 +10,6 @@
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0 40em rgba(0, 0, 0, 0.6) inset;
-    align-items: center;
     margin-top: 3em;
 }
 
@@ -22,9 +17,6 @@
 form {
     background-color: rgba(255, 255, 255, 0.3);
     min-height: 63vh;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
     padding: 2em 0 2em 0;
     width: 55%;
 }
@@ -41,17 +33,12 @@ input {
 }
 
 /* form-group */
-.form-group {
-    width: 100%;
-}
-
 .form-group>input:first-child {
     margin-right: 10px;
 }
 
 /* form-elements */
 .form-elements {
-    flex-direction: column;
     width: 80%;
 }
 
@@ -60,7 +47,6 @@ input {
     font-size: 15px;
     height: 15em;
     padding: 15px 15px 15px 10px;
-    width: 100%;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #777777;
@@ -69,7 +55,6 @@ input {
 /* submit-button */
 .form-elements>.submit-button {
     font-family: "Roboto-Light", sans-serif;
-    align-self: flex-start;
     border: 1px solid var(--button);
     background-color: var(--button);
     color: #fff;
@@ -78,7 +63,7 @@ input {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
     font-size: 16px;
     width: 20%;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 .form-elements>.submit-button:hover {
@@ -97,6 +82,5 @@ input {
     font-family: "Roboto-Light", sans-serif;
     font-size: 18px;
     margin: 20px 0 30px 0;
-    text-align: center;
     color: #fff;
 }
