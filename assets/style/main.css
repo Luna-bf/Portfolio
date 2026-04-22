@@ -23022,7 +23022,7 @@ nav {
   top: 0;
   z-index: 10;
   /*Pour que les éléments animés restent derrière la nav*/
-  padding: 1.4em 0.8em 1.4em 0.8em;
+  padding: 1.4em 0.8em 1.4em 0.8em !important;
   text-align: center;
   width: 100%;
   background-color: var(--nav-bg-color);
@@ -23071,7 +23071,6 @@ nav ul li a:hover {
 /***ABOUT ME***/
 .about-me > figure {
   width: 21.2%;
-  margin-left: 5em;
 }
 
 .about-me > figure:hover {
@@ -23084,7 +23083,6 @@ nav ul li a:hover {
 }
 
 .about-me > .searching-for {
-  width: 52%;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 40px 30px 40px 30px;
   border-radius: 10px;
@@ -23133,19 +23131,11 @@ nav ul li a:hover {
 
 /***** PROJETS *****/
 .all-cards {
-  width: 74%;
-  margin: 0 auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-content: space-around;
   margin-top: 3em;
 }
 
 .project-card {
   border-radius: 10px;
-  flex-direction: column;
-  width: 380px;
   margin-bottom: 130px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
@@ -23254,6 +23244,10 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 /*** PROJECTS ***/
+.projects > h2 {
+  margin-bottom: 100px;
+}
+
 .projects-h1 {
   margin-bottom: 100px !important;
 }
@@ -23323,6 +23317,16 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 .vuejs-link a > i {
   margin-right: 10px;
   color: #34495E;
+}
+
+/* Tailwind CSS */
+.tailwind-link {
+  border: 1px solid #AAAAAA;
+}
+
+.tailwind-link a > i {
+  margin-right: 10px;
+  color: #38BDF8;
 }
 
 /* WordPress */
@@ -23409,12 +23413,12 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 
 .project-card > .translation {
   background-image: url("../../assets/imgs/projects/simple_translation.png");
-  background-position: -240px top;
+  background-position: top;
 }
 
 .project-card > .todo_list {
   background-image: url("../../assets/imgs/projects/todo_list_php.png");
-  background-position: -198px -180px;
+  background-position: -170px -180px;
 }
 
 .project-card > .blog_bootstrap {
@@ -23424,6 +23428,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 
 .project-card > .portfolio {
   background-image: url("../../assets/imgs/projects/maquette_portfolio.png");
+  background-position: -80.5px -180px;
 }
 
 .project-card > .joke-generator {
@@ -23448,7 +23453,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .cards-container {
-  width: 80%;
+  width: 90%;
   margin-top: 3em;
   flex-direction: row;
   justify-content: space-around;
@@ -23480,7 +23485,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .card-item > figure {
-  width: 29%;
+  width: 25%;
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -23527,12 +23532,12 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .card-item > .bootstrap {
-  width: 34%;
+  width: 32%;
   margin-bottom: 5px;
 }
 
 .card-item > .figma {
-  width: 20%;
+  width: 18%;
 }
 
 .card-item > .mySQL {
@@ -23540,7 +23545,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .card-item > .php {
-  width: 52%;
+  width: 48%;
 }
 
 .card-item > .git {
@@ -23558,7 +23563,7 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 .card-item > .symfony {
-  width: 31%;
+  width: 28%;
   margin-bottom: 10px;
 }
 
@@ -23573,10 +23578,6 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 }
 
 /*** CONTACT ***/
-.title-contact {
-  justify-content: center;
-}
-
 .title-contact > h1 {
   margin: 135px 0 20px 0;
 }
@@ -23588,7 +23589,6 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 40em rgba(0, 0, 0, 0.6) inset;
-  align-items: center;
   margin-top: 3em;
 }
 
@@ -23596,9 +23596,6 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
 form {
   background-color: rgba(255, 255, 255, 0.3);
   min-height: 63vh;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
   padding: 2em 0 2em 0;
   width: 55%;
 }
@@ -23615,17 +23612,12 @@ input {
 }
 
 /* form-group */
-.form-group {
-  width: 100%;
-}
-
 .form-group > input:first-child {
   margin-right: 10px;
 }
 
 /* form-elements */
 .form-elements {
-  flex-direction: column;
   width: 80%;
 }
 
@@ -23634,7 +23626,6 @@ input {
   font-size: 15px;
   height: 15em;
   padding: 15px 15px 15px 10px;
-  width: 100%;
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #777777;
@@ -23643,7 +23634,6 @@ input {
 /* submit-button */
 .form-elements > .submit-button {
   font-family: "Roboto-Light", sans-serif;
-  align-self: flex-start;
   border: 1px solid var(--button);
   background-color: var(--button);
   color: #fff;
@@ -23671,7 +23661,6 @@ input {
   font-family: "Roboto-Light", sans-serif;
   font-size: 18px;
   margin: 20px 0 30px 0;
-  text-align: center;
   color: #fff;
 }
 
