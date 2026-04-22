@@ -23,7 +23,7 @@ form {
 
 input {
     font-family: "Roboto-Light", sans-serif;
-    font-size: 1rem; // 16px
+    font-size: 1rem;
     height: 2.7em;
     width: 100%;
     margin-bottom: 1.25em;
@@ -38,7 +38,7 @@ input {
 
 .form-elements>textarea {
     font-family: "Roboto-Light", sans-serif;
-    font-size: 1rem; // 16px
+    font-size: 1rem;
     height: 15em;
     padding-top: 0.63em;
     margin-bottom: 0.625em;
@@ -55,7 +55,7 @@ input {
     padding: 0.63em 1.3em;
     border-radius: 5px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
-    font-size: 1rem; // 16px
+    font-size: 1rem;
     width: 20%;
     margin-top: 0.625em;
 }
@@ -68,10 +68,6 @@ input {
 }
 
 /* Message */
-.none {
-    display: none;
-}
-
 #submit-message>p {
     font-family: "Roboto-Light", sans-serif;
     font-size: 1.125rem;
