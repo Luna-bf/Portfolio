@@ -17,23 +17,34 @@
     <!-- Début HEADER -->
     <header class="d-flex align-items-center">
         <!-- Début NAV -->
-        <nav class="navbar navbar-expands-sm position-fixed top-0 d-flex flex-row justify-content-center justify-content-between w-100 text-center" style="padding: 1.4em 0.8em">
+        <!-- La classe ".navbar-expand-lg" indique à partir de quelle taille d'écran la barre de navigation devra "s'étendre" soit
+        passer de l'affichage du burger menu (menu contenant les trois liens) au menu complet (les trois liens affichés en ligne) -->
+        <nav class="navbar navbar-expand-lg position-fixed top-0 d-flex flex-row justify-content-center justify-content-between w-100 text-center" style="padding: 1.4em 0.8em">
             <div class="theme-switcher">
                 <div class="theme-button d-flex align-content-center align-items-center justify-content-center">
                     <i class="fa-solid fa-moon text-white text-center"></i>
                     <i class="fa-solid fa-sun"></i>
                 </div>
             </div>
+            <!-- Le bouton du hamburger menu -->
+            <!-- 
+            Explication des attributs :
+
+            - data-bs-toggle : Permet de contrôler l'affichage d'un élément repliable (ex : burger menu)
+            - data-bs-target : Permet d'associer un bouton ou un lien au contenu repliable (ici via son identifiant)
+            - aria-controls : Associe l'élément contrôlé (ici navbarNavDropdown) à l'élément contrôleur (ici ".nav-toggler")
+            - aria-expanded : Indique si les éléments contrôlés sont actuellement développés ou réduits.
+            -->
             <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="list-unstyled ps-0 d-flex flex-column-sm align-items-end justify-content-end mt-4 mb-2">
-                    <li class="my-2"><a href="#projects">Projets</a></li>
-                    <li class="my-2"><a href="#competences">Compétences</a></li>
-                    <li class="my-2"><a href="#contact">Contact</a></li>
+            <!-- La classe ".navbar-collapse" permet à la navbar de se réduire -->
+            <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavDropdown">
+                <ul class="list-unstyled ps-0 d-flex flex-column-sm align-items-end justify-content-end mt-sm-4 mb-sm-2 mt-lg-0 mb-lg-0">
+                    <li class="my-md-2 my-lg-0"><a href="#projects">Projets</a></li>
+                    <li class="my-md-2 my-lg-0"><a href="#competences">Compétences</a></li>
+                    <li class="my-md-2 my-lg-0"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
