@@ -2,14 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Initialisation du carrousel
     const swiper = new Swiper('.card-wrapper', {
-        effect: 'coverflow',
+        effect: 'cards',
         centeredSlides: true,
         loop: true,
-
-        coverflowEffect: {
-            rotate: -30,
-            depth: 100,
-        },
 
         // Pagination (points sous le slider)
         pagination: {
@@ -34,9 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 slidesPerView: 2,
                 spaceBetween: 25
             },
+            
             1281: {
                 slidesPerView: 3,
-                spaceBetween: 40
+                spaceBetween: 40,
             },
         }
     });
