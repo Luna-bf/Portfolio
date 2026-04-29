@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const swiper = new Swiper('.card-wrapper', {
         effect: 'cards',
         centeredSlides: true,
-        loop: true,
 
         // Pagination (points sous le slider)
         pagination: {
