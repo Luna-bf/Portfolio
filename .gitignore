@@ -1,3 +1,11 @@
 assets-folder/
 settings.json
-node_modules
+node_modules/.package-lock.json
+node_modules/@fortawesome
+node_modules/@popperjs
+node_modules/bootstrap/js
+node_modules/bootstrap/scss
+node_modules/bootstrap/LICENSE
+node_modules/bootstrap/*.json
+node_modules/bootstrap/*.md
+node_modules/bootstrap/dist/css
