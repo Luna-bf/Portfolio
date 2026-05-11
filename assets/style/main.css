@@ -23393,6 +23393,11 @@ sur toute la zone disponible, sans tenir compte du ratio à respecter.
   background-position: -2.5px 5px;
 }
 
+.project-card > .tmt {
+  background-image: url("../../assets/imgs/projects/tmt.png");
+  background-position: -250px -165px;
+}
+
 .project-card > .portfolio {
   background-image: url("../../assets/imgs/projects/maquette_portfolio.png");
   background-position: -35px -170px;
